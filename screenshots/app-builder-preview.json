@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Туманная застава",
+      "hasCanvas": false,
+      "bodyTextLen": 127,
+      "bodyTextHash": "74e736c3004613f4ff144cb581ec0092cfe9d466c55cfa516656bae5f7721ae4",
+      "bodyTextPrefix": "ПОСЛЕ КОНЦА ВРЕМЁН Туманная застава Туман стирает нехоженое. Иди",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Туманная застава",
+      "hasCanvas": false,
+      "bodyTextLen": 127,
+      "bodyTextHash": "74e736c3004613f4ff144cb581ec0092cfe9d466c55cfa516656bae5f7721ae4",
+      "bodyTextPrefix": "ПОСЛЕ КОНЦА ВРЕМЁН Туманная застава Туман стирает нехоженое. Иди",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [
+    "BRAND WARNING: /workspace/public/og.jpg exists but /workspace/src/lib/og/site.json is missing \"card\": \"custom\". Bake infers custom from the file, but set the flag in /workspace/src/lib/og/site.json per /workspace/.grok/skills/og/SKILL.md so identity is explicit."
+  ],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

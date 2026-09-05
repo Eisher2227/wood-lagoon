@@ -1,0 +1,1 @@
+import{i as e,r as t}from"./index-kRTlCc-C.js";var n=e();function r(){return(0,n.jsx)(t,{to:`/`})}export{r as component};

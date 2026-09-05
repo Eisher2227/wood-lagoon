@@ -1,0 +1,12321 @@
+import { a as e, i as t, n, o as r, t as i } from "./index-kRTlCc-C.js";
+var a = n(`arrow-up`, [
+    [`path`, { d: `m5 12 7-7 7 7`, key: `hav0vg` }],
+    [`path`, { d: `M12 19V5`, key: `x0mq9r` }],
+  ]),
+  o = n(`menu`, [
+    [`path`, { d: `M4 12h16`, key: `1lakjw` }],
+    [`path`, { d: `M4 18h16`, key: `19g7jn` }],
+    [`path`, { d: `M4 6h16`, key: `1o0s65` }],
+  ]),
+  s = r(e(), 1),
+  c = `Close`,
+  l = `Understood`,
+  u = `thing`,
+  d = {
+    "hex.mill.name": `Rusty mill`,
+    "hex.bridge.name": `Lock bridge`,
+    "hex.mine.name": `Steam mine`,
+    "hex.depot.name": `Trackers' depot`,
+    "hex.camp.name": `Camp by the rails`,
+    "hex.chapel.name": `Chapel under steam`,
+    "hex.mill.t0": `The mill's wings are gears. Wind turns them idle; steam hisses from the hub.`,
+    "hex.mill.t1": `The flour ran out long ago. A copper washer is stuck in the millstones, warm to the touch.`,
+    "hex.mill.t2": `The wings' shadow draws a circle on the rusty waste. A good place to catch your breath.`,
+    "hex.bridge.t0": `The bridge holds the lock gates. Water below is black; rivets in the rails are still hot.`,
+    "hex.bridge.t1": `Copper pipes run the deck like veins. The fog does not dare step onto the span.`,
+    "hex.bridge.t2": `Rails on one side, reeds on the other. Today the bridge asks no one.`,
+    "hex.mine.t0": `The mine mouth is bound in brass. Rails go into a warm dark; the lamps still burn.`,
+    "hex.mine.t1": `It smells of coal and wet iron. Someone rolled a cart out not long ago and did not come back.`,
+    "hex.mine.t2": `Above the headframe the gauge sits in yellow. No need to go down — the cage already breathes steam.`,
+    "hex.depot.t0": `The depot stands without a shift. The locomotive has gone cold, but the roof pipes still remember pressure.`,
+    "hex.depot.t1": `Belts hang in the bay, and 18mm spanners. The floor is oily. You can sleep here if you don't fear the echo.`,
+    "hex.depot.t2": `Chalk on the gates: «Don't whistle». There is no whistle anyway.`,
+    "hex.camp.t0": `Tents by the broken rails. The pot is still warm; of the owners — not a single track.`,
+    "hex.camp.t1": `The fire smokes with copper soot. Someone left bread and shut the damper.`,
+    "hex.camp.t2": `Night here is shorter than it looks. The rails lead into the fog and back.`,
+    "hex.chapel.t0": `Instead of a bell — a smoke stack. Icons on the porch sit in brass riza, warm.`,
+    "hex.chapel.t1": `Inside it smells of incense and machine oil. Candles stand even, like marks on a gauge.`,
+    "hex.chapel.t2": `Someone prayed to the boiler. The boiler did not answer — and that too is an answer.`,
+    "combat.flee": `Flee`,
+    "combat.fleeFail": `The flee failed. The fight goes on.`,
+    "combat.fleeFailFx": `Flee failed`,
+    "combat.fleeOk": `You slipped into the fog.`,
+    "combat.fleeOkFx": `Flee succeeded`,
+    "combat.enemyPower": `Power {n}`,
+    "dice.press": `press`,
+    "item.rusty_axe.name": `Riveting axe`,
+    "item.rusty_axe.desc": `Rust on the rivets does not stop it hewing steam and bone.`,
+    "item.short_sword.name": `Blade of the watch-pipe`,
+    "item.short_sword.desc": `A light blade. It whistles like steam in a crack.`,
+    "item.ash_staff.name": `Manometer staff`,
+    "item.ash_staff.desc": `Ash wood and a brass eye of pressure. It feeds mana.`,
+    "item.bone_knife.name": `Bone-steam knife`,
+    "item.bone_knife.desc": `Bone remembers where to cut. The grip is warm from the firebox.`,
+    "item.hunter_bow.name": `Hunter's needler`,
+    "item.hunter_bow.desc": `The string still sings. Needles fly together with the steam.`,
+    "item.padded.name": `Riveter's quilt`,
+    "item.padded.desc": `Holds a blow better than it looks. Rivets along the seams.`,
+    "item.robe.name": `Steamword robe`,
+    "item.robe.desc": `Smells of smoke, herbs and hot copper. More mana.`,
+    "item.mail_shard.name": `Copper mail scrap`,
+    "item.mail_shard.desc": `A few rings still hold. Between them — pipe grit.`,
+    "item.wraps.name": `Riveted wraps`,
+    "item.wraps.desc": `Cloth and brass at the wrists.`,
+    "item.boots_plain.name": `Way-boots`,
+    "item.boots_plain.desc": `They have worn many sleepers and roads.`,
+    "item.boots_bog.name": `Boiling-mire boots`,
+    "item.boots_bog.desc": `They keep the water out. Valves on the shafts hiss.`,
+    "item.iron_helm.name": `Manometer helm`,
+    "race.human.name": `Human`,
+    "race.human.blurb": `Copper in the blood and in the palms. People rivet the pipes of sleeping gods and learn fastest while the steam is still warm.`,
+    "race.human.bonus": `+10% XP. Versatile.`,
+    "race.lesovik.name": `Smokewood`,
+    "race.lesovik.blurb": `Kin of the thicket: bark for skin, moss in the hair, breath of warm smoke. Nimble between trunks, little extra copper on the body.`,
+    "race.lesovik.bonus": `Stealth and luck in thickets. +dexterity.`,
+    "race.vodyanoy.name": `Sluicekin`,
+    "race.vodyanoy.blurb": `River blood that holds the sluices. Steam instead of spray, more mana, weaker poisons.`,
+    "race.vodyanoy.bonus": `+Gift, poison resistance.`,
+    "race.kostyanoy.name": `Hearthbone`,
+    "race.kostyanoy.blurb": `They came out of Nav beneath the furnace. Bone and soot. Stout health; people do not take to them.`,
+    "race.kostyanoy.bonus": `+health. Penalty to charisma.`,
+    "race.zharkrovny.name": `Furnaceblood`,
+    "race.zharkrovny.blurb": `A furnace smolders in the veins. Living bellows of the smithy. Strong, and they barely fear flame.`,
+    "race.zharkrovny.bonus": `+strength, fire resistance.`,
+    "class.warrior.name": `Riveter`,
+    "class.warrior.blurb": `Strikes with hammer and axe. Holds a blow the way a rivet holds a boiler.`,
+    "class.volkhv.name": `Steamword`,
+    "class.volkhv.blurb": `Prayer is pressure. Words and steam. Blows come from the mind.`,
+    "class.archer.name": `Needler`,
+    "class.archer.blurb": `Shoots needles from a steam bow. Dexterity decides the fight.`,
+    "class.tracker.name": `Wayman`,
+    "class.tracker.blurb": `Reads tracks on the fog rails and finds the way while the cell is still earth.`,
+    "kit.w_axe.name": `Riveting axe`,
+    "kit.w_axe.blurb": `A heavy swing. For those who start with a blow on the world's rivet.`,
+    "kit.w_sword.name": `Blade of the watch-pipe`,
+    "kit.w_sword.blurb": `Simpler than an axe, and you need no shield — the blade is quick as a whistle.`,
+    "kit.v_staff.name": `Manometer staff`,
+    "kit.v_staff.blurb": `Words still burn if you do not spare the pressure.`,
+    "kit.v_bone.name": `Cup of bone steam`,
+    "kit.v_bone.blurb": `Less blow, more whisper of the ancestors from the furnace.`,
+    "kit.a_bow.name": `Hunter's needler`,
+    "kit.a_bow.blurb": `A quiet needle shot. Good while they have not spotted you in the steam.`,
+    "kit.a_knife.name": `Knife and needle`,
+    "kit.a_knife.blurb": `If the needle does not arrive, the knife will, along the copper.`,
+    "kit.t_pack.name": `Wayman's pack`,
+    "kit.t_pack.blurb": `A rope, a root, a sharp eye and a bit of rail to remember.`,
+    "kit.t_light.name": `Light step on the rails`,
+    "kit.t_light.blurb": `Little iron — much luck. The fog ties do not creak.`,
+    "item.iron_helm.desc": `A dent above the temple. The needle still twitches.`,
+    "item.root.name": `Livewort root`,
+    "item.root.desc": `Bitter, with a copper vein. Heals if you chew it.`,
+    "item.wort.name": `Wormwood draught`,
+    "item.wort.desc": `Bitter. Returns Gift. The lid is a valve.`,
+    "item.tears.name": `Sluice-kin tears`,
+    "item.tears.desc": `A cold vial. Steam stands in a column inside.`,
+    "item.ember.name": `Brazier-coal`,
+    "item.ember.desc": `A coal that will not go out. It warms the palm like a firebox.`,
+    "item.silver_bit.name": `Ancestors' silver`,
+    "item.silver_bit.desc": `A coin without a mint-mark — only a gear and a knot.`,
+    "item.amber.name": `Gear-amber`,
+    "item.amber.desc": `A warm stone. A tiny gear-tooth is frozen in the resin.`,
+    "item.ribbon.name": `Faded ribbon`,
+    "item.ribbon.desc": `Someone tied it for luck and sewed on a brass bell.`,
+    "item.black_apple.name": `Black apple`,
+    "item.black_apple.desc": `It does not rot. The skin is like boiler scale.`,
+    "item.key_ring.name": `Wet key`,
+    "item.key_ring.desc": `For a door that is not there. Or a valve that is.`,
+    "item.bone_cup.name": `Bone cup of steam`,
+    "item.bone_cup.desc": `Cold. Honest. A pressure tick on the rim.`,
+    "item.memory_shard.name": `Memory shard`,
+    "item.memory_shard.desc": `A stranger's memory inside. Steam walks in circles.`,
+    "item.steel_axe.name": `Watch-pipe axe`,
+    "item.steel_axe.desc": `Honed on the outpost stone and a boiler rivet.`,
+    "item.green_staff.name": `Living manometer staff`,
+    "item.green_staff.desc": `The branch still weeps resin. The pressure needle dances. Much mana.`,
+    "item.long_bow.name": `Long needler`,
+    "item.long_bow.desc": `A heavy string. Farther and meaner. Steam in the bow's shoulders.`,
+    "item.sworn_mail.name": `Oath-mail`,
+    "item.sworn_mail.desc": `Rings soldered by oath and copper, not by fire alone.`,
+    "item.seer_staff.name": `Seer's staff`,
+    "item.seer_staff.desc": `The words in it are already stacked. The gauge shows another's dream.`,
+    "item.moon_bow.name": `Moon needler`,
+    "item.moon_bow.desc": `It shoots quieter than night. The needles glow like condensate.`,
+    "item.temple_helm.name": `Helm of the boiler-shrine`,
+    "item.temple_helm.desc": `Forged with a prayer in the seam and a tube at the temple.`,
+    "item.perun_cleaver.name": `Perun's cleaver`,
+    "item.perun_cleaver.desc": `Thunder in the blade, pressure in the poll. Unique skill: Gauge-split.`,
+    "item.fate_spindle.name": `Mokosh's spindle`,
+    "item.fate_spindle.desc": `It spins luck out of steam. Unique skill: Fate-thread.`,
+    "item.nav_crown.name": `Crown of Nav`,
+    "item.nav_crown.desc": `Passive: steals life. Skill: Death-pact. A crown of soot and brass.`,
+    "item.fire_heart.name": `Heart of the forge`,
+    "item.fire_heart.desc": `Passive: the first blow is stronger. Skill: Forge-word.`,
+    "skill.power_strike.name": `Riveting blow`,
+    "skill.power_strike.desc": `A heavy hammer swing. + to the combat roll.`,
+    "skill.aimed_shot.name": `Needle into steam`,
+    "skill.aimed_shot.desc": `Hits truer. Even blows do not scatter.`,
+    "skill.black_word.name": `Black whistle`,
+    "skill.black_word.desc": `A steam-word strikes the foe and lowers their roll.`,
+    "skill.forest_shadow.name": `Smokewood shade`,
+    "skill.forest_shadow.desc": `After battle you take half as much harm.`,
+    "skill.ancestors_luck.name": `Ancestors' luck`,
+    "skill.ancestors_luck.desc": `Roll extra dice once per rank and keep the best.`,
+    "skill.blood_heat.name": `Firebox heat`,
+    "skill.blood_heat.desc": `Fire in the veins. Strength goes into the blow.`,
+    "skill.river_breath.name": `Sluice-breath`,
+    "skill.river_breath.desc": `After a blow it heals a little.`,
+    "skill.bone_shell.name": `Bone boiler`,
+    "skill.bone_shell.desc": `Takes off some harm after battle.`,
+    "skill.leshy_step.name": `Steamwood step`,
+    "skill.leshy_step.desc": `In the thicket fewer fights and more finds.`,
+    "skill.mokosh_gaze.name": `Weaver's gaze`,
+    "skill.mokosh_gaze.desc": `You find things more often when searching.`,
+    "skill.grave_sense.name": `Firebox sense`,
+    "skill.grave_sense.desc": `A higher chance to dig up a hoard.`,
+    "skill.bargain.name": `Haggle at the pipe`,
+    "skill.bargain.desc": `You buy cheaper and sell dearer.`,
+    "skill.thunder_cleave.name": `Gauge-split`,
+    "skill.thunder_cleave.desc": `Perun's blow. A strong bonus to the roll. Only with Perun's cleaver.`,
+    "skill.weave_fate.name": `Fate-thread`,
+    "skill.weave_fate.desc": `Roll twice and keep the better. Only with Mokosh's spindle.`,
+    "skill.death_pact.name": `Death-pact`,
+    "skill.death_pact.desc": `You pay in blood for a blow. Only with the Crown of Nav.`,
+    "skill.pyre_word.name": `Forge-word`,
+    "skill.pyre_word.desc": `Heat strikes with you. Only with the Heart of the forge.`,
+    "enemy.utopelnik.name": `Drowned-driver`,
+    "enemy.utopelnik.desc": `Wet, in an oiled jacket. Slow, mean, hissing with valves.`,
+    "enemy.kikimora.name": `Kikimora-spinner`,
+    "enemy.kikimora.desc": `She spins steam into thread and tangles hands. She whispers into a brass tube.`,
+    "enemy.bone_hound.name": `Cog-hound`,
+    "enemy.bone_hound.desc": `It barks without a throat. It bites with gears instead of fangs.`,
+    "enemy.upyr.name": `Pressure-upyr`,
+    "enemy.upyr.desc": `It drinks heat from pipes and veins. After a blow you want to sit down.`,
+    "enemy.nav_shade.name": `Shade from the firebox`,
+    "enemy.nav_shade.desc": `It walks where you already are not. Soot instead of a face.`,
+    "enemy.ognevik.name": `Stoker-fireling`,
+    "enemy.ognevik.desc": `Coal that learned to walk and throw itself into the firebox.`,
+    "enemy.leshy_shard.name": `Shard of Steamwood`,
+    "enemy.leshy_shard.desc": `A wood without a master. Bark for a face, pipes for roots.`,
+    "enemy.koshchei.name": `Clockwork Koshchei`,
+    "enemy.koshchei.desc": `Not him. His habit of not dying, wound with a key.`,
+    "hex.forest.name": `Copper thicket`,
+    "hex.swamp.name": `Boiling mire`,
+    "hex.ruins.name": `Dead engine-house`,
+    "hex.village.name": `Settlement by the pipe`,
+    "hex.field.name": `Rusty waste`,
+    "hex.mound.name": `Mound with a gauge`,
+    "hex.river.name": `Sluice river`,
+    "hex.tavern.name": `Inn «Under Pressure»`,
+    "hex.market.name": `Gear jumble-sale`,
+    "hex.kapishche.name": `Boiler-shrine`,
+    "hex.city.name": `Brass posad`,
+    "hex.fog.name": `Fog nozzle`,
+    "hex.nav.name": `Nav under the firebox`,
+    "hex.nav_gate.name": `Gate of Yav`,
+    "hex.bonefield.name": `Bone field`,
+    "hex.eye.name": `Eye of Oblivion`,
+    "layer.0.name": `Yav under steam`,
+    "layer.0.goal": `Boiler-shrine`,
+    "layer.1.name": `Sleep of the machine-gods`,
+    "layer.1.goal": `Brass posad`,
+    "layer.2.name": `Heart of the shard`,
+    "layer.2.goal": `Eye of Oblivion`,
+    "goal.navGate": `Gates of Yav`,
+    "nar.start": `You stand on the first cell of Yav under steam. The rims drink the fog-exhaust of sleeping gods. Six arrows — six roads. Choose where to go.`,
+    "nar.intro": `{name}, {race}. Layer goal — {goal}. Two deeds, then a step by the arrow.`,
+    "nar.questHead": `Quest: {title}. {intro}`,
+    "nar.layerFound": `You find {goal}. Layer «{name}» is done.`,
+    "nar.layerEye": `The Eye looks. You look back. The world did not become whole — but it was seen. That is enough.`,
+    "nar.layerNext": `Next — {goal} ({name}).`,
+    "nar.gateOpen": `The Gates of Yav stand open. You return to where you fell from.`,
+    "nar.death": `Death is a door downward, into the furnace. Nav beneath the furnace takes you without ceremony. {hex} Find the Gates of Yav by the arrows.`,
+    "nar.searchFight": `The search leads not to a hoard — to one who also sought in the steam.`,
+    "nar.searchFound": `Found: {name}.`,
+    "nar.searchEmpty1": `Nothing. Only steam and wind.`,
+    "nar.searchEmpty2": `There are traces, but whose — already past saying. On the sleeper, a rusty washer.`,
+    "nar.searchEmpty3": `The cell is empty. You may go on.`,
+    "nar.digFound": `Hoard: {name} and {gold} coppers.`,
+    "nar.digEmpty1": `Stones, earth and a rusty washer. The hoard is not here.`,
+    "nar.digEmpty2": `A pit to the elbow. Empty.`,
+    "nar.digEmpty3": `No luck: 1 in 10 did not fall.`,
+    "nar.rest": `Rest. Health +{hp}, mana +{mp}. Mana returns weakly — without rest, the fight will eat you.`,
+    "nar.ambush": `Sleep is broken: someone decided a sleeper by the furnace is easy prey.`,
+    "nar.flagCrone": `On the shoal the crone's traces and a vial wait for you. The Sluicekin's tears are cold as a promise.`,
+    "nar.flagWarrior": `From behind the column comes that wounded one — alive, almost. He bows and leaves the mail. «Duty is heavier than the wound.»`,
+    "nar.flagGod": `Thunder without clouds strikes ten steps away. The beggar-god reminds you of himself. Health sinks.`,
+    "nar.flagChild": `On the well — a ribbon and bread you did not leave. Someone remembers being fed.`,
+    "nar.flagShadow": `The second shadow goes ahead and comes back: «Not that way. Not yet.»`,
+    "combat.emerge": `{name} steps out of steam and fog. {flavor}`,
+    "combat.enemyRoll": `{name} rolls the die: {raw} came up. Enemy might +{bonus}. Enemy total: {total}. Your turn — press your die.`,
+    "combat.youRaw": `Die: {raw} came up.`,
+    "combat.youAttack": `Attack ({stat} {statVal} + weapon {weapon}): +{bonus}.`,
+    "combat.youLuck": `Luck: +{n}.`,
+    "combat.youSkill": `Skill: +{n}{notes}`,
+    "combat.youNotes": `{notes}.`,
+    "combat.youTotal": `Total: {you} against {enemy} (enemy: die {raw}).`,
+    "combat.roundYou": `The round is yours.`,
+    "combat.roundEnemy": `The round is the enemy's.`,
+    "combat.roundTie": `A draw.`,
+    "combat.drain": `The shade drinks Gift.`,
+    "combat.reflect": `Reflected stab: −2.`,
+    "combat.river": `The sluice returns {n} health.`,
+    "combat.pact": `The pact takes 4 health.`,
+    "combat.lifesteal": `The Crown drinks life (+2).`,
+    "combat.nextRoundN": `Round {n}. The enemy rolls the die…`,
+    "combat.winLoot": `Victory {w}:{l}{ties}. XP +{xp}, coppers +{gold}, loot: {item}. Damage for lost rounds: {dmg}.`,
+    "combat.winGold": `Victory {w}:{l}{ties}. XP +{xp}, coppers +{gold}. Damage {dmg}.`,
+    "combat.draw": `Draw {w}:{l}{ties}. Neither yielded. XP +{xp}, coppers +{gold}. Damage {dmg}.`,
+    "combat.lose": `Defeat {w}:{l}{ties}. Damage {dmg}. The enemy leaves into the steam.`,
+    "combat.tiesNote": ` (draws {n})`,
+    "combat.tiesNote2": `, drawn rounds: {n}`,
+    "game.needActions": `Finish the deeds on this hex · {n} left`,
+    "game.menuHint": `Pause, save, leave`,
+    "quest.diff.easy": `easy`,
+    "quest.diff.medium": `medium`,
+    "quest.diff.hard": `hard`,
+    "quest.diff.very_hard": `very hard`,
+    "quest.warning": `Difficulty: {rank}. Check: {stat}. Failure hits harder on tough deeds.`,
+    "item.level": `lv. {n}`,
+    "combat.fleeOkDmg": `You slipped away, but a blow caught you: −{dmg}. XP {xp}.`,
+    "combat.fleeOkSafe": `You slipped away clean. XP {xp}.`,
+    "auth.mailPassword": `A new password is written. Keep it and sign in.`,
+    "auth.sendPassword": `Send a new password`,
+    "fx.noSpace": `No room in the bag.`,
+    "quest.wounded.title": `The wounded at the boundary`,
+    "quest.wounded.intro": `At the boundary by a rusty pipe a riveter lies. He holds his belly — blood and machine oil. «Finish it. Or pull me out. Just don't leave me like this.»`,
+    "quest.wounded.talk.t1": `«Where does it hurt more? Be quiet and breathe.»`,
+    "quest.wounded.talk.t2": `«I need the blade more than you.»`,
+    "quest.wounded.talk.t3": `«Name the hoard — and I'll bind you.»`,
+    "quest.wounded.out.statOk": `You drag him to a stone and bind him. He whispers where «the earth rings».`,
+    "quest.wounded.out.statFail": `Strength fails. He thanks you with a look and goes still. His knife stays in the bag.`,
+    "quest.wounded.out.bribe": `Gold for water and bandages. He reaches the settlement himself.`,
+    "quest.wounded.out.luckOk": `The wound is not so deep. He stands and gives the axe «for life».`,
+    "quest.wounded.out.luckFail": `The blood will not stop. He shuts his eyes, tired.`,
+    "quest.wounded.out.t1": `The binding holds. He whispers of earth that rings.`,
+    "quest.wounded.out.t2": `The axe comes off easily. He does not curse — he is tired. Warm gold in the belt.`,
+    "quest.wounded.out.t3": `He looks long, speaks the truth. The binding holds. The hoard may be a trap.`,
+    "quest.idol_blood.title": `The idol asks`,
+    "quest.idol_blood.intro": `In the grove stands a nameless wooden god. In its chest — not a hollow, but a small furnace of cold coals, and above it a glass pressure-eye at zero. A voiceless voice, as from a pipe: «A drop. Any. The boiler wants to remember it is alive.» Give blood, bribe with coins like coal — or refuse the idol?`,
+    "quest.idol_blood.talk.t1": `«Take water. Today it costs more than blood.»`,
+    "quest.idol_blood.talk.t2": `«Hold the cell yourself. I am still alive.»`,
+    "quest.idol_blood.talk.t3": `«Say whom you remember — then I decide.»`,
+    "quest.idol_blood.out.statOk": `You endure and give blood. The cell around you grows sharper. The arm aches.`,
+    "quest.idol_blood.out.statFail": `The head spins. The idol is silent. Fog steps closer.`,
+    "quest.idol_blood.out.bribe": `Coins fall into the furnace like drops. The idol takes the substitute. Fog eases back a little.`,
+    "quest.idol_blood.out.luckOk": `Coins pour from the hollow by themselves. The idol is fed without you.`,
+    "quest.idol_blood.out.luckFail": `The wood does not answer. Somewhere a branch falls — too on time.`,
+    "quest.idol_blood.out.t1": `Water darkens, pretending to be blood. The idol accepts. Luck flinches.`,
+    "quest.idol_blood.out.t2": `The idol stays silent as if you confirmed what it thought of people.`,
+    "quest.idol_blood.out.t3": `It names a name you do not know. For a moment the cell grows sharper.`,
+    "quest.well.title": `The voice from the well`,
+    "quest.well.intro": `A well without a curb — only a cast-iron rim and a chain into black. The voice below is yours, only younger, and between words drops tap metal: «Pull me out. I remember summer. I remember when the pipe still sang.» Rope lies dry beside it. Lower the rope, seal it with stones — or talk without giving your hands?`,
+    "quest.well.talk.t1": `«Which summer? Name the river.»`,
+    "quest.well.talk.t2": `«Stay. Stones are honester than rope.»`,
+    "quest.well.talk.t3": `«We'll talk. I will not give my hands.»`,
+    "quest.well.out.statOk": `You understand: this is not you. You say it aloud. The voice fades. Warmth in the chest.`,
+    "quest.well.out.statFail": `The rope snaps. Laughter from below. A wet key remains on the rim.`,
+    "quest.well.out.bribe": `Coins fall down. The chime does not end for a long time. A key rolls out from above.`,
+    "quest.well.out.luckOk": `The rope holds. Below — only a bucket of clean water. Mana returns.`,
+    "quest.well.out.luckFail": `Stones tear loose by themselves. The voice grows quieter, like talk behind a wall.`,
+    "quest.well.out.t1": `He gets confused. The rope snaps in the middle. On the rim — a wet key.`,
+    "quest.well.out.t2": `Stones fall for a long time. Tonight's sleep will be without wells. That is already payment.`,
+    "quest.well.out.t3": `You speak of a field that never was. By the end it is unclear who comforted whom. Mana drips back.`,
+    "quest.two_travelers.title": `Two at the path`,
+    "quest.two_travelers.intro": `By a steam-fire sit two. One in an oiled jacket: «He is a shadow, do not feed him. Shadows have no rivets on the collar.» The other, without a shadow on the ground, smiles too warm: «He lies to eat your bread first.» Between them a pot too black for porridge. Put food in the middle, pick one — or demand they show their hands?`,
+    "quest.two_travelers.talk.t1": `«Food in the middle. Eat if you can.»`,
+    "quest.two_travelers.talk.t2": `«I don't care which of you lies.»`,
+    "quest.two_travelers.talk.t3": `«Show your hands. Shadows don't have them.»`,
+    "quest.two_travelers.out.statOk": `You speak so both fall silent. Amber remains on the ground — pay for peace.`,
+    "quest.two_travelers.out.statFail": `Words tangle. One cuts the other. Pays in silver that smells of ash.`,
+    "quest.two_travelers.out.bribe": `Bread and coins between them. Nobody eats. When you leave, the fire flares by itself. In the track — amber.`,
+    "quest.two_travelers.out.luckOk": `Both turn out alive. They give a mail link «for not choosing».`,
+    "quest.two_travelers.out.luckFail": `One vanishes, smiling. The other weeps. You do not know whom you saved.`,
+    "quest.two_travelers.out.t1": `They look at the food, then at each other. Nobody eats. In the track — amber.`,
+    "quest.two_travelers.out.t2": `The first nods and cuts the second without hurry. Pays in silver.`,
+    "quest.two_travelers.out.t3": `The second shows his palms. The first dissolves. The link is warm — almost armor.`,
+    "quest.eyed_bird.title": `The bird with a human eye`,
+    "quest.eyed_bird.intro": `A raven sits on a copper pipe so close you see: the right eye is grey-green, someone's, alive, ringed in brass like a loupe. It croaks the word «stay», and steam from the beak lays a letter on the air. Bow without startling it, ask whose eye — or give bread and leave?`,
+    "quest.eyed_bird.talk.t1": `«Whose eye, raven?»`,
+    "quest.eyed_bird.talk.t2": `«I will not stay. Walk me ten steps — then you are free.»`,
+    "quest.eyed_bird.talk.t3": `«Take the bread. Keep the eye.»`,
+    "quest.eyed_bird.out.statOk": `You bow deftly without startling it. Fog ahead thins for ten steps.`,
+    "quest.eyed_bird.out.statFail": `The hand twitches toward the eye. The beak strikes the wrist. The hand will ache in damp weather.`,
+    "quest.eyed_bird.out.bribe": `Coins glitter. The raven pecks one and carries it off. A draught falls from a feather.`,
+    "quest.eyed_bird.out.luckOk": `A feather falls by itself. In it — a vial of draught.`,
+    "quest.eyed_bird.out.luckFail": `The raven carries your luck ten wingbeats away and brings half back.`,
+    "quest.eyed_bird.out.t1": `It pecks the wrist. The eye stays with the bird. Your blood is news to it.`,
+    "quest.eyed_bird.out.t2": `It tilts its head too much like a human. Fog thins. It is almost a road.`,
+    "quest.eyed_bird.out.t3": `It pecks carefully. Flies off. A draught falls from a feather — as if carried for someone.`,
+    "quest.pyre.title": `The smoldering hearth`,
+    "quest.pyre.intro": `In the middle of the cell a funeral hearth breathes: not a fire — a small furnace in the ground, lined with brick and ribbons. In the coals a ring, and from the heat a voice dry as ash: «Do not quench. Or quench. Just do not stand between.» Feed brushwood, take the ring alive — or leave it burning?`,
+    "quest.pyre.talk.t1": `«Do you need brushwood or silence?»`,
+    "quest.pyre.talk.t2": `«The ring is pay for the living. The coals are yours.»`,
+    "quest.pyre.talk.t3": `«Burn until you tire yourselves.»`,
+    "quest.pyre.out.statOk": `You understand the rite and feed brushwood correctly. Breathing eases. Mana comes.`,
+    "quest.pyre.out.statFail": `The rite tangles. From wet coals a bone cup rolls out.`,
+    "quest.pyre.out.bribe": `Coins into the heat. Flame stands in a pillar without pain. Ash settles on the shoulders like a cloak.`,
+    "quest.pyre.out.luckOk": `The ring itself becomes coins in the fist. The heat takes no offense.`,
+    "quest.pyre.out.luckFail": `The finger burns. There are coins, but the hand remembers the price.`,
+    "quest.pyre.out.t1": `Flame stands. Faces in it nod. Ash on the shoulders. Breathing eases.`,
+    "quest.pyre.out.t2": `The ring burns and spills into coins. A greedy gesture — but the world understands it.`,
+    "quest.pyre.out.t3": `It hisses, offended, then lets go. From the coals — a bone cup. Cold. Honest.`,
+    "quest.mirror.title": `The mirror in the fog`,
+    "quest.mirror.intro": `A frame stands without a wall, driven into a sleeper. Glass clouded with condensate: in it you, only older, same jacket, but a tube at the temple you do not have. The reflection lifts a hand out of time. Make it blink first, give a ribbon — or say the glass lies?`,
+    "quest.mirror.talk.t1": `«Blink first. Then I will go.»`,
+    "quest.mirror.talk.t2": `«Take the ribbon. It tangles my step.»`,
+    "quest.mirror.talk.t3": `«The glass lies. I know it.»`,
+    "quest.mirror.out.statOk": `You stare until it blinks. The head grows roomy. Mana returns.`,
+    "quest.mirror.out.statFail": `Shards sing. One cuts into the palm. In the wound — a memory stone.`,
+    "quest.mirror.out.bribe": `A coin to the frame. The reflection bows. On the glass a frost-map — you cannot memorize it in time.`,
+    "quest.mirror.out.luckOk": `The glass itself gives a shard — warm, without a wound.`,
+    "quest.mirror.out.luckFail": `The frame is empty. Fog laughs without malice.`,
+    "quest.mirror.out.t1": `It blinks second. You remember your name louder. Mana comes as if from a pawnshop.`,
+    "quest.mirror.out.t2": `The reflection bows. Fog goes around the mirror. Luck rises a little.`,
+    "quest.mirror.out.t3": `The glass cracks. A shard in the palm is warm. You almost regret the frame.`,
+    "quest.beggar_god.title": `The beggar god`,
+    "quest.beggar_god.intro": `By a stone sits a beggar in a stoker's rags. Under the patches — traces of gilding, and at the belt a furnace key he does not hide. He asks not for gold — a memory of thunder. «Perun now sleeps as a manometer, — he says, — but thunder can still be lent.» Give a childhood storm, push a coin instead of thunder — or say the gods ate themselves?`,
+    "quest.beggar_god.talk.t1": `«Thunder was in childhood. Take it if you hear.»`,
+    "quest.beggar_god.talk.t2": `«Take a coin. I still need the thunder.»`,
+    "quest.beggar_god.talk.t3": `«The gods ate themselves. I must go.»`,
+    "quest.beggar_god.out.statOk": `You tell of the storm. He straightens and bows to the ground. Heat in the hand.`,
+    "quest.beggar_god.out.statFail": `The words are small. He takes no offense. Behind your back a short rumble, without clouds.`,
+    "quest.beggar_god.out.bribe": `He catches the coin and laughs. «You still think we are bought.» He spatters a root.`,
+    "quest.beggar_god.out.luckOk": `Thunder happens by itself — small, kind. An ember in the palm.`,
+    "quest.beggar_god.out.luckFail": `Silence. He nods: the debt is written without interest.`,
+    "quest.beggar_god.out.t1": `For a moment the head is empty where the storm was. He bows. Warmth in the hand, as from an ember.`,
+    "quest.beggar_god.out.t2": `He swallows the coin. Spits a root. A strange, filling exchange.`,
+    "quest.beggar_god.out.t3": `He takes no offense. Behind your back it rumbles. Hair stands. The world records the debt.`,
+    "quest.shadow_woman.title": `The woman without a shadow`,
+    "quest.shadow_woman.intro": `On pale sand by broken rails a woman stands. No shadow — even when a pipe overhead casts a stripe. She asks to be walked through the cell: «I must not go alone. Sleepers count steps, and without a shadow they count wrong.» Walk her in silence, refuse — or ask her name?`,
+    "quest.shadow_woman.talk.t1": `«Walk behind. Do not speak until the sand ends.»`,
+    "quest.shadow_woman.talk.t2": `«A shadow is needed so you do not lose yourself. Go alone.»`,
+    "quest.shadow_woman.talk.t3": `«What is your name? Names hold the road here.»`,
+    "quest.shadow_woman.out.statOk": `You walk in silence. At the edge she touches the wrist — cold. The step grows lighter.`,
+    "quest.shadow_woman.out.statFail": `You lose the way. She looks with pity. The voice sits down.`,
+    "quest.shadow_woman.out.bribe": `Coins on the sand. She takes them like bread and leaves. The sand stays empty and honest.`,
+    "quest.shadow_woman.out.luckOk": `Sand folds itself into a path. She bows. You have two shadows until the next hex.`,
+    "quest.shadow_woman.out.luckFail": `The sand ends at once. She vanishes without offense.`,
+    "quest.shadow_woman.out.t1": `You walk silent. «Now you have two shadows. One lies.» The step is lighter. Sleep is heavier.`,
+    "quest.shadow_woman.out.t2": `She nods. «Wise and cruel.» She leaves. On the sand her absence remains.`,
+    "quest.shadow_woman.out.t3": `The name burns the tongue and slips out. Charisma is a hole the wind blows through. Mana rises a little.`,
+    "quest.speaking_wolf.title": `The wolf with a human voice`,
+    "quest.speaking_wolf.intro": `From rusty waste a grey wolf comes. Ribs like a griffin, on the neck a rim of gears like a collar he forged himself. He speaks from the chest, low, with a steam whistle: «Give food or give work. Hungry I bite. Fed I can walk beside.» Throw bread, hire him to the fog — or say hunting is also work?`,
+    "quest.speaking_wolf.talk.t1": `«Eat. Then decide if you are a dog or a wolf.»`,
+    "quest.speaking_wolf.talk.t2": `«Walk beside me to the edge of the cell. I pay.»`,
+    "quest.speaking_wolf.talk.t3": `«Hunting is also work. Show me.»`,
+    "quest.speaking_wolf.out.statOk": `You are not afraid. The wolf feels it and leaves a fang — almost a blade.`,
+    "quest.speaking_wolf.out.statFail": `He is unimpressed. Vanishes in the grass. Later the laugh repeats behind your back.`,
+    "quest.speaking_wolf.out.bribe": `He does not need coins, but he understands price. Takes them and goes. The track scares off small things.`,
+    "quest.speaking_wolf.out.luckOk": `The wolf turns out fed already. Leaves a fang «in memory of a good day».`,
+    "quest.speaking_wolf.out.luckFail": `A hungry look. He leaves without a gift.`,
+    "quest.speaking_wolf.out.t1": `He eats slowly, ashamed. Rubs against the shin. The track scares lesser unclean things.`,
+    "quest.speaking_wolf.out.t2": `He walks beside, not breathing. At the fog he stops. Leaves a fang. The fang is warm.`,
+    "quest.speaking_wolf.out.t3": `He laughs from the chest and vanishes. Later the laugh repeats when something hungry looks at you.`,
+    "quest.black_cup.title": `The cup of black water`,
+    "quest.black_cup.intro": `On a stone stands a bone cup. Water inside does not slosh — it stands in a column, black, with the copper smell of a well. Writing from within: «Drink if you are ready to give the extra.» Drink, pour it to the earth, take the cup dry — or walk away?`,
+    "quest.black_cup.talk.t1": `«The extra is offense. Take it.»`,
+    "quest.black_cup.talk.t2": `«The earth knows better. I pour.»`,
+    "quest.black_cup.talk.t3": `«I take the cup dry. Water can wait.»`,
+    "quest.black_cup.out.statOk": `You drink. Taste of well and copper. The body lightens. The wound forgets its depth.`,
+    "quest.black_cup.out.statFail": `The water is angrier than it seemed. The throat is scraped. The cup stays on the stone.`,
+    "quest.black_cup.out.bribe": `A coin into the cup. Water lightens. You can drink without a price — almost.`,
+    "quest.black_cup.out.luckOk": `Water spills by itself. From the grass — a root thicker than a wrist.`,
+    "quest.black_cup.out.luckFail": `The cup empties without a gift. The stone is just a stone.`,
+    "quest.black_cup.out.t1": `Taste of well and copper. The offense leaves. The wound on the rib shallows.`,
+    "quest.black_cup.out.t2": `Earth takes the black. From the grass a root crawls out. It knocks on the palm, alive.`,
+    "quest.black_cup.out.t3": `The cup in the bag rings without cause. Until you drink, it counts this as a promise.`,
+    "quest.lullaby.title": `The lullaby from under the ground`,
+    "quest.lullaby.intro": `From under the ground, through rusty pipes, a woman's voice sings — a lullaby for a child who is not there. Grass sways in time, and with it the needle of a discarded manometer. Join a verse, leave coins for the nurse, listen as in a stranger's house — or leave?`,
+    "quest.lullaby.talk.t1": `«I know the verse. Let's do it together.»`,
+    "quest.lullaby.talk.t2": `«Sleep. It is early for me.»`,
+    "quest.lullaby.talk.t3": `«I will listen to the end. Then leave as from a stranger's house.»`,
+    "quest.lullaby.out.statOk": `The voice strengthens, glad of company. By the end — tears without cause and full mana.`,
+    "quest.lullaby.out.statFail": `The song breaks off. From the earth — silver, so you leave and do not spoil the tune.`,
+    "quest.lullaby.out.bribe": `Coins into the grass, as pay for the nurse. The voice grows kinder. Health gathers.`,
+    "quest.lullaby.out.luckOk": `The song ends itself on a kind note. Sleep will be deep. Health rises.`,
+    "quest.lullaby.out.luckFail": `The verse stumbles. The throat is scraped. Better to go on.`,
+    "quest.lullaby.out.t1": `The mouth knows the verse though you do not remember. Tears without cause. Mana as after sleep.`,
+    "quest.lullaby.out.t2": `The song takes offense. From the earth — silver. The pocket grows heavy. The throat too.`,
+    "quest.lullaby.out.t3": `There is no end. You leave yourself. Sleep will be deep. Health piles together.`,
+    "quest.black_apple.title": `The child with an apple`,
+    "quest.black_apple.intro": `By a foggy sleeper a boy in a too-big jacket holds a black apple — skin like boiler scale, steam whistling from the stem. «Take it, or it takes by itself.» His pupils are ticks on a gauge.`,
+    "quest.black_apple.talk.t1": `«Whose was it before you?»`,
+    "quest.black_apple.talk.t2": `«Better bread. Apples can wait.»`,
+    "quest.black_apple.talk.t3": `«Keep it. I have enough of my own load.»`,
+    "quest.black_apple.out.statOk": `The apple rolls into the grass and goes out. The boy laughs like a human and gives a ribbon.`,
+    "quest.black_apple.out.statFail": `You take the wrong thing. The apple is warm. The boy vanishes, leaving a smell of scorch.`,
+    "quest.black_apple.out.bribe": `Coins matter more than the apple. He hides them and leaves a ribbon.`,
+    "quest.black_apple.out.luckOk": `The apple splits — silver and a gear-crumb inside.`,
+    "quest.black_apple.out.luckFail": `Behind you an apple crunches — someone took it after all. Not you.`,
+    "quest.black_apple.out.t1": `He does not answer. The apple stays with you. Heavy. It does not rot.`,
+    "quest.black_apple.out.t2": `He eats greedily and weeps ordinary tears. He leaves a ribbon.`,
+    "quest.black_apple.out.t3": `He nods. Behind you someone takes the apple anyway. Luck sags a little.`,
+    "brand.tagline": `After the End of Times`,
+    "menu.tagline": `The fog is the steam of sleeping gods. Walk while the cell is still earth.`,
+    "menu.newGame": `New game`,
+    "menu.continue": `Continue`,
+    "menu.about": `About the world`,
+    "menu.settings": `Settings`,
+    "menu.back": `Back`,
+    "settings.title": `Settings`,
+    "settings.language": `Language`,
+    "settings.volume": `Volume`,
+    "settings.music": `Music`,
+    "settings.sfx": `Sound effects`,
+    "settings.back": `Back`,
+    "settings.languageHint": `Tap a language — the whole game switches at once.`,
+    "settings.volumeHint": `Two sliders: music and effects. Drag to turn them down or up.`,
+    close: c,
+    "auth.loginLead": `Sign in so your save lives on any device.`,
+    "auth.registerLead": `New wanderer. Login, password and email — email is for when you forget the password.`,
+    "auth.recoverLead": `Login or email — we will write a new password.`,
+    "auth.resetLead": `Enter the code from the letter and a new password.`,
+    "auth.loginOrEmail": `Login or email`,
+    "auth.login": `Login`,
+    "auth.email": `Email`,
+    "auth.code": `Code from the letter`,
+    "auth.password": `Password`,
+    "auth.newPassword": `New password`,
+    "auth.wait": `A moment…`,
+    "auth.enter": `Sign in`,
+    "auth.create": `Create account`,
+    "auth.sendCode": `Send code`,
+    "auth.changePassword": `Change password`,
+    "auth.hasAccount": `Already have an account — sign in`,
+    "auth.noAccount": `No account — register`,
+    "auth.forgot": `Forgot password`,
+    "auth.orVia": `Or via`,
+    "auth.enterVia": `Sign in with {name}`,
+    "auth.mailSent": `The letter went to your mail. Outpost code: {code}`,
+    "auth.err.needLogin": `You need to sign in again`,
+    "auth.err.badLogin": `Wrong login or password`,
+    "auth.err.loginLen": `Login: 3–20 characters`,
+    "auth.err.loginChars": `Login: letters, digits, underscore`,
+    "auth.err.needEmail": `Give a real email`,
+    "auth.err.emailOnly": `Give an email`,
+    "auth.err.passLen": `Password from 8 characters`,
+    "auth.err.loginTaken": `This login is already taken`,
+    "auth.err.signUp": `Could not create the account`,
+    "auth.err.sendCode": `Could not send the code`,
+    "auth.err.badCode": `The code did not fit`,
+    "auth.err.oauth": `Could not sign in`,
+    "create.step": `Creation · step {n} of 4`,
+    "create.race": `Race`,
+    "create.class": `Class`,
+    "create.kit": `Gear`,
+    "create.name": `Name`,
+    "create.raceHint": `Who you will be on the steam shards of Yav.`,
+    "create.classHint": `How you fight and hold the pressure.`,
+    "create.kitHint": `Starting kit. Later you will find better in the fog.`,
+    "create.nameHint": `The name must be remembered. While you remember — you exist.`,
+    "create.next": `Next`,
+    "create.go": `On the road`,
+    "create.howName": `What is your name`,
+    "create.unnamed": `Nameless`,
+    "create.itemsN": `· {n} items`,
+    "game.actionsLeft": `Actions · {n} left`,
+    "game.search": `Seek adventures`,
+    "game.searchHint": `A beast, a find, or silence.`,
+    "game.dig": `Dig up treasure`,
+    "game.digHint": `Dig — until the spade wears down!`,
+    "game.rest": `Make camp`,
+    "game.restHint": `Warm yourself by the fire, but stay on watch...`,
+    "game.quest": `Complete the quest`,
+    "game.noQuest": `No active quest`,
+    "game.usedThisTurn": `Already done this turn`,
+    "game.visitShop": `Visit the trader`,
+    "game.layerGoal": `Layer goal: {goal}. Cells walked: {n}. After two deeds pick an arrow and go.`,
+    "game.deeds": `Actions`,
+    "game.inventoryAria": `Inventory`,
+    "game.menu": `Menu`,
+    "left.levelShort": `lv. {n}`,
+    "left.hp": `Health {cur}/{max}`,
+    "left.mp": `Gift {cur}/{max}`,
+    "left.xp": `XP {cur}/{need} · lv. {n}`,
+    "left.inventory": `Inventory`,
+    "left.equipment": `Equipment`,
+    "left.empty": `empty`,
+    "left.emptyCell": `Empty slot`,
+    "left.skill": `Skill: {name}`,
+    "left.use": `Use`,
+    "left.stats": `Attributes`,
+    "left.skills": `Skills`,
+    "left.pause": `Pause`,
+    "stats.title": `Attributes`,
+    "stats.line": `{cls} · level {n} · {xp} XP to next`,
+    "stats.equipNote": `Gear is already in the green numbers. Armor and attack from items enter the fight.`,
+    "stats.unspent": `Unspent: {n}`,
+    "stats.armorAttack": `Armor {armor} · Attack {attack}`,
+    "stats.wearGear": ` — put on a weapon and armor`,
+    "stats.fromGear": ` from gear`,
+    "skills.title": `Skills`,
+    "skills.points": `Points: {n}`,
+    "skills.itemOnly": `item`,
+    "levelup.title": `Memory grows stronger`,
+    "levelup.body": `Level {n}. Points wait in Attributes and Skills, when you want them.`,
+    ok: l,
+    "shop.buy": `Buy`,
+    "shop.sellBag": `Sell from the bag`,
+    "pause.title": `Pause`,
+    "pause.resume": `Resume`,
+    "pause.save": `Save`,
+    "pause.how": `How to play`,
+    "pause.toMenu": `To menu`,
+    "pause.signOut": `Sign out`,
+    "ending.kicker": `End of the layer`,
+    "ending.stay": `Stay at the outpost`,
+    "combat.header": `Fight · round {n} of 3 · {w}:{l}`,
+    "combat.ties": ` · ties {n}`,
+    "combat.rawToTotal": `die {raw} → total `,
+    "combat.enemyLevel": `Level {n}`,
+    "combat.enemyRolling": `The enemy rolls the die…`,
+    "combat.pressDie": `Press your die on the left. A skill is one press per fight, then the roll.`,
+    "combat.mpCost": `{name} · {n} Gift`,
+    "combat.chosen": ` · chosen`,
+    "combat.used": ` · used`,
+    "combat.lowMp": ` · low Gift`,
+    "combat.nextRound": `Next round`,
+    "combat.result": `Battle result`,
+    "dice.yours": `Your die`,
+    "dice.enemy": `Enemy die`,
+    "dice.luck": `Luck {luck}. Need {dc}: die + luck`,
+    "tut.kicker": `Lesson · {n} of {total}`,
+    "tut.skip": `Skip`,
+    "tut.next": `Next`,
+    "tut.last": `Understood, on the road`,
+    "splash.opening": `Opening the gates…`,
+    "load.kicker": `Outpost`,
+    "load.title": `Please wait, loading...`,
+    "load.body": `Raising the cloud save.`,
+    "crash.title": `A fault at the outpost`,
+    "crash.body": `The save is in place. You can continue without reloading.`,
+    "quest.talk": `Talk`,
+    "quest.label": `Quest`,
+    "quest.how": `What will you do?`,
+    "quest.whatSay": `What will you say?`,
+    "quest.methodStat": `Check {stat}: need {dc}+ (you have {val})`,
+    "quest.methodBribe": `Bribe — {n} coppers`,
+    "quest.methodLuck": `Roll the die for luck: die + luck ≥ {dc} (luck {luck})`,
+    "quest.methodTalk": `Talk`,
+    "layer.nav": `Nav beneath the furnace`,
+    "layer.endless": `The Boundless`,
+    "rarity.common": `Common`,
+    "rarity.uncommon": `Uncommon`,
+    "rarity.rare": `Rare`,
+    "rarity.legendary": `Legendary`,
+    "rarity.epic": `Epic`,
+    "stat.str": `Strength`,
+    "stat.dex": `Dexterity`,
+    "stat.int": `Intellect`,
+    "stat.end": `Endurance`,
+    "stat.luck": `Luck`,
+    "stat.cha": `Charisma`,
+    "stat.gen.str": `strength`,
+    "stat.gen.dex": `dexterity`,
+    "stat.gen.int": `intellect`,
+    "stat.gen.end": `endurance`,
+    "stat.gen.luck": `luck`,
+    "stat.gen.cha": `charisma`,
+    "stat.gen.armor": `armor`,
+    "stat.gen.attack": `attack`,
+    "slot.head": `Head`,
+    "slot.body": `Torso`,
+    "slot.hands": `Hands`,
+    "slot.legs": `Legs`,
+    "slot.rightHand": `Right hand`,
+    "slot.leftHand": `Left hand`,
+    "dir.nw": `Forward-left`,
+    "dir.ne": `Forward-right`,
+    "dir.e": `Right`,
+    "dir.se": `Back-right`,
+    "dir.sw": `Back-left`,
+    "dir.w": `Left`,
+    "bonus.hp": `+{n} health`,
+    "bonus.mp": `+{n} Gift`,
+    thing: u,
+    "special.ignoreEven": `Even hits pass through`,
+    "special.reflect1": `Reflects 1 damage`,
+    "special.fogArmor": `Fog armor (+2 to the enemy roll)`,
+    "special.drain": `Drinks Gift if you lose the round`,
+    "special.poison": `Poison: a lost round hits harder`,
+    "special.fear": `Fear (−2 to the roll)`,
+    "passive.lifesteal": `Life steal: +2 health for a won round`,
+    "passive.first_strike": `First strike: +3 to the total in round one`,
+    "fx.goldPlus": `Coppers +{n}`,
+    "fx.goldMinus": `Coppers {n}`,
+    "fx.hpPlus": `Health +{n}`,
+    "fx.hpMinus": `Health {n}`,
+    "fx.itemGot": `Gained: {name}`,
+    "fx.xpPlus": `XP +{n}`,
+    "fx.level": `Level {n}`,
+    "fx.bought": `Bought: {name}`,
+    "fx.soldFor": `Sold for {n}`,
+    "fx.win": `Victory`,
+    "fx.lose": `Defeat`,
+    "fx.draw": `Draw`,
+    "fx.ok": `Success`,
+    "fx.fail": `Failure`,
+    "fx.unlucky": `Misfortune`,
+    "fx.noGold": `Not enough coppers`,
+    "fx.luckClick": `Press the die`,
+    "fx.luckOk": `Success: die {raw} + luck {luck} = {total}`,
+    "fx.luckFail": `Failure: die {raw} + luck {luck} = {total}`,
+    "fx.roundYou": `The round is yours`,
+    "fx.roundEnemy": `The round is the enemy's`,
+    "fx.roundTie": `Draw`,
+    "fx.navFall": `Fall into Nav`,
+    "fx.navReturn": `Return from Nav`,
+    "fx.layerDone": `Layer cleared`,
+    "fx.goal": `Goal: {name}`,
+    "fx.godWrath": `A god's wrath: −6 health`,
+    "note.fear": `fear −2`,
+    "note.even": `even hit scattered (total ÷2)`,
+    "note.firstStrike": `first strike`,
+    "consume.msg": `{name}: {bits}.`,
+    "log.pathBegun": `The path has begun.`,
+    "log.navReturn": `Return from Nav.`,
+    "log.navFall": `Fall into Nav.`,
+    "shop.title": `The Gear Flea Market`,
+    "game.offer": `Offering`,
+    "game.offerHint": `One copper for a sip of Gift.`,
+    "game.talk": `Talk to locals`,
+    "game.talkHint": `Live conversation is always nicer`,
+    "game.steal": `Theft`,
+    "game.stealHint": `If you have a taste for dark deeds...`,
+    "game.hunt": `Hunt`,
+    "game.huntHint": `Game to sell. Honest work.`,
+    "game.fish": `Fish`,
+    "game.fishHint": `The sluice loves the patient.`,
+    "left.read": `Read`,
+    "fx.mpPlus": `Gift +{n}`,
+    "fx.xpMinus": `XP −1`,
+    "nar.restHp": `The fire holds. HP +{hp}. Gift sleeps.`,
+    "nar.offer": `A copper falls into the grate. Gift +{n}.`,
+    "nar.digSkull": `A skull under the hex. Fear hits for {dmg} and steals XP.`,
+    "nar.hunt": `The trail gave game: {name}.`,
+    "nar.fish": `The float dove. You hold {name}.`,
+    "nar.stealOk": `The pocket was generous. The watch slept.`,
+    "nar.stealSpot": `You were spotted...`,
+    "nar.stealGuard": `The guard is already here. The settlement's law does not haggle.`,
+    "item.tradeMark": `Trade good`,
+    "item.noteMark": `A note. Read it — then it is gone.`,
+    "slot.artifact": `Artifact`,
+    "slot.weapon": `Weapon`,
+    "slot.jewelry": `Jewelry`,
+    "weapon.axe": `Axe`,
+    "weapon.sword": `Sword`,
+    "weapon.staff": `Staff`,
+    "weapon.bow": `Bow`,
+    "weapon.crossbow": `Crossbow`,
+    "weapon.dagger": `Dagger`,
+    "menu.bestiary": `Bestiary`,
+    "bestiary.title": `Bestiary`,
+    "bestiary.enemies": `Enemies`,
+    "bestiary.notes": `Notes`,
+    "bestiary.hexes": `Places`,
+    "bestiary.rules": `Rules`,
+    "bestiary.unknown": `???`,
+    "bestiary.lockedHint": `Unlocks when you meet it on the road.`,
+    "note.title": `A note`,
+    "note.done": `Burn`,
+    "dig.title": `Dig for treasure`,
+    "dig.hint": `Three strikes of the spade. Left: {n}.`,
+    "talk.title": `Locals`,
+    "steal.title": `Theft`,
+    "steal.pick": `Whom to rob? Chances are hidden.`,
+    "steal.spin": `The wheel spins...`,
+    "steal.stop": `The needle stopped.`,
+    "hunt.title": `Hunt`,
+    "hunt.hint": `Tracks left: {n}.`,
+    "hunt.mark": `Track`,
+    "fish.title": `Fishing`,
+    "fish.hint": `Bites needed: {n}.`,
+    "search.title": `On the trail`,
+    "search.hint": `Tracks lead into the steam. Three heartbeats.`,
+    "npc.chatDone": `The talk ended like steam.`,
+    "npc.event.bread": `Shares bread with ash. Warmth sits in the chest.`,
+    "npc.event.debt": `Recalls a debt and presses coppers into your palm.`,
+    "npc.event.curse": `The gossip is a curse. The hand aches.`,
+    "npc.event.wort": `Pushes a tonic “for the road, while the steam is kind.”`,
+    "npc.event.theft": `While you talk, the guest's fingers are lighter than yours. Coppers ring the wrong way.`,
+    "npc.event.bless": `Blesses you toward the boiler. Gift stirs a little.`,
+    "npc.event.rumor": `Whispers of a hoard at the boundary. Maybe a lie. Luck itches.`,
+    "rules.combat.title": `Combat`,
+    "rules.combat.body": `Three rounds. An unlabeled 30-sided die. Two round wins take the fight. A draw if the score ties. Flee shows only while the foe can still win. One skill per battle. A guard from theft will not kill — you stay at 1 HP.`,
+    "rules.explore.title": `Exploration`,
+    "rules.explore.body": `Two deeds per hex, then a travel arrow. Search follows tracks for three seconds, then a beast, a find, or silence. Digging opens 19 small hexes and three spades: treasure 1 in 10, skull 1 in 20. Rest lights a fire for three seconds and heals the body, not Gift.`,
+    "rules.settle.title": `Settlements`,
+    "rules.settle.body": `Villages, cities, hamlets, castles, outposts and walking huts are peaceful. No quests spawn there. Talk to five locals or steal: hidden chances 10, 25, 45, 65 and 90. Failure calls a guard.`,
+    "rules.camp.title": `Rest and offering`,
+    "rules.camp.body": `Rest heals the body. Gift does not return on its own — pay one copper to the gods with Offering. Hunting in forest and fishing by water always succeed and yield goods to sell.`,
+    "rules.gear.title": `Gear`,
+    "rules.gear.body": `Head, torso, legs on the left; artifact, weapon, jewelry on the right. Items move only by dragging. Warrior: axe and sword; volkhv: staff and dagger; archer: bow, crossbow, dagger; tracker: sword, dagger, bow. No bonuses means a trade good. Notes are read once and go to the bestiary.`,
+    "rules.coin.title": `Coppers`,
+    "rules.coin.body": `The world's coin is the copper: a worn disc with a chip. It pays merchants, bribes, and offerings to the gods.`,
+    "hex.hamlet.name": `Hamlet by the valve`,
+    "hex.hamlet.t0": `Cottages around a shared pipe. Roosters are silent; children still shout.`,
+    "hex.hamlet.t1": `Flax and a copper washer dry on the fence. People live here; they do not fight.`,
+    "hex.hamlet.t2": `The well is shared, the bread is shared. A stranger is given drink, then asked.`,
+    "hex.castle.name": `Castle under steam`,
+    "hex.castle.t0": `The domes are whole. The bridge is half-raised — enough to walk.`,
+    "hex.castle.t1": `A cold boiler stands in the yard. The watch drinks tea from copper mugs.`,
+    "hex.castle.t2": `The arms are worn off, but the gate still knows whom to let in.`,
+    "hex.outpost.name": `Outpost on the rails`,
+    "hex.outpost.t0": `A tower with a brass pipe. Someone is on watch and does not hide.`,
+    "hex.outpost.t1": `A map of the layer and cold tea on the table. Trackmen nod to their own.`,
+    "hex.outpost.t2": `The rails go into the fog. They still hold a shift here.`,
+    "hex.hut.name": `Walking hut`,
+    "hex.hut.t0": `A hut on iron legs has stopped to rest. The door is open.`,
+    "hex.hut.t1": `Inside it smells of pie and machine oil. The hostess was already waiting.`,
+    "hex.hut.t2": `The hut's legs step like a hen. Do not fear — she is tame.`,
+    "enemy.pipe_wraith.name": `Pipe-wraith`,
+    "enemy.pipe_wraith.desc": `Steam took a human height. The eyes are furnace doors.`,
+    "enemy.rust_widow.name": `Rust widow`,
+    "enemy.rust_widow.desc": `She spins a thread of rust. Legs like a riveter's compass.`,
+    "enemy.steam_golem.name": `Steam golem`,
+    "enemy.steam_golem.desc": `A boiler learned to walk. Blows heavy as a rivet.`,
+    "enemy.ash_crow.name": `Ash crow`,
+    "enemy.ash_crow.desc": `A copper beak. It caws a word you already forgot.`,
+    "enemy.bog_drowned.name": `Bog-drowned`,
+    "enemy.bog_drowned.desc": `Valves on the neck. The water in the lungs turned to oil long ago.`,
+    "enemy.guard.name": `Guard`,
+    "enemy.guard.desc": `A brass helm and the settlement's law. Only if you were spotted stealing.`,
+    "item.steam_crossbow.name": `Steam crossbow`,
+    "item.steam_crossbow.desc": `A heavy prod with a gauge. For the archer.`,
+    "item.gear_amulet.name": `Gear amulet`,
+    "item.gear_amulet.desc": `A brass tooth on a ribbon. Trackmen's jewelry.`,
+    "item.game_meat.name": `Trail game`,
+    "item.game_meat.desc": `Honest catch. Merchants take it cheap.`,
+    "item.river_fish.name": `Sluice fish`,
+    "item.river_fish.desc": `Silver scale, river smell.`,
+    "item.note_letter.name": `Stoker's note`,
+    "item.note_letter.desc": `Paper in soot. Readable once.`,
+    "item.note_scroll.name": `Steam-word scroll`,
+    "item.note_scroll.desc": `A roll with a copper bead. Once — then the paper dies.`,
+    "item.note_diary.name": `Trackman's diary`,
+    "item.note_diary.desc": `Copper corners. The pages remember another layer.`,
+    "item.note_book.name": `Book of rivets`,
+    "item.note_book.desc": `A thick volume with no author. Read once.`,
+    "lore.letter": `A stoker wrote in soot on the back of a waybill: “Boilers remember names. If steam calls you by name — do not turn. That is not you in the grate. That is the grate's habit of being you. Put coppers in the boot. Fog loves the ring.”`,
+    "lore.scroll": `The steam-word holds the cage: not a wall, but pressure. Layers are washers on one bolt. The waking world, the sleep of machine gods, the Eye. Beyond that, those who saw keep silent. Gift is not water in the veins. It is the pressure that still remembers your name.`,
+    "lore.diary": `A trackman wrote in the evenings: “The sleeper counts steps. Without a shadow the count slips — that is why walking huts go on the rails and feed you if you do not lie from the doorstep. A guard without a shadow is not a guard. Hide the coppers. Fog loves the ring.”`,
+    "lore.book": `A nameless book, rivets instead of letters. On the hundredth page: “Gods sleep in boilers. Do not knock the wall — they dream of pressure. Perun is a gauge now. Mokosh spins a rust thread. Nav is not death but a grate where you are already gone. You return if the rivet holds.”`,
+    "tut.5.body": `A quest can be closed four ways: by a stat, gold, luck, or talk. Luck is a separate throw.`,
+    "combat.mp": `Gift`,
+    "hex.forest.t0": `Trunks are bound in copper. Between them a path, and it is unclear who wore it in — a beast or a sleeper.`,
+    "hex.forest.t1": `It smells of pine needles and hot oil. Somewhere a twig clicked — or a valve.`,
+    "hex.forest.t2": `The glade is round as a boiler hatch. A good place to catch your breath before the steam thickens.`,
+    "hex.swamp.t0": `The water is black, the reeds taller than a head. Rusty pipes stick from the muck like roots.`,
+    "hex.swamp.t1": `Bubbles rise rarely and smell of boiled iron. Step the hummocks — and you will pass.`,
+    "hex.swamp.t2": `An old ribbon and a brass valve hang from a hummock. The bog is calm today.`,
+    "hex.ruins.t0": `Stone walls without a roof. Between the slabs — torn belts and grass.`,
+    "hex.ruins.t1": `Columns lie on their sides like cooled pistons. In a niche — a shard of a bowl and a gear.`,
+    "hex.ruins.t2": `The echo of steps lags a little. The stone still remembers that people lived here and riveted.`,
+    "hex.village.t0": `Izbas stand along a huge pipe. The well is open, the rope dry, the valve warm.`,
+    "hex.village.t1": `On the threshold — a bowl of kasha. Someone left without finishing, and did not close the damper.`,
+    "hex.village.t2": `The roofs are whole. The rooster is silent, but the houses still hold pressure.`,
+    "hex.field.t0": `A grey field to the fog. A mill in the distance without sails, but with a torn drive.`,
+    "hex.field.t1": `Crows sit evenly on wires that are already gone. The ploughland is opened — no one left to sow.`,
+    "hex.field.t2": `On the boundary a nameless cross and a rusty gauge. The earth around is soft.`,
+    "hex.mound.t0": `A hill with ribbons on poles. Instead of an idol — a dial gone past the red.`,
+    "hex.mound.t1": `Under the sod a hum, as of a distant song and a distant boiler.`,
+    "hex.mound.t2": `On the summit a bowl of rainwater. The needle does not twitch. Quiet and clear.`,
+    "hex.river.t0": `The river goes slowly between lock gates. A boat on its side, oars folded neatly.`,
+    "hex.river.t1": `Willows drink the dark water. On the far bank — a wall of fog and a row of rivets in the sky.`,
+    "hex.river.t2": `On the shoal, pebbles and a copper washer gleam. The river is not angry today.`,
+    "hex.tavern.t0": `Windows glow. Inside it smells of kvass, smoke and machine oil. The host nods as to an old guest.`,
+    "hex.tavern.t1": `Behind the bar two men are silent. The fire in the hearth is even, the gauge above the board is in the green.`,
+    "hex.tavern.t2": `The sign over the door is almost worn away. Inside it is warm — a rare fortune at the outpost.`,
+    "hex.market.t0": `A cart, cloth, a tray of roots and screws. The trader smiles: «Ask the price, not the origin.»`,
+    "hex.market.t1": `On the tray — a ribbon, a mail link, a tincture. Prices in charcoal, but you may haggle.`,
+    "hex.market.t2": `A lantern swings on a copper arc. Things in its light look dearer. Or better.`,
+    "hex.kapishche.t0": `Idols stand in the grove, and in their chests are fireboxes. The air is thick as before a storm.`,
+    "hex.kapishche.t1": `At the foot — ash, a handful of grain and a cooled rivet. Someone fed the gods not long ago.`,
+    "hex.kapishche.t2": `Here the world's layer is thinner. If you stay, you may hear how the machine-names sleep.`,
+    "hex.city.t0": `Streets break off into fog. Domes are whole, the market empty — but the city still holds steam.`,
+    "hex.city.t1": `In an alley, a clock without hands. The cobbles keep the warmth of others' steps and others' pipes.`,
+    "hex.city.t2": `Above the gates the arms are worn away. No guards. You may enter freely, if you do not fear the echo.`,
+    "hex.fog.t0": `There is almost no earth — only earth's habit of being. Here a god exhales the fog.`,
+    "hex.fog.t1": `A whisper: «Stay, it is easier so.» Polite. It smells of exhaust. Do not listen.`,
+    "hex.fog.t2": `Underfoot a hexagon can be guessed. The shard still holds by its rivets.`,
+    "hex.nav.t0": `The sky is a ceiling of ash. Trees without leaves, pipes without steam. Here you are weaker — that is honest.`,
+    "hex.nav.t1": `Shades walk slowly, like stokers without a shift-change. The way out is sought with feet, not prayer.`,
+    "hex.nav.t2": `Cold, but bearable. The Gate of Yav is somewhere near — seek it with arrows along the rails.`,
+    "hex.nav_gate.t0": `A stone slit with a brass rim. Beyond it — the right to be alive. Cold steps back one pace.`,
+    "hex.nav_gate.t1": `Notches and pressure ticks on the jamb. Someone has already returned. You may too.`,
+    "hex.bonefield.t0": `The ground is sown with white. Wind picks over ribs like strings, and gears like beads.`,
+    "hex.bonefield.t1": `A skull at the foot without a jaw. It still seems to smile with a key in the socket.`,
+    "hex.eye.t0": `The shard's center. Fog looks back through the gauge-glass. The world holds because you are still here.`,
+    "hex.eye.t1": `No altar and no foe. Only the choice to stay a witness and not drop the pressure to zero.`,
+    "tut.0.title": `One cell`,
+    "tut.0.body": `Fog eats the rims. You see one cell — a hex of earth under steam. Look where you stand before steam closes the path.`,
+    "tut.1.title": `Six roads`,
+    "tut.1.body": `Six arrows — six roads. A step costs a turn. The cell changes; the old one goes into steam.`,
+    "tut.2.title": `Two deeds`,
+    "tut.2.body": `On a cell, two deeds: search, dig, rest or a quest. Then a step by the arrow. Do not waste a turn on nothing.`,
+    "tut.3.title": `Bag and body`,
+    "tut.3.body": `On the left is the bag. Wear, eat, sell. A description opens right under the grid, not under the belt.`,
+    "tut.4.title": `Three rounds`,
+    "tut.4.body": `Combat is three rounds. Press the die yourself. One skill per battle. The die shows the raw throw, not the total.`,
+    "tut.5.title": `Four ways`,
+    "tut.6.title": `Layer goal`,
+    "tut.6.body": `The layer goal is far. At least fifty cells, then it may appear. Walk while the cell is still earth.`,
+    "menu.lore1": `After the End of Times the gods lay down to sleep in boilers. Their exhale became fog, their blood copper in the pipes. Yav holds on rivets and the earth's habit of being.`,
+    "menu.lore2": `You are a walker at the outpost where steam is still warm. One cell ahead, six arrows around. The gods sleep. Walk while the cell is still earth.`,
+    "menu.lore3": `Nav waits under the firebox for those who fell. Yav — for those who still rivet. Between them: the fog nozzle and the habit of not dropping pressure.`,
+    "ending.title": `The Eye looks`,
+    "ending.body1": `The world did not become whole. It was seen. The rivets hold. The steam is still warm. That is enough.`,
+    "ending.body2": `You may stay a witness. You may walk on while the cell is still earth. The outpost is not shut.`,
+    "quest.old_woman.title": `The crone at the sluice`,
+    "quest.old_woman.intro": `In thick steam by the sluice-river an old woman sits on a rusted rivet the size of a wheel. She beckons — a light hand, a copper gauge-bracelet on the wrist. She asks to be walked to the gate where «one may still drink without a price».`,
+    "quest.old_woman.talk.t1": `«I barely remember the bank myself. Let's go together.»`,
+    "quest.old_woman.talk.t2": `«The water here is foreign. Better not drink.»`,
+    "quest.old_woman.talk.t3": `«Say a name — then I will decide.»`,
+    "quest.old_woman.out.statOk": `You speak calmly. The crone nods and reaches the gate herself. A root remains on your palm.`,
+    "quest.old_woman.out.statFail": `The words come out rough. She goes into the reeds. A wet track and a cold valve remain.`,
+    "quest.old_woman.out.bribe": `Coins clink. She hides them in cloth and leaves a root «for the road».`,
+    "quest.old_woman.out.luckOk": `The die kicks luckily. On the path to the sluice a vial already lies — as if it waited.`,
+    "quest.old_woman.out.luckFail": `It did not work. She shakes her head and dissolves into the reeds, leaving a valve hiss.`,
+    "quest.old_woman.out.t1": `You reach a puddle at the gate. She drinks and thanks you. In your hand — a livewort root.`,
+    "quest.old_woman.out.t2": `She nods without offense. «Right.» She leaves. Luck remains — a strange gift.`,
+    "quest.old_woman.out.t3": `The name drops from the head at once. For the chime she gives silver. The head hums like a boiler.`,
+    "combat.youReroll": `Ancestral luck: rolls {rolls} — keeping {best}.`,
+    "combat.skillHint": `Hover a skill — the description stays here so the window does not jump.`,
+  },
+  f = {
+    "class.warrior.name": `Workhand`,
+    "class.warrior.blurb": `Fights with axe or sword. Combat uses Strength. Can wear only axes and swords. Holds the line.`,
+    "class.volkhv.name": `Steamspeaker`,
+    "class.volkhv.blurb": `Fights with staff or knife. Combat uses Intellect. Spends gift on word-strikes. Wears staves and daggers.`,
+    "class.archer.name": `Trackman`,
+    "class.archer.blurb": `Fights with bow or crossbow. Combat uses Dexterity. Can learn to see a false answer in talks.`,
+    "class.tracker.name": `Trackman`,
+    "class.tracker.blurb": `Fights with bow or crossbow. Combat uses Dexterity. The False Path skill highlights one wrong talk answer — you buy it, it is not a starter.`,
+    "class.rogue.name": `Latch-snap`,
+    "class.rogue.blurb": `Fights with daggers and short blades. Combat uses Dexterity. Pocket Eye shows steal chance on each townsfolk — you buy it, it is not a starter.`,
+    "class.bonesetter.name": `Bonesetter`,
+    "class.bonesetter.blurb": `Heals allies and cripples foes. Fights with staff or bone knife. Combat uses Endurance. A won round can restore health.`,
+    "settings.tutorial": `Tutorial`,
+    "settings.tutorialOn": `on`,
+    "settings.tutorialOff": `off`,
+    "tut.on": `Turn tutorial on`,
+    "tut.off": `Turn tutorial off`,
+    "tut.mainKicker": `Main tutorial`,
+    "tut.extraKicker": `New action`,
+    "tut.next": `Next`,
+    "tut.skip": `Skip`,
+    "tut.falsePath": `False Path — this answer is wrong`,
+    "tut.main.hex.title": `The hex under steam`,
+    "tut.main.hex.body": `You stand on one hex. The painting is the place. Look where you are before you walk.`,
+    "tut.main.story.title": `The log`,
+    "tut.main.story.body": `Here the game writes what happened: search, talk, fight, find. Read top to bottom. Long text scrolls.`,
+    "tut.main.inv.title": `The bag`,
+    "tut.main.inv.body": `Left side is inventory, five rows. Equip, eat, sell. Coppers are counted here, not on the belt.`,
+    "tut.main.actions.title": `Two deeds`,
+    "tut.main.actions.body": `Two actions per hex: search, dig, rest, hunt, fish, talk, steal or quest. Then you step.`,
+    "tut.main.move.title": `Six roads`,
+    "tut.main.move.body": `Six arrows around the hex — six neighbours. A step costs a turn. Walk when two deeds are done.`,
+    "tut.act.search.title": `Search tracks`,
+    "tut.act.search.body": `Prints walk themselves: left, right, left. This is not a fight. Wait — at the end you find an item, a note, or nothing.`,
+    "tut.act.dig.title": `Dig`,
+    "tut.act.dig.body": `Tap hexes until the chest opens. The lid lifts up and back. You may skip once it is open.`,
+    "tut.act.rest.title": `Rest`,
+    "tut.act.rest.body": `The fire heals. Sometimes fog sends an ambush — about one in ten. The game waits for the fire to finish.`,
+    "tut.act.offer.title": `Heads or tails offering`,
+    "tut.act.offer.body": `The coin spins itself: heads or tails. This is ancestors' luck, not combat. Wait until it lands.`,
+    "tut.act.quest.title": `Quest on the hex`,
+    "tut.act.quest.body": `Close it with a stat, coppers, luck, or talk. Talk has three answers, one true. False Path lights one wrong answer.`,
+    "tut.act.talk.title": `Talk`,
+    "tut.act.talk.body": `Townsfolk have names. One talk in three pays luck; the rest is chatter or a trinket. Listen, then pick.`,
+    "tut.act.steal.title": `Steal`,
+    "tut.act.steal.body": `Pick a person. The disc spins, the needle sits on top. Green slice is success. Reward is fat: a heap of coppers or a good item. Fail brings a guard. Latch-snap's Pocket Eye shows the chance.`,
+    "tut.act.hunt.title": `Hunt`,
+    "tut.act.hunt.body": `Three hits on the hare. Tap when the beast stands. Meat comes from hunting only.`,
+    "tut.act.fish.title": `Fish`,
+    "tut.act.fish.body": `Tap when the float jerks. No fishing line — float and splash only. Fish comes from fishing only.`,
+    "tut.combat.dice.title": `Combat: die`,
+    "tut.combat.dice.body": `Three rounds. A 30-sided die, unlabeled. Press your die yourself — the enemy die spins on its own. One skill per fight.`,
+    "tut.combat.skills.title": `Combat: skills`,
+    "tut.combat.skills.body": `Pick a skill before the throw. The hint sits above the buttons. You may swing with a bare die.`,
+    "tut.combat.flee.title": `Combat: flee`,
+    "tut.combat.flee.body": `You may flee at 0–0 or 1–1. Otherwise the button stays mute. Fleeing is not shame — fog forgives.`,
+    "tut.shop.title": `Shop`,
+    "tut.shop.body": `Buy and sell. Price follows Charm and Bargain. Bag on the left, stock on the right.`,
+    "tut.levelup.title": `Level`,
+    "tut.levelup.body": `A new level gives stat points and a skill point. Spend them in the growth window.`,
+    "steal.chance": `Chance {n}%`,
+    "create.startLevel": `Start at lv. {n}`,
+    "skill.false_path.name": `False Path`,
+    "skill.false_path.desc": `In talks, highlights one wrong answer. Must be bought. Not a starter.`,
+    "skill.mark_pockets.name": `Pocket Eye`,
+    "skill.mark_pockets.desc": `On steal, shows success chance for each townsfolk. Must be bought. Not a starter.`,
+    "skill.quick_cut.name": `Latch Cut`,
+    "skill.quick_cut.desc": `A short stab into armor gap. Bonus to the combat roll.`,
+    "skill.set_bone.name": `Set Bone`,
+    "skill.set_bone.desc": `A won round mends you. Bonus to the roll and health after a round win.`,
+    "item.storm_bow.name": `Thunder String`,
+    "item.storm_bow.desc": `A bow of rail-spring. Needles hiss like a safety valve.`,
+    "item.latch_fang.name": `Latch Fang`,
+    "item.latch_fang.desc": `A dagger-latch. Opens locks and veins equally quiet.`,
+    "item.living_splint.name": `Living Splint`,
+    "item.living_splint.desc": `A staff of green bone. Sets and breaks in one motion.`,
+    "kit.w_axe.name": `Full rivet kit`,
+    "kit.w_axe.blurb": `Axe, helm, padded coat, boots and wraps. Almost no coppers.`,
+    "kit.w_sword.name": `Shift and ration`,
+    "kit.w_sword.blurb": `Blade, padded coat, boots, a root and a handful of coppers.`,
+    "kit.w_legend.name": `Cleaver, no purse`,
+    "kit.w_legend.blurb": `One Perun cleaver. No money, no other gear.`,
+    "kit.w_rank.name": `Senior of the shift`,
+    "kit.w_rank.blurb": `Start at +1 level. A plain blade, wraps and a few coppers.`,
+    "kit.w_gold.name": `Purse on an empty belt`,
+    "kit.w_gold.blurb": `Almost nothing worn. A fat pocket of coppers.`,
+    "kit.v_staff.name": `Full rite`,
+    "kit.v_staff.blurb": `Staff, robe, boots, wraps and wort. Almost no coppers.`,
+    "kit.v_bone.name": `Cup and ration`,
+    "kit.v_bone.blurb": `Bone knife, robe, tears and a handful of coppers.`,
+    "kit.v_legend.name": `Spindle, no purse`,
+    "kit.v_legend.blurb": `One Mokosh spindle. No money, no other gear.`,
+    "kit.v_rank.name": `Junior steamspeaker`,
+    "kit.v_rank.blurb": `Start at +1 level. A staff, wraps and a few coppers.`,
+    "kit.v_gold.name": `Coppers instead of prayer`,
+    "kit.v_gold.blurb": `Almost nothing worn. Plenty of coppers.`,
+    "kit.a_bow.name": `Full quiver`,
+    "kit.a_bow.blurb": `Bow, padded coat, bog boots, wraps. Almost no coppers.`,
+    "kit.t_pack.name": `Trackman's bag`,
+    "kit.t_pack.blurb": `Bow, padded coat, root, wort and a handful of coppers.`,
+    "kit.t_legend.name": `Thunder string`,
+    "kit.t_legend.blurb": `One legendary bow. No money, no other gear.`,
+    "kit.t_rank.name": `Senior of the sleepers`,
+    "kit.t_rank.blurb": `Start at +1 level. A crossbow, wraps and a few coppers.`,
+    "kit.t_gold.name": `Coppers instead of arrows`,
+    "kit.t_gold.blurb": `Almost nothing worn. Plenty of coppers.`,
+    "kit.r_full.name": `Full snap`,
+    "kit.r_full.blurb": `Dagger, padded coat, boots, ribbon and wraps. Almost no coppers.`,
+    "kit.r_mid.name": `Knife and ration`,
+    "kit.r_mid.blurb": `Short blade, padded coat and a handful of coppers.`,
+    "kit.r_legend.name": `Latch fang`,
+    "kit.r_legend.blurb": `One legendary dagger. No money, no other gear.`,
+    "kit.r_rank.name": `Senior of the latch`,
+    "kit.r_rank.blurb": `Start at +1 level. A knife, wraps and a few coppers.`,
+    "kit.r_gold.name": `Someone else's purse`,
+    "kit.r_gold.blurb": `Almost nothing worn. A very fat pocket of coppers.`,
+    "kit.b_full.name": `Full kit box`,
+    "kit.b_full.blurb": `Staff, robe, boots, wort and wraps. Almost no coppers.`,
+    "kit.b_mid.name": `Splint and ration`,
+    "kit.b_mid.blurb": `Bone knife, robe, root and a handful of coppers.`,
+    "kit.b_legend.name": `Living splint`,
+    "kit.b_legend.blurb": `One legendary staff. No money, no other gear.`,
+    "kit.b_rank.name": `Apprentice`,
+    "kit.b_rank.blurb": `Start at +1 level. A staff, wraps and a few coppers.`,
+    "kit.b_gold.name": `Fee for setting bone`,
+    "kit.b_gold.blurb": `Almost nothing worn. Plenty of coppers.`,
+    "hex.wreck.name": `Burnt train`,
+    "hex.wreck.t0": `Wagons lie on their side. Wheels still warm, no coal in the firebox.`,
+    "hex.wreck.t1": `Rails tied in a knot. Someone tried to turn the train by hand.`,
+    "hex.wreck.t2": `A kettle and a brass mug sit in a compartment. No owners.`,
+    "hex.quarry.name": `Brass quarry`,
+    "hex.quarry.t0": `The pit wall shines with copper. Picks stand as if in someone else's work.`,
+    "hex.quarry.t1": `A puddle of oil below. A pipe that is not there walks in the reflection.`,
+    "hex.quarry.t2": `A washer the size of a palm lies on the rim. Heavy, warm.`,
+    "hex.rails.name": `Torn track`,
+    "hex.rails.t0": `Sleepers end in fog. A rail bends to the sky like a finger.`,
+    "hex.rails.t1": `The switch sits in the middle. Neither this way nor that.`,
+    "hex.rails.t2": `Chalk on a sleeper: 'no further'. The chalk is not yet damp.`,
+    "hex.crater.name": `Boiler crater`,
+    "hex.crater.t0": `Earth sank in a ring. A burst boiler and silence at the bottom.`,
+    "hex.crater.t1": `The rim is fused. Grass around is rust-red, like scale.`,
+    "hex.crater.t2": `It is warm inside. You can sit and listen to the world cool.`,
+    "hex.silo.name": `Grain elevator`,
+    "hex.silo.t0": `A tower of riveted sheets. Grain is gone; the mice stayed brass.`,
+    "hex.silo.t1": `The belt stands still. Three grains and a bolt on it.`,
+    "hex.silo.t2": `Inside it booms. Echo repeats steps a heartbeat late.`,
+    "hex.dump.name": `Gear dump`,
+    "hex.dump.t0": `A hill of teeth and rims. Fireweed grows between them.`,
+    "hex.dump.t1": `Something clicks in the pile by itself. Do not dig — let it click.`,
+    "hex.dump.t2": `A whole wheel on the top. You can sit as on a stump.`,
+    "hex.tower.name": `Water tower`,
+    "hex.tower.t0": `The tower holds a tank, the tank holds the sky. Outer stairs, no rail.`,
+    "hex.tower.t1": `A tap below drips warm water. Drink if you do not fear rust.`,
+    "hex.tower.t2": `From the top you see six neighbour hexes. Fog eats the far ones.`,
+    "hex.observatory.name": `Manometer observatory`,
+    "hex.observatory.t0": `The dome is open. Instead of a tube — a spyglass-gauge at rivet-stars.`,
+    "hex.observatory.t1": `On the table a sky map and a pressure map. They almost match.`,
+    "hex.observatory.t2": `The needle trembles on zero. Stars do not breathe today.`,
+    "hex.forge.name": `Cold forge`,
+    "hex.forge.t0": `The hearth is grey. The hammer sleeps. The anvil still remembers the blow.`,
+    "hex.forge.t1": `In the ash — an unfinished shoe and a copper washer.`,
+    "hex.forge.t2": `You can night by the cold bellows. Draft is still there.`,
+    "hex.greenhouse.name": `Glass orangery`,
+    "hex.greenhouse.t0": `Glass in copper bars. Hot inside though no boiler is seen.`,
+    "hex.greenhouse.t1": `Cucumbers and pipes climb together. It smells of earth and oil.`,
+    "hex.greenhouse.t2": `The watering can is full. Someone watered this morning.`,
+    "hex.freeze.name": `Pipe glacier`,
+    "hex.freeze.t0": `Pipes in rime though summer stands around. Breath steams, the valve does not.`,
+    "hex.freeze.t1": `Underfoot not snow but scale frozen to the cold.`,
+    "hex.freeze.t2": `A gauge sticks from the ice. The needle is past red and still.`,
+    "hex.pine.name": `Pine haze`,
+    "hex.pine.t0": `Pines bound in copper rings. Needles smell of resin and hot oil.`,
+    "hex.pine.t1": `A path of sleepers between trunks. Resin drips on a rail and sets.`,
+    "hex.pine.t2": `A round glade. A good place to wait for a beast or to breathe.`,
+    "hex.grove.name": `Sacred grove`,
+    "hex.grove.t0": `Trees in ribbons. Little hearths in the hollows, warm as a palm.`,
+    "hex.grove.t1": `No one cuts here. People bow and check pressure on the bark.`,
+    "hex.grove.t2": `Under the oak a bowl of grain and a rivet. Gods sleep but listen.`,
+    "hex.thicket.name": `Willow palisade`,
+    "hex.thicket.t0": `Willows woven into a wall. Copper wire between the twigs.`,
+    "hex.thicket.t1": `You walk sideways. A branch whips like a drive belt.`,
+    "hex.thicket.t2": `In the middle a dry patch and hoof-gear prints.`,
+    "hex.copse.name": `Birch smokewood`,
+    "hex.copse.t0": `Birches white as new pipes. Black ticks are gauge marks, not eyes.`,
+    "hex.copse.t1": `It hums under the bark. Someone let steam into the trunk and forgot the valve.`,
+    "hex.copse.t2": `A glade with an anthill of shavings and washers. The ants are alive.`,
+    "hex.taiga.name": `Taiga by the rails`,
+    "hex.taiga.t0": `Firs to the fog. A rail dives into moss and comes up ten steps later.`,
+    "hex.taiga.t1": `It smells of pine, resin and coal dust from a far firebox.`,
+    "hex.taiga.t2": `Beast prints and a horseshoe print on the moss. You may hunt.`,
+    "hex.lake.name": `Oil lake`,
+    "hex.lake.t0": `Water is black and does not slap. Rainbow rings like oil.`,
+    "hex.lake.t1": `A boat on the shore. Oars whole, a rivet instead of a hole.`,
+    "hex.lake.t2": `Scale glints at the rim. Fish here take a copper bead.`,
+    "hex.lock.name": `Second lock`,
+    "hex.lock.t0": `Gates half shut. A ladder of staples between them.`,
+    "hex.lock.t1": `Water stands in the chamber. Level marked in coal: 'yesterday'.`,
+    "hex.lock.t2": `You can cross on a beam. Below it is quiet as in a bell.`,
+    "hex.creek.name": `Condensate creek`,
+    "hex.creek.t0": `A warm brook runs from a pipe in the hill. Stones slick with oil.`,
+    "hex.creek.t1": `Willows and a rusted tap on the bank. The tap turns, water does not grow.`,
+    "hex.creek.t2": `A fish flashes in the stream. You can fish from the valve.`,
+    "hex.station.name": `Trackmen's station`,
+    "hex.station.t0": `A platform with no train. Clock with no hands, but tea at the boil.`,
+    "hex.station.t1": `The duty woman nods. Kin sleep here and no one asks for a ticket.`,
+    "hex.station.t2": `On the bench a layer map and a cold gauge. You may ask the road.`,
+    "hex.milltown.name": `Millers' village`,
+    "hex.milltown.t0": `Izbas around a shared gear. Mill wings stick from the roofs.`,
+    "hex.milltown.t1": `Children roll a washer-hoop. Adults look at the boiler-sky.`,
+    "hex.milltown.t2": `Bread here is baked with copper crumb. A stranger is fed first.`,
+    "hex.pier.name": `Stokers' pier`,
+    "hex.pier.t0": `Planks into black water. A barge moored, firebox cold.`,
+    "hex.pier.t1": `A drive-belt life ring hangs on a pile.`,
+    "hex.pier.t2": `Fishers nod. No one steals here — they wait for the river to breathe.`,
+    "hex.bazaar.name": `Rivet fair`,
+    "hex.bazaar.t0": `Stalls under canvas. Cry of prices, smell of kvass, oil and cinnamon.`,
+    "hex.bazaar.t1": `A trader hangs weights on a gauge-steelyard. 'Ask, do not be shy.'`,
+    "hex.bazaar.t2": `At the edge they play heads-or-tails. Coppers ring honestly.`,
+    "hex.apothecary.name": `Wort shop`,
+    "hex.apothecary.t0": `Glass, herbs, copper flasks. The mistress weighs a root on her palm.`,
+    "hex.apothecary.t1": `It smells of wormwood and machine oil. Jars on the shelf have pressure marks.`,
+    "hex.apothecary.t2": `'It does not heal all, but prices are honest.' The wort is warm even shut.`,
+    "enemy.rust_boar.name": `Rust boar`,
+    "enemy.rust_boar.desc": `Bristle of nails. Tusks are broken 24mm wrenches.`,
+    "enemy.coil_snake.name": `Copper snake`,
+    "enemy.coil_snake.desc": `A pipe that learned to crawl. The fang is a gauge needle.`,
+    "enemy.whistle_imp.name": `Whistle imp`,
+    "enemy.whistle_imp.desc": `Small, born of a valve. It whistles until hands shake.`,
+    "enemy.rail_spider.name": `Rail spider`,
+    "enemy.rail_spider.desc": `Eight sleeper-legs. It weaves a web of rusted wire.`,
+    "enemy.soot_baba.name": `Soot baba`,
+    "enemy.soot_baba.desc": `A hut without a hut. A face of soot, arms of brooms and pipes.`,
+    "enemy.valve_knight.name": `Valve knight`,
+    "enemy.valve_knight.desc": `Plate of gate valves. The blow is heavy as a shut lock.`,
+    "enemy.moss_mare.name": `Moss mare`,
+    "enemy.moss_mare.desc": `A horse with no rider. Mane of moss, hooves of gears.`,
+    "enemy.gear_domovoi.name": `Gear domovoi`,
+    "enemy.gear_domovoi.desc": `Lives in a boiler. Bites fingers if you do not greet it.`,
+    "enemy.frost_stoker.name": `Frost stoker`,
+    "enemy.frost_stoker.desc": `The firebox went cold; he did not. He breathes rime and coal dust.`,
+    "enemy.needle_witch.name": `Needle witch`,
+    "enemy.needle_witch.desc": `Spins needles out of steam. Each needle remembers a stranger's name.`,
+    "enemy.tank_fish.name": `Tank-fish`,
+    "enemy.tank_fish.desc": `Scale of rivets. It swims oil as a river.`,
+    "enemy.bell_wight.name": `Bell wight`,
+    "enemy.bell_wight.desc": `A bell tongue for a heart. The ring hits luck.`,
+    "enemy.cinder_wolf.name": `Cinder wolf`,
+    "enemy.cinder_wolf.desc": `Fur sheds coals. Eyes are firebox doors.`,
+    "enemy.brass_noon.name": `Brass noon-maid`,
+    "enemy.brass_noon.desc": `Walks at noon when steam is thickest. The voice cuts.`,
+    "enemy.smoke_leshy.name": `Smoke leshy`,
+    "enemy.smoke_leshy.desc": `Master of the thicket with no face. Pipes for roots, moss on the boiler.`,
+    "enemy.nail_rusalka.name": `Nail rusalka`,
+    "enemy.nail_rusalka.desc": `Hair of rusted wire. She calls into the lock, not the pool.`,
+    "enemy.boiler_priest.name": `Boiler priest`,
+    "enemy.boiler_priest.desc": `Prays to pressure. Censer is a gauge, vestments oiled.`,
+    "item.note_ticket.name": `Ticket for a cold train`,
+    "item.note_ticket.desc": `Cardboard in soot. Station rubbed out. Read once.`,
+    "item.note_recipe.name": `Copper wort recipe`,
+    "item.note_recipe.desc": `Crooked hand, exact pressure numbers. Once.`,
+    "item.note_psalm.name": `Psalm of pressure`,
+    "item.note_psalm.desc": `A prayer to the boiler on the back of a waybill. Once.`,
+    "item.note_map.name": `Scrap of a layer map`,
+    "item.note_map.desc": `Hexes in coal. The edge torn at the shrine. Once.`,
+    "item.note_oath.name": `Trackman's oath`,
+    "item.note_oath.desc": `'Do not whistle in fog.' The signature is gone. Once.`,
+    "item.note_child.name": `A child's note`,
+    "item.note_child.desc": `In pencil: 'mama went to the pipe'. Once.`,
+    "item.note_shift.name": `Stoker's shift log`,
+    "item.note_shift.desc": `Pressure, coal, who did not come out. Once.`,
+    "item.note_verdict.name": `Fog court's verdict`,
+    "item.note_verdict.desc": `Name erased, the measure — 'leave in steam'. Once.`,
+    "lore.ticket": `A ticket with no station. On the back in soot: 'the train went into fog and did not return. If you find this — do not board.'`,
+    "lore.recipe": `Copper wort: a root, three washers, a drop of condensate. Pressure no higher than green. Drink standing or the gears will rise in the throat.`,
+    "lore.psalm": `'Our boiler, who art in the firebox. Thy steam come. Thy pressure be done, on earth as in the sky.' Signed with a key, then rubbed out.`,
+    "lore.map": `Six hexes in coal. An arrow at the shrine. The edge is torn where the second layer should be. On the back: 'do not whistle'.`,
+    "lore.oath": `Trackman's oath: do not whistle in fog, do not leave a sleeper unnamed, do not take another's gauge. Who broke it is already a shade.`,
+    "lore.child": `'Mama went to the pipe. She said the steam is kind. I will wait by the valve. If you come — whistle twice, like a rooster.'`,
+    "lore.shift": `Third shift. Pressure yellow. Coal damp. Did not come out: Yegor, Marfa, the one whose name is crossed. The firebox is still warm.`,
+    "lore.verdict": `The fog court ruled: erase the name, the measure — leave in steam. The accused did not come. Steam came in his place.`,
+    "tut.stats.title": `Stats`,
+    "tut.stats.body": `Strength, dexterity, intellect, endurance, luck and charm. Plus spends free points. Minus undoes a point you just placed.`,
+    "tut.skills.title": `Skills`,
+    "tut.skills.body": `Combat and field skills. Plus raises a rank. False Path and Pocket Eye are not starters — you buy them with points.`,
+    "talk.questOffer": `{name}: “Listen. There is a job — {title}.”`,
+  },
+  p = {
+    "class.warrior.name": `Работяга`,
+    "class.warrior.blurb": `Бьётся топором или мечом. В бою считает силу. Носит только топоры и мечи. Держит удар.`,
+    "class.volkhv.name": `Парослов`,
+    "class.volkhv.blurb": `Бьётся посохом или ножом. В бою считает интеллект. Тратит дар на слова-удары. Носит посохи и кинжалы.`,
+    "class.archer.name": `Путевой`,
+    "class.archer.blurb": `Бьётся луком или арбалетом. В бою считает ловкость. Может учиться видеть ложный ответ в переговорах.`,
+    "class.tracker.name": `Путевой`,
+    "class.tracker.blurb": `Бьётся луком или арбалетом. В бою считает ловкость. Навык «Ложный след» подсвечивает один неверный ответ в переговорах — его нужно качать, в начале не даётся.`,
+    "class.rogue.name": `Щелкун`,
+    "class.rogue.blurb": `Бьётся кинжалами и короткими клинками. В бою считает ловкость. Навык «Глаз кармана» показывает шанс кражи у каждого жителя — его нужно качать, в начале не даётся.`,
+    "class.bonesetter.name": `Костоправ`,
+    "class.bonesetter.blurb": `Лечит своих и калечит чужих. Бьётся посохом или костяным ножом. В бою считает выносливость. После выигранного раунда может вернуть здоровье.`,
+    "settings.tutorial": `Обучение`,
+    "settings.tutorialOn": `включено`,
+    "settings.tutorialOff": `выключено`,
+    "tut.on": `Включить обучение`,
+    "tut.off": `Выключить обучение`,
+    "tut.mainKicker": `Главное обучение`,
+    "tut.extraKicker": `Новое действие`,
+    "tut.next": `Дальше`,
+    "tut.skip": `Пропустить`,
+    "tut.falsePath": `Ложный след — этот ответ неверный`,
+    "tut.main.hex.title": `Клетка под паром`,
+    "tut.main.hex.body": `Ты стоишь на одном шестиграннике. Картинка — это место. Смотри, где ты, прежде чем ходить.`,
+    "tut.main.story.title": `Лента событий`,
+    "tut.main.story.body": `Здесь пишется, что случилось: поиск, разговор, бой, находка. Читай сверху вниз. Длинный текст можно прокрутить.`,
+    "tut.main.inv.title": `Сумка`,
+    "tut.main.inv.body": `Слева — инвентарь, пять рядов. Надень, съешь, продай. Медяки считаются здесь, не на поясе.`,
+    "tut.main.actions.title": `Два дела`,
+    "tut.main.actions.body": `На клетке два действия за ход: поиск, копать, привал, охота, рыбалка, разговор, кража или квест. Потом — шаг.`,
+    "tut.main.move.title": `Шесть дорог`,
+    "tut.main.move.body": `Шесть стрелок вокруг клетки — шесть соседних мест. Шаг стоит ход. Иди, когда два дела сделаны.`,
+    "tut.act.search.title": `Поиск следов`,
+    "tut.act.search.body": `Следы идут сами: левая, правая, левая. Это не бой. Подожди — в конце найдётся вещь, записка или пусто.`,
+    "tut.act.dig.title": `Копать`,
+    "tut.act.dig.body": `Жми на шестигранники, пока сундук не откроется. Крышка поднимается вверх. Можно пропустить, когда сундук уже открыт.`,
+    "tut.act.rest.title": `Привал`,
+    "tut.act.rest.body": `Костёр лечит. Иногда из тумана выходит засада — примерно один раз из десяти. Игра сама дождётся конца.`,
+    "tut.act.offer.title": `Жертва орлом-решкой`,
+    "tut.act.offer.body": `Монета крутится сама: орёл или решка. Это удача предков, не бой. Жди, пока упадёт.`,
+    "tut.act.quest.title": `Квест на клетке`,
+    "tut.act.quest.body": `Закрыть можно силой характеристики, медяками, удачей или разговором. Разговор — три ответа, один верный. Если есть «Ложный след», один неверный ответ подсветится.`,
+    "tut.act.talk.title": `Разговор`,
+    "tut.act.talk.body": `Жители с именами. Один из трёх разговоров даёт удачу, остальные — болтовня или мелочь. Слушай и выбирай.`,
+    "tut.act.steal.title": `Кража`,
+    "tut.act.steal.body": `Выбери жителя. Диск крутится, стрелка сверху. Зелёный сектор — успех. Награда крупная: горсть медяков или вещь. Провал — стражник. У Щелкуна навык «Глаз кармана» показывает шанс.`,
+    "tut.act.hunt.title": `Охота`,
+    "tut.act.hunt.body": `Три попадания по зайцу. Жми, когда зверёк стоит. Мясо только с охоты.`,
+    "tut.act.fish.title": `Рыбалка`,
+    "tut.act.fish.body": `Жми, когда поплавок дёрнется. Лески нет — только поплавок и всплеск. Рыба только с рыбалки.`,
+    "tut.combat.dice.title": `Бой: кубик`,
+    "tut.combat.dice.body": `Три раунда. Кубик на 30 граней, без цифр на экране. Жми свой кубик сам — вражеский крутится сам. Один навык за бой.`,
+    "tut.combat.skills.title": `Бой: навыки`,
+    "tut.combat.skills.body": `Навык жмётся до броска. Подсказка появляется над кнопками. Без навыка можно бить голым кубиком.`,
+    "tut.combat.flee.title": `Бой: бегство`,
+    "tut.combat.flee.body": `Бежать можно при 0:0 или 1:1. Иначе кнопка молчит. Бегство не стыдно — туман прощает.`,
+    "tut.shop.title": `Лавка`,
+    "tut.shop.body": `Купить и продать. Цена зависит от обаяния и торга. Сумка слева, товар справа.`,
+    "tut.levelup.title": `Уровень`,
+    "tut.levelup.body": `Новый уровень даёт очки характеристик и навык. Распредели сразу в окне роста.`,
+    "steal.chance": `Шанс {n}%`,
+    "create.startLevel": `Старт с {n} ур.`,
+    "skill.false_path.name": `Ложный след`,
+    "skill.false_path.desc": `В переговорах подсвечивает один неверный ответ. Нужно качать. В начале не даётся.`,
+    "skill.mark_pockets.name": `Глаз кармана`,
+    "skill.mark_pockets.desc": `На краже показывает шанс успеха у каждого жителя. Нужно качать. В начале не даётся.`,
+    "skill.quick_cut.name": `Щелчок клинка`,
+    "skill.quick_cut.desc": `Короткий удар в щель доспеха. +к броску в бою.`,
+    "skill.set_bone.name": `Вправление`,
+    "skill.set_bone.desc": `Выигранный раунд чинит тебя. +к броску и здоровье после победы в раунде.`,
+    "item.storm_bow.name": `Громовая тетива`,
+    "item.storm_bow.desc": `Лук из рельсовой пружины. Иглы свистят, как пар из предохранителя.`,
+    "item.latch_fang.name": `Клык засова`,
+    "item.latch_fang.desc": `Кинжал-щеколда. Открывает замки и жилы одинаково тихо.`,
+    "item.living_splint.name": `Живая шина`,
+    "item.living_splint.desc": `Посох из зелёной кости. Вправляет и ломает одним движением.`,
+    "kit.w_axe.name": `Полная клёпка`,
+    "kit.w_axe.blurb": `Топор, шлем, стёганка, сапоги и обмотки. Медяков почти нет.`,
+    "kit.w_sword.name": `Смена и паёк`,
+    "kit.w_sword.blurb": `Клинок, стёганка, сапоги, корень и горсть медяков.`,
+    "kit.w_legend.name": `Колун без сумы`,
+    "kit.w_legend.blurb": `Один Перунов колун. Ни денег, ни другой амуниции.`,
+    "kit.w_rank.name": `Старший по смене`,
+    "kit.w_rank.blurb": `Сразу +1 уровень. Простой клинок, обмотки и чуть медяков.`,
+    "kit.w_gold.name": `Кошель на пустой пояс`,
+    "kit.w_gold.blurb": `Почти ничего на теле. Зато медяков — полный карман.`,
+    "kit.v_staff.name": `Полный обряд`,
+    "kit.v_staff.blurb": `Посох, роба, сапоги, обмотки и настой. Медяков почти нет.`,
+    "kit.v_bone.name": `Чаша и паёк`,
+    "kit.v_bone.blurb": `Костяной нож, роба, слёзы и горсть медяков.`,
+    "kit.v_legend.name": `Веретено без сумы`,
+    "kit.v_legend.blurb": `Одно Веретено Мокоши. Ни денег, ни другой амуниции.`,
+    "kit.v_rank.name": `Младший парослов`,
+    "kit.v_rank.blurb": `Сразу +1 уровень. Посох, обмотки и чуть медяков.`,
+    "kit.v_gold.name": `Медяки вместо молитвы`,
+    "kit.v_gold.blurb": `Почти ничего на теле. Зато медяков много.`,
+    "kit.a_bow.name": `Полный колчан`,
+    "kit.a_bow.blurb": `Лук, стёганка, болотные сапоги, обмотки. Медяков почти нет.`,
+    "kit.t_pack.name": `Сумка путевого`,
+    "kit.t_pack.blurb": `Лук, стёганка, корень, настой и горсть медяков.`,
+    "kit.t_legend.name": `Громовая тетива`,
+    "kit.t_legend.blurb": `Один легендарный лук. Ни денег, ни другой амуниции.`,
+    "kit.t_rank.name": `Старший по шпалам`,
+    "kit.t_rank.blurb": `Сразу +1 уровень. Арбалет, обмотки и чуть медяков.`,
+    "kit.t_gold.name": `Медяки вместо стрел`,
+    "kit.t_gold.blurb": `Почти ничего на теле. Зато медяков много.`,
+    "kit.r_full.name": `Полный щелчок`,
+    "kit.r_full.blurb": `Кинжал, стёганка, сапоги, лента и обмотки. Медяков почти нет.`,
+    "kit.r_mid.name": `Нож и паёк`,
+    "kit.r_mid.blurb": `Короткий клинок, стёганка и горсть медяков.`,
+    "kit.r_legend.name": `Клык засова`,
+    "kit.r_legend.blurb": `Один легендарный кинжал. Ни денег, ни другой амуниции.`,
+    "kit.r_rank.name": `Старший по щеколде`,
+    "kit.r_rank.blurb": `Сразу +1 уровень. Нож, обмотки и чуть медяков.`,
+    "kit.r_gold.name": `Чужой кошель`,
+    "kit.r_gold.blurb": `Почти ничего на теле. Зато медяков очень много.`,
+    "kit.b_full.name": `Полный ящик`,
+    "kit.b_full.blurb": `Посох, роба, сапоги, настой и обмотки. Медяков почти нет.`,
+    "kit.b_mid.name": `Шина и паёк`,
+    "kit.b_mid.blurb": `Костяной нож, роба, корень и горсть медяков.`,
+    "kit.b_legend.name": `Живая шина`,
+    "kit.b_legend.blurb": `Один легендарный посох. Ни денег, ни другой амуниции.`,
+    "kit.b_rank.name": `Подмастерье`,
+    "kit.b_rank.blurb": `Сразу +1 уровень. Посох, обмотки и чуть медяков.`,
+    "kit.b_gold.name": `Плата за вправление`,
+    "kit.b_gold.blurb": `Почти ничего на теле. Зато медяков много.`,
+    "hex.wreck.name": `Обгоревший состав`,
+    "hex.wreck.t0": `Вагоны лежат на боку. Колёса ещё тёплые, угля в топке нет.`,
+    "hex.wreck.t1": `Рельсы завязаны узлом. Кто-то пытался развернуть состав руками.`,
+    "hex.wreck.t2": `В купе лежит чайник и латунная кружка. Хозяев нет.`,
+    "hex.quarry.name": `Латунная каменоломня`,
+    "hex.quarry.t0": `Стенка карьера блестит медью. Кирки воткнуты, как в чужой работе.`,
+    "hex.quarry.t1": `Внизу лужа масла. По ней ходит отражение трубы, которой нет.`,
+    "hex.quarry.t2": `На краю лежит шайба размером с ладонь. Тяжёлая, тёплая.`,
+    "hex.rails.name": `Разорванный путь`,
+    "hex.rails.t0": `Шпалы кончаются в тумане. Рельс загнут к небу, как палец.`,
+    "hex.rails.t1": `Стрелка перевода стоит в среднем положении. Ни туда, ни сюда.`,
+    "hex.rails.t2": `На шпале мелом: «дальше нет». Мел ещё не отсырел.`,
+    "hex.crater.name": `Воронка котла`,
+    "hex.crater.t0": `Земля просела кругом. На дне — лопнувший котёл и тишина.`,
+    "hex.crater.t1": `Края воронки оплавлены. Трава вокруг рыжая, как окалина.`,
+    "hex.crater.t2": `Внутри тепло. Можно сесть и слушать, как остывает мир.`,
+    "hex.silo.name": `Зерновой элеватор`,
+    "hex.silo.t0": `Башня из клёпаных листов. Зерно кончилось, мыши остались латунными.`,
+    "hex.silo.t1": `Лента транспортёра стоит. На ней три зёрнышка и болт.`,
+    "hex.silo.t2": `Внутри гулко. Эхо повторяет шаги с опозданием на удар сердца.`,
+    "hex.dump.name": `Свалка шестерён`,
+    "hex.dump.t0": `Гора зубьев и ободов. Между ними растёт иван-чай.`,
+    "hex.dump.t1": `Что-то щёлкает в куче само. Не лезь — пусть щёлкает.`,
+    "hex.dump.t2": `На вершине — целое колесо. Можно сесть, как на пень.`,
+    "hex.tower.name": `Водонапорная башня`,
+    "hex.tower.t0": `Башня держит бак, бак держит небо. Лестница снаружи, без перил.`,
+    "hex.tower.t1": `Кран внизу капает тёплой водой. Пить можно, если не боишься ржавчины.`,
+    "hex.tower.t2": `Сверху видно шесть соседних клеток. Туман ест дальние.`,
+    "hex.observatory.name": `Обсерватория манометров`,
+    "hex.observatory.t0": `Купол открыт. Вместо трубы — подзорный манометр на звёзды-заклёпки.`,
+    "hex.observatory.t1": `На столе карта неба и карта давления. Они почти совпадают.`,
+    "hex.observatory.t2": `Стрелка дрожит на нуле. Звёзды сегодня не дышат.`,
+    "hex.forge.name": `Остывшая кузня`,
+    "hex.forge.t0": `Горн серый. Молот лежит, как спящий. Наковальня ещё помнит удар.`,
+    "hex.forge.t1": `В золе — недоделанная подкова и медная шайба.`,
+    "hex.forge.t2": `Можно переночевать у остывшего меха. Тяга ещё есть.`,
+    "hex.greenhouse.name": `Стеклянная оранжерея`,
+    "hex.greenhouse.t0": `Стекло в медных переплётах. Внутри жарко, хотя котла не видно.`,
+    "hex.greenhouse.t1": `Огурцы и трубы вьются вместе. Пахнет землёй и маслом.`,
+    "hex.greenhouse.t2": `Лейка полная. Кто-то поливал сегодня утром.`,
+    "hex.freeze.name": `Ледник труб`,
+    "hex.freeze.t0": `Трубы в инее, хотя кругом лето. Изо рта пар, из клапана — нет.`,
+    "hex.freeze.t1": `Под ногой хрустит не снег, а окалина, прикипевшая к холоду.`,
+    "hex.freeze.t2": `В середине льда торчит манометр. Стрелка за красным и не двигается.`,
+    "hex.pine.name": `Сосновая дымка`,
+    "hex.pine.t0": `Сосны окованы кольцами меди. Хвоя пахнет смолой и горячим маслом.`,
+    "hex.pine.t1": `Между стволами тропа из шпал. Смола капает на рельс и застывает.`,
+    "hex.pine.t2": `Поляна круглая. Хорошее место подкараулить зверя или перевести дух.`,
+    "hex.grove.name": `Священная роща`,
+    "hex.grove.t0": `Деревья в лентах. В дуплах — маленькие топки, тёплые как ладонь.`,
+    "hex.grove.t1": `Здесь не рубят. Здесь кланяются и проверяют давление на коре.`,
+    "hex.grove.t2": `Под дубом чаша с зерном и заклёпкой. Боги спят, но слушают.`,
+    "hex.thicket.name": `Ивовый частокол`,
+    "hex.thicket.t0": `Ивы сплелись в стену. Между прутьями — медная проволока.`,
+    "hex.thicket.t1": `Идти нужно боком. Ветка хлещет, как ремень привода.`,
+    "hex.thicket.t2": `В середине частокола сухое место и следы копыт-шестерён.`,
+    "hex.copse.name": `Берёзовый дымолес`,
+    "hex.copse.t0": `Берёзы белые, как новые трубы. Чёрные чёрточки — не чечевицы, риски.`,
+    "hex.copse.t1": `Под корой гудит. Кто-то пустил пар в ствол и забыл закрыть.`,
+    "hex.copse.t2": `Полянка с муравейником из стружки и шайб. Муравьи живые.`,
+    "hex.taiga.name": `Тайга у рельс`,
+    "hex.taiga.t0": `Ели до тумана. Рельс ныряет в мох и выныривает через десяток шагов.`,
+    "hex.taiga.t1": `Пахнет хвоей, смолой и угольной пылью с далёкой топки.`,
+    "hex.taiga.t2": `На мху следы зверя и след подковы. Охотиться можно.`,
+    "hex.lake.name": `Масляное озеро`,
+    "hex.lake.t0": `Вода чёрная и не плещет. По ней радужные круги, как от масла.`,
+    "hex.lake.t1": `Лодка на берегу. Вёсла целы, в днище — заклёпка вместо пробоины.`,
+    "hex.lake.t2": `У кромки блестит чешуя. Рыба здесь берёт на медную бусину.`,
+    "hex.lock.name": `Второй шлюз`,
+    "hex.lock.t0": `Створки закрыты наполовину. Между ними лестница из скоб.`,
+    "hex.lock.t1": `Вода в камере стоит. На стенке уровень отмечен углем: «вчера».`,
+    "hex.lock.t2": `Можно перейти по балке. Внизу тихо, как в колоколе.`,
+    "hex.creek.name": `Ручей-конденсат`,
+    "hex.creek.t0": `Из трубы в холме бежит тёплый ручей. Камни скользкие от масла.`,
+    "hex.creek.t1": `На берегу ивы и ржавый кран. Кран крутится, воды не прибавляет.`,
+    "hex.creek.t2": `В струе вспыхивает рыбка. Удить можно прямо с вентиля.`,
+    "hex.station.name": `Станция путевых`,
+    "hex.station.t0": `Перрон без поезда. Часы без стрелок, зато чай в кипятке.`,
+    "hex.station.t1": `Дежурная кивает. Здесь ночуют свои и не спрашивают билет.`,
+    "hex.station.t2": `На скамейке карта слоя и остывший манометр. Можно спросить дорогу.`,
+    "hex.milltown.name": `Посёлок мельников`,
+    "hex.milltown.t0": `Избы вокруг общей шестерни. Крылья мельниц торчат из крыш.`,
+    "hex.milltown.t1": `Дети гоняют обруч-шайбу. Взрослые молчат и смотрят на небо-котёл.`,
+    "hex.milltown.t2": `Хлеб здесь пекут с медной крошкой. Чужого сначала накормят.`,
+    "hex.pier.name": `Пристань кочегаров`,
+    "hex.pier.t0": `Мостки в чёрную воду. Баржа на приколе, топка холодная.`,
+    "hex.pier.t1": `На свае висит спасательный круг из ремня привода.`,
+    "hex.pier.t2": `Рыбаки кивают. Здесь не воруют — здесь ждут, пока река вздохнёт.`,
+    "hex.bazaar.name": `Ярмарка заклёпок`,
+    "hex.bazaar.t0": `Лотки под парусиной. Крик цен, запах кваса, масла и корицы.`,
+    "hex.bazaar.t1": `Торговец вешает гири на безмен-манометр. «Спрашивай, не стесняйся.»`,
+    "hex.bazaar.t2": `На краю ярмарки играют в орла-решку. Медяки звенят честно.`,
+    "hex.apothecary.name": `Лавка настоев`,
+    "hex.apothecary.t0": `Стекло, травы, медные колбы. Хозяйка взвешивает корень на ладони.`,
+    "hex.apothecary.t1": `Пахнет полынью и машинным маслом. На полке — банки с рисками давления.`,
+    "hex.apothecary.t2": `«Лечит не всё, но цены честные.» Настой тёплый, даже закрытый.`,
+    "enemy.rust_boar.name": `Ржавый вепрь`,
+    "enemy.rust_boar.desc": `Щетина из гвоздей. Клыки — сломанные ключи на 24.`,
+    "enemy.coil_snake.name": `Медная змея`,
+    "enemy.coil_snake.desc": `Трубка научилась ползти. Жало — игла манометра.`,
+    "enemy.whistle_imp.name": `Свистковый бес`,
+    "enemy.whistle_imp.desc": `Маленький, из клапана. Свистит так, что руки дрожат.`,
+    "enemy.rail_spider.name": `Рельсовый паук`,
+    "enemy.rail_spider.desc": `Восемь ног-шпал. Ткет паутину из ржавой проволоки.`,
+    "enemy.soot_baba.name": `Сажная баба`,
+    "enemy.soot_baba.desc": `Изба без избы. Лицо из копоти, руки из метел и труб.`,
+    "enemy.valve_knight.name": `Рыцарь вентиля`,
+    "enemy.valve_knight.desc": `Латы из задвижек. Удар тяжёлый, как закрытый шлюз.`,
+    "enemy.moss_mare.name": `Моховая кобыла`,
+    "enemy.moss_mare.desc": `Конь без всадника. Грива — мох, копыта — шестерни.`,
+    "enemy.gear_domovoi.name": `Домовой-шестерёнщик`,
+    "enemy.gear_domovoi.desc": `Живёт в котле. Кусает за пальцы, если не поздороваться.`,
+    "enemy.frost_stoker.name": `Ледяной кочегар`,
+    "enemy.frost_stoker.desc": `Топка остыла, он нет. Дышит инеем и угольной пылью.`,
+    "enemy.needle_witch.name": `Игольная ведьма`,
+    "enemy.needle_witch.desc": `Прядёт иглы из пара. Каждая игла помнит чужое имя.`,
+    "enemy.tank_fish.name": `Рыба-цистерна`,
+    "enemy.tank_fish.desc": `Чешуя — клёпка. Плывёт по маслу, как по реке.`,
+    "enemy.bell_wight.name": `Колокольный мертвец`,
+    "enemy.bell_wight.desc": `Язык колокола вместо сердца. Звон бьёт по удаче.`,
+    "enemy.cinder_wolf.name": `Волк-окалина`,
+    "enemy.cinder_wolf.desc": `Шерсть сыпется углями. Глаза — дверцы топки.`,
+    "enemy.brass_noon.name": `Латунная полудница`,
+    "enemy.brass_noon.desc": `Ходит в полдень, когда пар самый густой. Голос режет.`,
+    "enemy.smoke_leshy.name": `Дымовой леший`,
+    "enemy.smoke_leshy.desc": `Хозяин чащи без лица. Трубы вместо корней, мох на котле.`,
+    "enemy.nail_rusalka.name": `Русалка гвоздей`,
+    "enemy.nail_rusalka.desc": `Волосы — ржавая проволока. Зовет в шлюз, не в омут.`,
+    "enemy.boiler_priest.name": `Жрец котла`,
+    "enemy.boiler_priest.desc": `Молится давлению. Кадило — манометр, риза — промасленная.`,
+    "item.note_ticket.name": `Билет на остывший состав`,
+    "item.note_ticket.desc": `Картон в саже. Станция стёрта. Читается один раз.`,
+    "item.note_recipe.name": `Рецепт медного отвара`,
+    "item.note_recipe.desc": `Почерк кривой, цифры давления точные. Один раз.`,
+    "item.note_psalm.name": `Псалом давления`,
+    "item.note_psalm.desc": `Молитва котлу на обороте накладной. Один раз.`,
+    "item.note_map.name": `Обрывок карты слоя`,
+    "item.note_map.desc": `Шестигранники углем. Край оборван на капище. Один раз.`,
+    "item.note_oath.name": `Клятва путевого`,
+    "item.note_oath.desc": `«Не свисти в тумане». Подпись стёрта. Один раз.`,
+    "item.note_child.name": `Записка ребёнка`,
+    "item.note_child.desc": `Карандашом: «мама ушла к трубе». Один раз.`,
+    "item.note_shift.name": `Сменный журнал кочегара`,
+    "item.note_shift.desc": `Давление, уголь, кто не вышел. Один раз.`,
+    "item.note_verdict.name": `Приговор туманного суда`,
+    "item.note_verdict.desc": `Имя стёрто, мера — «оставить в пару». Один раз.`,
+    "lore.ticket": `Билет без станции. На обороте сажей: «состав ушёл в туман и не вернулся. Если найдёшь — не садись.»`,
+    "lore.recipe": `Медный отвар: корень, три шайбы, капля конденсата. Давление не выше зелёного. Пьют стоя, иначе тошнит шестернями.`,
+    "lore.psalm": `«Котёл наш, иже еси в топке. Да приидет пар Твой. Да будет давление, яко на земле, тако и в небе.» Подпись стёрта ключом.`,
+    "lore.map": `Шесть клеток углем. Стрелка на капище. Край оборван там, где должен быть второй слой. На обороте: «не свисти».`,
+    "lore.oath": `Клятва путевого: не свистеть в тумане, не оставлять шпалу без имени, не брать чужой манометр. Кто нарушил — тот уже тень.`,
+    "lore.child": `«Мама ушла к трубе. Сказала, пар добрый. Я подожду у вентиля. Если придёшь — посвисти два раза, как петух.»`,
+    "lore.shift": `Смена третья. Давление жёлтое. Уголь сырой. Не вышли: Егор, Марфа, тот, чьё имя зачеркнуто. Топка ещё тёплая.`,
+    "lore.verdict": `Туманный суд постановил: имя стереть, меру — оставить в пару. Подсудимый не пришёл. Пар пришёл вместо него.`,
+    "tut.stats.title": `Характеристики`,
+    "tut.stats.body": `Здесь сила, ловкость, ум, выносливость, удача и обаяние. Плюс тратит свободные очки. Минус снимает, если ещё не закрепил.`,
+    "tut.skills.title": `Навыки`,
+    "tut.skills.body": `Боевые и полевые умения. Плюс качает ранг. «Ложный след» и «Глаз кармана» в начале не даются — их покупают очками.`,
+    "talk.questOffer": `{name}: «Слушай. Есть дело — {title}.»`,
+  },
+  m = `Закрыть`,
+  h = `Понятно`,
+  g = `вещь`,
+  _ = {
+    "hex.mill.name": `Ржавая мельница`,
+    "hex.bridge.name": `Шлюзовый мост`,
+    "hex.mine.name": `Паровая шахта`,
+    "hex.depot.name": `Депо путевых`,
+    "hex.camp.name": `Лагерь у рельс`,
+    "hex.chapel.name": `Часовня под паром`,
+    "hex.mill.t0": `Крылья мельницы — шестерни. Ветер крутит их вхолостую, пар шипит из ступицы.`,
+    "hex.mill.t1": `Мука давно кончилась. В жерновах застряла медная шайба, тёплая на ощупь.`,
+    "hex.mill.t2": `Тень крыльев чертит круг на ржавой пустоши. Хорошее место перевести дух.`,
+    "hex.bridge.t0": `Мост держит створки шлюза. Вода внизу чёрная, заклёпки в поручнях ещё горячие.`,
+    "hex.bridge.t1": `По настилу идут медные трубы, как вены. Туман не решается ступить на пролёт.`,
+    "hex.bridge.t2": `С одной стороны — рельсы, с другой — камыш. Мост сегодня никого не спрашивает.`,
+    "hex.mine.t0": `Устье шахты оковано латунью. Рельсы уходят в тёплую темноту, фонари ещё горят.`,
+    "hex.mine.t1": `Пахнет углем и мокрым железом. Кто-то недавно выкатил вагонетку и не вернулся.`,
+    "hex.mine.t2": `Над копром манометр в жёлтом. Спускаться не надо — клетка и так дышит паром.`,
+    "hex.depot.t0": `Депо стоит без смены. Локомотив остыл, но трубы на крыше ещё помнят давление.`,
+    "hex.depot.t1": `В пролёте висят ремни и ключи на 18. Пол в масле. Можно переночевать, если не бояться эха.`,
+    "hex.depot.t2": `На воротах мелом: «Не свисти». Свистка всё равно нет.`,
+    "hex.camp.t0": `Палатки у оборванных рельс. Котелок ещё тёплый, следов хозяев — ни одного.`,
+    "hex.camp.t1": `Костёр дымит медной копотью. Кто-то оставил хлеб и закрыл заслонку.`,
+    "hex.camp.t2": `Ночь здесь короче, чем кажется. Рельсы ведут в туман и обратно.`,
+    "hex.chapel.t0": `Вместо колокола — дымовая труба. Иконы на крыльце в латунных окладах, тёплые.`,
+    "hex.chapel.t1": `Внутри пахнет ладаном и машинным маслом. Свечи стоят ровно, как риски на циферблате.`,
+    "hex.chapel.t2": `Кто-то молился котлу. Котёл не ответил — и это тоже ответ.`,
+    "combat.flee": `Побег`,
+    "combat.fleeFail": `Побег не удался. Бой идёт дальше.`,
+    "combat.fleeFailFx": `Побег не удался`,
+    "combat.fleeOk": `Ты ускользнул в туман.`,
+    "combat.fleeOkFx": `Побег удался`,
+    "combat.enemyPower": `Сила {n}`,
+    "dice.press": `нажми`,
+    "item.rusty_axe.name": `Клёпальная секира`,
+    "item.rusty_axe.desc": `Ржавчина на заклёпках не мешает рубить пар и кость.`,
+    "item.short_sword.name": `Клинок дозорной трубы`,
+    "item.short_sword.desc": `Лёгкий клинок. Свистит, как пар в щели.`,
+    "item.ash_staff.name": `Посох-манометр`,
+    "item.ash_staff.desc": `Ясень и латунный глаз давления. Кормит ману.`,
+    "item.bone_knife.name": `Нож костяного пара`,
+    "item.bone_knife.desc": `Кость помнит, куда резать. Рукоять тёплая от топки.`,
+    "item.hunter_bow.name": `Игломёт охотника`,
+    "item.hunter_bow.desc": `Тетива ещё поёт. Иглы летят вместе с паром.`,
+    "item.padded.name": `Стёганка клепальщика`,
+    "item.padded.desc": `Держит удар лучше, чем кажется. Заклёпки по швам.`,
+    "item.robe.name": `Роба парослова`,
+    "item.robe.desc": `Пахнет дымом, травами и горячей медью. Больше маны.`,
+    "item.mail_shard.name": `Медный обрывок кольчуги`,
+    "item.mail_shard.desc": `Несколько колец ещё держат. Между ними — крошка трубы.`,
+    "item.wraps.name": `Обмотки с заклёпками`,
+    "item.wraps.desc": `Ткань и латунь на запястьях.`,
+    "item.boots_plain.name": `Путевые сапоги`,
+    "item.boots_plain.desc": `Протоптали много шпал и дорог.`,
+    "item.boots_bog.name": `Сапоги кипящей трясины`,
+    "item.boots_bog.desc": `Не пропускают воду. Клапаны на голенищах шипят.`,
+    "item.iron_helm.name": `Шлем с манометром`,
+    "race.human.name": `Человек`,
+    "race.human.blurb": `Медь в крови и в ладонях. Люди клепают трубы спящих богов и быстрее всех учатся, пока пар ещё тёплый.`,
+    "race.human.bonus": `+10% опыта. Универсальны.`,
+    "race.lesovik.name": `Дымолес`,
+    "race.lesovik.blurb": `Родня чащи: кора вместо кожи, в волосах мох, дыхание — тёплый дым. Ловок между стволами, без лишней меди на теле.`,
+    "race.lesovik.bonus": `Скрытность и удача в чащах. +ловкость.`,
+    "race.vodyanoy.name": `Шлюзник`,
+    "race.vodyanoy.blurb": `Речная кровь, что держит шлюзы. Пар вместо брызг, больше маны, яды слабее.`,
+    "race.vodyanoy.bonus": `+дар, сопротивление ядам.`,
+    "race.kostyanoy.name": `Костерёв`,
+    "race.kostyanoy.blurb": `Вышли из Нави под топкой. Кость и сажа. Крепкое здоровье, людям они не по душе.`,
+    "race.kostyanoy.bonus": `+здоровье. Штраф к харизме.`,
+    "race.zharkrovny.name": `Горныч`,
+    "race.zharkrovny.blurb": `В жилах тлеет горн. Живые меха кузницы. Сильные и почти не боятся пламени.`,
+    "race.zharkrovny.bonus": `+сила, огнеустойчивость.`,
+    "class.warrior.name": `Клёпальщик`,
+    "class.warrior.blurb": `Бьёт молотом и секирой. Держит удар, как клёпка держит котёл.`,
+    "class.volkhv.name": `Парослов`,
+    "class.volkhv.blurb": `Молитва — это давление. Слова и пар. Удары идут от ума.`,
+    "class.archer.name": `Игломёт`,
+    "class.archer.blurb": `Стреляет иглами из парового лука. Ловкость решает бой.`,
+    "class.tracker.name": `Путевой`,
+    "class.tracker.blurb": `Читает следы на рельсах тумана и находит путь, пока клетка ещё земля.`,
+    "kit.w_axe.name": `Клёпальная секира`,
+    "kit.w_axe.blurb": `Тяжёлый замах. Для тех, кто начинает с удара по заклёпке мира.`,
+    "kit.w_sword.name": `Клинок дозорной трубы`,
+    "kit.w_sword.blurb": `Проще секиры, зато щит не нужен — клинок быстрый, как свисток.`,
+    "kit.v_staff.name": `Посох-манометр`,
+    "kit.v_staff.blurb": `Слова ещё жгут, если не жалеть давления.`,
+    "kit.v_bone.name": `Чаша костяного пара`,
+    "kit.v_bone.blurb": `Меньше удара, больше шёпота предков из топки.`,
+    "kit.a_bow.name": `Игломёт охотника`,
+    "kit.a_bow.blurb": `Тихий выстрел иглы. Хорош, пока тебя не заметили в пару.`,
+    "kit.a_knife.name": `Нож и игла`,
+    "kit.a_knife.blurb": `Если игла не долетит — нож дойдёт по меди.`,
+    "kit.t_pack.name": `Сумка путевого`,
+    "kit.t_pack.blurb": `Верёвка, корень, зоркий глаз и кусок рельса на память.`,
+    "kit.t_light.name": `Лёгкий ход по рельсам`,
+    "kit.t_light.blurb": `Мало железа — много удачи. Туманные шпалы не скрипят.`,
+    "item.iron_helm.desc": `Вмятина над виском. Стрелка ещё дёргается.`,
+    "item.root.name": `Корень живучки`,
+    "item.root.desc": `Горький, с медной жилкой. Лечит, если прожевать.`,
+    "item.wort.name": `Настой полыни`,
+    "item.wort.desc": `Горький. Возвращает дар. Крышка — как клапан.`,
+    "item.tears.name": `Слёзы шлюзника`,
+    "item.tears.desc": `Холодный флакон. Внутри пар стоит столбом.`,
+    "item.ember.name": `Жаровень`,
+    "item.ember.desc": `Уголь, который не гаснет. Греет ладонь, как топка.`,
+    "item.silver_bit.name": `Серебро предков`,
+    "item.silver_bit.desc": `Монета без чекана — только шестерня и узел.`,
+    "item.amber.name": `Янтарь с шестернёй`,
+    "item.amber.desc": `Тёплый камень. В смоле застыл крохотный зуб колеса.`,
+    "item.ribbon.name": `Выцветшая лента`,
+    "item.ribbon.desc": `Кто-то завязал её на удачу и пришил латунный бубенчик.`,
+    "item.black_apple.name": `Чёрное яблоко`,
+    "item.black_apple.desc": `Не гниёт. Кожура как накипь котла.`,
+    "item.key_ring.name": `Мокрый ключ`,
+    "item.key_ring.desc": `От двери, которой нет. Или от вентиля, который есть.`,
+    "item.bone_cup.name": `Костяная чаша пара`,
+    "item.bone_cup.desc": `Холодная. Честная. По ободку — риска давления.`,
+    "item.memory_shard.name": `Осколок памяти`,
+    "item.memory_shard.desc": `Чужое воспоминание внутри. Пар ходит кругами.`,
+    "item.steel_axe.name": `Секира дозорной трубы`,
+    "item.steel_axe.desc": `Точилась о камень заставы и о заклёпку котла.`,
+    "item.green_staff.name": `Живой посох-манометр`,
+    "item.green_staff.desc": `Ветка ещё сочит смолу. Стрелка давления пляшет. Много маны.`,
+    "item.long_bow.name": `Длинный игломёт`,
+    "item.long_bow.desc": `Тяжёлая тетива. Дальше и злее. Пар в плечах лука.`,
+    "item.sworn_mail.name": `Клятвенная кольчуга`,
+    "item.sworn_mail.desc": `Кольца спаяны клятвой и медью, не одним огнём.`,
+    "item.seer_staff.name": `Посох ясновидца`,
+    "item.seer_staff.desc": `Слова в нём уже сложены. Манометр показывает чужой сон.`,
+    "item.moon_bow.name": `Лунный игломёт`,
+    "item.moon_bow.desc": `Стреляет тише ночи. Иглы светятся, как конденсат.`,
+    "item.temple_helm.name": `Шлем капища котлов`,
+    "item.temple_helm.desc": `Ковка с молитвой в шве и трубкой у виска.`,
+    "item.perun_cleaver.name": `Перунов колун`,
+    "item.perun_cleaver.desc": `Гром в лезвии, давление в обухе. Уникальный навык: Раскол манометра.`,
+    "item.fate_spindle.name": `Веретено Мокоши`,
+    "item.fate_spindle.desc": `Прядёт удачу из пара. Уникальный навык: Нить судьбы.`,
+    "item.nav_crown.name": `Венец Нави`,
+    "item.nav_crown.desc": `Пассив: крадёт жизнь. Навык: Смертный уговор. Корона из сажи и латуни.`,
+    "item.fire_heart.name": `Сердце горна`,
+    "item.fire_heart.desc": `Пассив: первый удар сильнее. Навык: Слово горна.`,
+    "skill.power_strike.name": `Клёпальный удар`,
+    "skill.power_strike.desc": `Сильный замах молотом. +к броску в бою.`,
+    "skill.aimed_shot.name": `Игла в пар`,
+    "skill.aimed_shot.desc": `Бьёт точнее. Чётные удары не рассеиваются.`,
+    "skill.black_word.name": `Чёрный свисток`,
+    "skill.black_word.desc": `Слово-пар бьёт по врагу и снижает его бросок.`,
+    "skill.forest_shadow.name": `Тень дымолеса`,
+    "skill.forest_shadow.desc": `После боя получаешь вдвое меньше урона.`,
+    "skill.ancestors_luck.name": `Удача предков`,
+    "skill.ancestors_luck.desc": `Бросаешь кубик ещё раз за каждый ранг и берёшь лучший.`,
+    "skill.blood_heat.name": `Жар топки`,
+    "skill.blood_heat.desc": `Огонь в жилах. Сила идёт в удар.`,
+    "skill.river_breath.name": `Дыхание шлюза`,
+    "skill.river_breath.desc": `После удара немного лечит.`,
+    "skill.bone_shell.name": `Костяной котёл`,
+    "skill.bone_shell.desc": `Снимает часть урона после боя.`,
+    "skill.leshy_step.name": `Шаг Паролеса`,
+    "skill.leshy_step.desc": `В чаще меньше боёв и больше находок.`,
+    "skill.mokosh_gaze.name": `Взгляд ткачихи`,
+    "skill.mokosh_gaze.desc": `Чаще находишь вещи при поиске.`,
+    "skill.grave_sense.name": `Чутьё топки`,
+    "skill.grave_sense.desc": `Выше шанс выкопать клад.`,
+    "skill.bargain.name": `Торг у трубы`,
+    "skill.bargain.desc": `Покупаешь дешевле, продаёшь дороже.`,
+    "skill.thunder_cleave.name": `Раскол манометра`,
+    "skill.thunder_cleave.desc": `Удар Перуна. Сильный бонус к броску. Только с Перуновым колуном.`,
+    "skill.weave_fate.name": `Нить судьбы`,
+    "skill.weave_fate.desc": `Бросаешь кубик дважды и берёшь лучший. Только с Веретеном Мокоши.`,
+    "skill.death_pact.name": `Смертный уговор`,
+    "skill.death_pact.desc": `Платишь кровью за удар. Только с Венцом Нави.`,
+    "skill.pyre_word.name": `Слово горна`,
+    "skill.pyre_word.desc": `Жар бьёт вместе с тобой. Только с Сердцем горна.`,
+    "enemy.utopelnik.name": `Утоп-машинист`,
+    "enemy.utopelnik.desc": `Мокрый, в промасленной куртке. Медленный, злой, шипит клапанами.`,
+    "enemy.kikimora.name": `Кикимора-пряха`,
+    "enemy.kikimora.desc": `Прядёт пар в нить и путает руки. Шепчет в латунную трубку.`,
+    "enemy.bone_hound.name": `Зубчатый пёс`,
+    "enemy.bone_hound.desc": `Лает без горла. Кусает шестернями вместо клыков.`,
+    "enemy.upyr.name": `Упырь давления`,
+    "enemy.upyr.desc": `Пьёт тепло из труб и из жил. После удара хочется сесть.`,
+    "enemy.nav_shade.name": `Тень из топки`,
+    "enemy.nav_shade.desc": `Ходит там, где тебя уже нет. Сажа вместо лица.`,
+    "enemy.ognevik.name": `Топщик-огневик`,
+    "enemy.ognevik.desc": `Уголь, который научился ходить и подбрасывать себя в топку.`,
+    "enemy.leshy_shard.name": `Осколок Паролеса`,
+    "enemy.leshy_shard.desc": `Лес без хозяина. Кора вместо лица, трубы вместо корней.`,
+    "enemy.koshchei.name": `Кощей Заводной`,
+    "enemy.koshchei.desc": `Не он. Его привычка не умирать, заведённая ключом.`,
+    "hex.forest.name": `Медная чаща`,
+    "hex.swamp.name": `Кипящая трясина`,
+    "hex.ruins.name": `Мёртвая машинная`,
+    "hex.village.name": `Посёлок у трубы`,
+    "hex.field.name": `Ржавая пустошь`,
+    "hex.mound.name": `Курган с манометром`,
+    "hex.river.name": `Шлюзовая река`,
+    "hex.tavern.name": `Корчма «Под давлением»`,
+    "hex.market.name": `Барахолка шестерён`,
+    "hex.kapishche.name": `Капище котлов`,
+    "hex.city.name": `Латунный посад`,
+    "hex.fog.name": `Сопло тумана`,
+    "hex.nav.name": `Навь под топкой`,
+    "hex.nav_gate.name": `Врата Яви`,
+    "hex.bonefield.name": `Костяное поле`,
+    "hex.eye.name": `Око Забвения`,
+    "layer.0.name": `Явь под паром`,
+    "layer.0.goal": `Капище котлов`,
+    "layer.1.name": `Сон машинных богов`,
+    "layer.1.goal": `Латунный посад`,
+    "layer.2.name": `Сердце осколка`,
+    "layer.2.goal": `Око Забвения`,
+    "goal.navGate": `Врата Яви`,
+    "nar.start": `Ты стоишь на первой клетке Яви под паром. Края пьёт туман-выхлоп спящих богов. Шесть стрелок — шесть дорог. Выбери, куда идти.`,
+    "nar.intro": `{name}, {race}. Цель слоя — {goal}. Два действия, потом шаг стрелкой.`,
+    "nar.questHead": `Квест: {title}. {intro}`,
+    "nar.layerFound": `Ты находишь {goal}. Слой «{name}» пройден.`,
+    "nar.layerEye": `Око смотрит. Ты смотришь в ответ. Мир не стал целым — но его увидели. Этого хватает.`,
+    "nar.layerNext": `Дальше — {goal} ({name}).`,
+    "nar.gateOpen": `Врата Яви открыты. Ты возвращаешься туда, откуда упал.`,
+    "nar.death": `Смерть — дверь вниз, в топку. Навь под топкой принимает без церемоний. {hex} Найди Врата Яви стрелками.`,
+    "nar.searchFight": `Поиск приводит не к кладу — к тому, кто тоже искал в пару.`,
+    "nar.searchFound": `Нашёл: {name}.`,
+    "nar.searchEmpty1": `Ничего. Только пар и ветер.`,
+    "nar.searchEmpty2": `Следы есть, но чьи — уже не сказать. На шпале ржавая шайба.`,
+    "nar.searchEmpty3": `Клетка пуста. Можно идти дальше.`,
+    "nar.digFound": `Клад: {name} и {gold} медяков.`,
+    "nar.digEmpty1": `Камни, земля и ржавая шайба. Клад не здесь.`,
+    "nar.digEmpty2": `Яма по локоть. Пусто.`,
+    "nar.digEmpty3": `Не повезло: 1 из 10 не выпало.`,
+    "nar.rest": `Отдых. Здоровье +{hp}, мана +{mp}. Мана восстанавливается слабо — без отдыха бой съест тебя.`,
+    "nar.ambush": `Сон прерван: кто-то решил, что спящий у топки — лёгкая добыча.`,
+    "nar.flagCrone": `На отмели тебя ждут следы старухи и флакон. Слёзы шлюзника холодные, как обещание.`,
+    "nar.flagWarrior": `Из-за колонны выходит тот раненый — живой, почти. Кланяется и оставляет кольчугу. «Долг тяжелее раны.»`,
+    "nar.flagGod": `Гром без туч бьёт в десяти шагах. Нищий бог напоминает о себе. Здоровье садится.`,
+    "nar.flagChild": `На колодце — лента и хлеб, которого ты не оставлял. Кто-то помнит, что его кормили.`,
+    "nar.flagShadow": `Вторая тень уходит вперёд и возвращается: «Туда пока нельзя.»`,
+    "combat.emerge": `{name} выходит из пара и тумана. {flavor}`,
+    "combat.enemyRoll": `{name} бросает кубик: выпало {raw}. Сила врага +{bonus}. Итог врага: {total}. Твой ход — нажми свой кубик.`,
+    "combat.youRaw": `Кубик: выпало {raw}.`,
+    "combat.youAttack": `Атака ({stat} {statVal} + оружие {weapon}): +{bonus}.`,
+    "combat.youLuck": `Удача: +{n}.`,
+    "combat.youSkill": `Навык: +{n}{notes}`,
+    "combat.youNotes": `{notes}.`,
+    "combat.youTotal": `Итог: {you} против {enemy} (враг: кубик {raw}).`,
+    "combat.roundYou": `Раунд за тобой.`,
+    "combat.roundEnemy": `Раунд за врагом.`,
+    "combat.roundTie": `Ничья.`,
+    "combat.drain": `Тень пьёт дар.`,
+    "combat.reflect": `Отражённый укол: −2.`,
+    "combat.river": `Шлюз возвращает {n} здоровья.`,
+    "combat.pact": `Уговор берёт 4 здоровья.`,
+    "combat.lifesteal": `Венец пьёт жизнь (+2).`,
+    "combat.nextRoundN": `Раунд {n}. Враг бросает кубик…`,
+    "combat.winLoot": `Победа {w}:{l}{ties}. Опыт +{xp}, медяки +{gold}, добыча: {item}. Урон за проигранные раунды: {dmg}.`,
+    "combat.winGold": `Победа {w}:{l}{ties}. Опыт +{xp}, медяки +{gold}. Урон {dmg}.`,
+    "combat.draw": `Ничья {w}:{l}{ties}. Никто не уступил. Опыт +{xp}, медяки +{gold}. Урон {dmg}.`,
+    "combat.lose": `Поражение {w}:{l}{ties}. Урон {dmg}. Враг уходит в пар.`,
+    "combat.tiesNote": ` (ничьих {n})`,
+    "combat.tiesNote2": `, ничьих раундов: {n}`,
+    "game.needActions": `Сначала сделай дела на клетке · осталось {n}`,
+    "game.menuHint": `Пауза, сохранение, выход`,
+    "quest.diff.easy": `лёгкий`,
+    "quest.diff.medium": `средний`,
+    "quest.diff.hard": `тяжёлый`,
+    "quest.diff.very_hard": `очень тяжёлый`,
+    "quest.warning": `Сложность: {rank}. Проверка: {stat}. Неудача бьёт сильнее на тяжёлых делах.`,
+    "item.level": `ур. {n}`,
+    "combat.fleeOkDmg": `Ты ускользнул, но удар настиг: −{dmg}. Опыт {xp}.`,
+    "combat.fleeOkSafe": `Ты ускользнул чистым. Опыт {xp}.`,
+    "auth.mailPassword": `Новый пароль выписан. Сохрани его и войди.`,
+    "auth.sendPassword": `Выслать новый пароль`,
+    "fx.noSpace": `В сумке нет места.`,
+    "quest.wounded.title": `Раненый у межи`,
+    "quest.wounded.intro": `У межи у ржавой трубы лежит клёпальщик. Держит живот — кровь и машинное масло. «Добей. Или вытащи. Только не оставляй так.»`,
+    "quest.wounded.talk.t1": `«Где болит сильнее? Молчи и дыши.»`,
+    "quest.wounded.talk.t2": `«Клинок мне нужнее, чем тебе.»`,
+    "quest.wounded.talk.t3": `«Скажи место клада — и перевяжу.»`,
+    "quest.wounded.out.statOk": `Тащишь к камню и перевязываешь. Шепчет, где «в земле звенит».`,
+    "quest.wounded.out.statFail": `Сил не хватает. Благодарит взглядом и затихает. В сумке его нож.`,
+    "quest.wounded.out.bribe": `Золото на воду и бинты. Доходит до посёлка сам.`,
+    "quest.wounded.out.luckOk": `Рана не так глубока. Встаёт и отдаёт секиру «за жизнь».`,
+    "quest.wounded.out.luckFail": `Кровь не остановить. Устало закрывает глаза.`,
+    "quest.wounded.out.t1": `Перевязка держит. Шепчет про землю, где звенит.`,
+    "quest.wounded.out.t2": `Секира снимается легко. Не проклинает — устал. В поясе тёплое золото.`,
+    "quest.wounded.out.t3": `Смотрит долго, говорит правду. Перевязка держит. Клад — может, ловушка.`,
+    "quest.idol_blood.title": `Идол просит`,
+    "quest.idol_blood.intro": `В роще стоит деревянный бог без имени. В груди — не выемка, а маленькая топка с остывшими углями, и над ней стеклянный глаз давления, ушедший в ноль. Голос без рта, будто из трубы: «Капля. Любая. Котёл хочет помнить, что он живой.» Дашь кровь, подкупишь монетами, как углем, — или откажешь идолу?`,
+    "quest.idol_blood.talk.t1": `«Возьми воду. Сегодня она дороже крови.»`,
+    "quest.idol_blood.talk.t2": `«Держи клетку сам. Я ещё живой.»`,
+    "quest.idol_blood.talk.t3": `«Скажи, кого ты помнишь — и решу.»`,
+    "quest.idol_blood.out.statOk": `Ты терпишь и даёшь кровь. Клетка вокруг становится чётче. Рука ноет.`,
+    "quest.idol_blood.out.statFail": `Голова кружится. Идол молчит. Туман подходит ближе.`,
+    "quest.idol_blood.out.bribe": `Монеты падают в топку, как капли. Идол принимает замену. Туман чуть отступает.`,
+    "quest.idol_blood.out.luckOk": `Из выемки сами сыплются монеты. Идол сыт без тебя.`,
+    "quest.idol_blood.out.luckFail": `Дерево не отвечает. Где-то падает ветка — слишком вовремя.`,
+    "quest.idol_blood.out.t1": `Вода темнеет, притворяясь кровью. Идол принимает. Удача ёжится.`,
+    "quest.idol_blood.out.t2": `Идол молчит так, будто ты подтвердил то, что он думал о людях.`,
+    "quest.idol_blood.out.t3": `Он называет имя, которого ты не знаешь. Клетка на миг становится чётче.`,
+    "quest.well.title": `Голос из колодца`,
+    "quest.well.intro": `Колодец без сруба — только чугунный обод и цепь, уходящая в черноту. Голос снизу — твой, только моложе, и между словами слышен стук капель по металлу: «Вытащи. Я помню лето. Я помню, как труба ещё пела.» Верёвка лежит рядом, сухая. Спустишь верёвку, запечатаешь камнями — или поговоришь, не давая рук?`,
+    "quest.well.talk.t1": `«Какое лето? Назови реку.»`,
+    "quest.well.talk.t2": `«Сиди. Камни честнее верёвки.»`,
+    "quest.well.talk.t3": `«Поговорим. Рук не дам.»`,
+    "quest.well.out.statOk": `Ты понимаешь: это не ты. Говоришь об этом вслух. Голос стихает. В груди теплеет.`,
+    "quest.well.out.statFail": `Верёвка рвётся. Снизу смеются. На краю остаётся мокрый ключ.`,
+    "quest.well.out.bribe": `Монеты падают вниз. Звон долго не кончается. Сверху выкатывается ключ.`,
+    "quest.well.out.luckOk": `Верёвка держит. Снизу — только ведро с чистой водой. Мана возвращается.`,
+    "quest.well.out.luckFail": `Камни срываются сами. Голос становится тише, как разговор за стеной.`,
+    "quest.well.out.t1": `Он путается. Верёвка рвётся на середине. На краю — мокрый ключ.`,
+    "quest.well.out.t2": `Камни падают долго. Сон сегодня будет без колодцев. Это уже плата.`,
+    "quest.well.out.t3": `Говорите о поле, которого не было. К концу неясно, кто кого утешал. Мана капает обратно.`,
+    "quest.two_travelers.title": `Двое у тропы`,
+    "quest.two_travelers.intro": `У парового костра сидят двое. Один в промасленной куртке: «Он тень, не корми. У теней нет заклёпок на вороте.» Другой, без тени на земле, улыбается слишком тепло: «Он лжёт, чтобы съесть твой хлеб первым.» Между ними котелок слишком чёрный для каши. Положишь еду посередине, выберешь одного — или потребуешь показать руки?`,
+    "quest.two_travelers.talk.t1": `«Еда посередине. Ешьте, если можете.»`,
+    "quest.two_travelers.talk.t2": `«Мне всё равно, кто из вас врёт.»`,
+    "quest.two_travelers.talk.t3": `«Покажите руки. У тени их не бывает.»`,
+    "quest.two_travelers.out.statOk": `Ты говоришь так, что оба замолкают. На земле остаётся янтарь — плата за мир.`,
+    "quest.two_travelers.out.statFail": `Слова путаются. Один режет другого. Платит серебром, которое пахнет пеплом.`,
+    "quest.two_travelers.out.bribe": `Хлеб и монеты между ними. Никто не ест. Когда отходишь, костёр вспыхивает сам. В следе — янтарь.`,
+    "quest.two_travelers.out.luckOk": `Оба оказываются живыми. Отдают кольчужное звено «за то, что не выбрал».`,
+    "quest.two_travelers.out.luckFail": `Один исчезает, улыбаясь. Второй плачет. Ты не знаешь, кого спас.`,
+    "quest.two_travelers.out.t1": `Они смотрят на еду, потом друг на друга. Никто не ест. В следе — янтарь.`,
+    "quest.two_travelers.out.t2": `Первый кивает и режет второго без спешки. Платит серебром.`,
+    "quest.two_travelers.out.t3": `Второй показывает ладони. Первый растворяется. Звено тёплое — почти броня.`,
+    "quest.eyed_bird.title": `Птица с человеческим глазом`,
+    "quest.eyed_bird.intro": `Ворон сидит на медной трубе так близко, что видно: правый глаз — серо-зелёный, чей-то, живой, а вокруг него латунное кольцо, как оправа лупы. Он каркает словом «останься», и пар изо рта ложится буквой на воздух. Поклонишься, не спугнув, спросишь, чей глаз, — или дашь хлеб и уйдёшь?`,
+    "quest.eyed_bird.talk.t1": `«Чей глаз, ворон?»`,
+    "quest.eyed_bird.talk.t2": `«Не останусь. Проводи десять шагов — и волен.»`,
+    "quest.eyed_bird.talk.t3": `«Возьми хлеб. Глаз оставь себе.»`,
+    "quest.eyed_bird.out.statOk": `Ты кланяешься ловко, не спугнув. Туман перед тобой редеет на десять шагов.`,
+    "quest.eyed_bird.out.statFail": `Рука дёргается к глазу. Клюв бьёт в кисть. Рука будет ныть в сырую погоду.`,
+    "quest.eyed_bird.out.bribe": `Монеты блесят. Ворон клюёт одну и уносит. С пера падает настой.`,
+    "quest.eyed_bird.out.luckOk": `Перо падает само. В нём — пузырёк настоя.`,
+    "quest.eyed_bird.out.luckFail": `Ворон уносит твою удачу на десять взмахов и возвращает половину.`,
+    "quest.eyed_bird.out.t1": `Клюёт кисть. Глаз остаётся у птицы. Твоя кровь — ему весть.`,
+    "quest.eyed_bird.out.t2": `Клонит голову слишком по-человечески. Туман редеет. Это почти дорога.`,
+    "quest.eyed_bird.out.t3": `Клюёт аккуратно. Улетает. С пера падает настой — будто нёс его для кого-то.`,
+    "quest.pyre.title": `Тлеющий горн`,
+    "quest.pyre.intro": `Посреди клетки дышит погребальный горн: не костёр — маленькая топка в земле, обложенная кирпичом и лентами. В углях кольцо, и из жара голос, сухой, как зола: «Не туши. Или туши. Только не стой между.» Подбросишь хворост, заберёшь кольцо живым — или оставишь гореть?`,
+    "quest.pyre.talk.t1": `«Вам нужен хворост или тишина?»`,
+    "quest.pyre.talk.t2": `«Кольцо — плата живым. Угли — вам.»`,
+    "quest.pyre.talk.t3": `«Горите, пока сами не устанете.»`,
+    "quest.pyre.out.statOk": `Ты понимаешь обряд и подбрасываешь хворост правильно. Дышать легче. Мана приходит.`,
+    "quest.pyre.out.statFail": `Обряд путается. Из мокрых углей выкатывается костяная чаша.`,
+    "quest.pyre.out.bribe": `Монеты в жар. Пламя встаёт столбом без боли. Пепел ложится на плечи как плащ.`,
+    "quest.pyre.out.luckOk": `Кольцо само становится монетами в кулаке. Жар не обижается.`,
+    "quest.pyre.out.luckFail": `Палец обжигает. Монеты есть, но рука помнит цену.`,
+    "quest.pyre.out.t1": `Пламя встаёт. В нём лица кивают. Пепел на плечах. Дышать легче.`,
+    "quest.pyre.out.t2": `Кольцо обжигает и сыплется монетами. Жадный жест — но мир его понимает.`,
+    "quest.pyre.out.t3": `Шипит обиженно, потом отпускает. Из углей — костяная чаша. Холодная. Честная.`,
+    "quest.mirror.title": `Зеркало в тумане`,
+    "quest.mirror.intro": `Рама стоит без стены, вбитая в шпалу. Стекло мутное от конденсата: в нём ты, только старше, в той же куртке, но с трубкой у виска, которой у тебя нет. Отражение поднимает руку не в такт. Заставишь его моргнуть первым, отдашь ленту — или скажешь, что стекло врёт?`,
+    "quest.mirror.talk.t1": `«Моргни первым. Тогда пойду.»`,
+    "quest.mirror.talk.t2": `«Забери ленту. Мне она путает шаг.»`,
+    "quest.mirror.talk.t3": `«Стекло врёт. Я это знаю.»`,
+    "quest.mirror.out.statOk": `Ты смотришь, пока не моргнёт. В голове становится просторно. Мана возвращается.`,
+    "quest.mirror.out.statFail": `Осколки поют. Один врезается в ладонь. В ране — камень памяти.`,
+    "quest.mirror.out.bribe": `Монета к раме. Отражение кланяется. На стекле карта из инея — не успеваешь запомнить.`,
+    "quest.mirror.out.luckOk": `Стекло само даёт осколок — тёплый, без раны.`,
+    "quest.mirror.out.luckFail": `Рама пустая. Туман смеётся без зла.`,
+    "quest.mirror.out.t1": `Моргает вторым. Ты помнишь своё имя громче. Мана приходит, будто из ломбарда.`,
+    "quest.mirror.out.t2": `Отражение кланяется. Туман обходит зеркало. Удача чуть встаёт.`,
+    "quest.mirror.out.t3": `Стекло трескается. Осколок в ладони тёплый. Ты почти жалеешь о раме.`,
+    "quest.beggar_god.title": `Нищий бог`,
+    "quest.beggar_god.intro": `У камня сидит нищий в лохмотьях кочегара. Под заплатами — следы позолоты, а за поясом ключ от топки, который он не прячет. Просит не золота — воспоминание о громе. «Перун теперь спит манометром, — говорит он, — но гром ещё можно одолжить.» Отдашь бурю из детства, сунешь монету вместо грома — или скажешь, что боги сами себя доели?`,
+    "quest.beggar_god.talk.t1": `«Гром был в детстве. Забирай, если слышишь.»`,
+    "quest.beggar_god.talk.t2": `«Возьми монету. Гром мне ещё нужен.»`,
+    "quest.beggar_god.talk.t3": `«Боги сами себя доели. Мне идти.»`,
+    "quest.beggar_god.out.statOk": `Ты рассказываешь о буре. Он распрямляется и кланяется до земли. В руке — жар.`,
+    "quest.beggar_god.out.statFail": `Слова мелкие. Он не обижается. За спиной коротко гремит, без туч.`,
+    "quest.beggar_god.out.bribe": `Ловит монету и смеётся. «Вы всё ещё думаете, что нас покупают.» Выплёвывает корень.`,
+    "quest.beggar_god.out.luckOk": `Гром случается сам — маленький, добрый. Уголь в ладони.`,
+    "quest.beggar_god.out.luckFail": `Тишина. Он кивает: долг записан без процентов.`,
+    "quest.beggar_god.out.t1": `В голове на миг пусто, где была гроза. Он кланяется. В руке тепло, как от угля.`,
+    "quest.beggar_god.out.t2": `Монету глотает. Выплёвывает корень. Обмен странный и сытный.`,
+    "quest.beggar_god.out.t3": `Не обижается. За спиной гремит. Волосы встают. Мир фиксирует долг.`,
+    "quest.shadow_woman.title": `Женщина без тени`,
+    "quest.shadow_woman.intro": `На светлом песке у оборванных рельс стоит женщина. Тени нет — даже когда труба над головой отбрасывает полосу. Просит провести через клетку: «Мне нельзя одной. Шпалы считают шаги, а без тени они считают неправильно.» Проведёшь молча, откажешь — или спросишь имя?`,
+    "quest.shadow_woman.talk.t1": `«Иди следом. Не говори, пока не кончится песок.»`,
+    "quest.shadow_woman.talk.t2": `«Тень нужна, чтобы не потерять себя. Иди одна.»`,
+    "quest.shadow_woman.talk.t3": `«Как тебя звать? Имена здесь держат дорогу.»`,
+    "quest.shadow_woman.out.statOk": `Вы идёте молча. У края она касается запястья — холодно. Шаг становится легче.`,
+    "quest.shadow_woman.out.statFail": `Сбиваешься. Она смотрит с жалостью. Голос садится.`,
+    "quest.shadow_woman.out.bribe": `Монеты на песок. Она берёт их как хлеб и уходит. Песок остаётся пустым и честным.`,
+    "quest.shadow_woman.out.luckOk": `Песок сам складывается в тропу. Она кланяется. У тебя две тени до следующего гекса.`,
+    "quest.shadow_woman.out.luckFail": `Песок кончается сразу. Она исчезает, не обижаясь.`,
+    "quest.shadow_woman.out.t1": `Идёте молча. «Теперь у тебя две тени. Одна врёт.» Шаг легче. Сон — тяжелее.`,
+    "quest.shadow_woman.out.t2": `Кивает. «Мудро и жестоко.» Уходит. На песке остаётся её отсутствие.`,
+    "quest.shadow_woman.out.t3": `Имя обжигает язык и выскальзывает. Харизма — дыра, в которую дует. Мана чуть встаёт.`,
+    "quest.speaking_wolf.title": `Волк человечьим голосом`,
+    "quest.speaking_wolf.intro": `Из ржавой пустоши выходит серый волк. Рёбра как гриф, на шее ободок из шестерёнок, будто ошейник, который он сам себе выковал. Говорит из груди, низко, с присвистом пара: «Дай еды или дай работу. Голодный я кусаю. Сытый — могу идти рядом.» Бросишь хлеб, наймёшь до тумана — или скажешь, что охота тоже работа?`,
+    "quest.speaking_wolf.talk.t1": `«Ешь. Потом решай, пёс ты или волк.»`,
+    "quest.speaking_wolf.talk.t2": `«Иди рядом до края клетки. Плачу.»`,
+    "quest.speaking_wolf.talk.t3": `«Охота — тоже работа. Покажи.»`,
+    "quest.speaking_wolf.out.statOk": `Ты не боишься. Волк это чувствует и оставляет клык — почти клинок.`,
+    "quest.speaking_wolf.out.statFail": `Он не впечатлён. Исчезает в траве. Позже смех повторяется за спиной.`,
+    "quest.speaking_wolf.out.bribe": `Монеты ему не нужны, но он понимает цену. Берёт и уходит. След отпугивает мелочь.`,
+    "quest.speaking_wolf.out.luckOk": `Волк оказывается сыт сам. Оставляет клык «на память о хорошем дне».`,
+    "quest.speaking_wolf.out.luckFail": `Голодный взгляд. Уходит без подарка.`,
+    "quest.speaking_wolf.out.t1": `Ест медленно, стыдясь. Трётся о голень. След отпугивает меньшую нечисть.`,
+    "quest.speaking_wolf.out.t2": `Идёт сбоку, не дыша. У тумана останавливается. Оставляет клык. Клык тёплый.`,
+    "quest.speaking_wolf.out.t3": `Смеётся грудью и исчезает. Позже смех повторяется, когда на тебя смотрит голодное.`,
+    "quest.black_cup.title": `Чаша с чёрной водой`,
+    "quest.black_cup.intro": `На камне стоит костяная чаша. Вода внутри не плещется — стоит столбом, чёрная, с медным запахом колодца. Надпись изнутри: «Пей, если готов отдать лишнее.» Выпьешь, выльешь земле, заберёшь чашу сухой — или отойдёшь?`,
+    "quest.black_cup.talk.t1": `«Лишнее — обида. Забирай её.»`,
+    "quest.black_cup.talk.t2": `«Земле виднее. Выливаю.»`,
+    "quest.black_cup.talk.t3": `«Чашу возьму сухой. Вода подождёт.»`,
+    "quest.black_cup.out.statOk": `Пьёшь. На вкус — колодец и медь. Тело легчает. Рана забывает глубину.`,
+    "quest.black_cup.out.statFail": `Вода злее, чем казалась. Горло дерёт. Чаша остаётся на камне.`,
+    "quest.black_cup.out.bribe": `Монета в чашу. Вода светлеет. Можно выпить без цены — почти.`,
+    "quest.black_cup.out.luckOk": `Вода сама выплёскивается. Из травы — корень толще запястья.`,
+    "quest.black_cup.out.luckFail": `Чаша пустеет без подарка. Камень просто камень.`,
+    "quest.black_cup.out.t1": `На вкус — колодец и медь. Обида уходит. Рана на ребре мелеет.`,
+    "quest.black_cup.out.t2": `Земля принимает чёрное. Из травы вылезает корень. Он стучит по ладони, живой.`,
+    "quest.black_cup.out.t3": `Чаша в сумке звенит без повода. Пока не пьёшь, она считает это обещанием.`,
+    "quest.lullaby.title": `Колыбельная из-под земли`,
+    "quest.lullaby.intro": `Из-под земли, сквозь ржавые трубы, поёт женский голос — колыбельная ребёнку, которого нет. Трава качается в такт, и вместе с ней качается стрелка брошенного манометра. Подпоёшь куплет, оставишь монеты няньке, дослушаешь как в чужом доме — или уйдёшь?`,
+    "quest.lullaby.talk.t1": `«Я знаю куплет. Давай вместе.»`,
+    "quest.lullaby.talk.t2": `«Спите. Мне рано.»`,
+    "quest.lullaby.talk.t3": `«Дослушаю. Потом уйду, как из чужого дома.»`,
+    "quest.lullaby.out.statOk": `Голос крепнет, радуясь компании. К концу — слёзы без причины и полная мана.`,
+    "quest.lullaby.out.statFail": `Песня обрывается. Из земли — серебро, чтобы ты ушёл и не портил лад.`,
+    "quest.lullaby.out.bribe": `Монеты в траву, как плата няньке. Голос становится добрее. Здоровье собирается.`,
+    "quest.lullaby.out.luckOk": `Песня сама кончается на доброй ноте. Сон будет глубоким. Здоровье встаёт.`,
+    "quest.lullaby.out.luckFail": `Куплет сбивается. Горло дерёт. Лучше идти дальше.`,
+    "quest.lullaby.out.t1": `Рот знает куплет, хотя ты не помнишь. Слёзы без причины. Мана как после сна.`,
+    "quest.lullaby.out.t2": `Песня обижается. Из земли — серебро. Карман тяжелеет. Горло — тоже.`,
+    "quest.lullaby.out.t3": `Конца нет. Уходишь сам. Сон будет глубоким. Здоровье собирается в кучу.`,
+    "quest.black_apple.title": `Ребёнок с яблоком`,
+    "quest.black_apple.intro": `На обочине туманной шпалы мальчик в слишком большой куртке держит чёрное яблоко — кожура как накипь котла, из черенка свистит пар. «Возьми, а то оно само берёт.» Зрачки как риски на циферблате.`,
+    "quest.black_apple.talk.t1": `«Чьё оно было до тебя?»`,
+    "quest.black_apple.talk.t2": `«Давай лучше хлеб. Яблоки подождут.»`,
+    "quest.black_apple.talk.t3": `«Держи сам. Мне хватает своей ноши.»`,
+    "quest.black_apple.out.statOk": `Яблоко катится в траву и гаснет. Мальчик смеётся по-человечески и отдаёт ленту.`,
+    "quest.black_apple.out.statFail": `Ты берёшь не то. Яблоко тёплое. Мальчик исчезает, оставив запах гари.`,
+    "quest.black_apple.out.bribe": `Монеты ему важнее яблока. Он прячет их и оставляет ленту.`,
+    "quest.black_apple.out.luckOk": `Яблоко трескается — внутри серебро и крошка шестерни.`,
+    "quest.black_apple.out.luckFail": `За спиной хрустит яблоко — кто-то всё же его взял. Не ты.`,
+    "quest.black_apple.out.t1": `Он не отвечает. Яблоко остаётся у тебя. Тяжёлое, не гниёт.`,
+    "quest.black_apple.out.t2": `Ест жадно и плачет обыкновенными слезами. Оставляет ленту.`,
+    "quest.black_apple.out.t3": `Кивает. За спиной всё равно кто-то берёт яблоко. Удача чуть садится.`,
+    "brand.tagline": `После Конца Времён`,
+    "menu.tagline": `Туман — это пар спящих богов. Иди, пока клетка ещё земля.`,
+    "menu.newGame": `Новая игра`,
+    "menu.continue": `Продолжить`,
+    "menu.about": `О мире`,
+    "menu.settings": `Настройки`,
+    "menu.back": `Назад`,
+    "settings.title": `Настройки`,
+    "settings.language": `Смена языка`,
+    "settings.volume": `Громкость`,
+    "settings.music": `Музыка`,
+    "settings.sfx": `Звуковые эффекты`,
+    "settings.back": `Назад`,
+    "settings.languageHint": `Нажми язык — вся игра переключится сразу.`,
+    "settings.volumeHint": `Два ползунка: музыка и эффекты. Тяни, чтобы сделать тише или громче.`,
+    close: m,
+    "auth.loginLead": `Войди, чтобы сохранение жило на любом устройстве.`,
+    "auth.registerLead": `Новый путник. Логин, пароль и почта — почта нужна, если забудешь пароль.`,
+    "auth.recoverLead": `Логин или почта — выпишем новый пароль.`,
+    "auth.resetLead": `Введи код из письма и новый пароль.`,
+    "auth.loginOrEmail": `Логин или почта`,
+    "auth.login": `Логин`,
+    "auth.email": `Почта`,
+    "auth.code": `Код из письма`,
+    "auth.password": `Пароль`,
+    "auth.newPassword": `Новый пароль`,
+    "auth.wait": `Минуту…`,
+    "auth.enter": `Войти`,
+    "auth.create": `Создать аккаунт`,
+    "auth.sendCode": `Выслать код`,
+    "auth.changePassword": `Сменить пароль`,
+    "auth.hasAccount": `Уже есть аккаунт — войти`,
+    "auth.noAccount": `Нет аккаунта — регистрация`,
+    "auth.forgot": `Забыл пароль`,
+    "auth.orVia": `Или через`,
+    "auth.enterVia": `Войти через {name}`,
+    "auth.mailSent": `Письмо ушло на почту. Код на заставе: {code}`,
+    "auth.err.needLogin": `Нужно войти ещё раз`,
+    "auth.err.badLogin": `Неверный логин или пароль`,
+    "auth.err.loginLen": `Логин: 3–20 символов`,
+    "auth.err.loginChars": `Логин: буквы, цифры, подчёркивание`,
+    "auth.err.needEmail": `Укажи настоящую почту`,
+    "auth.err.emailOnly": `Укажи почту`,
+    "auth.err.passLen": `Пароль от 8 символов`,
+    "auth.err.loginTaken": `Этот логин уже занят`,
+    "auth.err.signUp": `Не удалось создать аккаунт`,
+    "auth.err.sendCode": `Не удалось выслать код`,
+    "auth.err.badCode": `Код не подошёл`,
+    "auth.err.oauth": `Не удалось войти`,
+    "create.step": `Создание · шаг {n} из 4`,
+    "create.race": `Раса`,
+    "create.class": `Класс`,
+    "create.kit": `Снаряжение`,
+    "create.name": `Имя`,
+    "create.raceHint": `Кем ты будешь на осколках паровой Яви.`,
+    "create.classHint": `Как дерёшься и держишь давление.`,
+    "create.kitHint": `Стартовый набор. Потом найдёшь лучше в тумане.`,
+    "create.nameHint": `Имя нужно помнить. Пока помнишь — существуешь.`,
+    "create.next": `Далее`,
+    "create.go": `В путь`,
+    "create.howName": `Как тебя зовут`,
+    "create.unnamed": `Безымянный`,
+    "create.itemsN": `· {n} вещей`,
+    "game.actionsLeft": `Действия · осталось {n}`,
+    "game.search": `Поискать приключения`,
+    "game.searchHint": `Тварь, находка или тишина.`,
+    "game.dig": `Выкопать клад`,
+    "game.digHint": `Копай - пока лопата не сточилась!`,
+    "game.rest": `Сделать привал`,
+    "game.restHint": `Погрейся у костра, но будь на чеку...`,
+    "game.quest": `Выполнить квест`,
+    "game.noQuest": `Нет активного квеста`,
+    "game.usedThisTurn": `Уже сделано в этот ход`,
+    "game.visitShop": `Посетить торговца`,
+    "game.layerGoal": `Цель слоя: {goal}. Клеток пройдено: {n}. После двух дел выбери стрелку и иди.`,
+    "game.deeds": `Действия`,
+    "game.inventoryAria": `Инвентарь`,
+    "game.menu": `Меню`,
+    "left.levelShort": `ур. {n}`,
+    "left.hp": `Здоровье {cur}/{max}`,
+    "left.mp": `Дар {cur}/{max}`,
+    "left.xp": `Опыт {cur}/{need} · ур. {n}`,
+    "left.inventory": `Инвентарь`,
+    "left.equipment": `Экипировка`,
+    "left.empty": `пусто`,
+    "left.emptyCell": `Пустая ячейка`,
+    "left.skill": `Навык: {name}`,
+    "left.use": `Использовать`,
+    "left.stats": `Характеристики`,
+    "left.skills": `Навыки`,
+    "left.pause": `Пауза`,
+    "stats.title": `Характеристики`,
+    "stats.line": `{cls} · уровень {n} · до следующего {xp} опыта`,
+    "stats.equipNote": `Экипировка уже учтена в зелёных числах. Броня и атака с вещей входят в бой.`,
+    "stats.unspent": `Нераспределено: {n}`,
+    "stats.armorAttack": `Броня {armor} · Атака {attack}`,
+    "stats.wearGear": ` — надень оружие и доспех`,
+    "stats.fromGear": ` с экипировки`,
+    "skills.title": `Навыки`,
+    "skills.points": `Очков: {n}`,
+    "skills.itemOnly": `предмет`,
+    "levelup.title": `Память крепнет`,
+    "levelup.body": `Уровень {n}. Очки ждут в «Характеристиках» и «Навыках», когда захочешь.`,
+    ok: h,
+    "shop.buy": `Купить`,
+    "shop.sellBag": `Продать из сумки`,
+    "pause.title": `Пауза`,
+    "pause.resume": `Продолжить`,
+    "pause.save": `Сохранить`,
+    "pause.how": `Как играть`,
+    "pause.toMenu": `В меню`,
+    "pause.signOut": `Выйти из аккаунта`,
+    "ending.kicker": `Конец слоя`,
+    "ending.stay": `Остаться на заставе`,
+    "combat.header": `Бой · раунд {n} из 3 · {w}:{l}`,
+    "combat.ties": ` · ничьих {n}`,
+    "combat.rawToTotal": `кубик {raw} → итог `,
+    "combat.enemyLevel": `Уровень {n}`,
+    "combat.enemyRolling": `Враг бросает кубик…`,
+    "combat.pressDie": `Нажми свой кубик слева. Навык — одно нажатие на бой, затем бросок.`,
+    "combat.mpCost": `{name} · {n} дара`,
+    "combat.chosen": ` · выбран`,
+    "combat.used": ` · использован`,
+    "combat.lowMp": ` · мало дара`,
+    "combat.nextRound": `Следующий раунд`,
+    "combat.result": `Итог боя`,
+    "dice.yours": `Твой кубик`,
+    "dice.enemy": `Кубик врага`,
+    "dice.luck": `Удача {luck}. Нужно {dc}: кубик + удача`,
+    "tut.kicker": `Обучение · {n} из {total}`,
+    "tut.skip": `Пропустить`,
+    "tut.next": `Дальше`,
+    "tut.last": `Понятно, в путь`,
+    "splash.opening": `Открываем ворота…`,
+    "load.kicker": `Застава`,
+    "load.title": `Подождите, идёт загрузка...`,
+    "load.body": `Поднимаем облачное сохранение.`,
+    "crash.title": `Сбой на заставе`,
+    "crash.body": `Сохранение на месте. Можно продолжить без перезагрузки.`,
+    "quest.talk": `Разговор`,
+    "quest.label": `Квест`,
+    "quest.how": `Как поступишь?`,
+    "quest.whatSay": `Что скажешь?`,
+    "quest.methodStat": `Проверить {stat}: нужно {dc}+ (у тебя {val})`,
+    "quest.methodBribe": `Подкупить — {n} медяков`,
+    "quest.methodLuck": `Бросить кубик на удачу: кубик + удача ≥ {dc} (удача {luck})`,
+    "quest.methodTalk": `Поговорить`,
+    "layer.nav": `Навь под топкой`,
+    "layer.endless": `Бескрайнее`,
+    "rarity.common": `Обычный`,
+    "rarity.uncommon": `Необычный`,
+    "rarity.rare": `Редкий`,
+    "rarity.legendary": `Легендарный`,
+    "rarity.epic": `Эпический`,
+    "stat.str": `Сила`,
+    "stat.dex": `Ловкость`,
+    "stat.int": `Интеллект`,
+    "stat.end": `Выносливость`,
+    "stat.luck": `Удача`,
+    "stat.cha": `Харизма`,
+    "stat.gen.str": `силы`,
+    "stat.gen.dex": `ловкости`,
+    "stat.gen.int": `интеллекта`,
+    "stat.gen.end": `выносливости`,
+    "stat.gen.luck": `удачи`,
+    "stat.gen.cha": `харизмы`,
+    "stat.gen.armor": `брони`,
+    "stat.gen.attack": `атаки`,
+    "slot.head": `Голова`,
+    "slot.body": `Туловище`,
+    "slot.hands": `Руки`,
+    "slot.legs": `Ноги`,
+    "slot.rightHand": `Правая рука`,
+    "slot.leftHand": `Левая рука`,
+    "dir.nw": `Вперёд-влево`,
+    "dir.ne": `Вперёд-вправо`,
+    "dir.e": `Вправо`,
+    "dir.se": `Назад-вправо`,
+    "dir.sw": `Назад-влево`,
+    "dir.w": `Влево`,
+    "bonus.hp": `+{n} здоровья`,
+    "bonus.mp": `+{n} дара`,
+    thing: g,
+    "special.ignoreEven": `Чётные удары проходят сквозь`,
+    "special.reflect1": `Отражает 1 урон`,
+    "special.fogArmor": `Туманный доспех (+2 к броску врага)`,
+    "special.drain": `Пьёт дар, если ты проиграл раунд`,
+    "special.poison": `Яд: проигранный раунд бьёт сильнее`,
+    "special.fear": `Страх (−2 к броску)`,
+    "passive.lifesteal": `Кража жизни: за выигранный раунд +2 здоровья`,
+    "passive.first_strike": `Первый удар: в первом раунде +3 к итогу`,
+    "fx.goldPlus": `Медяки +{n}`,
+    "fx.goldMinus": `Медяки {n}`,
+    "fx.hpPlus": `Здоровье +{n}`,
+    "fx.hpMinus": `Здоровье {n}`,
+    "fx.itemGot": `Получено: {name}`,
+    "fx.xpPlus": `Опыт +{n}`,
+    "fx.level": `Уровень {n}`,
+    "fx.bought": `Куплено: {name}`,
+    "fx.soldFor": `Продано за {n}`,
+    "fx.win": `Победа`,
+    "fx.lose": `Поражение`,
+    "fx.draw": `Ничья`,
+    "fx.ok": `Успех`,
+    "fx.fail": `Провал`,
+    "fx.unlucky": `Неудача`,
+    "fx.noGold": `Не хватает медяков`,
+    "fx.luckClick": `Нажми на кубик`,
+    "fx.luckOk": `Успех: кубик {raw} + удача {luck} = {total}`,
+    "fx.luckFail": `Провал: кубик {raw} + удача {luck} = {total}`,
+    "fx.roundYou": `Раунд за тобой`,
+    "fx.roundEnemy": `Раунд за врагом`,
+    "fx.roundTie": `Ничья`,
+    "fx.navFall": `Падение в Навь`,
+    "fx.navReturn": `Возвращение из Нави`,
+    "fx.layerDone": `Слой пройден`,
+    "fx.goal": `Цель: {name}`,
+    "fx.godWrath": `Гнев бога: −6 здоровья`,
+    "note.fear": `страх −2`,
+    "note.even": `чётный удар рассеялся (итог ÷2)`,
+    "note.firstStrike": `первый удар`,
+    "consume.msg": `{name}: {bits}.`,
+    "log.pathBegun": `Путь начат.`,
+    "log.navReturn": `Возвращение из Нави.`,
+    "log.navFall": `Падение в Навь.`,
+    "shop.title": `Барахолка шестерён`,
+    "game.offer": `Подношение`,
+    "game.offerHint": `Один медяк — боги вернут дар.`,
+    "game.talk": `Поговорить с местными`,
+    "game.talkHint": `Живое общение всегда приятнее`,
+    "game.steal": `Кража`,
+    "game.stealHint": `Если вы любитель темных дел...`,
+    "game.hunt": `Поохотиться`,
+    "game.huntHint": `Дичь на продажу. Честный промысел.`,
+    "game.fish": `Порыбачить`,
+    "game.fishHint": `Шлюз любит терпеливых.`,
+    "left.read": `Прочесть`,
+    "fx.mpPlus": `Дар +{n}`,
+    "fx.xpMinus": `Опыт −1`,
+    "nar.restHp": `Костёр держит. Здоровье +{hp}. Дар спит.`,
+    "nar.offer": `Медяк падает в топку. Дар +{n}.`,
+    "nar.digSkull": `Под гексом — череп. Страх бьёт на {dmg} и крадёт опыт.`,
+    "nar.hunt": `Тропа отдала дичь: {name}.`,
+    "nar.fish": `Поплавок нырнул. В руках {name}.`,
+    "nar.stealOk": `Карман оказался щедрым. Стража спала.`,
+    "nar.stealSpot": `Вас заметили...`,
+    "nar.stealGuard": `Стражник уже здесь. Закон посада не торгуется.`,
+    "item.tradeMark": `Предмет для торговли`,
+    "item.noteMark": `Записка. Прочесть — и она исчезнет.`,
+    "slot.artifact": `Артефакт`,
+    "slot.weapon": `Оружие`,
+    "slot.jewelry": `Украшение`,
+    "weapon.axe": `Топор`,
+    "weapon.sword": `Меч`,
+    "weapon.staff": `Посох`,
+    "weapon.bow": `Лук`,
+    "weapon.crossbow": `Арбалет`,
+    "weapon.dagger": `Кинжал`,
+    "menu.bestiary": `Бестиарий`,
+    "bestiary.title": `Бестиарий`,
+    "bestiary.enemies": `Враги`,
+    "bestiary.notes": `Записки`,
+    "bestiary.hexes": `Локации`,
+    "bestiary.rules": `Правила`,
+    "bestiary.unknown": `???`,
+    "bestiary.lockedHint": `Откроется, когда встретишь это в пути.`,
+    "note.title": `Записка`,
+    "note.done": `Сжечь`,
+    "dig.title": `Выкопать клад`,
+    "dig.hint": `Три удара лопатой. Осталось: {n}.`,
+    "talk.title": `Местные`,
+    "steal.title": `Кража`,
+    "steal.pick": `Кого обокрасть? Шансы скрыты.`,
+    "steal.spin": `Колесо крутится...`,
+    "steal.stop": `Стрелка встала.`,
+    "hunt.title": `Охота`,
+    "hunt.hint": `Следы ещё {n}.`,
+    "hunt.mark": `След`,
+    "fish.title": `Рыбалка`,
+    "fish.hint": `Поклёвок нужно: {n}.`,
+    "search.title": `По следам`,
+    "search.hint": `Следы ведут в пар. Три удара сердца.`,
+    "npc.chatDone": `Разговор кончился, как пар.`,
+    "npc.event.bread": `Делится хлебом с золой. Тепло садится в грудь.`,
+    "npc.event.debt": `Вспоминает долг и суёт медяки в ладонь.`,
+    "npc.event.curse": `Сплетня оказывается проклятием. Рука ноет.`,
+    "npc.event.wort": `Суёт настой «на дорогу, пока пар добрый».`,
+    "npc.event.theft": `Пока говоришь, пальцы гостя легче твоих. Медяки звякнули не туда.`,
+    "npc.event.bless": `Крестит на котёл. Дар чуть встаёт.`,
+    "npc.event.rumor": `Шепчет про клад у межи. Может, врёт. Удача зудит.`,
+    "rules.combat.title": `Бой`,
+    "rules.combat.body": `Три раунда. Кубик на 30 граней без подписи. Победа — два раунда. Ничья, если счёт равный. Побег виден, только пока враг ещё может выиграть. Один приём за бой. Стражник на краже не убивает — оставляет 1 здоровья.`,
+    "rules.explore.title": `Исследование`,
+    "rules.explore.body": `На гексе два действия, потом стрелка хода. Поиск — следы на три секунды, затем тварь, находка или тишина. Клад — поле из 19 малых гексов и три лопаты: клад 1 из 10, череп 1 из 20. Привал зажигает костёр на три секунды и лечит тело, не дар.`,
+    "rules.settle.title": `Поселения`,
+    "rules.settle.body": `Деревни, города, сёла, замки, аванпосты и бродячие избы — мирные. Квестов там нет. Можно говорить с пятью жителями или красть: скрытые шансы 10, 25, 45, 65 и 90. Неудача зовёт стражника.`,
+    "rules.camp.title": `Привал и подношение`,
+    "rules.camp.body": `Привал лечит здоровье. Дар сам не встаёт — за него платят медяк богам кнопкой «Подношение». Охота в лесу и рыбалка у воды всегда удаются и дают товар на продажу.`,
+    "rules.gear.title": `Снаряжение`,
+    "rules.gear.body": `Голова, туловище, ноги слева; артефакт, оружие, украшение справа. Вещи двигаются только перетаскиванием. Воин — топор и меч; волхв — посох и кинжал; лучник — лук, арбалет, кинжал; следопыт — меч, кинжал, лук. Без бонусов — товар на продажу. Записки читаются один раз и уходят в бестиарий.`,
+    "rules.coin.title": `Медяки`,
+    "rules.coin.body": `Валюта мира — медяк: потёртый медный кружок со сколом. Им платят торговцам, взятки и подношение богам.`,
+    "hex.hamlet.name": `Село у вентиля`,
+    "hex.hamlet.t0": `Избы вокруг общей трубы. Петухи молчат, зато дети ещё кричат.`,
+    "hex.hamlet.t1": `На плетне сушится лён и медная шайба. Здесь не бьются — здесь живут.`,
+    "hex.hamlet.t2": `Колодец общий, хлеб общий. Чужого путника сначала напоят, потом спросят.`,
+    "hex.castle.name": `Замок под паром`,
+    "hex.castle.t0": `Купола целы. Мост поднят наполовину — достаточно, чтобы пройти пешком.`,
+    "hex.castle.t1": `Во дворе стоит холодный котёл. Стража пьёт чай из медных кружек.`,
+    "hex.castle.t2": `Герб стёрт, но ворота ещё знают, кого впускать.`,
+    "hex.outpost.name": `Аванпост на рельсах`,
+    "hex.outpost.t0": `Вышка с латунной трубой. Кто-то дежурит и не прячется.`,
+    "hex.outpost.t1": `На столе карта слоя и остывший чай. Путевые кивают своим.`,
+    "hex.outpost.t2": `Рельсы уходят в туман. Здесь ещё держат смену.`,
+    "hex.hut.name": `Бродячая изба`,
+    "hex.hut.t0": `Изба на железных ногах остановилась передохнуть. Дверь открыта.`,
+    "hex.hut.t1": `Внутри пахнет пирогом и машинным маслом. Хозяйка уже ждала.`,
+    "hex.hut.t2": `Ноги избы переступают, как курица. Не пугайся — она ручная.`,
+    "enemy.pipe_wraith.name": `Труба-призрак`,
+    "enemy.pipe_wraith.desc": `Пар принял человечий рост. Глаза — дверцы топки.`,
+    "enemy.rust_widow.name": `Ржавая вдова`,
+    "enemy.rust_widow.desc": `Прядёт нить из ржавчины. Ноги — как циркуль клепальщика.`,
+    "enemy.steam_golem.name": `Паровой истукан`,
+    "enemy.steam_golem.desc": `Котёл научился ходить. Удары тяжёлые, как заклёпка.`,
+    "enemy.ash_crow.name": `Пепельный ворон`,
+    "enemy.ash_crow.desc": `Клюв из меди. Каркает словом, которое ты уже забыл.`,
+    "enemy.bog_drowned.name": `Болотный утоп`,
+    "enemy.bog_drowned.desc": `Клапаны на шее. Вода в лёгких давно стала маслом.`,
+    "enemy.guard.name": `Стражник`,
+    "enemy.guard.desc": `Латунный шлем и закон посада. Только если тебя заметили на краже.`,
+    "item.steam_crossbow.name": `Паровой арбалет`,
+    "item.steam_crossbow.desc": `Тяжёлая плеть с манометром. Для лучника.`,
+    "item.gear_amulet.name": `Амулет-шестерня`,
+    "item.gear_amulet.desc": `Латунный зуб на ленте. Украшение путевых.`,
+    "item.game_meat.name": `Дичь с тропы`,
+    "item.game_meat.desc": `Честная добыча. Торговцы берут недорого.`,
+    "item.river_fish.name": `Рыба шлюза`,
+    "item.river_fish.desc": `Серебро чешуи, запах реки.`,
+    "item.note_letter.name": `Записка кочегара`,
+    "item.note_letter.desc": `Бумага в саже. Прочесть можно один раз.`,
+    "item.note_scroll.name": `Свиток парослова`,
+    "item.note_scroll.desc": `Свёрток с медной бусиной. Один раз — и бумага гаснет.`,
+    "item.note_diary.name": `Дневник путевого`,
+    "item.note_diary.desc": `Медные уголки. Страницы помнят чужой слой.`,
+    "item.note_book.name": `Книга заклёпок`,
+    "item.note_book.desc": `Толстый том без имени автора. Читается один раз.`,
+    "lore.letter": `Кочегар писал сажей по обороту накладной: «Котлы помнят имена. Если пар зовёт тебя по имени — не оборачивайся. Это не ты в топке. Это привычка топки быть тобой. Медяки клади в сапог. Туман любит звон.»`,
+    "lore.scroll": `Парослово держит клетку: не стена, а давление. Слои — шайбы на одном болте. Явь, сон машинных богов, око. Дальше молчат, кто видел. Дар — не вода в жилах, а то давление, что ещё помнит твоё имя.`,
+    "lore.diary": `Путевой писал вечерами: «Шпала считает шаги. Без тени счёт сбивается — потому бродячие избы ходят по рельсам, кормят, если не врать с порога. Стражника без тени не бывает: это не стражник. Медяки прячь. Туман любит звон.»`,
+    "lore.book": `Книга без имени, заклёпки вместо букв. На сотой странице: «Боги спят в котлах. Не стучи по стенке — им снится давление. Перун теперь манометр. Мокошь прядёт ржавую нить. Навь — не смерть, а топка, где тебя уже нет. Вернёшься, если клепка держит.»`,
+    "tut.5.body": `Квест можно закрыть четырьмя способами: характеристикой, золотом, удачей или разговором. Удача — отдельный бросок.`,
+    "combat.mp": `Дар`,
+    "hex.forest.t0": `Стволы окованы медью. Между ними тропа, и непонятно, кто её протоптал — зверь или шпала.`,
+    "hex.forest.t1": `Пахнет хвоей и горячим маслом. Где-то щёлкнула ветка — или клапан.`,
+    "hex.forest.t2": `Поляна круглая, как люк котла. Хорошее место перевести дух, пока пар не сгустел.`,
+    "hex.swamp.t0": `Вода чёрная, камыш выше головы. Из жижи торчат ржавые трубы, как корни.`,
+    "hex.swamp.t1": `Пузыри поднимаются редко и пахнут варёным железом. Ступай по кочкам — и пройдёшь.`,
+    "hex.swamp.t2": `На кочке висит старая лента и латунный вентиль. Трясина сегодня спокойная.`,
+    "hex.ruins.t0": `Каменные стены без крыши. Между плит — порванные ремни и трава.`,
+    "hex.ruins.t1": `Колонны лежат на боку, как остывшие поршни. В нише — черепок чаши и шестерня.`,
+    "hex.ruins.t2": `Эхо шагов чуть запаздывает. Камень ещё помнит, что здесь жили и клепали.`,
+    "hex.village.t0": `Избы стоят вдоль огромной трубы. Колодец открыт, верёвка сухая, вентиль тёплый.`,
+    "hex.village.t1": `На пороге — миска с кашей. Кто-то ушёл, не доев, и не закрыл заслонку.`,
+    "hex.village.t2": `Крыши целые. Петух молчит, но дома ещё держат давление.`,
+    "hex.field.t0": `Серое поле до тумана. Мельница вдалеке без крыльев, зато с оборванным приводом.`,
+    "hex.field.t1": `Вороны сидят ровно на проводах, которых уже нет. Пашня вскрыта — сеять некому.`,
+    "hex.field.t2": `На меже крест без имени и ржавый манометр. Земля вокруг мягкая.`,
+    "hex.mound.t0": `Холм с лентами на жердях. Вместо идола — циферблат, ушедший за красное.`,
+    "hex.mound.t1": `Под дёрном гул, как от далёкой песни и далёкого котла.`,
+    "hex.mound.t2": `На вершине чаша с дождевой водой. Стрелка не дёргается. Тихо и ясно.`,
+    "hex.river.t0": `Река идёт медленно между створками шлюза. Лодка на боку, вёсла сложены аккуратно.`,
+    "hex.river.t1": `Ивы пьют тёмную воду. На том берегу — стена тумана и ряд заклёпок в небе.`,
+    "hex.river.t2": `На отмели блестит галька и медная шайба. Река сегодня не злится.`,
+    "hex.tavern.t0": `Окна горят. Внутри пахнет квасом, дымом и машинным маслом. Хозяин кивает, как старому гостю.`,
+    "hex.tavern.t1": `За стойкой двое молчат. Огонь в очаге ровный, манометр над барной доской в зелёном.`,
+    "hex.tavern.t2": `Над дверью вывеска почти стёрлась. Внутри тепло — редкая удача на заставе.`,
+    "hex.market.t0": `Повозка, сукно, лоток с кореньями и винтами. Торговец улыбается: «Спрашивай цену, не происхождение.»`,
+    "hex.market.t1": `На лотке — лента, звено кольчуги, настой. Цены углем, но торговаться можно.`,
+    "hex.market.t2": `Фонарь качается на медной дуге. Вещи в его свете выглядят дороже. Или лучше.`,
+    "hex.kapishche.t0": `Идолы стоят в роще, а в груди у них топки. Воздух густой, как перед грозой.`,
+    "hex.kapishche.t1": `У подножия зола, горсть зерна и остывшая заклёпка. Кто-то кормил богов недавно.`,
+    "hex.kapishche.t2": `Здесь слой мира тоньше. Если остаться, можно услышать, как спят машинные имена.`,
+    "hex.city.t0": `Улицы обрываются туманом. Купола целы, рынок пуст — но город ещё держит пар.`,
+    "hex.city.t1": `В переулке часы без стрелок. Мостовая хранит тепло чужих шагов и чужих труб.`,
+    "hex.city.t2": `Над воротами герб стёрт. Стражи нет. Войти можно свободно, если не боишься эха.`,
+    "hex.fog.t0": `Земли почти нет — только привычка земли быть. Туман здесь выдыхает бог.`,
+    "hex.fog.t1": `Шёпот: «Останься, так легче.» Вежливый. Пахнет выхлопом. Не слушай.`,
+    "hex.fog.t2": `Под ногами угадывается шестигранник. Осколок ещё держится заклёпками.`,
+    "hex.nav.t0": `Небо — потолок из пепла. Деревья без листьев, трубы без пара. Здесь ты слабее, это честно.`,
+    "hex.nav.t1": `Тени ходят медленно, как кочегары без смены. Выход ищут ногами, не молитвой.`,
+    "hex.nav.t2": `Холодно, но терпимо. Врата Яви где-то рядом — ищи стрелками по рельсам.`,
+    "hex.nav_gate.t0": `Каменная щель с латунным ободом. За ней — право быть живым. Холод отступает на шаг.`,
+    "hex.nav_gate.t1": `На косяке зарубки и риски давления. Кто-то уже возвращался. Можно и тебе.`,
+    "hex.bonefield.t0": `Земля усеяна белым. Ветер перебирает рёбра, как струны, и шестерни, как чётки.`,
+    "hex.bonefield.t1": `Череп у ноги без челюсти. Он всё равно как будто улыбается ключом в глазнице.`,
+    "hex.eye.t0": `Центр осколка. Туман смотрит в ответ сквозь стекло манометра. Мир держится на том, что ты ещё здесь.`,
+    "hex.eye.t1": `Нет алтаря и нет врага. Есть только выбор остаться свидетелем и не сбросить давление в ноль.`,
+    "tut.0.title": `Одна клетка`,
+    "tut.0.body": `Туман ест края. Ты видишь одну клетку — шестигранник земли под паром. Смотри, где стоишь, пока пар не закрыл тропу.`,
+    "tut.1.title": `Шесть дорог`,
+    "tut.1.body": `Шесть стрелок — шесть дорог. Шаг стоит ход. Клетка меняется, старая уходит в пар.`,
+    "tut.2.title": `Два дела`,
+    "tut.2.body": `На клетке два дела: поиск, копать, привал или квест. Потом — шаг стрелкой. Не жалей хода впустую.`,
+    "tut.3.title": `Сумка и тело`,
+    "tut.3.body": `Слева — сумка. Надень, съешь, продай. Описание открывается сразу под сеткой, не под поясом.`,
+    "tut.4.title": `Три раунда`,
+    "tut.4.body": `Бой — три раунда. Кубик жми сам. Один навык за бой. Кубик показывает сырой бросок, не итог.`,
+    "tut.5.title": `Четыре пути`,
+    "tut.6.title": `Цель слоя`,
+    "tut.6.body": `Цель слоя далеко. Минимум пятьдесят клеток, потом она может встретиться. Иди, пока клетка ещё земля.`,
+    "menu.lore1": `После Конца Времён боги легли спать в котлах. Их выдох стал туманом, их кровь — медью в трубах. Явь держится на заклёпках и привычке земли быть.`,
+    "menu.lore2": `Ты — путник на заставе, где пар ещё тёплый. Одна клетка впереди, шесть стрелок по сторонам. Боги спят. Иди, пока клетка ещё земля.`,
+    "menu.lore3": `Навь ждёт под топкой тех, кто упал. Явь — тех, кто ещё клепает. Между ними — сопло тумана и привычка не сдавать давление.`,
+    "ending.title": `Око смотрит`,
+    "ending.body1": `Мир не стал целым. Его увидели. Заклёпки держат. Пар ещё тёплый. Этого хватает.`,
+    "ending.body2": `Можно остаться свидетелем. Можно идти дальше, пока клетка ещё земля. Застава не закрыта.`,
+    "quest.old_woman.title": `Старуха у шлюза`,
+    "quest.old_woman.intro": `В густом пару у шлюзовой реки сидит старуха на ржавой заклёпке размером с колесо. Манит пальцем — рука лёгкая, на запястье медный браслет-манометр. Просит проводить к створке, где «ещё можно напиться без цены».`,
+    "quest.old_woman.talk.t1": `«Я сам едва помню берег. Пойдём вместе.»`,
+    "quest.old_woman.talk.t2": `«Вода здесь чужая. Лучше не пить.»`,
+    "quest.old_woman.talk.t3": `«Скажи имя — тогда решу.»`,
+    "quest.old_woman.out.statOk": `Ты говоришь спокойно. Старуха кивает и доходит сама. На ладони остаётся корень.`,
+    "quest.old_woman.out.statFail": `Слова выходят грубо. Она уходит в камыш. На месте — мокрый след и остывший вентиль.`,
+    "quest.old_woman.out.bribe": `Монеты звякают. Старуха прячет их в холст и оставляет корень «за дорогу».`,
+    "quest.old_woman.out.luckOk": `Кубик лягает удачно. На тропе к шлюзу уже лежит флакон — как будто ждал.`,
+    "quest.old_woman.out.luckFail": `Не вышло. Старуха качает головой и растворяется в камыше, оставив шипение клапана.`,
+    "quest.old_woman.out.t1": `Вы доходите до лужи у створки. Она пьёт и благодарит. В руке — корень живучки.`,
+    "quest.old_woman.out.t2": `Она кивает без обиды. «Правильно.» Уходит. На месте остаётся удача — странный подарок.`,
+    "quest.old_woman.out.t3": `Имя сразу выпадает из головы. За звон она отдаёт серебро. Голова гудит, как котёл.`,
+    "combat.youReroll": `Удача предков: броски {rolls} — берём {best}.`,
+    "combat.skillHint": `Наведи на навык — описание здесь, окно боя не прыгает.`,
+  },
+  v = (e) => {
+    let t,
+      n = new Set(),
+      r = (e, r) => {
+        let i = typeof e == `function` ? e(t) : e;
+        if (!Object.is(i, t)) {
+          let e = t;
+          ((t =
+            (r ?? (typeof i != `object` || !i)) ? i : Object.assign({}, t, i)),
+            n.forEach((n) => n(t, e)));
+        }
+      },
+      i = () => t,
+      a = {
+        setState: r,
+        getState: i,
+        getInitialState: () => o,
+        subscribe: (e) => (n.add(e), () => n.delete(e)),
+      },
+      o = (t = e(r, i, a));
+    return a;
+  },
+  y = (e) => (e ? v(e) : v),
+  b = (e) => e;
+function x(e, t = b) {
+  let n = s.useSyncExternalStore(
+    e.subscribe,
+    s.useCallback(() => t(e.getState()), [e, t]),
+    s.useCallback(() => t(e.getInitialState()), [e, t]),
+  );
+  return (s.useDebugValue(n), n);
+}
+var ee = (e) => {
+    let t = y(e),
+      n = (e) => x(t, e);
+    return (Object.assign(n, t), n);
+  },
+  S = (e) => (e ? ee(e) : ee),
+  C = {
+    human: {
+      id: `human`,
+      name: `Человек`,
+      portrait: `/portraits/human.webp`,
+      blurb: `Медь в крови и в ладонях. Люди клепают трубы спящих богов и быстрее всех учатся, пока пар ещё тёплый.`,
+      bonus: `+10% опыта. Универсальны.`,
+      stats: { str: 6, dex: 6, int: 6, end: 6, luck: 6, cha: 6 },
+      xpMult: 1.1,
+      resists: { poison: 0, fire: 0 },
+    },
+    lesovik: {
+      id: `lesovik`,
+      name: `Дымолес`,
+      portrait: `/portraits/lesovik.webp`,
+      blurb: `Родня чащи: кора вместо кожи, в волосах мох, дыхание — тёплый дым. Ловок между стволами, без лишней меди на теле.`,
+      bonus: `Скрытность и удача в чащах. +ловкость.`,
+      stats: { str: 5, dex: 8, int: 5, end: 6, luck: 7, cha: 5 },
+      xpMult: 1,
+      resists: { poison: 1, fire: 0 },
+    },
+    vodyanoy: {
+      id: `vodyanoy`,
+      name: `Шлюзник`,
+      portrait: `/portraits/vodyanoy.webp`,
+      blurb: `Речная кровь, что держит шлюзы. Пар вместо брызг, больше маны, яды слабее.`,
+      bonus: `+мана, сопротивление ядам.`,
+      stats: { str: 5, dex: 5, int: 8, end: 6, luck: 5, cha: 6 },
+      xpMult: 1,
+      resists: { poison: 3, fire: 0 },
+    },
+    kostyanoy: {
+      id: `kostyanoy`,
+      name: `Костерёв`,
+      portrait: `/portraits/kostyanoy.webp`,
+      blurb: `Вышли из Нави под топкой. Кость и сажа. Крепкое здоровье, людям они не по душе.`,
+      bonus: `+здоровье. Штраф к харизме.`,
+      stats: { str: 6, dex: 5, int: 5, end: 9, luck: 5, cha: 3 },
+      xpMult: 1,
+      resists: { poison: 2, fire: 0 },
+    },
+    zharkrovny: {
+      id: `zharkrovny`,
+      name: `Горныч`,
+      portrait: `/portraits/zharkrovny.webp`,
+      blurb: `В жилах тлеет горн. Живые меха кузницы. Сильные и почти не боятся пламени.`,
+      bonus: `+сила, огнеустойчивость.`,
+      stats: { str: 9, dex: 5, int: 4, end: 7, luck: 5, cha: 5 },
+      xpMult: 1,
+      resists: { poison: 0, fire: 3 },
+    },
+  },
+  te = {
+    warrior: {
+      id: `warrior`,
+      name: `Работяга`,
+      blurb: `Бьётся топором или мечом. В бою считает силу. Носит только топоры и мечи. Держит удар.`,
+      bonus: { str: 3, end: 2 },
+      attack: `str`,
+    },
+    volkhv: {
+      id: `volkhv`,
+      name: `Парослов`,
+      blurb: `Бьётся посохом или ножом. В бою считает интеллект. Тратит дар на слова-удары. Носит посохи и кинжалы.`,
+      bonus: { int: 3, cha: 2 },
+      attack: `int`,
+    },
+    archer: {
+      id: `archer`,
+      name: `Путевой`,
+      blurb: `Бьётся луком или арбалетом. В бою считает ловкость. Может учиться видеть ложный ответ в переговорах.`,
+      bonus: { dex: 3, luck: 1, cha: 1 },
+      attack: `dex`,
+    },
+    tracker: {
+      id: `tracker`,
+      name: `Путевой`,
+      blurb: `Бьётся луком или арбалетом. В бою считает ловкость. Навык «Ложный след» подсвечивает один неверный ответ в переговорах — его нужно качать.`,
+      bonus: { dex: 3, luck: 1, cha: 1 },
+      attack: `dex`,
+    },
+    rogue: {
+      id: `rogue`,
+      name: `Щелкун`,
+      blurb: `Бьётся кинжалами и короткими клинками. В бою считает ловкость. Навык «Глаз кармана» показывает шанс кражи у каждого жителя — его нужно качать.`,
+      bonus: { dex: 3, luck: 2 },
+      attack: `dex`,
+    },
+    bonesetter: {
+      id: `bonesetter`,
+      name: `Костоправ`,
+      blurb: `Лечит своих и калечит чужих. Бьётся посохом или костяным ножом. В бою считает выносливость. После выигранного раунда может вернуть здоровье.`,
+      bonus: { end: 3, int: 2 },
+      attack: `end`,
+    },
+  },
+  ne = [`warrior`, `volkhv`, `tracker`, `rogue`, `bonesetter`],
+  re = [
+    {
+      id: `w_axe`,
+      classId: `warrior`,
+      name: `Полная клёпка`,
+      blurb: `Топор, шлем, стёганка, сапоги и обмотки. Медяков почти нет.`,
+      items: [`rusty_axe`, `iron_helm`, `padded`, `boots_plain`, `wraps`],
+      gold: 3,
+    },
+    {
+      id: `w_sword`,
+      classId: `warrior`,
+      name: `Смена и паёк`,
+      blurb: `Клинок, стёганка, сапоги, корень и горсть медяков.`,
+      items: [`short_sword`, `padded`, `wraps`, `boots_plain`, `root`],
+      gold: 16,
+    },
+    {
+      id: `w_legend`,
+      classId: `warrior`,
+      name: `Колун без сумы`,
+      blurb: `Один Перунов колун. Ни денег, ни другой амуниции.`,
+      items: [`perun_cleaver`],
+      gold: 0,
+    },
+    {
+      id: `w_rank`,
+      classId: `warrior`,
+      name: `Старший по смене`,
+      blurb: `Сразу +1 уровень. Простой клинок, обмотки и чуть медяков.`,
+      items: [`short_sword`, `wraps`, `boots_plain`],
+      gold: 8,
+      startLevel: 2,
+    },
+    {
+      id: `w_gold`,
+      classId: `warrior`,
+      name: `Кошель на пустой пояс`,
+      blurb: `Почти ничего на теле. Зато медяков — полный карман.`,
+      items: [`wraps`],
+      gold: 96,
+    },
+    {
+      id: `v_staff`,
+      classId: `volkhv`,
+      name: `Полный обряд`,
+      blurb: `Посох, роба, сапоги, обмотки и настой. Медяков почти нет.`,
+      items: [`ash_staff`, `robe`, `boots_plain`, `wraps`, `wort`],
+      gold: 3,
+    },
+    {
+      id: `v_bone`,
+      classId: `volkhv`,
+      name: `Чаша и паёк`,
+      blurb: `Костяной нож, роба, слёзы и горсть медяков.`,
+      items: [`bone_knife`, `robe`, `wraps`, `boots_plain`, `wort`, `tears`],
+      gold: 14,
+    },
+    {
+      id: `v_legend`,
+      classId: `volkhv`,
+      name: `Веретено без сумы`,
+      blurb: `Одно Веретено Мокоши. Ни денег, ни другой амуниции.`,
+      items: [`fate_spindle`],
+      gold: 0,
+    },
+    {
+      id: `v_rank`,
+      classId: `volkhv`,
+      name: `Младший парослов`,
+      blurb: `Сразу +1 уровень. Посох, обмотки и чуть медяков.`,
+      items: [`ash_staff`, `wraps`],
+      gold: 8,
+      startLevel: 2,
+    },
+    {
+      id: `v_gold`,
+      classId: `volkhv`,
+      name: `Медяки вместо молитвы`,
+      blurb: `Почти ничего на теле. Зато медяков много.`,
+      items: [`wraps`],
+      gold: 96,
+    },
+    {
+      id: `a_bow`,
+      classId: `tracker`,
+      name: `Полный колчан`,
+      blurb: `Лук, стёганка, болотные сапоги, обмотки. Медяков почти нет.`,
+      items: [`hunter_bow`, `padded`, `boots_bog`, `wraps`],
+      gold: 4,
+    },
+    {
+      id: `t_pack`,
+      classId: `tracker`,
+      name: `Сумка путевого`,
+      blurb: `Лук, стёганка, корень, настой и горсть медяков.`,
+      items: [`hunter_bow`, `padded`, `wraps`, `boots_bog`, `root`, `wort`],
+      gold: 16,
+    },
+    {
+      id: `t_legend`,
+      classId: `tracker`,
+      name: `Громовая тетива`,
+      blurb: `Один легендарный лук. Ни денег, ни другой амуниции.`,
+      items: [`storm_bow`],
+      gold: 0,
+    },
+    {
+      id: `t_rank`,
+      classId: `tracker`,
+      name: `Старший по шпалам`,
+      blurb: `Сразу +1 уровень. Арбалет, обмотки и чуть медяков.`,
+      items: [`steam_crossbow`, `wraps`, `boots_plain`],
+      gold: 8,
+      startLevel: 2,
+    },
+    {
+      id: `t_gold`,
+      classId: `tracker`,
+      name: `Медяки вместо стрел`,
+      blurb: `Почти ничего на теле. Зато медяков много.`,
+      items: [`wraps`],
+      gold: 96,
+    },
+    {
+      id: `a_knife`,
+      classId: `tracker`,
+      name: `Нож и игла`,
+      blurb: `Старый набор.`,
+      items: [`hunter_bow`, `steam_crossbow`, `padded`, `wraps`, `boots_plain`],
+      gold: 13,
+      hidden: !0,
+    },
+    {
+      id: `t_light`,
+      classId: `tracker`,
+      name: `Лёгкий ход`,
+      blurb: `Старый набор.`,
+      items: [`bone_knife`, `wraps`, `boots_bog`, `root`, `ribbon`],
+      gold: 20,
+      hidden: !0,
+    },
+    {
+      id: `r_full`,
+      classId: `rogue`,
+      name: `Полный щелчок`,
+      blurb: `Кинжал, стёганка, сапоги, лента и обмотки. Медяков почти нет.`,
+      items: [`bone_knife`, `padded`, `boots_plain`, `wraps`, `ribbon`],
+      gold: 4,
+    },
+    {
+      id: `r_mid`,
+      classId: `rogue`,
+      name: `Нож и паёк`,
+      blurb: `Короткий клинок, стёганка и горсть медяков.`,
+      items: [`short_sword`, `padded`, `wraps`, `boots_plain`, `root`],
+      gold: 18,
+    },
+    {
+      id: `r_legend`,
+      classId: `rogue`,
+      name: `Клык засова`,
+      blurb: `Один легендарный кинжал. Ни денег, ни другой амуниции.`,
+      items: [`latch_fang`],
+      gold: 0,
+    },
+    {
+      id: `r_rank`,
+      classId: `rogue`,
+      name: `Старший по щеколде`,
+      blurb: `Сразу +1 уровень. Нож, обмотки и чуть медяков.`,
+      items: [`bone_knife`, `wraps`],
+      gold: 8,
+      startLevel: 2,
+    },
+    {
+      id: `r_gold`,
+      classId: `rogue`,
+      name: `Чужой кошель`,
+      blurb: `Почти ничего на теле. Зато медяков очень много.`,
+      items: [`wraps`],
+      gold: 108,
+    },
+    {
+      id: `b_full`,
+      classId: `bonesetter`,
+      name: `Полный ящик`,
+      blurb: `Посох, роба, сапоги, настой и обмотки. Медяков почти нет.`,
+      items: [`ash_staff`, `robe`, `boots_plain`, `wraps`, `wort`],
+      gold: 4,
+    },
+    {
+      id: `b_mid`,
+      classId: `bonesetter`,
+      name: `Шина и паёк`,
+      blurb: `Костяной нож, роба, корень и горсть медяков.`,
+      items: [`bone_knife`, `robe`, `wraps`, `boots_plain`, `root`, `wort`],
+      gold: 16,
+    },
+    {
+      id: `b_legend`,
+      classId: `bonesetter`,
+      name: `Живая шина`,
+      blurb: `Один легендарный посох. Ни денег, ни другой амуниции.`,
+      items: [`living_splint`],
+      gold: 0,
+    },
+    {
+      id: `b_rank`,
+      classId: `bonesetter`,
+      name: `Подмастерье`,
+      blurb: `Сразу +1 уровень. Посох, обмотки и чуть медяков.`,
+      items: [`ash_staff`, `wraps`],
+      gold: 8,
+      startLevel: 2,
+    },
+    {
+      id: `b_gold`,
+      classId: `bonesetter`,
+      name: `Плата за вправление`,
+      blurb: `Почти ничего на теле. Зато медяков много.`,
+      items: [`wraps`],
+      gold: 96,
+    },
+  ],
+  w = {
+    rusty_axe: {
+      id: `rusty_axe`,
+      name: `Клёпальная секира`,
+      description: `Ржавчина на заклёпках не мешает рубить пар и кость.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `axe`,
+      rarity: `common`,
+      bonuses: { attack: 2, str: 2 },
+      value: 14,
+    },
+    short_sword: {
+      id: `short_sword`,
+      name: `Клинок дозорной трубы`,
+      description: `Лёгкий клинок. Свистит, как пар в щели.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `sword`,
+      rarity: `common`,
+      bonuses: { attack: 2, str: 1, dex: 1 },
+      value: 16,
+    },
+    ash_staff: {
+      id: `ash_staff`,
+      name: `Посох-манометр`,
+      description: `Ясень и латунный глаз давления. Кормит ману.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `staff`,
+      rarity: `common`,
+      bonuses: { attack: 1, int: 3 },
+      value: 15,
+    },
+    bone_knife: {
+      id: `bone_knife`,
+      name: `Нож костяного пара`,
+      description: `Кость помнит, куда резать. Рукоять тёплая от топки.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `dagger`,
+      rarity: `common`,
+      bonuses: { attack: 1, dex: 1, luck: 1 },
+      value: 12,
+    },
+    hunter_bow: {
+      id: `hunter_bow`,
+      name: `Игломёт охотника`,
+      description: `Тетива ещё поёт. Иглы летят вместе с паром.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `bow`,
+      rarity: `common`,
+      bonuses: { attack: 2, dex: 2 },
+      value: 18,
+    },
+    padded: {
+      id: `padded`,
+      name: `Стёганка клепальщика`,
+      description: `Держит удар лучше, чем кажется. Заклёпки по швам.`,
+      slot: `body`,
+      kind: `armor`,
+      rarity: `common`,
+      bonuses: { armor: 2, end: 1 },
+      value: 12,
+    },
+    robe: {
+      id: `robe`,
+      name: `Роба парослова`,
+      description: `Пахнет дымом, травами и горячей медью. Больше маны.`,
+      slot: `body`,
+      kind: `armor`,
+      rarity: `common`,
+      bonuses: { armor: 1, int: 2 },
+      value: 14,
+    },
+    mail_shard: {
+      id: `mail_shard`,
+      name: `Медный обрывок кольчуги`,
+      description: `Несколько колец ещё держат. Между ними — крошка трубы.`,
+      slot: `body`,
+      kind: `armor`,
+      rarity: `uncommon`,
+      bonuses: { armor: 3, end: 2 },
+      value: 28,
+    },
+    wraps: {
+      id: `wraps`,
+      name: `Обмотки с заклёпками`,
+      description: `Ткань и латунь. Носятся как украшение на запястье.`,
+      slot: `jewelry`,
+      kind: `armor`,
+      rarity: `common`,
+      bonuses: { armor: 1, dex: 1 },
+      value: 5,
+    },
+    boots_plain: {
+      id: `boots_plain`,
+      name: `Путевые сапоги`,
+      description: `Протоптали много шпал и дорог.`,
+      slot: `legs`,
+      kind: `armor`,
+      rarity: `common`,
+      bonuses: { armor: 1, end: 1 },
+      value: 8,
+    },
+    boots_bog: {
+      id: `boots_bog`,
+      name: `Сапоги кипящей трясины`,
+      description: `Не пропускают воду. Клапаны на голенищах шипят.`,
+      slot: `legs`,
+      kind: `armor`,
+      rarity: `uncommon`,
+      bonuses: { armor: 2, luck: 2, end: 1 },
+      value: 18,
+    },
+    iron_helm: {
+      id: `iron_helm`,
+      name: `Шлем с манометром`,
+      description: `Вмятина над виском. Стрелка ещё дёргается.`,
+      slot: `head`,
+      kind: `armor`,
+      rarity: `uncommon`,
+      bonuses: { armor: 3, str: 1, end: 1 },
+      value: 36,
+    },
+    root: {
+      id: `root`,
+      name: `Корень живучки`,
+      description: `Горький, с медной жилкой. Лечит, если прожевать.`,
+      slot: `none`,
+      kind: `consumable`,
+      rarity: `common`,
+      bonuses: {},
+      value: 8,
+      healHp: 10,
+    },
+    wort: {
+      id: `wort`,
+      name: `Настой полыни`,
+      description: `Горький. Возвращает ману. Крышка — как клапан.`,
+      slot: `none`,
+      kind: `consumable`,
+      rarity: `common`,
+      bonuses: {},
+      value: 10,
+      healMp: 8,
+    },
+    tears: {
+      id: `tears`,
+      name: `Слёзы шлюзника`,
+      description: `Холодный флакон. Внутри пар стоит столбом.`,
+      slot: `none`,
+      kind: `consumable`,
+      rarity: `uncommon`,
+      bonuses: {},
+      value: 22,
+      healHp: 14,
+      healMp: 6,
+    },
+    ember: {
+      id: `ember`,
+      name: `Жаровень`,
+      description: `Уголь, который не гаснет. Греет ладонь, как топка.`,
+      slot: `none`,
+      kind: `consumable`,
+      rarity: `uncommon`,
+      bonuses: {},
+      value: 16,
+      healHp: 6,
+      healMp: 10,
+    },
+    silver_bit: {
+      id: `silver_bit`,
+      name: `Серебро предков`,
+      description: `Монета без чекана — только шестерня и узел.`,
+      slot: `none`,
+      kind: `trade`,
+      rarity: `common`,
+      bonuses: {},
+      value: 20,
+    },
+    amber: {
+      id: `amber`,
+      name: `Янтарь с шестернёй`,
+      description: `Тёплый камень. В смоле застыл крохотный зуб колеса.`,
+      slot: `none`,
+      kind: `trade`,
+      rarity: `common`,
+      bonuses: {},
+      value: 18,
+    },
+    ribbon: {
+      id: `ribbon`,
+      name: `Выцветшая лента`,
+      description: `Кто-то завязал её на удачу и пришил латунный бубенчик. Надевается как украшение.`,
+      slot: `jewelry`,
+      kind: `armor`,
+      rarity: `common`,
+      bonuses: { luck: 1 },
+      value: 9,
+    },
+    black_apple: {
+      id: `black_apple`,
+      name: `Чёрное яблоко`,
+      description: `Не гниёт. Кожура как накипь котла.`,
+      slot: `none`,
+      kind: `trade`,
+      rarity: `common`,
+      bonuses: {},
+      value: 4,
+    },
+    key_ring: {
+      id: `key_ring`,
+      name: `Мокрый ключ`,
+      description: `От двери, которой нет. Или от вентиля, который есть.`,
+      slot: `none`,
+      kind: `trade`,
+      rarity: `common`,
+      bonuses: {},
+      value: 6,
+    },
+    bone_cup: {
+      id: `bone_cup`,
+      name: `Костяная чаша пара`,
+      description: `Холодная. Честная. По ободку — риска давления. Артефакт.`,
+      slot: `artifact`,
+      kind: `treasure`,
+      rarity: `uncommon`,
+      bonuses: { cha: 1 },
+      value: 16,
+    },
+    memory_shard: {
+      id: `memory_shard`,
+      name: `Осколок памяти`,
+      description: `Чужое воспоминание внутри. Пар ходит кругами. Артефакт.`,
+      slot: `artifact`,
+      kind: `treasure`,
+      rarity: `rare`,
+      bonuses: { int: 2 },
+      value: 24,
+    },
+    steel_axe: {
+      id: `steel_axe`,
+      name: `Секира дозорной трубы`,
+      description: `Точилась о камень заставы и о заклёпку котла.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `axe`,
+      rarity: `uncommon`,
+      bonuses: { attack: 3, str: 3 },
+      value: 32,
+      icon: `rusty_axe`,
+    },
+    green_staff: {
+      id: `green_staff`,
+      name: `Живой посох-манометр`,
+      description: `Ветка ещё сочит смолу. Стрелка давления пляшет. Много маны.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `staff`,
+      rarity: `uncommon`,
+      bonuses: { attack: 2, int: 4 },
+      value: 30,
+      icon: `ash_staff`,
+    },
+    long_bow: {
+      id: `long_bow`,
+      name: `Длинный игломёт`,
+      description: `Тяжёлая тетива. Дальше и злее. Пар в плечах лука.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `bow`,
+      rarity: `uncommon`,
+      bonuses: { attack: 3, dex: 3 },
+      value: 34,
+      icon: `hunter_bow`,
+    },
+    sworn_mail: {
+      id: `sworn_mail`,
+      name: `Клятвенная кольчуга`,
+      description: `Кольца спаяны клятвой и медью, не одним огнём.`,
+      slot: `body`,
+      kind: `armor`,
+      rarity: `rare`,
+      bonuses: { armor: 5, end: 3, str: 1 },
+      value: 58,
+      icon: `mail_shard`,
+    },
+    seer_staff: {
+      id: `seer_staff`,
+      name: `Посох ясновидца`,
+      description: `Слова в нём уже сложены. Манометр показывает чужой сон.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `staff`,
+      rarity: `rare`,
+      bonuses: { attack: 3, int: 5, cha: 1 },
+      value: 62,
+      icon: `ash_staff`,
+    },
+    moon_bow: {
+      id: `moon_bow`,
+      name: `Лунный игломёт`,
+      description: `Стреляет тише ночи. Иглы светятся, как конденсат.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `bow`,
+      rarity: `rare`,
+      bonuses: { attack: 4, dex: 4, luck: 2 },
+      value: 64,
+      icon: `hunter_bow`,
+    },
+    temple_helm: {
+      id: `temple_helm`,
+      name: `Шлем капища котлов`,
+      description: `Ковка с молитвой в шве и трубкой у виска.`,
+      slot: `head`,
+      kind: `armor`,
+      rarity: `rare`,
+      bonuses: { armor: 4, str: 2, end: 2 },
+      value: 55,
+      icon: `iron_helm`,
+    },
+    perun_cleaver: {
+      id: `perun_cleaver`,
+      name: `Перунов колун`,
+      description: `Гром в лезвии, давление в обухе. Уникальный навык: Раскол манометра.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `axe`,
+      rarity: `legendary`,
+      bonuses: { attack: 5, str: 5 },
+      value: 120,
+      icon: `rusty_axe`,
+      uniqueSkill: `thunder_cleave`,
+    },
+    fate_spindle: {
+      id: `fate_spindle`,
+      name: `Веретено Мокоши`,
+      description: `Прядёт удачу из пара. Уникальный навык: Нить судьбы.`,
+      slot: `artifact`,
+      kind: `treasure`,
+      rarity: `legendary`,
+      bonuses: { luck: 4, int: 3, cha: 2 },
+      value: 118,
+      icon: `ash_staff`,
+      uniqueSkill: `weave_fate`,
+    },
+    nav_crown: {
+      id: `nav_crown`,
+      name: `Венец Нави`,
+      description: `Пассив: крадёт жизнь. Навык: Смертный уговор. Корона из сажи и латуни.`,
+      slot: `head`,
+      kind: `armor`,
+      rarity: `epic`,
+      bonuses: { armor: 6, end: 4, int: 3 },
+      value: 180,
+      icon: `iron_helm`,
+      uniqueSkill: `death_pact`,
+      passive: `lifesteal`,
+    },
+    fire_heart: {
+      id: `fire_heart`,
+      name: `Сердце горна`,
+      description: `Пассив: первый удар сильнее. Навык: Слово горна.`,
+      slot: `artifact`,
+      kind: `treasure`,
+      rarity: `epic`,
+      bonuses: { str: 4, int: 3, attack: 2 },
+      value: 175,
+      icon: `ember`,
+      uniqueSkill: `pyre_word`,
+      passive: `first_strike`,
+    },
+    steam_crossbow: {
+      id: `steam_crossbow`,
+      name: `Паровой арбалет`,
+      description: `Иглы толкает давление, не тетива. Для игломёта.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `crossbow`,
+      rarity: `uncommon`,
+      bonuses: { attack: 3, dex: 2 },
+      value: 28,
+    },
+    gear_amulet: {
+      id: `gear_amulet`,
+      name: `Амулет-шестерня`,
+      description: `Латунный зуб на ленте. Украшение путевых.`,
+      slot: `jewelry`,
+      kind: `armor`,
+      rarity: `uncommon`,
+      bonuses: { luck: 2, cha: 1 },
+      value: 22,
+    },
+    game_meat: {
+      id: `game_meat`,
+      name: `Дичь с тропы`,
+      description: `Честная добыча. Торговцы берут недорого, но всегда.`,
+      slot: `none`,
+      kind: `trade`,
+      rarity: `common`,
+      bonuses: {},
+      value: 11,
+    },
+    river_fish: {
+      id: `river_fish`,
+      name: `Рыба шлюза`,
+      description: `Серебро чешуи, запах реки.`,
+      slot: `none`,
+      kind: `trade`,
+      rarity: `common`,
+      bonuses: {},
+      value: 10,
+    },
+    note_letter: {
+      id: `note_letter`,
+      name: `Записка кочегара`,
+      description: `Бумага в саже. Прочесть можно один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 4,
+      loreKey: `lore.letter`,
+    },
+    note_scroll: {
+      id: `note_scroll`,
+      name: `Свиток парослова`,
+      description: `Свёрток с медной бусиной. Один раз — и бумага гаснет.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 5,
+      loreKey: `lore.scroll`,
+    },
+    note_diary: {
+      id: `note_diary`,
+      name: `Дневник путевого`,
+      description: `Медные уголки. Страницы помнят чужой слой.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `legendary`,
+      bonuses: {},
+      value: 8,
+      loreKey: `lore.diary`,
+    },
+    note_book: {
+      id: `note_book`,
+      name: `Книга заклёпок`,
+      description: `Толстый том без имени автора. Читается один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `legendary`,
+      bonuses: {},
+      value: 9,
+      icon: `note_diary`,
+      loreKey: `lore.book`,
+    },
+    storm_bow: {
+      id: `storm_bow`,
+      name: `Громовая тетива`,
+      description: `Лук из рельсовой пружины. Иглы свистят, как пар из предохранителя.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `bow`,
+      rarity: `legendary`,
+      bonuses: { attack: 5, dex: 5, luck: 2 },
+      value: 122,
+      icon: `hunter_bow`,
+    },
+    latch_fang: {
+      id: `latch_fang`,
+      name: `Клык засова`,
+      description: `Кинжал-щеколда. Открывает замки и жилы одинаково тихо.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `dagger`,
+      rarity: `legendary`,
+      bonuses: { attack: 5, dex: 4, luck: 3 },
+      value: 118,
+      icon: `bone_knife`,
+    },
+    living_splint: {
+      id: `living_splint`,
+      name: `Живая шина`,
+      description: `Посох из зелёной кости. Вправляет и ломает одним движением.`,
+      slot: `weapon`,
+      kind: `weapon`,
+      weaponType: `staff`,
+      rarity: `legendary`,
+      bonuses: { attack: 4, end: 4, int: 3 },
+      value: 120,
+      icon: `ash_staff`,
+    },
+    note_ticket: {
+      id: `note_ticket`,
+      name: `Билет на остывший состав`,
+      description: `Картон в саже. Станция стёрта. Читается один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 4,
+      icon: `note_letter`,
+      loreKey: `lore.ticket`,
+    },
+    note_recipe: {
+      id: `note_recipe`,
+      name: `Рецепт медного отвара`,
+      description: `Почерк кривой, цифры давления точные. Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 5,
+      icon: `note_scroll`,
+      loreKey: `lore.recipe`,
+    },
+    note_psalm: {
+      id: `note_psalm`,
+      name: `Псалом давления`,
+      description: `Молитва котлу на обороте накладной. Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 5,
+      icon: `note_scroll`,
+      loreKey: `lore.psalm`,
+    },
+    note_map: {
+      id: `note_map`,
+      name: `Обрывок карты слоя`,
+      description: `Шестигранники углем. Край оборван на капище. Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 6,
+      icon: `note_letter`,
+      loreKey: `lore.map`,
+    },
+    note_oath: {
+      id: `note_oath`,
+      name: `Клятва путевого`,
+      description: `«Не свисти в тумане». Подпись стёрта. Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `legendary`,
+      bonuses: {},
+      value: 8,
+      icon: `note_diary`,
+      loreKey: `lore.oath`,
+    },
+    note_child: {
+      id: `note_child`,
+      name: `Записка ребёнка`,
+      description: `Карандашом: «мама ушла к трубе». Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `rare`,
+      bonuses: {},
+      value: 4,
+      icon: `note_letter`,
+      loreKey: `lore.child`,
+    },
+    note_shift: {
+      id: `note_shift`,
+      name: `Сменный журнал кочегара`,
+      description: `Давление, уголь, кто не вышел. Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `legendary`,
+      bonuses: {},
+      value: 8,
+      icon: `note_diary`,
+      loreKey: `lore.shift`,
+    },
+    note_verdict: {
+      id: `note_verdict`,
+      name: `Приговор туманного суда`,
+      description: `Имя стёрто, мера — «оставить в пару». Один раз.`,
+      slot: `none`,
+      kind: `note`,
+      rarity: `legendary`,
+      bonuses: {},
+      value: 9,
+      icon: `note_diary`,
+      loreKey: `lore.verdict`,
+    },
+  },
+  ie = [`root`, `wort`, `wraps`, `silver_bit`, `ribbon`, `boots_plain`],
+  ae = [
+    `boots_bog`,
+    `bone_knife`,
+    `padded`,
+    `ember`,
+    `amber`,
+    `tears`,
+    `steel_axe`,
+    `green_staff`,
+    `long_bow`,
+    `iron_helm`,
+    `mail_shard`,
+    `steam_crossbow`,
+    `gear_amulet`,
+  ],
+  oe = [
+    `sworn_mail`,
+    `seer_staff`,
+    `moon_bow`,
+    `temple_helm`,
+    `memory_shard`,
+    `short_sword`,
+    `note_letter`,
+    `note_scroll`,
+    `note_ticket`,
+    `note_recipe`,
+    `note_psalm`,
+    `note_map`,
+    `note_child`,
+  ],
+  se = [
+    `perun_cleaver`,
+    `fate_spindle`,
+    `note_diary`,
+    `note_book`,
+    `storm_bow`,
+    `latch_fang`,
+    `living_splint`,
+    `note_oath`,
+    `note_shift`,
+    `note_verdict`,
+  ],
+  ce = [`nav_crown`, `fire_heart`],
+  le = [
+    `note_letter`,
+    `note_scroll`,
+    `note_diary`,
+    `note_book`,
+    `note_ticket`,
+    `note_recipe`,
+    `note_psalm`,
+    `note_map`,
+    `note_oath`,
+    `note_child`,
+    `note_shift`,
+    `note_verdict`,
+  ],
+  ue = {
+    warrior: [`axe`, `sword`],
+    volkhv: [`staff`, `dagger`],
+    archer: [`bow`, `crossbow`, `dagger`],
+    tracker: [`bow`, `crossbow`, `dagger`],
+    rogue: [`dagger`, `sword`],
+    bonesetter: [`staff`, `dagger`],
+  },
+  de = [
+    {
+      id: `power_strike`,
+      name: `Клёпальный удар`,
+      description: `Сильный замах молотом. +к броску в бою.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+      classReq: `warrior`,
+    },
+    {
+      id: `aimed_shot`,
+      name: `Игла в пар`,
+      description: `Бьёт точнее. Чётные удары не рассеиваются.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+      classReq: `tracker`,
+    },
+    {
+      id: `black_word`,
+      name: `Чёрный свисток`,
+      description: `Слово-пар бьёт по врагу и снижает его бросок.`,
+      mp: 6,
+      maxRank: 3,
+      combat: !0,
+      classReq: `volkhv`,
+    },
+    {
+      id: `forest_shadow`,
+      name: `Тень дымолеса`,
+      description: `После боя получаешь вдвое меньше урона.`,
+      mp: 3,
+      maxRank: 3,
+      combat: !0,
+      classReq: `tracker`,
+    },
+    {
+      id: `ancestors_luck`,
+      name: `Удача предков`,
+      description: `Бросаешь кубик ещё раз за каждый ранг и берёшь лучший.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+    },
+    {
+      id: `blood_heat`,
+      name: `Жар топки`,
+      description: `Огонь в жилах. Сила идёт в удар.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+      raceReq: `zharkrovny`,
+    },
+    {
+      id: `river_breath`,
+      name: `Дыхание шлюза`,
+      description: `После удара немного лечит.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+      raceReq: `vodyanoy`,
+    },
+    {
+      id: `bone_shell`,
+      name: `Костяной котёл`,
+      description: `Снимает часть урона после боя.`,
+      mp: 5,
+      maxRank: 3,
+      combat: !0,
+      raceReq: `kostyanoy`,
+    },
+    {
+      id: `leshy_step`,
+      name: `Шаг Паролеса`,
+      description: `В чаще меньше боёв и больше находок.`,
+      mp: 0,
+      maxRank: 3,
+      combat: !1,
+      raceReq: `lesovik`,
+    },
+    {
+      id: `mokosh_gaze`,
+      name: `Взгляд ткачихи`,
+      description: `Чаще находишь вещи при поиске.`,
+      mp: 0,
+      maxRank: 3,
+      combat: !1,
+      classReq: `tracker`,
+    },
+    {
+      id: `grave_sense`,
+      name: `Чутьё топки`,
+      description: `Выше шанс выкопать клад.`,
+      mp: 0,
+      maxRank: 3,
+      combat: !1,
+    },
+    {
+      id: `bargain`,
+      name: `Торг у трубы`,
+      description: `Покупаешь дешевле, продаёшь дороже.`,
+      mp: 0,
+      maxRank: 3,
+      combat: !1,
+    },
+    {
+      id: `thunder_cleave`,
+      name: `Раскол манометра`,
+      description: `Удар Перуна. Сильный бонус к броску. Только с Перуновым колуном.`,
+      mp: 6,
+      maxRank: 1,
+      combat: !0,
+      itemOnly: !0,
+    },
+    {
+      id: `weave_fate`,
+      name: `Нить судьбы`,
+      description: `Бросаешь кубик дважды и берёшь лучший. Только с Веретеном Мокоши.`,
+      mp: 5,
+      maxRank: 1,
+      combat: !0,
+      itemOnly: !0,
+    },
+    {
+      id: `death_pact`,
+      name: `Смертный уговор`,
+      description: `Платишь кровью за удар. Только с Венцом Нави.`,
+      mp: 8,
+      maxRank: 1,
+      combat: !0,
+      itemOnly: !0,
+    },
+    {
+      id: `pyre_word`,
+      name: `Слово горна`,
+      description: `Жар бьёт вместе с тобой. Только с Сердцем горна.`,
+      mp: 7,
+      maxRank: 1,
+      combat: !0,
+      itemOnly: !0,
+    },
+    {
+      id: `false_path`,
+      name: `Ложный след`,
+      description: `В переговорах подсвечивает один неверный ответ. Нужно качать. В начале не даётся.`,
+      mp: 0,
+      maxRank: 3,
+      combat: !1,
+      classReq: `tracker`,
+    },
+    {
+      id: `mark_pockets`,
+      name: `Глаз кармана`,
+      description: `На краже показывает шанс успеха у каждого жителя. Нужно качать. В начале не даётся.`,
+      mp: 0,
+      maxRank: 3,
+      combat: !1,
+      classReq: `rogue`,
+    },
+    {
+      id: `quick_cut`,
+      name: `Щелчок клинка`,
+      description: `Короткий удар в щель доспеха. +к броску в бою.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+      classReq: `rogue`,
+    },
+    {
+      id: `set_bone`,
+      name: `Вправление`,
+      description: `Выигранный раунд чинит тебя. +к броску и здоровье после победы в раунде.`,
+      mp: 4,
+      maxRank: 3,
+      combat: !0,
+      classReq: `bonesetter`,
+    },
+  ],
+  fe = [
+    {
+      id: `utopelnik`,
+      name: `Утоп-машинист`,
+      description: `Мокрый, в промасленной куртке. Медленный, злой, шипит клапанами.`,
+      portrait: `/portraits/utopelnik.webp`,
+      specials: [`poison`],
+      minLevel: 1,
+      weight: 8,
+    },
+    {
+      id: `kikimora`,
+      name: `Кикимора-пряха`,
+      description: `Прядёт пар в нить и путает руки. Шепчет в латунную трубку.`,
+      portrait: `/portraits/kikimora.webp`,
+      specials: [`fear`],
+      minLevel: 1,
+      weight: 7,
+    },
+    {
+      id: `bone_hound`,
+      name: `Зубчатый пёс`,
+      description: `Лает без горла. Кусает шестернями вместо клыков.`,
+      portrait: `/portraits/bone_hound.webp`,
+      specials: [`ignoreEven`],
+      minLevel: 1,
+      weight: 7,
+    },
+    {
+      id: `upyr`,
+      name: `Упырь давления`,
+      description: `Пьёт тепло из труб и из жил. После удара хочется сесть.`,
+      portrait: `/portraits/upyr.webp`,
+      specials: [`drain`],
+      minLevel: 2,
+      weight: 6,
+    },
+    {
+      id: `nav_shade`,
+      name: `Тень из топки`,
+      description: `Ходит там, где тебя уже нет. Сажа вместо лица.`,
+      portrait: `/portraits/nav_shade.webp`,
+      specials: [`drain`, `fear`],
+      minLevel: 2,
+      weight: 5,
+      navOnly: !0,
+    },
+    {
+      id: `ognevik`,
+      name: `Топщик-огневик`,
+      description: `Уголь, который научился ходить и подбрасывать себя в топку.`,
+      portrait: `/portraits/ognevik.webp`,
+      specials: [`fogArmor`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `leshy_shard`,
+      name: `Осколок Паролеса`,
+      description: `Лес без хозяина. Кора вместо лица, трубы вместо корней.`,
+      portrait: `/portraits/leshy_shard.webp`,
+      specials: [`fear`, `fogArmor`],
+      minLevel: 4,
+      weight: 4,
+    },
+    {
+      id: `koshchei`,
+      name: `Кощей Заводной`,
+      description: `Не он. Его привычка не умирать, заведённая ключом.`,
+      portrait: `/portraits/koshchei.webp`,
+      specials: [`reflect1`, `ignoreEven`],
+      minLevel: 7,
+      weight: 2,
+    },
+    {
+      id: `pipe_wraith`,
+      name: `Труба-призрак`,
+      description: `Пар принял человечий рост. Глаза — дверцы топки.`,
+      portrait: `/portraits/pipe_wraith.webp`,
+      specials: [`drain`, `fear`],
+      minLevel: 2,
+      weight: 6,
+    },
+    {
+      id: `rust_widow`,
+      name: `Ржавая вдова`,
+      description: `Прядёт нить из ржавчины. Ноги — как циркуль клепальщика.`,
+      portrait: `/portraits/rust_widow.webp`,
+      specials: [`poison`, `fear`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `steam_golem`,
+      name: `Паровой истукан`,
+      description: `Котёл научился ходить. Удары тяжёлые, как заклёпка.`,
+      portrait: `/portraits/steam_golem.webp`,
+      specials: [`fogArmor`, `reflect1`],
+      minLevel: 4,
+      weight: 4,
+    },
+    {
+      id: `ash_crow`,
+      name: `Пепельный ворон`,
+      description: `Клюв из меди. Каркает словом, которое ты уже забыл.`,
+      portrait: `/portraits/ash_crow.webp`,
+      specials: [`ignoreEven`, `drain`],
+      minLevel: 2,
+      weight: 6,
+    },
+    {
+      id: `bog_drowned`,
+      name: `Болотный утоп`,
+      description: `Клапаны на шее. Вода в лёгких давно стала маслом.`,
+      portrait: `/portraits/bog_drowned.webp`,
+      specials: [`poison`, `fogArmor`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `rust_boar`,
+      name: `Ржавый вепрь`,
+      description: `Щетина из гвоздей. Клыки — сломанные ключи на 24.`,
+      portrait: `/portraits/rust_boar.webp`,
+      specials: [`reflect1`, `fogArmor`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `coil_snake`,
+      name: `Медная змея`,
+      description: `Трубка научилась ползти. Жало — игла манометра.`,
+      portrait: `/portraits/coil_snake.webp`,
+      specials: [`poison`],
+      minLevel: 1,
+      weight: 7,
+    },
+    {
+      id: `whistle_imp`,
+      name: `Свистковый бес`,
+      description: `Маленький, из клапана. Свистит так, что руки дрожат.`,
+      portrait: `/portraits/whistle_imp.webp`,
+      specials: [`fear`, `ignoreEven`],
+      minLevel: 1,
+      weight: 6,
+    },
+    {
+      id: `rail_spider`,
+      name: `Рельсовый паук`,
+      description: `Восемь ног-шпал. Ткет паутину из ржавой проволоки.`,
+      portrait: `/portraits/rail_spider.webp`,
+      specials: [`poison`, `fogArmor`],
+      minLevel: 2,
+      weight: 6,
+    },
+    {
+      id: `soot_baba`,
+      name: `Сажная баба`,
+      description: `Изба без избы. Лицо из копоти, руки из метел и труб.`,
+      portrait: `/portraits/soot_baba.webp`,
+      specials: [`fear`, `drain`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `valve_knight`,
+      name: `Рыцарь вентиля`,
+      description: `Латы из задвижек. Удар тяжёлый, как закрытый шлюз.`,
+      portrait: `/portraits/valve_knight.webp`,
+      specials: [`fogArmor`, `reflect1`],
+      minLevel: 4,
+      weight: 4,
+    },
+    {
+      id: `moss_mare`,
+      name: `Моховая кобыла`,
+      description: `Конь без всадника. Грива — мох, копыта — шестерни.`,
+      portrait: `/portraits/moss_mare.webp`,
+      specials: [`fear`],
+      minLevel: 2,
+      weight: 5,
+    },
+    {
+      id: `gear_domovoi`,
+      name: `Домовой-шестерёнщик`,
+      description: `Живёт в котле. Кусает за пальцы, если не поздороваться.`,
+      portrait: `/portraits/gear_domovoi.webp`,
+      specials: [`ignoreEven`],
+      minLevel: 1,
+      weight: 6,
+    },
+    {
+      id: `frost_stoker`,
+      name: `Ледяной кочегар`,
+      description: `Топка остыла, он нет. Дышит инеем и угольной пылью.`,
+      portrait: `/portraits/frost_stoker.webp`,
+      specials: [`drain`, `fogArmor`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `needle_witch`,
+      name: `Игольная ведьма`,
+      description: `Прядёт иглы из пара. Каждая игла помнит чужое имя.`,
+      portrait: `/portraits/needle_witch.webp`,
+      specials: [`poison`, `fear`],
+      minLevel: 4,
+      weight: 4,
+    },
+    {
+      id: `tank_fish`,
+      name: `Рыба-цистерна`,
+      description: `Чешуя — клёпка. Плывёт по маслу, как по реке.`,
+      portrait: `/portraits/tank_fish.webp`,
+      specials: [`fogArmor`, `poison`],
+      minLevel: 2,
+      weight: 5,
+    },
+    {
+      id: `bell_wight`,
+      name: `Колокольный мертвец`,
+      description: `Язык колокола вместо сердца. Звон бьёт по удаче.`,
+      portrait: `/portraits/bell_wight.webp`,
+      specials: [`fear`, `drain`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `cinder_wolf`,
+      name: `Волк-окалина`,
+      description: `Шерсть сыпется углями. Глаза — дверцы топки.`,
+      portrait: `/portraits/cinder_wolf.webp`,
+      specials: [`ignoreEven`, `fogArmor`],
+      minLevel: 2,
+      weight: 6,
+    },
+    {
+      id: `brass_noon`,
+      name: `Латунная полудница`,
+      description: `Ходит в полдень, когда пар самый густой. Голос режет.`,
+      portrait: `/portraits/brass_noon.webp`,
+      specials: [`fear`, `drain`],
+      minLevel: 5,
+      weight: 3,
+    },
+    {
+      id: `smoke_leshy`,
+      name: `Дымовой леший`,
+      description: `Хозяин чащи без лица. Трубы вместо корней, мох на котле.`,
+      portrait: `/portraits/smoke_leshy.webp`,
+      specials: [`fogArmor`, `fear`],
+      minLevel: 5,
+      weight: 3,
+    },
+    {
+      id: `nail_rusalka`,
+      name: `Русалка гвоздей`,
+      description: `Волосы — ржавая проволока. Зовет в шлюз, не в омут.`,
+      portrait: `/portraits/nail_rusalka.webp`,
+      specials: [`poison`, `drain`],
+      minLevel: 3,
+      weight: 5,
+    },
+    {
+      id: `boiler_priest`,
+      name: `Жрец котла`,
+      description: `Молится давлению. Кадило — манометр, риза — промасленная.`,
+      portrait: `/portraits/boiler_priest.webp`,
+      specials: [`reflect1`, `fear`],
+      minLevel: 4,
+      weight: 4,
+    },
+    {
+      id: `guard`,
+      name: `Стражник`,
+      description: `Латунный шлем и закон посада. Встречается только если тебя заметили на краже.`,
+      portrait: `/portraits/guard.webp`,
+      specials: [`fogArmor`, `reflect1`, `ignoreEven`],
+      minLevel: 1,
+      weight: 0,
+      stealOnly: !0,
+    },
+  ],
+  T = {
+    forest: {
+      type: `forest`,
+      name: `Медная чаща`,
+      image: `/locations/forest.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Стволы окованы медью. Между ними тропа, и непонятно, кто её протоптал — зверь или шпала.`,
+        `Пахнет хвоей и горячим маслом. Где-то щёлкнула ветка — или клапан.`,
+        `Поляна круглая, как люк котла. Хорошее место перевести дух, пока пар не сгустел.`,
+      ],
+    },
+    swamp: {
+      type: `swamp`,
+      name: `Кипящая трясина`,
+      image: `/locations/swamp.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Вода чёрная, камыш выше головы. Из жижи торчат ржавые трубы, как корни.`,
+        `Пузыри поднимаются редко и пахнут варёным железом. Ступай по кочкам — и пройдёшь.`,
+        `На кочке висит старая лента и латунный вентиль. Трясина сегодня спокойная.`,
+      ],
+    },
+    ruins: {
+      type: `ruins`,
+      name: `Мёртвая машинная`,
+      image: `/locations/ruins.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Каменные стены без крыши. Между плит — порванные ремни и трава.`,
+        `Колонны лежат на боку, как остывшие поршни. В нише — черепок чаши и шестерня.`,
+        `Эхо шагов чуть запаздывает. Камень ещё помнит, что здесь жили и клепали.`,
+      ],
+    },
+    village: {
+      type: `village`,
+      name: `Посёлок у трубы`,
+      image: `/locations/village.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Избы стоят вдоль огромной трубы. Колодец открыт, верёвка сухая, вентиль тёплый.`,
+        `На пороге — миска с кашей. Кто-то ушёл, не доев, и не закрыл заслонку.`,
+        `Крыши целые. Петух молчит, но дома ещё держат давление.`,
+      ],
+    },
+    field: {
+      type: `field`,
+      name: `Ржавая пустошь`,
+      image: `/locations/field.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Серое поле до тумана. Мельница вдалеке без крыльев, зато с оборванным приводом.`,
+        `Вороны сидят ровно на проводах, которых уже нет. Пашня вскрыта — сеять некому.`,
+        `На меже крест без имени и ржавый манометр. Земля вокруг мягкая.`,
+      ],
+    },
+    mound: {
+      type: `mound`,
+      name: `Курган с манометром`,
+      image: `/locations/mound.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Холм с лентами на жердях. Вместо идола — циферблат, ушедший за красное.`,
+        `Под дёрном гул, как от далёкой песни и далёкого котла.`,
+        `На вершине чаша с дождевой водой. Стрелка не дёргается. Тихо и ясно.`,
+      ],
+    },
+    river: {
+      type: `river`,
+      name: `Шлюзовая река`,
+      image: `/locations/river.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Река идёт медленно между створками шлюза. Лодка на боку, вёсла сложены аккуратно.`,
+        `Ивы пьют тёмную воду. На том берегу — стена тумана и ряд заклёпок в небе.`,
+        `На отмели блестит галька и медная шайба. Река сегодня не злится.`,
+      ],
+    },
+    tavern: {
+      type: `tavern`,
+      name: `Корчма «Под давлением»`,
+      image: `/locations/tavern.webp`,
+      shop: !0,
+      nav: !1,
+      texts: [
+        `Окна горят. Внутри пахнет квасом, дымом и машинным маслом. Хозяин кивает, как старому гостю.`,
+        `За стойкой двое молчат. Огонь в очаге ровный, манометр над барной доской в зелёном.`,
+        `Над дверью вывеска почти стёрлась. Внутри тепло — редкая удача на заставе.`,
+      ],
+    },
+    market: {
+      type: `market`,
+      name: `Барахолка шестерён`,
+      image: `/locations/market.webp`,
+      shop: !0,
+      nav: !1,
+      texts: [
+        `Повозка, сукно, лоток с кореньями и винтами. Торговец улыбается: «Спрашивай цену, не происхождение.»`,
+        `На лотке — лента, звено кольчуги, настой. Цены углем, но торговаться можно.`,
+        `Фонарь качается на медной дуге. Вещи в его свете выглядят дороже. Или лучше.`,
+      ],
+    },
+    kapishche: {
+      type: `kapishche`,
+      name: `Капище котлов`,
+      image: `/locations/kapishche.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Идолы стоят в роще, а в груди у них топки. Воздух густой, как перед грозой.`,
+        `У подножия зола, горсть зерна и остывшая заклёпка. Кто-то кормил богов недавно.`,
+        `Здесь слой мира тоньше. Если остаться, можно услышать, как спят машинные имена.`,
+      ],
+    },
+    city: {
+      type: `city`,
+      name: `Латунный посад`,
+      image: `/locations/city.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Улицы обрываются туманом. Купола целы, рынок пуст — но город ещё держит пар.`,
+        `В переулке часы без стрелок. Мостовая хранит тепло чужих шагов и чужих труб.`,
+        `Над воротами герб стёрт. Стражи нет. Войти можно свободно, если не боишься эха.`,
+      ],
+    },
+    fog: {
+      type: `fog`,
+      name: `Сопло тумана`,
+      image: `/locations/fog.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Земли почти нет — только привычка земли быть. Туман здесь выдыхает бог.`,
+        `Шёпот: «Останься, так легче.» Вежливый. Пахнет выхлопом. Не слушай.`,
+        `Под ногами угадывается шестигранник. Осколок ещё держится заклёпками.`,
+      ],
+    },
+    nav: {
+      type: `nav`,
+      name: `Навь под топкой`,
+      image: `/locations/nav.webp`,
+      shop: !1,
+      nav: !0,
+      texts: [
+        `Небо — потолок из пепла. Деревья без листьев, трубы без пара. Здесь ты слабее, это честно.`,
+        `Тени ходят медленно, как кочегары без смены. Выход ищут ногами, не молитвой.`,
+        `Холодно, но терпимо. Врата Яви где-то рядом — ищи стрелками по рельсам.`,
+      ],
+    },
+    nav_gate: {
+      type: `nav_gate`,
+      name: `Врата Яви`,
+      image: `/locations/nav_gate.webp`,
+      shop: !1,
+      nav: !0,
+      texts: [
+        `Каменная щель с латунным ободом. За ней — право быть живым. Холод отступает на шаг.`,
+        `На косяке зарубки и риски давления. Кто-то уже возвращался. Можно и тебе.`,
+      ],
+    },
+    bonefield: {
+      type: `bonefield`,
+      name: `Костяное поле`,
+      image: `/locations/bonefield.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Земля усеяна белым. Ветер перебирает рёбра, как струны, и шестерни, как чётки.`,
+        `Череп у ноги без челюсти. Он всё равно как будто улыбается ключом в глазнице.`,
+      ],
+    },
+    eye: {
+      type: `eye`,
+      name: `Око Забвения`,
+      image: `/locations/eye.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Центр осколка. Туман смотрит в ответ сквозь стекло манометра. Мир держится на том, что ты ещё здесь.`,
+        `Нет алтаря и нет врага. Есть только выбор остаться свидетелем и не сбросить давление в ноль.`,
+      ],
+    },
+    mill: {
+      type: `mill`,
+      name: `Ржавая мельница`,
+      image: `/locations/mill.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Крылья мельницы — шестерни. Ветер крутит их вхолостую, пар шипит из ступицы.`,
+        `Мука давно кончилась. В жерновах застряла медная шайба, тёплая на ощупь.`,
+        `Тень крыльев чертит круг на ржавой пустоши. Хорошее место перевести дух.`,
+      ],
+    },
+    bridge: {
+      type: `bridge`,
+      name: `Шлюзовый мост`,
+      image: `/locations/bridge.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Мост держит створки шлюза. Вода внизу чёрная, заклёпки в поручнях ещё горячие.`,
+        `По настилу идут медные трубы, как вены. Туман не решается ступить на пролёт.`,
+        `С одной стороны — рельсы, с другой — камыш. Мост сегодня никого не спрашивает.`,
+      ],
+    },
+    mine: {
+      type: `mine`,
+      name: `Паровая шахта`,
+      image: `/locations/mine.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Устье шахты оковано латунью. Рельсы уходят в тёплую темноту, фонари ещё горят.`,
+        `Пахнет углем и мокрым железом. Кто-то недавно выкатил вагонетку и не вернулся.`,
+        `Над копром манометр в жёлтом. Спускаться не надо — клетка и так дышит паром.`,
+      ],
+    },
+    depot: {
+      type: `depot`,
+      name: `Депо путевых`,
+      image: `/locations/depot.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Депо стоит без смены. Локомотив остыл, но трубы на крыше ещё помнят давление.`,
+        `В пролёте висят ремни и ключи на 18. Пол в масле. Можно переночевать, если не бояться эха.`,
+        `На воротах мелом: «Не свисти». Свистка всё равно нет.`,
+      ],
+    },
+    camp: {
+      type: `camp`,
+      name: `Лагерь у рельс`,
+      image: `/locations/camp.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Палатки у оборванных рельс. Котелок ещё тёплый, следов хозяев — ни одного.`,
+        `Костёр дымит медной копотью. Кто-то оставил хлеб и закрыл заслонку.`,
+        `Ночь здесь короче, чем кажется. Рельсы ведут в туман и обратно.`,
+      ],
+    },
+    chapel: {
+      type: `chapel`,
+      name: `Часовня под паром`,
+      image: `/locations/chapel.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Вместо колокола — дымовая труба. Иконы на крыльце в латунных окладах, тёплые.`,
+        `Внутри пахнет ладаном и машинным маслом. Свечи стоят ровно, как риски на циферблате.`,
+        `Кто-то молился котлу. Котёл не ответил — и это тоже ответ.`,
+      ],
+    },
+    hamlet: {
+      type: `hamlet`,
+      name: `Село у вентиля`,
+      image: `/locations/hamlet.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Избы вокруг общей трубы. Петухи молчат, зато дети ещё кричат.`,
+        `На плетне сушится лён и медная шайба. Здесь не бьются — здесь живут.`,
+        `Колодец общий, хлеб общий. Чужого путника сначала напоят, потом спросят.`,
+      ],
+    },
+    castle: {
+      type: `castle`,
+      name: `Замок под паром`,
+      image: `/locations/castle.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Купола целы. Мост поднят наполовину — достаточно, чтобы пройти пешком.`,
+        `Во дворе стоит холодный котёл. Стража пьёт чай из медных кружек.`,
+        `Герб стёрт, но ворота ещё знают, кого впускать.`,
+      ],
+    },
+    outpost: {
+      type: `outpost`,
+      name: `Аванпост на рельсах`,
+      image: `/locations/outpost.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Вышка с латунной трубой. Кто-то дежурит и не прячется.`,
+        `На столе карта слоя и остывший чай. Путевые кивают своим.`,
+        `Рельсы уходят в туман. Здесь ещё держат смену.`,
+      ],
+    },
+    hut: {
+      type: `hut`,
+      name: `Бродячая изба`,
+      image: `/locations/hut.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Изба на железных ногах остановилась передохнуть. Дверь открыта.`,
+        `Внутри пахнет пирогом и машинным маслом. Хозяйка уже ждала.`,
+        `Ноги избы переступают, как курица. Не пугайся — она ручная.`,
+      ],
+    },
+    wreck: {
+      type: `wreck`,
+      name: `Обгоревший состав`,
+      image: `/locations/wreck.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Вагоны лежат на боку. Колёса ещё тёплые, угля в топке нет.`,
+        `Рельсы завязаны узлом. Кто-то пытался развернуть состав руками.`,
+        `В купе лежит чайник и латунная кружка. Хозяев нет.`,
+      ],
+    },
+    quarry: {
+      type: `quarry`,
+      name: `Латунная каменоломня`,
+      image: `/locations/quarry.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Стенка карьера блестит медью. Кирки воткнуты, как в чужой работе.`,
+        `Внизу лужа масла. По ней ходит отражение трубы, которой нет.`,
+        `На краю лежит шайба размером с ладонь. Тяжёлая, тёплая.`,
+      ],
+    },
+    rails: {
+      type: `rails`,
+      name: `Разорванный путь`,
+      image: `/locations/rails.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Шпалы кончаются в тумане. Рельс загнут к небу, как палец.`,
+        `Стрелка перевода стоит в среднем положении. Ни туда, ни сюда.`,
+        `На шпале мелом: «дальше нет». Мел ещё не отсырел.`,
+      ],
+    },
+    crater: {
+      type: `crater`,
+      name: `Воронка котла`,
+      image: `/locations/crater.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Земля просела кругом. На дне — лопнувший котёл и тишина.`,
+        `Края воронки оплавлены. Трава вокруг рыжая, как окалина.`,
+        `Внутри тепло. Можно сесть и слушать, как остывает мир.`,
+      ],
+    },
+    silo: {
+      type: `silo`,
+      name: `Зерновой элеватор`,
+      image: `/locations/silo.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Башня из клёпаных листов. Зерно кончилось, мыши остались латунными.`,
+        `Лента транспортёра стоит. На ней три зёрнышка и болт.`,
+        `Внутри гулко. Эхо повторяет шаги с опозданием на удар сердца.`,
+      ],
+    },
+    dump: {
+      type: `dump`,
+      name: `Свалка шестерён`,
+      image: `/locations/dump.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Гора зубьев и ободов. Между ними растёт иван-чай.`,
+        `Что-то щёлкает в куче само. Не лезь — пусть щёлкает.`,
+        `На вершине — целое колесо. Можно сесть, как на пень.`,
+      ],
+    },
+    tower: {
+      type: `tower`,
+      name: `Водонапорная башня`,
+      image: `/locations/tower.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Башня держит бак, бак держит небо. Лестница снаружи, без перил.`,
+        `Кран внизу капает тёплой водой. Пить можно, если не боишься ржавчины.`,
+        `Сверху видно шесть соседних клеток. Туман ест дальние.`,
+      ],
+    },
+    observatory: {
+      type: `observatory`,
+      name: `Обсерватория манометров`,
+      image: `/locations/observatory.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Купол открыт. Вместо трубы — подзорный манометр на звёзды-заклёпки.`,
+        `На столе карта неба и карта давления. Они почти совпадают.`,
+        `Стрелка дрожит на нуле. Звёзды сегодня не дышат.`,
+      ],
+    },
+    forge: {
+      type: `forge`,
+      name: `Остывшая кузня`,
+      image: `/locations/forge.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Горн серый. Молот лежит, как спящий. Наковальня ещё помнит удар.`,
+        `В золе — недоделанная подкова и медная шайба.`,
+        `Можно переночевать у остывшего меха. Тяга ещё есть.`,
+      ],
+    },
+    greenhouse: {
+      type: `greenhouse`,
+      name: `Стеклянная оранжерея`,
+      image: `/locations/greenhouse.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Стекло в медных переплётах. Внутри жарко, хотя котла не видно.`,
+        `Огурцы и трубы вьются вместе. Пахнет землёй и маслом.`,
+        `Лейка полная. Кто-то поливал сегодня утром.`,
+      ],
+    },
+    freeze: {
+      type: `freeze`,
+      name: `Ледник труб`,
+      image: `/locations/freeze.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Трубы в инее, хотя кругом лето. Изо рта пар, из клапана — нет.`,
+        `Под ногой хрустит не снег, а окалина, прикипевшая к холоду.`,
+        `В середине льда торчит манометр. Стрелка за красным и не двигается.`,
+      ],
+    },
+    pine: {
+      type: `pine`,
+      name: `Сосновая дымка`,
+      image: `/locations/pine.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Сосны окованы кольцами меди. Хвоя пахнет смолой и горячим маслом.`,
+        `Между стволами тропа из шпал. Смола капает на рельс и застывает.`,
+        `Поляна круглая. Хорошее место подкараулить зверя или перевести дух.`,
+      ],
+    },
+    grove: {
+      type: `grove`,
+      name: `Священная роща`,
+      image: `/locations/grove.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Деревья в лентах. В дуплах — маленькие топки, тёплые как ладонь.`,
+        `Здесь не рубят. Здесь кланяются и проверяют давление на коре.`,
+        `Под дубом чаша с зерном и заклёпкой. Боги спят, но слушают.`,
+      ],
+    },
+    thicket: {
+      type: `thicket`,
+      name: `Ивовый частокол`,
+      image: `/locations/thicket.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Ивы сплелись в стену. Между прутьями — медная проволока.`,
+        `Идти нужно боком. Ветка хлещет, как ремень привода.`,
+        `В середине частокола сухое место и следы копыт-шестерён.`,
+      ],
+    },
+    copse: {
+      type: `copse`,
+      name: `Берёзовый дымолес`,
+      image: `/locations/copse.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Берёзы белые, как новые трубы. Чёрные чёрточки — не чечевицы, риски.`,
+        `Под корой гудит. Кто-то пустил пар в ствол и забыл закрыть.`,
+        `Полянка с муравейником из стружки и шайб. Муравьи живые.`,
+      ],
+    },
+    taiga: {
+      type: `taiga`,
+      name: `Тайга у рельс`,
+      image: `/locations/taiga.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Ели до тумана. Рельс ныряет в мох и выныривает через десяток шагов.`,
+        `Пахнет хвоей, смолой и угольной пылью с далёкой топки.`,
+        `На мху следы зверя и след подковы. Охотиться можно.`,
+      ],
+    },
+    lake: {
+      type: `lake`,
+      name: `Масляное озеро`,
+      image: `/locations/lake.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Вода чёрная и не плещет. По ней радужные круги, как от масла.`,
+        `Лодка на берегу. Вёсла целы, в днище — заклёпка вместо пробоины.`,
+        `У кромки блестит чешуя. Рыба здесь берёт на медную бусину.`,
+      ],
+    },
+    lock: {
+      type: `lock`,
+      name: `Второй шлюз`,
+      image: `/locations/lock.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Створки закрыты наполовину. Между ними лестница из скоб.`,
+        `Вода в камере стоит. На стенке уровень отмечен углем: «вчера».`,
+        `Можно перейти по балке. Внизу тихо, как в колоколе.`,
+      ],
+    },
+    creek: {
+      type: `creek`,
+      name: `Ручей-конденсат`,
+      image: `/locations/creek.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Из трубы в холме бежит тёплый ручей. Камни скользкие от масла.`,
+        `На берегу ивы и ржавый кран. Кран крутится, воды не прибавляет.`,
+        `В струе вспыхивает рыбка. Удить можно прямо с вентиля.`,
+      ],
+    },
+    station: {
+      type: `station`,
+      name: `Станция путевых`,
+      image: `/locations/station.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Перрон без поезда. Часы без стрелок, зато чай в кипятке.`,
+        `Дежурная кивает. Здесь ночуют свои и не спрашивают билет.`,
+        `На скамейке карта слоя и остывший манометр. Можно спросить дорогу.`,
+      ],
+    },
+    milltown: {
+      type: `milltown`,
+      name: `Посёлок мельников`,
+      image: `/locations/milltown.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Избы вокруг общей шестерни. Крылья мельниц торчат из крыш.`,
+        `Дети гоняют обруч-шайбу. Взрослые молчат и смотрят на небо-котёл.`,
+        `Хлеб здесь пекут с медной крошкой. Чужого сначала накормят.`,
+      ],
+    },
+    pier: {
+      type: `pier`,
+      name: `Пристань кочегаров`,
+      image: `/locations/pier.webp`,
+      shop: !1,
+      nav: !1,
+      texts: [
+        `Мостки в чёрную воду. Баржа на приколе, топка холодная.`,
+        `На свае висит спасательный круг из ремня привода.`,
+        `Рыбаки кивают. Здесь не воруют — здесь ждут, пока река вздохнёт.`,
+      ],
+    },
+    bazaar: {
+      type: `bazaar`,
+      name: `Ярмарка заклёпок`,
+      image: `/locations/bazaar.webp`,
+      shop: !0,
+      nav: !1,
+      texts: [
+        `Лотки под парусиной. Крик цен, запах кваса, масла и корицы.`,
+        `Торговец вешает гири на безмен-манометр. «Спрашивай, не стесняйся.»`,
+        `На краю ярмарки играют в орла-решку. Медяки звенят честно.`,
+      ],
+    },
+    apothecary: {
+      type: `apothecary`,
+      name: `Лавка настоев`,
+      image: `/locations/apothecary.webp`,
+      shop: !0,
+      nav: !1,
+      texts: [
+        `Стекло, травы, медные колбы. Хозяйка взвешивает корень на ладони.`,
+        `Пахнет полынью и машинным маслом. На полке — банки с рисками давления.`,
+        `«Лечит не всё, но цены честные.» Настой тёплый, даже закрытый.`,
+      ],
+    },
+  },
+  pe = {
+    0: { name: `Явь под паром`, goal: `kapishche`, goalName: `Капище котлов` },
+    1: { name: `Сон машинных богов`, goal: `city`, goalName: `Латунный посад` },
+    2: { name: `Сердце осколка`, goal: `eye`, goalName: `Око Забвения` },
+  },
+  me =
+    `forest.pine.grove.thicket.copse.taiga.swamp.ruins.village.field.mound.river.fog.bonefield.mill.bridge.mine.depot.camp.chapel.hamlet.castle.outpost.hut.wreck.quarry.rails.crater.silo.dump.tower.observatory.forge.greenhouse.freeze.lake.lock.creek.station.milltown.pier`.split(
+      `.`,
+    ),
+  he = [
+    `village`,
+    `city`,
+    `hamlet`,
+    `castle`,
+    `outpost`,
+    `hut`,
+    `station`,
+    `milltown`,
+    `pier`,
+  ],
+  ge = [`forest`, `pine`, `grove`, `thicket`, `copse`, `taiga`],
+  _e = [`river`, `swamp`, `bridge`, `lake`, `lock`, `creek`],
+  ve = {
+    human: [
+      `Марфа Клепалина`,
+      `Егор Путевой`,
+      `Анисья Медная`,
+      `Фрол Дозорный`,
+      `Пелагея Шайбова`,
+    ],
+    lesovik: [
+      `Мох-за-ухом`,
+      `Ива-в-дыму`,
+      `Корневой`,
+      `Чащобник Тихий`,
+      `Дымка`,
+    ],
+    vodyanoy: [
+      `Ил-на-ладони`,
+      `Шлюзница Вера`,
+      `Омут Малой`,
+      `Капля`,
+      `Тихая заводь`,
+    ],
+    kostyanoy: [
+      `Сажа`,
+      `Костяной Иван`,
+      `Зола-в-кармане`,
+      `Пепел Серый`,
+      `Скрип`,
+    ],
+    zharkrovny: [
+      `Жар-в-груди`,
+      `Горн Петров`,
+      `Уголёк`,
+      `Искра Ночная`,
+      `Топка-Мария`,
+    ],
+  },
+  ye = [
+    `«Пар сегодня добрый. Не слушай, если зовёт по имени.»`,
+    `«Медяки прячь в сапог. Туман любит звон.»`,
+    `«Боги спят в котлах. Не стучи по стенке — им снится давление.»`,
+    `«Если увидишь стражника без тени — это не стражник.»`,
+    `«Рыба у шлюза берёт на медную бусину. Честно.»`,
+    `«В Нави под топкой тепло, да возвращаются не все.»`,
+    `«Заклёпка держит мир лучше молитвы. Но молитва дешевле.»`,
+  ],
+  be = [
+    `«Явь — привычка земли быть. Пока клепают трубы, туман ест только края.»`,
+    `«Медяки — не золото богов. Это кровь котлов, остывшая в ладони.»`,
+    `«Дар — не вода в жилах. Это давление, которое ещё помнит твоё имя.»`,
+    `«Слои лежат как шайбы. Капище, посад, око. Дальше — кто видел, молчит.»`,
+    `«Бродячие избы ходят по шпалам. Кормят путника, если не врёт с порога.»`,
+  ],
+  xe = [
+    {
+      id: `bread`,
+      text: `Делится хлебом с золой. Тепло садится в грудь.`,
+      hp: 6,
+      xp: 3,
+    },
+    {
+      id: `debt`,
+      text: `Вспоминает долг и суёт медяки в ладонь.`,
+      gold: 9,
+      xp: 2,
+    },
+    { id: `curse`, text: `Сплетня оказывается проклятием. Рука ноет.`, hp: -5 },
+    {
+      id: `wort`,
+      text: `Суёт настой «на дорогу, пока пар добрый».`,
+      item: `wort`,
+      xp: 4,
+    },
+    {
+      id: `theft`,
+      text: `Пока говоришь, пальцы гостя легче твоих. Медяки звякнули не туда.`,
+      gold: -8,
+    },
+    { id: `bless`, text: `Крестит на котёл. Дар чуть встаёт.`, mp: 5, xp: 3 },
+    {
+      id: `rumor`,
+      text: `Шепчет про клад у межи. Может, врёт. Удача зудит.`,
+      xp: 5,
+    },
+  ],
+  Se = {
+    old_woman: `easy`,
+    black_apple: `medium`,
+    wounded: `medium`,
+    idol_blood: `hard`,
+    well: `medium`,
+    two_travelers: `medium`,
+    eyed_bird: `easy`,
+    pyre: `hard`,
+    mirror: `very_hard`,
+    beggar_god: `easy`,
+    shadow_woman: `hard`,
+    speaking_wolf: `medium`,
+    black_cup: `easy`,
+    lullaby: `medium`,
+  },
+  E = [
+    {
+      id: `old_woman`,
+      title: `Старуха у шлюза`,
+      intro: `В густом пару, что стелется над шлюзовой рекой, ты видишь старуху у корней-труб. Она сидит на ржавой заклёпке размером с колесо и манит пальцем — рука лёгкая, как у птицы, на запястье медный браслет-манометр. От неё веет непонятным холодком, хотя вода рядом кипит. Просит проводить её к створке шлюза, где «ещё можно напиться без цены». Подойдёшь — или обойдёшь стороной, пока туман не закрыл тропу?`,
+      checkStat: `cha`,
+      checkDC: 12,
+      bribeCost: 10,
+      talk: [
+        { id: `t1`, text: `«Я сам едва помню берег. Пойдём вместе.»` },
+        { id: `t2`, text: `«Вода здесь чужая. Лучше не пить.»` },
+        { id: `t3`, text: `«Скажи имя — тогда решу.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты говоришь спокойно. Старуха кивает и доходит сама. На ладони остаётся корень.`,
+          item: `root`,
+          flag: `helped_crone`,
+          xp: 8,
+        },
+        statFail: {
+          text: `Слова выходят грубо. Она уходит в камыш. На месте — мокрый след и остывший вентиль.`,
+          luck: 1,
+        },
+        bribe: {
+          text: `Монеты звякают. Старуха прячет их в холст и оставляет корень «за дорогу».`,
+          item: `root`,
+          flag: `helped_crone`,
+          xp: 6,
+        },
+        luckOk: {
+          text: `Кубик лягает удачно. На тропе к шлюзу уже лежит флакон — как будто ждал.`,
+          item: `tears`,
+          xp: 8,
+        },
+        luckFail: {
+          text: `Не вышло. Старуха качает головой и растворяется в камыше, оставив шипение клапана.`,
+        },
+        talk: {
+          t1: {
+            text: `Вы доходите до лужи у створки. Она пьёт и благодарит. В руке — корень живучки.`,
+            item: `root`,
+            flag: `helped_crone`,
+            xp: 8,
+          },
+          t2: {
+            text: `Она кивает без обиды. «Правильно.» Уходит. В камыше остаётся холод — и удача чуть садится.`,
+            luck: -1,
+          },
+          t3: {
+            text: `Имя сразу выпадает из головы. За звон она не платит. Голова гудит, как котёл.`,
+            hp: -4,
+          },
+        },
+      },
+    },
+    {
+      id: `black_apple`,
+      title: `Ребёнок с яблоком`,
+      intro: `На обочине туманной шпалы стоит мальчик в куртке на два размера больше. В ладонях чёрное яблоко — кожура матовая, как накипь котла, и из черенка тонко свистит пар. «Возьми, — говорит он слишком взрослым голосом, — а то оно само берёт.» Глаза у него человеческие, но зрачки — как риски на циферблате. Возьмёшь плод, отодвинешь мальчика хлебом — или оставишь это место, пока яблоко не выбрало тебя само?`,
+      checkStat: `cha`,
+      checkDC: 12,
+      bribeCost: 8,
+      talk: [
+        { id: `t1`, text: `«Чьё оно было до тебя?»` },
+        { id: `t2`, text: `«Давай лучше хлеб. Яблоки подождут.»` },
+        { id: `t3`, text: `«Держи сам. Мне хватает своей ноши.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Яблоко само катится в траву и гаснет. Мальчик смеётся по-человечески и отдаёт ленту.`,
+          item: `ribbon`,
+          xp: 6,
+        },
+        statFail: {
+          text: `Ты берёшь не то. Яблоко тёплое. Мальчик исчезает, оставив запах гари.`,
+          item: `black_apple`,
+        },
+        bribe: {
+          text: `Монеты ему важнее яблока. Он прячет их и оставляет ленту.`,
+          item: `ribbon`,
+          xp: 6,
+          flag: `fed_child`,
+        },
+        luckOk: {
+          text: `Кубик падает удачно. Яблоко трескается — внутри серебро и крошка шестерни.`,
+          gold: 14,
+          xp: 6,
+        },
+        luckFail: {
+          text: `За спиной хрустит яблоко — кто-то всё же его взял. Не ты.`,
+          luck: -1,
+        },
+        talk: {
+          t1: {
+            text: `Он не отвечает. Яблоко остаётся сказкой. Удача ёжится.`,
+            luck: -1,
+          },
+          t2: {
+            text: `Ест жадно и плачет обыкновенными слезами. Оставляет ленту.`,
+            item: `ribbon`,
+            xp: 6,
+            flag: `fed_child`,
+          },
+          t3: {
+            text: `Кивает. За спиной всё равно кто-то берёт яблоко. Удача чуть садится.`,
+            luck: -1,
+          },
+        },
+      },
+    },
+    {
+      id: `wounded`,
+      title: `Раненый у межи`,
+      intro: `У межи, где поле кончается ржавой трубой, лежит клёпальщик в промасленной стёганке. Он держит живот — между пальцев блестит не только кровь, но и машинное масло. «Добей. Или вытащи. Только не оставляй так,» — голос ровный, как у человека, который уже посчитал давление. Рядом секира с выбитой заклёпкой и фляга, которой он не может достать. Вытащишь его к камню, заберёшь клинок — или спросишь про клад, пока он ещё отвечает?`,
+      checkStat: `str`,
+      checkDC: 13,
+      bribeCost: 14,
+      talk: [
+        { id: `t1`, text: `«Где болит сильнее? Молчи и дыши.»` },
+        { id: `t2`, text: `«Клинок мне нужнее, чем тебе.»` },
+        { id: `t3`, text: `«Скажи место клада — и перевяжу.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты тащишь его к камню и перевязываешь крепко. Он шепчет, где «в земле звенит».`,
+          flag: `spared_warrior`,
+          xp: 10,
+        },
+        statFail: {
+          text: `Сил не хватает. Он благодарит взглядом и затихает. В сумке остаётся его нож.`,
+          item: `short_sword`,
+          flag: `mercy_kill`,
+          xp: 8,
+        },
+        bribe: {
+          text: `Золото на воду и бинты. Он доходит до посёлка сам. Долг записан.`,
+          flag: `spared_warrior`,
+          xp: 8,
+        },
+        luckOk: {
+          text: `Ране не так глубока, как казалось. Он встаёт и отдаёт секиру «за жизнь».`,
+          item: `rusty_axe`,
+          xp: 10,
+        },
+        luckFail: {
+          text: `Не повезло. Кровь не остановить. Он устало закрывает глаза.`,
+          cha: -1,
+        },
+        talk: {
+          t1: {
+            text: `Перевязка держит. Он шепчет про землю, где звенит.`,
+            flag: `spared_warrior`,
+            xp: 8,
+          },
+          t2: {
+            text: `Секира снимается легко. Он не проклинает — он устал. Совесть тяжелее железа.`,
+            cha: -1,
+            hp: -5,
+            flag: `robbed_dying`,
+          },
+          t3: {
+            text: `Он смотрит долго и молчит. Перевязка срывается. Клад остаётся сказкой.`,
+            hp: -6,
+          },
+        },
+      },
+    },
+    {
+      id: `idol_blood`,
+      title: `Идол просит`,
+      intro: `В роще стоит деревянный бог без имени. В груди — не выемка, а маленькая топка с остывшими углями, и над ней стеклянный глаз давления, ушедший в ноль. Голос без рта, будто из трубы: «Капля. Любая. Котёл хочет помнить, что он живой.» Воздух густой, как перед грозой, волосы на руках встают. Дашь кровь, подкупишь монетами, как углем, — или откажешь идолу, рискуя, что туман подойдёт ближе?`,
+      checkStat: `end`,
+      checkDC: 13,
+      bribeCost: 16,
+      talk: [
+        { id: `t1`, text: `«Возьми воду. Сегодня она дороже крови.»` },
+        { id: `t2`, text: `«Держи клетку сам. Я ещё живой.»` },
+        { id: `t3`, text: `«Скажи, кого ты помнишь — и решу.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты терпишь и даёшь кровь. Клетка вокруг становится чётче. Рука ноет.`,
+          flag: `blood_idol`,
+          xp: 12,
+        },
+        statFail: {
+          text: `Голова кружится. Идол молчит. Туман подходит ближе.`,
+          flag: `refused_idol`,
+        },
+        bribe: {
+          text: `Монеты падают в топку, как капли. Идол принимает замену. Туман чуть отступает.`,
+          xp: 8,
+          flag: `blood_idol`,
+        },
+        luckOk: {
+          text: `Из выемки сами сыплются монеты. Идол сыт без тебя.`,
+          gold: 12,
+          xp: 8,
+        },
+        luckFail: {
+          text: `Дерево не отвечает. Где-то падает ветка — слишком вовремя.`,
+        },
+        talk: {
+          t1: {
+            text: `Вода темнеет, притворяясь кровью. Идол принимает ложь. Удача ёжится.`,
+            luck: -1,
+            flag: `lied_idol`,
+          },
+          t2: {
+            text: `Идол молчит так, будто ты подтвердил то, что он думал о людях.`,
+            flag: `refused_idol`,
+          },
+          t3: {
+            text: `Он называет имя, которого ты не знаешь. Клетка на миг становится чётче.`,
+            flag: `blood_idol`,
+            xp: 10,
+          },
+        },
+      },
+    },
+    {
+      id: `well`,
+      title: `Голос из колодца`,
+      intro: `Колодец без сруба — только чугунный обод и цепь, уходящая в черноту. Голос снизу — твой, только моложе, и между словами слышен стук капель по металлу: «Вытащи. Я помню лето. Я помню, как труба ещё пела.» Верёвка лежит рядом, сухая, будто её уже пробовали. Это может быть ты из другого слоя — или топка, которая научилась говорить твоим ртом. Спустишь верёвку, запечатаешь камнями — или поговоришь, не давая рук?`,
+      checkStat: `int`,
+      checkDC: 12,
+      bribeCost: 10,
+      talk: [
+        { id: `t1`, text: `«Какое лето? Назови реку.»` },
+        { id: `t2`, text: `«Сиди. Камни честнее верёвки.»` },
+        { id: `t3`, text: `«Поговорим. Рук не дам.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты понимаешь: это не ты. Говоришь об этом вслух. Голос стихает. В груди теплеет.`,
+          mp: 6,
+          xp: 8,
+        },
+        statFail: {
+          text: `Верёвка рвётся. Снизу смеются. На краю остаётся мокрый ключ.`,
+          item: `key_ring`,
+          hp: -2,
+        },
+        bribe: {
+          text: `Монеты падают вниз. Звон долго не кончается. Сверху выкатывается ключ.`,
+          item: `key_ring`,
+          xp: 6,
+        },
+        luckOk: {
+          text: `Верёвка держит. Снизу — только ведро с чистой водой. Мана возвращается.`,
+          mp: 8,
+          xp: 6,
+        },
+        luckFail: {
+          text: `Камни срываются сами. Голос становится тише, как разговор за стеной.`,
+          flag: `sealed_well`,
+        },
+        talk: {
+          t1: {
+            text: `Он путается. Верёвка рвётся на середине. Голос снизу смеётся.`,
+            hp: -4,
+            mp: -2,
+          },
+          t2: {
+            text: `Камни падают долго. Сон сегодня будет без колодцев — и без покоя.`,
+            flag: `sealed_well`,
+            hp: -3,
+          },
+          t3: {
+            text: `Говорите о поле, которого не было. К концу неясно, кто кого утешал. Мана капает обратно.`,
+            mp: 6,
+            xp: 5,
+          },
+        },
+      },
+    },
+    {
+      id: `two_travelers`,
+      title: `Двое у тропы`,
+      intro: `У парового костра сидят двое. Один в промасленной куртке: «Он тень, не корми. У теней нет заклёпок на вороте.» Другой, без тени на земле, улыбается слишком тепло: «Он лжёт, чтобы съесть твой хлеб первым. Посмотри, как у него дымится рукав.» Между ними — котелок, в котором кипит что-то слишком чёрное для каши, и одна ложка на двоих. Положишь еду посередине, выберешь одного — или потребуешь показать руки, пока пар не скрыл, у кого их нет?`,
+      checkStat: `cha`,
+      checkDC: 13,
+      bribeCost: 12,
+      talk: [
+        { id: `t1`, text: `«Еда посередине. Ешьте, если можете.»` },
+        { id: `t2`, text: `«Мне всё равно, кто из вас врёт.»` },
+        { id: `t3`, text: `«Покажите руки. У тени их не бывает.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты говоришь так, что оба замолкают. На земле остаётся янтарь — плата за мир.`,
+          item: `amber`,
+          xp: 10,
+        },
+        statFail: {
+          text: `Слова путаются. Один режет другого. Платит серебром, которое пахнет пеплом.`,
+          gold: 15,
+          flag: `trusted_liar`,
+        },
+        bribe: {
+          text: `Хлеб и монеты между ними. Никто не ест. Когда отходишь, костёр вспыхивает сам. В следе — янтарь.`,
+          item: `amber`,
+          xp: 10,
+        },
+        luckOk: {
+          text: `Оба оказываются живыми. Отдают кольчужное звено «за то, что не выбрал».`,
+          item: `padded`,
+          xp: 8,
+        },
+        luckFail: {
+          text: `Один исчезает, улыбаясь. Второй плачет. Ты не знаешь, кого спас.`,
+          xp: 4,
+        },
+        talk: {
+          t1: {
+            text: `Они смотрят на еду, потом друг на друга. Никто не ест. В следе — янтарь.`,
+            item: `amber`,
+            xp: 10,
+          },
+          t2: {
+            text: `Первый кивает и режет второго без спешки. Брызги горячие. Платы нет.`,
+            hp: -5,
+            flag: `trusted_liar`,
+          },
+          t3: {
+            text: `Второй показывает ладони. Первый растворяется — и кусает за запястье из воздуха.`,
+            hp: -4,
+          },
+        },
+      },
+    },
+    {
+      id: `eyed_bird`,
+      title: `Птица с человеческим глазом`,
+      intro: `Ворон сидит на медной трубе так близко, что видно: правый глаз — серо-зелёный, чей-то, живой, а вокруг него латунное кольцо, как оправа лупы. Он каркает не карканьем, а словом «останься», и пар изо рта ложится буквой на воздух. Туман за спиной птицы гуще, чем впереди, будто она сторожит сопло. Поклонишься, не спугнув, спросишь, чей глаз, — или дашь хлеб и уйдёшь, пока слово не стало приказом?`,
+      checkStat: `dex`,
+      checkDC: 12,
+      bribeCost: 9,
+      talk: [
+        { id: `t1`, text: `«Чей глаз, ворон?»` },
+        { id: `t2`, text: `«Не останусь. Проводи десять шагов — и волен.»` },
+        { id: `t3`, text: `«Возьми хлеб. Глаз оставь себе.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты кланяешься ловко, не спугнув. Туман перед тобой редеет на десять шагов.`,
+          xp: 7,
+          flag: `honored_bird`,
+        },
+        statFail: {
+          text: `Рука дёргается к глазу. Клюв бьёт в кисть. Рука будет ныть в сырую погоду.`,
+          hp: -5,
+          luck: 1,
+        },
+        bribe: {
+          text: `Монеты блесят. Ворон клюёт одну и уносит. С пера падает настой.`,
+          item: `wort`,
+        },
+        luckOk: {
+          text: `Перо падает само. В нём — пузырёк настоя.`,
+          item: `wort`,
+          xp: 6,
+        },
+        luckFail: {
+          text: `Ворон уносит твою удачу на десять взмахов и возвращает половину.`,
+          luck: -1,
+        },
+        talk: {
+          t1: {
+            text: `Клюёт кисть. Глаз остаётся у птицы. Твоя кровь — ему весть.`,
+            hp: -5,
+            luck: 1,
+          },
+          t2: {
+            text: `Клонит голову слишком по-человечески. Туман редеет. Это почти дорога.`,
+            xp: 7,
+            flag: `honored_bird`,
+          },
+          t3: {
+            text: `Клюёт аккуратно — в кисть. Улетает. Хлеб падает в грязь.`,
+            hp: -3,
+          },
+        },
+      },
+    },
+    {
+      id: `pyre`,
+      title: `Тлеющий горн`,
+      intro: `Посреди клетки дышит погребальный горн: не костёр — маленькая топка в земле, обложенная кирпичом и лентами. В углях кольцо, и из жара голос, сухой, как зола: «Не туши. Или туши. Только не стой между.» Лица в пламени кивают слишком вежливо, будто ждут правильного обряда. Подбросишь хворост, как положено парословам, заберёшь кольцо живым — или оставишь гореть, пока сами не устанут?`,
+      checkStat: `int`,
+      checkDC: 13,
+      bribeCost: 11,
+      talk: [
+        { id: `t1`, text: `«Вам нужен хворост или тишина?»` },
+        { id: `t2`, text: `«Кольцо — плата живым. Угли — вам.»` },
+        { id: `t3`, text: `«Горите, пока сами не устанете.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты понимаешь обряд и подбрасываешь хворост правильно. Дышать легче. Мана приходит.`,
+          mp: 8,
+          xp: 8,
+          flag: `fed_pyre`,
+        },
+        statFail: {
+          text: `Обряд путается. Из мокрых углей выкатывается костяная чаша.`,
+          item: `bone_cup`,
+          flag: `doused_pyre`,
+        },
+        bribe: {
+          text: `Монеты в жар. Пламя встаёт столбом без боли. Пепел ложится на плечи как плащ.`,
+          mp: 6,
+          xp: 6,
+          flag: `fed_pyre`,
+        },
+        luckOk: {
+          text: `Кольцо само становится монетами в кулаке. Жар не обижается.`,
+          gold: 18,
+          xp: 6,
+        },
+        luckFail: {
+          text: `Палец обжигает. Монеты есть, но рука помнит цену.`,
+          gold: 10,
+          hp: -3,
+        },
+        talk: {
+          t1: {
+            text: `Пламя встаёт. В нём лица кивают. Пепел на плечах. Дышать легче.`,
+            mp: 8,
+            xp: 8,
+            flag: `fed_pyre`,
+          },
+          t2: {
+            text: `Кольцо обжигает и сыплется пеплом. Жадный жест мир не прощает.`,
+            hp: -4,
+          },
+          t3: {
+            text: `Шипит обиженно. Жар бьёт в лицо. Из углей — ничего, кроме копоти.`,
+            hp: -4,
+            flag: `doused_pyre`,
+          },
+        },
+      },
+    },
+    {
+      id: `mirror`,
+      title: `Зеркало в тумане`,
+      intro: `Рама стоит без стены, вбитая в шпалу. Стекло мутное от конденсата: в нём ты, только старше, в той же куртке, но с трубкой у виска, которой у тебя нет. Отражение поднимает руку не в такт и стучит ногтем по стеклу, будто по котлу, проверяя, цело ли давление. Туман обходит раму кругом, не смея войти. Заставишь его моргнуть первым, отдашь ленту — или скажешь вслух, что стекло врёт, рискуя осколком в ладони?`,
+      checkStat: `int`,
+      checkDC: 14,
+      bribeCost: 16,
+      talk: [
+        { id: `t1`, text: `«Моргни первым. Тогда пойду.»` },
+        { id: `t2`, text: `«Забери ленту. Мне она путает шаг.»` },
+        { id: `t3`, text: `«Стекло врёт. Я это знаю.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты смотришь, пока не моргнёт. В голове становится просторно. Мана возвращается.`,
+          mp: 10,
+          xp: 6,
+        },
+        statFail: {
+          text: `Осколки поют. Один врезается в ладонь. В ране — камень памяти.`,
+          hp: -4,
+          item: `memory_shard`,
+        },
+        bribe: {
+          text: `Монета к раме. Отражение кланяется. На стекле карта из инея — не успеваешь запомнить.`,
+          luck: 1,
+          xp: 5,
+        },
+        luckOk: {
+          text: `Стекло само даёт осколок — тёплый, без раны.`,
+          item: `memory_shard`,
+          xp: 8,
+        },
+        luckFail: { text: `Рама пустая. Туман смеётся без зла.` },
+        talk: {
+          t1: {
+            text: `Моргает вторым. Ты помнишь своё имя громче. Мана приходит, будто из ломбарда.`,
+            mp: 10,
+            xp: 6,
+          },
+          t2: {
+            text: `Отражение кланяется и забирает больше, чем ленту. Удача садится.`,
+            luck: -1,
+            gold: -8,
+          },
+          t3: {
+            text: `Стекло трескается. Осколок в ладони холодный. Рамы больше нет.`,
+            hp: -4,
+          },
+        },
+      },
+    },
+    {
+      id: `beggar_god`,
+      title: `Нищий бог`,
+      intro: `У камня сидит нищий в лохмотьях кочегара. Под заплатами — следы позолоты, а за поясом ключ от топки, который он не прячет. Просит не золота — воспоминание о громе. «Перун теперь спит манометром, — говорит он, — но гром ещё можно одолжить, если кто-то его помнит.» В воздухе пахнет озоном и машинным маслом. Отдашь бурю из детства, сунешь монету вместо грома — или скажешь, что боги сами себя доели, и пойдёшь дальше?`,
+      checkStat: `cha`,
+      checkDC: 12,
+      bribeCost: 8,
+      talk: [
+        { id: `t1`, text: `«Гром был в детстве. Забирай, если слышишь.»` },
+        { id: `t2`, text: `«Возьми монету. Гром мне ещё нужен.»` },
+        { id: `t3`, text: `«Боги сами себя доели. Мне идти.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты рассказываешь о буре. Он распрямляется и кланяется до земли. В руке — жар.`,
+          item: `ember`,
+          flag: `shared_storm`,
+          xp: 12,
+        },
+        statFail: {
+          text: `Слова мелкие. Он не обижается. За спиной коротко гремит, без туч.`,
+          flag: `mocked_god`,
+        },
+        bribe: {
+          text: `Ловит монету и смеётся. «Вы всё ещё думаете, что нас покупают.» Выплёвывает корень.`,
+          item: `root`,
+        },
+        luckOk: {
+          text: `Гром случается сам — маленький, добрый. Уголь в ладони.`,
+          item: `ember`,
+          xp: 8,
+        },
+        luckFail: {
+          text: `Тишина. Он кивает: долг записан без процентов.`,
+          flag: `mocked_god`,
+        },
+        talk: {
+          t1: {
+            text: `В голове на миг пусто, где была гроза. Он кланяется. В руке тепло, как от угля.`,
+            item: `ember`,
+            flag: `shared_storm`,
+            xp: 12,
+          },
+          t2: {
+            text: `Монету глотает. Выплёвывает пепел. Обмен горький.`,
+            gold: -5,
+            hp: -3,
+          },
+          t3: {
+            text: `Не обижается. За спиной гремит. Волосы встают. Мир фиксирует долг.`,
+            flag: `mocked_god`,
+          },
+        },
+      },
+    },
+    {
+      id: `shadow_woman`,
+      title: `Женщина без тени`,
+      intro: `На светлом песке у оборванных рельс стоит женщина. Тени нет — даже когда труба над головой отбрасывает полосу. Просит провести через клетку: «Мне нельзя одной. Шпалы считают шаги, а без тени они считают неправильно.» Голос спокойный, пальцы холодные уже на расстоянии. От неё не пахнет смертью — пахнет остывшим металлом. Проведёшь молча, откажешь, чтобы она не потеряла себя окончательно, — или спросишь имя, хотя имена здесь держат дорогу слишком крепко?`,
+      checkStat: `dex`,
+      checkDC: 13,
+      bribeCost: 12,
+      talk: [
+        { id: `t1`, text: `«Иди следом. Не говори, пока не кончится песок.»` },
+        { id: `t2`, text: `«Тень нужна, чтобы не потерять себя. Иди одна.»` },
+        { id: `t3`, text: `«Как тебя звать? Имена здесь держат дорогу.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Вы идёте молча. У края она касается запястья — холодно. Шаг становится легче.`,
+          dex: 1,
+          flag: `two_shadows`,
+          xp: 9,
+        },
+        statFail: {
+          text: `Сбиваешься. Она смотрит с жалостью. Голос садится.`,
+          cha: -1,
+        },
+        bribe: {
+          text: `Монеты на песок. Она берёт их как хлеб и уходит. Песок остаётся пустым и честным.`,
+          cha: 1,
+          xp: 5,
+        },
+        luckOk: {
+          text: `Песок сам складывается в тропу. Она кланяется. У тебя две тени до следующего гекса.`,
+          dex: 1,
+          flag: `two_shadows`,
+          xp: 8,
+        },
+        luckFail: { text: `Песок кончается сразу. Она исчезает, не обижаясь.` },
+        talk: {
+          t1: {
+            text: `Идёте молча. «Теперь у тебя две тени. Одна врёт.» Шаг легче. Сон — тяжелее.`,
+            dex: 1,
+            flag: `two_shadows`,
+            xp: 9,
+          },
+          t2: {
+            text: `Кивает. «Мудро и жестоко.» Уходит. На песке остаётся её отсутствие — и тяжесть в горле.`,
+            cha: -1,
+          },
+          t3: {
+            text: `Имя обжигает язык и выскальзывает. Харизма — дыра, в которую дует.`,
+            cha: -2,
+          },
+        },
+      },
+    },
+    {
+      id: `speaking_wolf`,
+      title: `Волк человечьим голосом`,
+      intro: `Из ржавой пустоши выходит серый волк. Рёбра как гриф, на шее ободок из шестерёнок, будто ошейник, который он сам себе выковал. Говорит из груди, низко, с присвистом пара: «Дай еды или дай работу. Голодный я кусаю. Сытый — могу идти рядом до края клетки.» Глаза умные и голодные сразу. Бросишь ему хлеб, наймёшь до тумана — или скажешь, что охота тоже работа, и посмотришь, кто из вас зверь?`,
+      checkStat: `str`,
+      checkDC: 13,
+      bribeCost: 10,
+      talk: [
+        { id: `t1`, text: `«Ешь. Потом решай, пёс ты или волк.»` },
+        { id: `t2`, text: `«Иди рядом до края клетки. Плачу.»` },
+        { id: `t3`, text: `«Охота — тоже работа. Покажи.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Ты не боишься. Волк это чувствует и оставляет клык — почти клинок.`,
+          item: `bone_knife`,
+          xp: 8,
+        },
+        statFail: {
+          text: `Он не впечатлён. Исчезает в траве. Позже смех повторяется за спиной.`,
+          flag: `wolf_laugh`,
+        },
+        bribe: {
+          text: `Монеты ему не нужны, но он понимает цену. Берёт и уходит. След отпугивает мелочь.`,
+          flag: `fed_wolf`,
+          xp: 6,
+        },
+        luckOk: {
+          text: `Волк оказывается сыт сам. Оставляет клык «на память о хорошем дне».`,
+          item: `bone_knife`,
+          xp: 8,
+        },
+        luckFail: { text: `Голодный взгляд. Уходит без подарка.` },
+        talk: {
+          t1: {
+            text: `Ест медленно, стыдясь, и всё равно кусает. След крови, не охраны.`,
+            hp: -6,
+            flag: `fed_wolf`,
+          },
+          t2: {
+            text: `Идёт сбоку, не дыша. У тумана останавливается. Оставляет клык. Клык тёплый.`,
+            item: `bone_knife`,
+            xp: 8,
+          },
+          t3: {
+            text: `Смеётся грудью и исчезает. Позже смех повторяется, когда на тебя смотрит голодное.`,
+            flag: `wolf_laugh`,
+          },
+        },
+      },
+    },
+    {
+      id: `black_cup`,
+      title: `Чаша с чёрной водой`,
+      intro: `На камне стоит костяная чаша. Вода внутри не плещется — стоит столбом, чёрная, с медным запахом колодца. Надпись выцарапана изнутри, читать можно только наклонив голову: «Пей, если готов отдать лишнее.» Рядом на камне риска, как на манометре, и она дрожит, хотя ветра нет. Выпьешь, выльешь земле, заберёшь чашу сухой — или отойдёшь, оставив лишнее себе?`,
+      checkStat: `end`,
+      checkDC: 12,
+      bribeCost: 9,
+      talk: [
+        { id: `t1`, text: `«Лишнее — обида. Забирай её.»` },
+        { id: `t2`, text: `«Земле виднее. Выливаю.»` },
+        { id: `t3`, text: `«Чашу возьму сухой. Вода подождёт.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Пьёшь. На вкус — колодец и медь. Тело легчает. Рана забывает глубину.`,
+          hp: 14,
+          xp: 6,
+        },
+        statFail: {
+          text: `Вода злее, чем казалась. Горло дерёт. Чаша остаётся на камне.`,
+          hp: -4,
+        },
+        bribe: {
+          text: `Монета в чашу. Вода светлеет. Можно выпить без цены — почти.`,
+          hp: 8,
+          xp: 4,
+        },
+        luckOk: {
+          text: `Вода сама выплёскивается. Из травы — корень толще запястья.`,
+          item: `root`,
+          flag: `poured_cup`,
+        },
+        luckFail: { text: `Чаша пустеет без подарка. Камень просто камень.` },
+        talk: {
+          t1: {
+            text: `На вкус — колодец и медь. Обида уходит. Рана на ребре мелеет.`,
+            hp: 14,
+            xp: 6,
+          },
+          t2: {
+            text: `Земля принимает чёрное и отдаёт холод. Рука ноет.`,
+            hp: -5,
+            flag: `poured_cup`,
+          },
+          t3: {
+            text: `Чаша в сумке звенит без повода и кусает ладонь. Вода подождала — и плюнула.`,
+            hp: -3,
+          },
+        },
+      },
+    },
+    {
+      id: `lullaby`,
+      title: `Колыбельная из-под земли`,
+      intro: `Из-под земли, сквозь ржавые трубы, поёт женский голос — колыбельная ребёнку, которого нет. Трава качается в такт, и вместе с ней качается стрелка брошенного манометра, будто песня держит давление мира. Голос не злой и не добрый: просто очень старый, и в припеве слышно шипение котла, уложенного спать. Подпоёшь куплет, оставишь монеты няньке, дослушаешь как в чужом доме — или уйдёшь, пока сон не принял тебя за своего?`,
+      checkStat: `cha`,
+      checkDC: 13,
+      bribeCost: 11,
+      talk: [
+        { id: `t1`, text: `«Я знаю куплет. Давай вместе.»` },
+        { id: `t2`, text: `«Спите. Мне рано.»` },
+        { id: `t3`, text: `«Дослушаю. Потом уйду, как из чужого дома.»` },
+      ],
+      outcomes: {
+        statOk: {
+          text: `Голос крепнет, радуясь компании. К концу — слёзы без причины и полная мана.`,
+          mp: 12,
+          cha: 1,
+          xp: 8,
+        },
+        statFail: {
+          text: `Песня обрывается. Из земли — серебро, чтобы ты ушёл и не портил лад.`,
+          gold: 14,
+          mp: -2,
+        },
+        bribe: {
+          text: `Монеты в траву, как плата няньке. Голос становится добрее. Здоровье собирается.`,
+          hp: 8,
+          flag: `heard_lullaby`,
+        },
+        luckOk: {
+          text: `Песня сама кончается на доброй ноте. Сон будет глубоким. Здоровье встаёт.`,
+          hp: 10,
+          xp: 6,
+        },
+        luckFail: {
+          text: `Куплет сбивается. Горло дерёт. Лучше идти дальше.`,
+          mp: -2,
+        },
+        talk: {
+          t1: {
+            text: `Рот знает куплет, хотя ты не помнишь. Слёзы без причины. Мана как после сна.`,
+            mp: 12,
+            cha: 1,
+            xp: 8,
+          },
+          t2: {
+            text: `Песня обижается. Из земли — тишина. Горло дерёт.`,
+            mp: -4,
+          },
+          t3: {
+            text: `Конца нет. Уходишь сам. Сон будет тяжёлым, как мокрый холст.`,
+            mp: -3,
+            hp: -2,
+          },
+        },
+      },
+    },
+  ],
+  Ce = {
+    warrior: `power_strike`,
+    volkhv: `black_word`,
+    archer: `aimed_shot`,
+    tracker: `forest_shadow`,
+    rogue: `quick_cut`,
+    bonesetter: `set_bone`,
+  },
+  we = null,
+  D = null,
+  O = null,
+  k = null,
+  Te = !1,
+  A = !1,
+  Ee = 1,
+  De = 1,
+  Oe = !1,
+  ke = 0.32,
+  Ae = 0.36,
+  je = 0.7;
+function Me() {
+  if (typeof window > `u`) return null;
+  if (!we) {
+    let e = window.AudioContext || window.webkitAudioContext;
+    if (!e) return null;
+    ((we = new e({ latencyHint: `interactive` })),
+      (D = we.createGain()),
+      (D.gain.value = je * De),
+      D.connect(we.destination));
+  }
+  return we;
+}
+function Ne(e) {
+  return Number.isFinite(e) ? Math.max(0, Math.min(1, e)) : 0;
+}
+function Pe(e = A) {
+  return Ee <= 0.001 ? 0 : (e ? Ae : ke) * Ee;
+}
+function Fe() {
+  D && (D.gain.value = je * De);
+}
+function Ie() {
+  let e = A ? k : O,
+    t = A ? O : k;
+  if ((t && ((t.volume = 0), t.pause()), e)) {
+    let t = Pe();
+    ((e.volume = t),
+      t > 0.001 && Te ? e.play().catch(() => void 0) : e.pause());
+  }
+}
+function Le(e) {
+  let t = document.createElement(`audio`);
+  return t.canPlayType(`audio/ogg; codecs="vorbis"`) ||
+    t.canPlayType(`audio/ogg`)
+    ? `${e}.ogg?v=5`
+    : `${e}.mp3?v=5`;
+}
+function Re(e) {
+  let t = new Audio();
+  return ((t.preload = `none`), (t.loop = !0), (t.volume = 0), (t.src = e), t);
+}
+function ze(e) {
+  if (e && e.preload !== `auto`) {
+    e.preload = `auto`;
+    try {
+      e.load();
+    } catch {}
+  }
+}
+function Be(e) {
+  return !!(e && !e.src.includes(`v=5`));
+}
+function Ve() {
+  typeof Audio > `u` ||
+    (Be(O) && (O?.pause(), (O = null)), (O ||= Re(Le(`/music/folk`))));
+}
+function He() {
+  typeof Audio > `u` ||
+    (Be(k) && (k?.pause(), (k = null)), (k ||= Re(Le(`/music/battle`))));
+}
+function Ue() {
+  (Ve(), A && He());
+}
+function We() {
+  let e = Me();
+  if ((e && e.state === `suspended` && e.resume(), Fe(), Te)) {
+    Ue();
+    let e = A ? k : O;
+    (ze(e), e && e.paused && Pe() > 0.001 && e.play().catch(() => void 0));
+    return;
+  }
+  ((Te = !0), window.setTimeout(() => Ge(), 200));
+}
+function Ge() {
+  typeof Audio > `u` ||
+    (Ue(),
+    ze(A ? k : O),
+    Ie(),
+    typeof document < `u` &&
+      !Oe &&
+      ((Oe = !0),
+      document.addEventListener(`visibilitychange`, () => {
+        if (document.visibilityState === `visible` && Pe() > 0.001) {
+          let e = Me();
+          (e && e.state === `suspended` && e.resume(),
+            (A ? k : O)?.play().catch(() => void 0));
+        }
+      })));
+}
+function j(e) {
+  ((A = e), (Te = !0));
+  let t = Me();
+  if (
+    (t && t.state === `suspended` && t.resume(),
+    Ve(),
+    e && He(),
+    !O || (e && !k))
+  )
+    return;
+  let n = e ? O : k,
+    r = e ? k : O;
+  if (!r) return;
+  if (n) {
+    (n.pause(), (n.volume = 0));
+    try {
+      n.currentTime = 0;
+    } catch {}
+  }
+  if (Ee <= 0.001) {
+    (r.pause(), (r.volume = 0));
+    return;
+  }
+  try {
+    (r.pause(), (r.currentTime = 0));
+  } catch {}
+  (ze(r), (r.volume = Pe(e)));
+  let i = () => {
+    r.play().catch(() => {
+      window.setTimeout(() => void r.play().catch(() => void 0), 160);
+    });
+  };
+  if (r.readyState >= 2) i();
+  else {
+    let t = () => {
+      (r.removeEventListener(`canplay`, t), A === e && i());
+    };
+    (r.addEventListener(`canplay`, t), i());
+  }
+}
+function Ke(e) {
+  Ee = Ne(e);
+  let t = A ? k : O;
+  if (t) {
+    let e = Pe();
+    ((t.volume = e),
+      e > 0.001 && Te
+        ? t.play().catch(() => void 0)
+        : (O?.pause(), k?.pause()));
+  }
+}
+function qe(e) {
+  ((De = Ne(e)), Fe());
+}
+function M(e, t, n, r = 0.04) {
+  if (De <= 0.001) return;
+  let i = Me();
+  if (!i || !D) return;
+  i.state === `suspended` && i.resume();
+  let a = i.createOscillator(),
+    o = i.createGain(),
+    s = i.createBiquadFilter();
+  ((a.type = n === `sawtooth` || n === `square` ? `triangle` : n),
+    (a.frequency.value = e),
+    (s.type = `lowpass`),
+    (s.frequency.value = Math.min(1800, e * 4)),
+    o.gain.setValueAtTime(1e-4, i.currentTime),
+    o.gain.exponentialRampToValueAtTime(r, i.currentTime + 0.01),
+    o.gain.exponentialRampToValueAtTime(1e-4, i.currentTime + t),
+    a.connect(s),
+    s.connect(o),
+    o.connect(D),
+    (a.onended = () => {
+      try {
+        (a.disconnect(), s.disconnect(), o.disconnect());
+      } catch {}
+    }),
+    a.start(i.currentTime),
+    a.stop(i.currentTime + t + 0.03));
+}
+function N() {
+  M(420, 0.06, `sine`, 0.03);
+}
+function Je() {
+  M(180, 0.16, `sine`, 0.035);
+}
+function Ye() {
+  (M(620, 0.04, `sine`, 0.022),
+    setTimeout(() => M(480, 0.05, `sine`, 0.018), 55));
+}
+function Xe() {
+  if (De <= 0.001) return;
+  let e = Me();
+  if (!e || !D) return;
+  e.state === `suspended` && e.resume();
+  let t = Math.floor(e.sampleRate * 0.09),
+    n = e.createBuffer(1, t, e.sampleRate),
+    r = n.getChannelData(0);
+  for (let n = 0; n < t; n++)
+    r[n] = (Math.random() * 2 - 1) * Math.exp(-n / (e.sampleRate * 0.018));
+  let i = e.createBufferSource();
+  i.buffer = n;
+  let a = e.createBiquadFilter();
+  ((a.type = `bandpass`), (a.frequency.value = 920), (a.Q.value = 1.2));
+  let o = e.createGain();
+  (o.gain.setValueAtTime(0.09, e.currentTime),
+    o.gain.exponentialRampToValueAtTime(1e-4, e.currentTime + 0.12),
+    i.connect(a),
+    a.connect(o),
+    o.connect(D),
+    i.start(),
+    M(180, 0.07, `sine`, 0.03));
+}
+function Ze() {
+  M(140, 0.14, `triangle`, 0.04);
+}
+function Qe() {
+  (M(523, 0.1, `sine`, 0.036),
+    setTimeout(() => M(659, 0.12, `sine`, 0.034), 90),
+    setTimeout(() => M(784, 0.2, `sine`, 0.038), 190));
+}
+function $e() {
+  (M(311, 0.16, `triangle`, 0.038),
+    setTimeout(() => M(247, 0.2, `sine`, 0.036), 130),
+    setTimeout(() => M(185, 0.3, `sine`, 0.04), 280));
+}
+function et() {
+  (M(988, 0.07, `sine`, 0.028),
+    setTimeout(() => M(1319, 0.1, `sine`, 0.03), 60),
+    setTimeout(() => M(1760, 0.12, `triangle`, 0.022), 130));
+}
+function tt() {
+  (M(160, 0.09, `sine`, 0.045),
+    setTimeout(() => M(120, 0.12, `triangle`, 0.04), 70));
+}
+function nt() {
+  (M(220, 0.2, `triangle`, 0.034),
+    M(233, 0.2, `triangle`, 0.028),
+    setTimeout(() => M(165, 0.26, `sine`, 0.032), 140));
+}
+function rt() {
+  (M(392, 0.1, `sine`, 0.032),
+    setTimeout(() => M(523, 0.1, `sine`, 0.034), 90),
+    setTimeout(() => M(659, 0.1, `sine`, 0.036), 180),
+    setTimeout(() => M(784, 0.12, `sine`, 0.038), 280),
+    setTimeout(() => M(1047, 0.22, `triangle`, 0.03), 400));
+}
+function it(e, t) {
+  e === `level`
+    ? rt()
+    : e === `win`
+      ? Qe()
+      : e === `lose`
+        ? $e()
+        : e === `item`
+          ? et()
+          : e === `fail`
+            ? nt()
+            : e === `ok` && tt();
+}
+var at = [
+    { id: `head`, label: `Голова`, col: `left` },
+    { id: `artifact`, label: `Артефакт`, col: `right` },
+    { id: `body`, label: `Туловище`, col: `left` },
+    { id: `weapon`, label: `Оружие`, col: `right` },
+    { id: `legs`, label: `Ноги`, col: `left` },
+    { id: `jewelry`, label: `Украшение`, col: `right` },
+  ],
+  ot = [
+    { id: `nw`, label: `Вперёд-влево`, rotate: -60 },
+    { id: `ne`, label: `Вперёд-вправо`, rotate: 60 },
+    { id: `e`, label: `Вправо`, rotate: 90 },
+    { id: `se`, label: `Назад-вправо`, rotate: 120 },
+    { id: `sw`, label: `Назад-влево`, rotate: -120 },
+    { id: `w`, label: `Влево`, rotate: -90 },
+  ],
+  st = [
+    { id: `ru`, native: `Русский`, english: `Russian`, rtl: !1 },
+    { id: `en`, native: `English`, english: `English`, rtl: !1 },
+    { id: `zh`, native: `中文`, english: `Chinese`, rtl: !1 },
+    { id: `es`, native: `Español`, english: `Spanish`, rtl: !1 },
+    { id: `hi`, native: `हिन्दी`, english: `Hindi`, rtl: !1 },
+    { id: `ar`, native: `العربية`, english: `Arabic`, rtl: !0 },
+    { id: `fr`, native: `Français`, english: `French`, rtl: !1 },
+    { id: `pt`, native: `Português`, english: `Portuguese`, rtl: !1 },
+    { id: `de`, native: `Deutsch`, english: `German`, rtl: !1 },
+    { id: `ja`, native: `日本語`, english: `Japanese`, rtl: !1 },
+  ],
+  ct = {
+    ru: `RU`,
+    en: `ENG`,
+    zh: `ZH`,
+    es: `ES`,
+    hi: `HI`,
+    ar: `AR`,
+    fr: `FR`,
+    pt: `PT`,
+    de: `DE`,
+    ja: `JP`,
+  },
+  lt = `tmz-settings`,
+  ut = new Set([`ar`]),
+  dt = new Set(st.map((e) => e.id)),
+  ft = { ru: { ..._, ...p }, en: { ...d, ...f } },
+  pt = Object.assign({
+    "./i18n-packs/ar.json": () => i(() => import(`./ar-DJenlx95.js`), []),
+    "./i18n-packs/de.json": () => i(() => import(`./de-CJWc2wgk.js`), []),
+    "./i18n-packs/en.json": () => i(() => import(`./en-Ci4yszRD.js`), []),
+    "./i18n-packs/es.json": () => i(() => import(`./es-BbH1vUXn.js`), []),
+    "./i18n-packs/extra-en.json": () =>
+      i(() => import(`./extra-en-oS8L9Ymf.js`), []),
+    "./i18n-packs/extra.json": () => i(() => import(`./extra-C1pGwg9V.js`), []),
+    "./i18n-packs/fr.json": () => i(() => import(`./fr-DBOUACoQ.js`), []),
+    "./i18n-packs/hi.json": () => i(() => import(`./hi-CeDYFyKM.js`), []),
+    "./i18n-packs/ja.json": () => i(() => import(`./ja-Ceu_IGqs.js`), []),
+    "./i18n-packs/pt.json": () => i(() => import(`./pt-BeQDGcdv.js`), []),
+    "./i18n-packs/ru.json": () => i(() => import(`./ru-C3coNu-C.js`), []),
+    "./i18n-packs/zh.json": () => i(() => import(`./zh-CyCWtYdF.js`), []),
+  }),
+  mt = new Map(),
+  ht = {
+    zh: `https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700&display=swap`,
+    ja: `https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap`,
+    ar: `https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@500;700&family=Noto+Naskh+Arabic:wght@500;700&display=swap`,
+    hi: `https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@500;700&display=swap`,
+  };
+function gt(e) {
+  if (typeof document > `u`) return;
+  let t = ht[e];
+  if (!t) return;
+  let n = `tmz-font-${e}`;
+  if (document.getElementById(n)) return;
+  let r = document.createElement(`link`);
+  ((r.id = n),
+    (r.rel = `stylesheet`),
+    (r.href = t),
+    document.head.appendChild(r));
+}
+function _t(e) {
+  if (ft[e]) return Promise.resolve();
+  let t = mt.get(e);
+  if (t) return t;
+  let n = pt[`./i18n-packs/${e}.json`];
+  if (!n) return Promise.resolve();
+  let r = n()
+    .then((t) => {
+      ft[e] = t.default ?? t;
+    })
+    .catch(() => void 0)
+    .finally(() => {
+      mt.delete(e);
+    });
+  return (mt.set(e, r), r);
+}
+var vt = new Set();
+function yt(e) {
+  let t = typeof e == `number` ? e : Number(e);
+  return Number.isFinite(t) ? Math.max(0, Math.min(1, t)) : 1;
+}
+function bt(e) {
+  return dt.has(String(e)) ? e : `ru`;
+}
+function xt() {
+  let e = { lang: `ru`, music: 1, sfx: 1, tutorial: !0 };
+  try {
+    let t = localStorage.getItem(lt);
+    if (!t) return e;
+    let n = JSON.parse(t);
+    return {
+      lang: bt(n.lang),
+      music: yt(n.music ?? 1),
+      sfx: yt(n.sfx ?? 1),
+      tutorial: n.tutorial !== !1,
+    };
+  } catch {
+    return e;
+  }
+}
+var P =
+  typeof window > `u` ? { lang: `ru`, music: 1, sfx: 1, tutorial: !0 } : xt();
+function St() {
+  try {
+    localStorage.setItem(lt, JSON.stringify(P));
+  } catch {}
+}
+function Ct(e) {
+  typeof document > `u` ||
+    ((document.documentElement.lang = e),
+    (document.documentElement.dir = ut.has(e) ? `rtl` : `ltr`));
+}
+function wt() {
+  (St(),
+    Ct(P.lang),
+    gt(P.lang),
+    Ke(P.music),
+    qe(P.sfx),
+    vt.forEach((e) => e(P)));
+}
+typeof window < `u` &&
+  (Ct(P.lang),
+  gt(P.lang),
+  Ke(P.music),
+  qe(P.sfx),
+  ft[P.lang] ||
+    _t(P.lang).then(() => {
+      vt.forEach((e) => e(P));
+    }));
+function Tt() {
+  return P;
+}
+function Et(e) {
+  if (!dt.has(e)) return;
+  let t = P.lang === e;
+  ((P = { ...P, lang: e }), St(), Ct(e), gt(e));
+  let n = () => vt.forEach((e) => e(P));
+  if (ft[e]) {
+    t || (Ke(P.music), qe(P.sfx), n());
+    return;
+  }
+  (n(), _t(e).then(n));
+}
+function Dt(e) {
+  ((P = { ...P, music: yt(e) }), wt());
+}
+function Ot(e) {
+  ((P = { ...P, sfx: yt(e) }), wt());
+}
+function kt(e) {
+  ((P = { ...P, tutorial: !!e }), wt());
+}
+function At(e) {
+  return (
+    vt.add(e),
+    () => {
+      vt.delete(e);
+    }
+  );
+}
+function F(e, t) {
+  let n = ft[P.lang]?.[e] ?? ft.en?.[e] ?? ft.ru?.[e] ?? e;
+  if (t)
+    for (let [e, r] of Object.entries(t)) n = n.replaceAll(`{${e}}`, String(r));
+  return n;
+}
+function I(e) {
+  return F(`item.${e}.name`);
+}
+function jt(e) {
+  return F(`item.${e}.desc`);
+}
+function Mt(e) {
+  return F(`race.${e}.name`);
+}
+function Nt(e) {
+  return F(`class.${e}.name`);
+}
+function L(e) {
+  return F(`skill.${e}.name`);
+}
+function Pt(e) {
+  return F(`skill.${e}.desc`);
+}
+function Ft(e) {
+  return F(`enemy.${e}.name`);
+}
+function It(e) {
+  return F(`hex.${e}.name`);
+}
+function Lt(e) {
+  return F(`kit.${e}.name`);
+}
+function R(e) {
+  return F(`quest.${e}.title`);
+}
+function Rt(e) {
+  return F(`quest.${e}.intro`);
+}
+function zt(e) {
+  return F(`rarity.${e}`);
+}
+function Bt(e) {
+  return F(`stat.${e}`);
+}
+function Vt(e) {
+  return F(`slot.${e}`);
+}
+var Ht = (0, s.createContext)(`ru`);
+function Ut({ children: e }) {
+  let [t, n] = (0, s.useState)(P.lang);
+  return (
+    (0, s.useEffect)(() => At((e) => n(e.lang)), []),
+    (0, s.createElement)(
+      Ht.Provider,
+      { value: t },
+      (0, s.createElement)(
+        `div`,
+        { lang: t, dir: ut.has(t) ? `rtl` : `ltr`, className: `min-h-dvh` },
+        e,
+      ),
+    )
+  );
+}
+function z() {
+  return (0, s.useContext)(Ht);
+}
+function Wt() {
+  let [e, t] = (0, s.useState)(P);
+  return ((0, s.useEffect)(() => At(t), []), e);
+}
+function Gt() {
+  return `i-${Math.random().toString(36).slice(2, 8)}${Date.now().toString(36).slice(-4)}`;
+}
+function Kt() {
+  return 1 + Math.floor(Math.random() * 30);
+}
+function qt() {
+  return Kt();
+}
+function B(e) {
+  return e[Math.floor(Math.random() * e.length)];
+}
+function Jt(e, t = 1) {
+  return { uid: Gt(), defId: e, level: Math.max(1, Math.floor(t)) };
+}
+function V(e) {
+  let t = e?.level;
+  return typeof t == `number` && t >= 1 ? Math.floor(t) : 1;
+}
+function Yt(e, t) {
+  return e ? Math.round(e * (1 + (Math.max(1, t) - 1) * 0.3)) : 0;
+}
+function Xt(e) {
+  return e < 0 ? 1 : Math.max(0, e) * 2;
+}
+function Zt(e) {
+  let t = 1 + Math.max(0, e);
+  return Math.random() < 0.22 ? t + 1 : t;
+}
+var Qt = [`easy`, `medium`, `hard`, `very_hard`];
+function $t(e) {
+  return Se[e] ?? `medium`;
+}
+function en(e, t) {
+  return Qt[Math.min(Qt.length - 1, Qt.indexOf(e) + Math.max(0, t))];
+}
+function tn(e) {
+  return [10, 12, 14, 17][Qt.indexOf(e)] ?? 12;
+}
+function nn(e, t, n) {
+  let r = [0.8, 1, 1.35, 1.8][Qt.indexOf(t)] ?? 1;
+  return Math.max(1, Math.round(e * r) + Math.max(0, n) * 3);
+}
+function rn(e) {
+  return [0.75, 1, 1.45, 2.1][Qt.indexOf(e)] ?? 1;
+}
+function an(e) {
+  return [0, 2, 5, 8][Qt.indexOf(e)] ?? 2;
+}
+function on(e) {
+  return e === `luck` ? `cha` : e;
+}
+function sn(e, t) {
+  return 8 + e * 6 + Math.max(0, t) * 8;
+}
+function cn(e, t, n) {
+  return e * (4 + t + Math.max(0, n) * 2);
+}
+function H(e) {
+  return e ? (w[e.defId] ?? null) : null;
+}
+function ln(e) {
+  return 48 + e * 36;
+}
+function un(e, t, n) {
+  let r = n === `kostyanoy` ? 6 : 0;
+  return 14 + e.end * 2 + t * 3 + r;
+}
+function dn(e, t, n) {
+  let r = n === `vodyanoy` ? 5 : 0;
+  return 4 + e.int * 2 + t + r;
+}
+function fn(e, t = {}) {
+  let n = e ?? { str: 6, dex: 6, int: 6, end: 6, luck: 6, cha: 6 };
+  return {
+    str: (n.str ?? 6) + (t.str ?? 0),
+    dex: (n.dex ?? 6) + (t.dex ?? 0),
+    int: (n.int ?? 6) + (t.int ?? 0),
+    end: (n.end ?? 6) + (t.end ?? 0),
+    luck: (n.luck ?? 6) + (t.luck ?? 0),
+    cha: (n.cha ?? 6) + (t.cha ?? 0),
+  };
+}
+function pn(e) {
+  let t = { armor: 0, attack: 0 };
+  if (!e) return t;
+  for (let n of Object.values(e)) {
+    let e = H(n);
+    if (!e) continue;
+    let r = V(n);
+    ((t.armor += Yt(e.bonuses.armor ?? 0, r)),
+      (t.attack += Yt(e.bonuses.attack ?? 0, r)),
+      [`str`, `dex`, `int`, `end`, `luck`, `cha`].forEach((n) => {
+        let i = e.bonuses[n];
+        typeof i == `number` && (t[n] = (t[n] ?? 0) + Yt(i, r));
+      }));
+  }
+  return t;
+}
+function U(e) {
+  return fn(e.stats, pn(e.equipment));
+}
+function mn(e) {
+  return pn(e.equipment).armor;
+}
+function hn(e) {
+  let t = [];
+  for (let n of Object.values(e.equipment)) {
+    let e = H(n)?.passive;
+    e && !t.includes(e) && t.push(e);
+  }
+  return t;
+}
+function gn(e) {
+  let t = { ...(e.skills ?? {}) };
+  if (!e.equipment) return t;
+  for (let n of Object.values(e.equipment)) {
+    let e = H(n)?.uniqueSkill;
+    e && !(t[e] > 0) && (t[e] = 1);
+  }
+  return t;
+}
+function _n(e) {
+  return de.find((t) => t.id === e)?.mp ?? 0;
+}
+function vn(e, t = 1) {
+  let n = [`str`, `dex`, `int`, `end`, `luck`, `cha`, `armor`, `attack`],
+    r = [];
+  for (let i of n) {
+    let n = e.bonuses[i],
+      a = typeof n == `number` ? Yt(n, t) : 0;
+    a !== 0 && r.push(`${a > 0 ? `+` : ``}${a} ${F(`stat.gen.${i}`)}`);
+  }
+  return (
+    e.healHp && r.push(F(`bonus.hp`, { n: Yt(e.healHp, t) })),
+    e.healMp && r.push(F(`bonus.mp`, { n: Yt(e.healMp, t) })),
+    (e.kind === `trade` ||
+      (e.slot === `none` &&
+        !e.healHp &&
+        !e.healMp &&
+        e.kind !== `note` &&
+        !Object.keys(e.bonuses).length)) &&
+      r.push(F(`item.tradeMark`)),
+    e.kind === `note` && r.push(F(`item.noteMark`)),
+    e.weaponType && r.push(F(`weapon.${e.weaponType}`)),
+    r
+  );
+}
+function yn(e, t, n, r) {
+  let i = C[e],
+    a = te[t],
+    o = re.find((e) => e.id === n) ?? re.find((e) => e.classId === t),
+    s = fn(i.stats, a.bonus),
+    c = Array.from({ length: 30 }, () => null),
+    l = er();
+  for (let e of o.items) {
+    let n = w[e];
+    if (!n) continue;
+    let r = Jt(e);
+    if (n.slot !== `none` && l[n.slot] === null && $n(t, r, n.slot))
+      l[n.slot] = r;
+    else {
+      let e = c.findIndex((e) => e === null);
+      e >= 0 && (c[e] = r);
+    }
+  }
+  let u = Math.max(1, o.startLevel ?? 1),
+    d = { [Ce[t] ?? Ce.warrior]: 1 };
+  (e === `lesovik` && (d.leshy_step = 1),
+    e === `vodyanoy` && (d.river_breath = 1),
+    e === `zharkrovny` && (d.blood_heat = 1),
+    e === `kostyanoy` && (d.bone_shell = 1),
+    (t === `tracker` || t === `archer`) && (d.mokosh_gaze = 1));
+  let f = bn({
+    name: r.trim() || `Безымянный`,
+    race: e,
+    class: t === `archer` ? `tracker` : t,
+    kitId: o.id,
+    level: u,
+    xp: 0,
+    hp: 1,
+    maxHp: 1,
+    mp: 1,
+    maxMp: 1,
+    gold: o.gold,
+    stats: s,
+    unspentStat: Math.max(0, (u - 1) * 3),
+    unspentSkill: Math.max(0, (u - 1) * 1),
+    skills: d,
+    inventory: c,
+    equipment: l,
+    resists: { ...i.resists },
+    journal: nr(),
+  });
+  return { ...f, hp: f.maxHp, mp: f.maxMp };
+}
+function bn(e) {
+  let t = U(e),
+    n = un(t, e.level, e.race),
+    r = dn(t, e.level, e.race);
+  return {
+    ...e,
+    maxHp: n,
+    maxMp: r,
+    hp: Math.min(e.hp, n),
+    mp: Math.min(e.mp, r),
+  };
+}
+function xn(e, t) {
+  let n = C[e.race] ?? C.human,
+    r = e.xp + Math.round(t * n.xpMult),
+    i = e.level,
+    a = e.unspentStat,
+    o = e.unspentSkill,
+    s = { ...e.stats };
+  for (; r >= ln(i) && i < 20;)
+    ((r -= ln(i)),
+      (i += 1),
+      (a += 3),
+      (o += 1),
+      (s = { ...s, end: s.end + 0 }));
+  return bn({
+    ...e,
+    xp: r,
+    level: i,
+    unspentStat: a,
+    unspentSkill: o,
+    stats: s,
+  });
+}
+function Sn(e) {
+  return e.findIndex((e) => e === null);
+}
+function Cn(e, t, n = 1) {
+  let r = [...e.inventory],
+    i = Sn(r);
+  return i < 0 ? e : ((r[i] = Jt(t, n)), { ...e, inventory: r });
+}
+function wn(e, t) {
+  let n = [...e.inventory],
+    r = Sn(n);
+  return r < 0 ? e : ((n[r] = t), { ...e, inventory: n });
+}
+function Tn(e) {
+  let t =
+    (e.hp ?? 0) < 0 ||
+    (e.mp ?? 0) < 0 ||
+    (e.luck ?? 0) < 0 ||
+    (e.cha ?? 0) < 0 ||
+    (e.gold ?? 0) < 0;
+  return (
+    ((e.xp ?? 0) > 0 ||
+      !!e.item ||
+      (e.hp ?? 0) > 0 ||
+      (e.mp ?? 0) > 0 ||
+      (e.gold ?? 0) > 0) &&
+    !t
+  );
+}
+function En(e, t) {
+  let n = { ...e },
+    r = (e) => {
+      let r = n[e];
+      typeof r == `number` &&
+        (t && r < 0 && delete n[e], !t && r > 0 && delete n[e]);
+    };
+  return (
+    r(`hp`),
+    r(`mp`),
+    r(`gold`),
+    r(`xp`),
+    r(`luck`),
+    r(`cha`),
+    r(`dex`),
+    t || delete n.item,
+    n
+  );
+}
+function Dn(e, t, n = !1, r) {
+  let i = Math.max(0, e) * 0.003,
+    a = Math.max(0, t) * 0.008,
+    o = n ? 0.05 : 0,
+    s = Math.random();
+  if (!n && s < 0.018) return B(le);
+  let c = (n ? 0.006 : 0.003) + i * 0.08,
+    l = (n ? 0.03 : 0.015) + i * 0.15 + a * 0.15,
+    u = (n ? 0.12 : 0.06) + i + a + o * 0.4,
+    d = (n ? 0.38 : 0.24) + i * 1.6 + a + o,
+    f = ie;
+  s < c ? (f = ce) : s < l ? (f = se) : s < u ? (f = oe) : s < d && (f = ae);
+  let p = r === `archer` ? `tracker` : r;
+  if (p && ue[p] && Math.random() < 0.34) {
+    let e = ue[p],
+      t = f.filter((t) => {
+        let n = w[t];
+        return n?.kind === `weapon` && n.weaponType && e.includes(n.weaponType);
+      }),
+      n = Object.values(w)
+        .filter(
+          (t) =>
+            t.kind === `weapon` &&
+            t.weaponType &&
+            e.includes(t.weaponType) &&
+            t.rarity !== `epic`,
+        )
+        .map((e) => e.id),
+      r = t.length ? t : n;
+    if (r.length) return B(r);
+  }
+  return B(f);
+}
+var On = {
+  forest: 2.5,
+  pine: 2.3,
+  grove: 2.2,
+  thicket: 2.2,
+  copse: 2.2,
+  taiga: 2.3,
+  field: 1.55,
+  ruins: 1.35,
+  mound: 1.35,
+  fog: 1.4,
+  bonefield: 1.25,
+  mill: 1.3,
+  wreck: 1.5,
+  quarry: 1.4,
+  rails: 1.45,
+  crater: 1.35,
+  silo: 1.4,
+  dump: 1.45,
+  tower: 1.3,
+  observatory: 1.25,
+  forge: 1.35,
+  greenhouse: 1.3,
+  freeze: 1.25,
+  swamp: 1.15,
+  river: 1.15,
+  bridge: 1.05,
+  lake: 1.2,
+  lock: 1.1,
+  creek: 1.15,
+  village: 1,
+  hamlet: 1,
+  castle: 0.85,
+  outpost: 0.9,
+  hut: 0.9,
+  station: 0.95,
+  milltown: 0.9,
+  pier: 0.85,
+  camp: 1.15,
+  chapel: 1.05,
+  mine: 1.1,
+  depot: 1.1,
+};
+function kn(e) {
+  let t = e.map((e) => On[e] ?? 1),
+    n = t.reduce((e, t) => e + t, 0),
+    r = Math.random() * n;
+  for (let n = 0; n < e.length; n++) if (((r -= t[n]), r <= 0)) return e[n];
+  return e[e.length - 1];
+}
+function An(e, t, n, r, i) {
+  let a;
+  if (r) a = t >= 3 && Math.random() < 0.18 + t * 0.04 ? `nav_gate` : `nav`;
+  else {
+    let e = t < 50 ? 0 : Math.min(0.2, 0.04 + (t - 50) * 0.01),
+      r = Math.random();
+    a =
+      r < e
+        ? n
+        : r < e + 0.04
+          ? `tavern`
+          : r < e + 0.075
+            ? `market`
+            : r < e + 0.095
+              ? B([`bazaar`, `apothecary`])
+              : kn(me);
+  }
+  if (i && a === i && i !== `nav`) {
+    if (r) a = `nav`;
+    else {
+      let e = me.filter((e) => e !== i);
+      a = kn(e.length ? e : me);
+    }
+  }
+  let o = T[a] ?? T.fog;
+  return {
+    type: T[a] ? a : `fog`,
+    name: o.name,
+    seed: Math.floor(Math.random() * 1e9),
+  };
+}
+function jn(e) {
+  let t = T[e.type]?.texts ?? T.fog.texts,
+    n = e.seed % t.length,
+    r = `hex.${e.type}.t${n}`,
+    i = F(r);
+  return i === r ? t[n] : i;
+}
+function Mn(e) {
+  return !!T[e]?.shop;
+}
+function Nn(e, t, n, r = 0, i) {
+  if (
+    !i?.fromTalk &&
+    (T[e.type]?.shop ||
+      ir(e.type) ||
+      e.type === `kapishche` ||
+      e.type === `city` ||
+      e.type === `eye` ||
+      e.type === `nav_gate`)
+  )
+    return null;
+  let a = E.filter((e) => (t[`quest_${e.id}`] ?? 0) < 2 && e.id !== n);
+  if (a.length === 0) return null;
+  let o = B(a),
+    s = en($t(o.id), r);
+  return {
+    id: o.id,
+    title: o.title,
+    intro: o.intro,
+    hexesLeft: 1,
+    difficulty: s,
+  };
+}
+function Pn(e, t) {
+  let n = 5 + Math.min(3, e),
+    r = [],
+    i = Zt(e);
+  for (let a = 0; a < n; a++) {
+    let n = Dn(t, e, !0);
+    r.push(Jt(n, i));
+  }
+  return (
+    r.push(Jt(`root`, i), Jt(`wort`, i)),
+    { stock: r, title: F(`shop.title`) }
+  );
+}
+function Fn(e, t, n, r, i = 1) {
+  let a = w[e];
+  if (!a) return 0;
+  let o = a.value * (1 + (Math.max(1, i) - 1) * 0.35),
+    s = 1 - t * 0.015 - n * 0.05;
+  return r
+    ? Math.max(1, Math.floor(o * 0.45 * (2 - s)))
+    : Math.max(1, Math.ceil(o * Math.max(0.6, s)));
+}
+function In(e) {
+  return 3 + Math.max(1, e) * 2;
+}
+function Ln(e) {
+  return Math.max(1, e);
+}
+function Rn(e, t, n) {
+  let r = Ln(e),
+    i = In(e),
+    a = r + Math.floor(Math.random() * (i - r + 1));
+  return (t && (a += 1), n >= 2 && (a += 1), Math.max(r, Math.min(i, a)));
+}
+function zn(e, t, n = 0) {
+  let r = Xt(n),
+    i = Math.min(12, Math.max(1, e + r)),
+    a = fe.filter(
+      (e) => e.minLevel <= i && !e.stealOnly && (t ? !0 : !e.navOnly),
+    ),
+    o = a.length ? a : fe.filter((e) => !e.navOnly),
+    s = o.reduce((e, t) => e + t.weight, 0),
+    c = Math.random() * s,
+    l = o[0];
+  for (let e of o)
+    if (((c -= e.weight), c <= 0)) {
+      l = e;
+      break;
+    }
+  let u = i + (t ? 2 : 1),
+    d = i,
+    f = Math.random();
+  (f < 0.22 ? (d = Math.max(1, i - 1)) : f > 0.72 && (d = i + 1),
+    t && (d += 1),
+    (d = Math.max(1, Math.min(u, d))));
+  let p = Rn(d, t, n);
+  return {
+    enemyId: l.id,
+    enemyName: l.name,
+    enemyPortrait: l.portrait,
+    enemyLevel: d,
+    enemyPower: p,
+    enemySpecials: [...l.specials],
+    enemyFlavor: l.description,
+    round: 1,
+    phase: `intro`,
+    enemyRolls: [],
+    playerRolls: [],
+    roundWinners: [],
+    currentEnemyRoll: null,
+    currentPlayerRoll: null,
+    currentEnemyRaw: null,
+    currentPlayerRaw: null,
+    usedSkill: null,
+    usedSkills: [],
+    narrative: F(`combat.emerge`, {
+      name: F(`enemy.${l.id}.name`),
+      flavor: F(`enemy.${l.id}.desc`),
+    }),
+    finished: !1,
+    victory: null,
+    outcome: null,
+  };
+}
+function Bn(e, t = 0) {
+  let n = In(e.enemyLevel),
+    r = e.enemyPower ?? Ln(e.enemyLevel);
+  return (
+    e.enemySpecials?.includes(`fogArmor`) && (r += 1),
+    Math.max(1, Math.min(n, r))
+  );
+}
+function Vn(e) {
+  if (
+    e.finished ||
+    e.phase === `battle_end` ||
+    e.fleeTried ||
+    e.phase !== `player_act`
+  )
+    return !1;
+  let t = (e.roundWinners ?? []).filter((e) => e === `player`).length;
+  return (
+    t === (e.roundWinners ?? []).filter((e) => e === `enemy`).length && t <= 1
+  );
+}
+function Hn(e) {
+  return Math.min(0.5, 0.3 + Math.max(0, e) * 0.008);
+}
+function Un(e, t, n, r, i, a = 1, o = []) {
+  let s = [],
+    c = U(e),
+    l = (te[e.class] ?? te.warrior).attack,
+    u = pn(e.equipment),
+    d = c[l],
+    f = u.attack,
+    p = Math.floor((d + f) * 0.5),
+    m = Math.floor(c.luck / 4),
+    h = 0,
+    g = t + p + m,
+    _ = n ? (i[n] ?? 1) : 0,
+    v = (e, t) => {
+      ((h += e), (g += e), s.push(t));
+    };
+  return (
+    n === `power_strike` && v(3 + _, L(`power_strike`)),
+    n === `aimed_shot` && v(2 + _, L(`aimed_shot`)),
+    n === `black_word` && v(Math.floor(c.int * 0.45) + _, L(`black_word`)),
+    n === `quick_cut` && v(3 + _ + Math.floor(c.dex * 0.2), L(`quick_cut`)),
+    n === `set_bone` && v(2 + _, L(`set_bone`)),
+    n === `blood_heat` && v(Math.floor(c.str * 0.4) + _, L(`blood_heat`)),
+    n === `thunder_cleave` && v(6 + _ * 2, L(`thunder_cleave`)),
+    n === `weave_fate` && v(2 + _, L(`weave_fate`)),
+    n === `death_pact` && v(5 + Math.floor(c.int * 0.3) + _, L(`death_pact`)),
+    n === `pyre_word` && v(4 + Math.floor(c.str * 0.3) + _, L(`pyre_word`)),
+    o.includes(`first_strike`) && a === 1 && v(3, F(`note.firstStrike`)),
+    r?.includes(`fear`) &&
+      n !== `black_word` &&
+      n !== `death_pact` &&
+      ((g -= 2), s.push(F(`note.fear`))),
+    r?.includes(`ignoreEven`) &&
+      n !== `aimed_shot` &&
+      g % 2 == 0 &&
+      (s.push(F(`note.even`)), (g = Math.floor(g / 2))),
+    {
+      total: g,
+      notes: s,
+      attackBonus: p,
+      luckBonus: m,
+      skillBonus: h,
+      attackKey: l,
+      attackStatValue: d,
+      weaponAttack: f,
+    }
+  );
+}
+function Wn(e, t) {
+  return e > t ? `player` : t > e ? `enemy` : `tie`;
+}
+function Gn(e) {
+  let t = 0,
+    n = 0;
+  for (let r of e.roundWinners ?? [])
+    (r === `player` && (t += 1), r === `enemy` && (n += 1));
+  return { wins: t, losses: n };
+}
+function Kn(e, t) {
+  let n = U(e),
+    r = e.skills ?? {},
+    i = r.mokosh_gaze ?? 0,
+    a = r.leshy_step ?? 0,
+    o = 0.5,
+    s = 0.22;
+  return (
+    t.type === `forest` &&
+      (e.race === `lesovik` || a) &&
+      ((o -= 0.08 + a * 0.03), (s += 0.06)),
+    e.class === `tracker` && (s += 0.05),
+    (s += i * 0.04 + n.luck * 0.008),
+    (o = Math.max(0.28, Math.min(0.64, o))),
+    (s = Math.min(0.4, s)),
+    { fight: o, loot: s }
+  );
+}
+function qn(e) {
+  let t = U(e),
+    n = e.skills?.grave_sense ?? 0;
+  return Math.min(0.45, 0.1 + t.luck * 0.012 + n * 0.06);
+}
+function Jn(e) {
+  let t = pe[e];
+  return t
+    ? {
+        name: F(`layer.${e}.name`),
+        goal: t.goal,
+        goalName: F(`layer.${e}.goal`),
+      }
+    : { name: F(`layer.endless`), goal: `fog`, goalName: F(`hex.fog.name`) };
+}
+function W(e) {
+  return {
+    ...e,
+    hp: Math.max(0, Math.min(e.maxHp, e.hp)),
+    mp: Math.max(0, Math.min(e.maxMp, e.mp)),
+  };
+}
+function Yn(e, t) {
+  if (e.unspentStat <= 0) return e;
+  let n = { ...e.stats, [t]: e.stats[t] + 1 };
+  return bn({ ...e, stats: n, unspentStat: e.unspentStat - 1 });
+}
+function Xn(e, t, n) {
+  if (e.stats[t] <= n) return e;
+  let r = { ...e.stats, [t]: e.stats[t] - 1 };
+  return bn({ ...e, stats: r, unspentStat: e.unspentStat + 1 });
+}
+function Zn(e, t) {
+  if (e.unspentSkill <= 0) return e;
+  let n = de.find((e) => e.id === t);
+  if (!n || n.itemOnly) return e;
+  let r = (e.skills ?? {})[t] ?? 0;
+  return r >= n.maxRank ||
+    (r === 0 && n.classReq && n.classReq !== e.class) ||
+    (r === 0 && n.raceReq && n.raceReq !== e.race)
+    ? e
+    : {
+        ...e,
+        unspentSkill: e.unspentSkill - 1,
+        skills: { ...e.skills, [t]: r + 1 },
+      };
+}
+function Qn(e, t, n) {
+  let r = H(e);
+  return !r || r.slot === `none` || r.slot !== t
+    ? !1
+    : r.kind === `weapon` && r.weaponType && n
+      ? (ue[n] ?? ue.warrior).includes(r.weaponType)
+      : !0;
+}
+function $n(e, t, n) {
+  return Qn(t, n, e);
+}
+function er() {
+  return {
+    head: null,
+    body: null,
+    legs: null,
+    artifact: null,
+    weapon: null,
+    jewelry: null,
+  };
+}
+function tr(e) {
+  let t = e ?? {};
+  return {
+    head: t.head ?? null,
+    body: t.body ?? null,
+    legs: t.legs ?? null,
+    artifact: t.artifact ?? t.leftHand ?? null,
+    weapon: t.weapon ?? t.rightHand ?? null,
+    jewelry: t.jewelry ?? t.hands ?? null,
+  };
+}
+function nr() {
+  return { enemies: [], hexes: [], notes: [] };
+}
+function rr(e, t, n) {
+  let r = e ?? nr(),
+    i = Array.isArray(r[t]) ? r[t] : [];
+  return i.includes(n)
+    ? { ...nr(), ...r, [t]: i }
+    : { ...nr(), ...r, [t]: [...i, n] };
+}
+function ir(e) {
+  return he.includes(e);
+}
+function ar(e) {
+  return Math.max(3, Math.floor(e.maxHp * 0.22));
+}
+function or(e) {
+  return Math.max(2, Math.floor(e.maxMp * 0.12));
+}
+function sr(e, t) {
+  let n = zn(e, !1, t),
+    r = fe.find((e) => e.id === `guard`),
+    i = Math.max(n.enemyLevel, 3 + Math.max(0, t) * 2),
+    a = In(i);
+  return {
+    ...n,
+    enemyId: `guard`,
+    enemyName: r.name,
+    enemyPortrait: r.portrait,
+    enemyLevel: i,
+    enemyPower: a,
+    enemySpecials: [...r.specials],
+    enemyFlavor: r.description,
+    guardFight: !0,
+    narrative: F(`combat.emerge`, {
+      name: F(`enemy.guard.name`),
+      flavor: F(`enemy.guard.desc`),
+    }),
+  };
+}
+function cr(e, t) {
+  let n = Math.max(0, t);
+  if (Math.random() < 0.48)
+    return {
+      gold:
+        24 +
+        Math.max(0, e) * 12 +
+        Math.floor(n * 0.45) +
+        Math.floor(Math.random() * 18),
+      items: [],
+    };
+  let r = Math.random() + n * 0.01 + Math.max(0, e) * 0.02;
+  return {
+    gold: 0,
+    items: [
+      B(
+        r > 0.82
+          ? se.filter((e) => !e.startsWith(`note_`))
+          : r > 0.48
+            ? oe.filter((e) => !e.startsWith(`note_`))
+            : r > 0.18
+              ? ae
+              : ie,
+      ),
+    ],
+  };
+}
+function lr(e) {
+  return 4 + Math.max(0, e) * 2;
+}
+function ur(e, t) {
+  let n = e.inventory.findIndex((e) => e?.uid === t);
+  if (n < 0) return null;
+  let r = e.inventory[n],
+    i = H(r);
+  if (!i || i.kind !== `consumable`) return null;
+  let a = V(r),
+    o = [...e.inventory];
+  o[n] = null;
+  let s = Yt(i.healHp ?? 0, a),
+    c = Yt(i.healMp ?? 0, a),
+    l = e.hp + s,
+    u = e.mp + c,
+    d = W({ ...e, inventory: o, hp: l, mp: u }),
+    f = [];
+  return (
+    s && f.push(F(`bonus.hp`, { n: s })),
+    c && f.push(F(`bonus.mp`, { n: c })),
+    {
+      character: d,
+      message: F(`consume.msg`, { name: I(i.id), bits: f.join(`, `) }),
+    }
+  );
+}
+var dr = `tmz-tut-seen`,
+  fr = [`main.hex`, `main.story`, `main.inv`, `main.actions`, `main.move`],
+  pr = {
+    "main.hex": `hex`,
+    "main.story": `story`,
+    "main.inv": `inv`,
+    "main.actions": `actions`,
+    "main.move": `move`,
+    "act.search": `act-search`,
+    "act.dig": `act-dig`,
+    "act.rest": `act-rest`,
+    "act.offer": `act-offer`,
+    "act.quest": `act-quest`,
+    "act.talk": `act-talk`,
+    "act.steal": `act-steal`,
+    "act.hunt": `act-hunt`,
+    "act.fish": `act-fish`,
+    "combat.dice": `combat-dice`,
+    "combat.skills": `combat-skills`,
+    "combat.flee": `combat-flee`,
+    shop: `shop`,
+    levelup: `levelup`,
+    stats: `stats`,
+    skills: `skills`,
+  },
+  G = new Set(),
+  K = null,
+  mr = [],
+  hr = new Set();
+function gr() {
+  try {
+    let e = localStorage.getItem(dr);
+    if (!e) return;
+    let t = JSON.parse(e);
+    Array.isArray(t) && (G = new Set(t.map(String)));
+  } catch {}
+}
+function _r() {
+  try {
+    localStorage.setItem(dr, JSON.stringify([...G]));
+  } catch {}
+}
+typeof window < `u` && gr();
+function vr() {
+  hr.forEach((e) => e());
+}
+function yr(e) {
+  return (
+    hr.add(e),
+    () => {
+      hr.delete(e);
+    }
+  );
+}
+function br() {
+  return Tt().tutorial !== !1;
+}
+function xr() {
+  return K;
+}
+function Sr(e) {
+  return e ? (pr[e] ?? e) : null;
+}
+function Cr(e) {
+  return !!(e && fr.includes(e));
+}
+function q(e) {
+  if (!(typeof window > `u`) && br() && !G.has(e) && K !== e) {
+    if (K) {
+      mr.includes(e) || mr.push(e);
+      return;
+    }
+    ((K = e), vr());
+  }
+}
+function wr() {
+  for (; mr.length;) {
+    let e = mr.shift();
+    if (!G.has(e)) return e;
+  }
+  return null;
+}
+function Tr(e = !1) {
+  typeof window > `u` ||
+    (!e && !br()) ||
+    (!e && fr.every((e) => G.has(e))) ||
+    ((K = fr.find((t) => e || !G.has(t)) ?? fr[0]), vr());
+}
+function Er() {
+  if (K) {
+    if ((G.add(K), _r(), Cr(K))) {
+      let e = fr[fr.indexOf(K) + 1];
+      if (e && !G.has(e)) {
+        ((K = e), vr());
+        return;
+      }
+    }
+    ((K = wr()), vr());
+  }
+}
+function Dr() {
+  (K && Cr(K) ? fr.forEach((e) => G.add(e)) : K && G.add(K),
+    _r(),
+    (K = wr()),
+    vr());
+}
+function Or() {
+  (kt(!1), (mr = []), (K = null), vr());
+}
+function kr() {
+  (kt(!0), vr());
+}
+var Ar = `tumannaya-zastava-v1`,
+  jr = [Ar, `oskolki-zabveniya-v1`, `oskолки-zabveniya-v1`],
+  Mr = 1,
+  Nr = `oz-tutorial-v2`;
+function Pr() {
+  return {
+    type: `kapishche`,
+    name: (T.kapishche ?? T.fog).name,
+    seed: Math.floor(Math.random() * 1e9),
+  };
+}
+function Fr(e) {
+  let t = (Array.isArray(e.inventory) ? e.inventory.filter(Boolean) : []).slice(
+    0,
+    30,
+  );
+  for (; t.length < 30;) t.push(null);
+  let n = e.stats ?? { str: 6, dex: 6, int: 6, end: 6, luck: 6, cha: 6 },
+    r = e.race && C[e.race] ? e.race : `human`,
+    i = e.class && te[e.class] ? e.class : `warrior`;
+  i === `archer` && (i = `tracker`);
+  let a = e.journal,
+    o = e.resists;
+  return {
+    ...e,
+    name: e.name || `Безымянный`,
+    race: r,
+    class: i,
+    level: e.level || 1,
+    xp: Number.isFinite(e.xp) ? e.xp : 0,
+    hp: Number.isFinite(e.hp) ? e.hp : 1,
+    maxHp: e.maxHp || 20,
+    mp: Number.isFinite(e.mp) ? e.mp : 0,
+    maxMp: e.maxMp || 8,
+    gold: Number.isFinite(e.gold) ? e.gold : 0,
+    stats: {
+      str: n.str ?? 6,
+      dex: n.dex ?? 6,
+      int: n.int ?? 6,
+      end: n.end ?? 6,
+      luck: n.luck ?? 6,
+      cha: n.cha ?? 6,
+    },
+    unspentStat: Number.isFinite(e.unspentStat) ? e.unspentStat : 0,
+    unspentSkill: Number.isFinite(e.unspentSkill) ? e.unspentSkill : 0,
+    skills: e.skills && typeof e.skills == `object` ? e.skills : {},
+    equipment: tr(e.equipment),
+    inventory: t,
+    resists: {
+      poison: Number.isFinite(o?.poison) ? o.poison : 0,
+      fire: Number.isFinite(o?.fire) ? o.fire : 0,
+    },
+    journal: {
+      enemies: Array.isArray(a?.enemies) ? a.enemies : [],
+      hexes: Array.isArray(a?.hexes) ? a.hexes : [],
+      notes: Array.isArray(a?.notes) ? a.notes : [],
+    },
+  };
+}
+function Ir() {
+  return F(`nar.start`);
+}
+var Lr = 0;
+function Rr() {
+  return ((Lr += 1), `fx-${Date.now()}-${Lr}`);
+}
+function J(e, t) {
+  return { id: Rr(), kind: e, text: t };
+}
+function Y(e, t) {
+  return [...(e ?? []), ...t].slice(-6);
+}
+function X(e, t, n = 1) {
+  let r = new Set(e.inventory.filter(Boolean).map((e) => e.uid)),
+    i = Cn(e, t, n);
+  return {
+    character: i,
+    uid: i.inventory.find((e) => e && !r.has(e.uid))?.uid ?? null,
+  };
+}
+function Z(e, t) {
+  return [...e, t].slice(-40);
+}
+function zr(e, t) {
+  return e.helped_crone && !e.crone_paid && (t === `river` || t === `swamp`)
+    ? { kind: `crone`, text: F(`nar.flagCrone`) }
+    : e.spared_warrior &&
+        !e.warrior_return &&
+        (t === `ruins` || t === `village`)
+      ? { kind: `warrior`, text: F(`nar.flagWarrior`) }
+      : e.refused_idol && !e.god_wrath && (t === `mound` || t === `kapishche`)
+        ? { kind: `god`, text: F(`nar.flagGod`) }
+        : e.fed_child && !e.child_gift && (t === `village` || t === `hamlet`)
+          ? { kind: `child`, text: F(`nar.flagChild`) }
+          : null;
+}
+var Br = () => ({
+  version: Mr,
+  screen: `menu`,
+  character: null,
+  hex: Pr(),
+  layer: 0,
+  returnLayer: 0,
+  hexesThisLayer: 0,
+  turn: 1,
+  actionsUsed: [],
+  narrative: Ir(),
+  choices: null,
+  pendingQuest: null,
+  flags: {},
+  log: [],
+  shop: null,
+  inNav: !1,
+  endingSeen: !1,
+  overlay: `none`,
+  combat: null,
+  create: { race: null, class: null, kitId: null, name: ``, step: 0 },
+  hydrated: !1,
+  toast: null,
+  fx: [],
+  pulseUid: null,
+  tutorialOpen: !1,
+  tutorialStep: 0,
+  luckPending: !1,
+  talkOpen: !1,
+  combatSkill: null,
+  readingNote: null,
+  stageFx: null,
+});
+function Vr(e) {
+  return {
+    version: e.version,
+    screen: e.screen === `create` ? `menu` : e.screen,
+    character: e.character,
+    hex: e.hex,
+    layer: e.layer,
+    returnLayer: e.returnLayer,
+    hexesThisLayer: e.hexesThisLayer,
+    turn: e.turn,
+    actionsUsed: e.actionsUsed,
+    narrative: e.narrative,
+    choices: e.choices,
+    pendingQuest: e.pendingQuest,
+    flags: e.flags,
+    log: e.log.slice(-40),
+    shop: e.shop,
+    inNav: e.inNav,
+    endingSeen: e.endingSeen,
+  };
+}
+var Q = S((e, t) => {
+  let n = (n) => {
+      e({
+        fx: Y(
+          t().fx,
+          n.map((e) => J(e.kind, e.text)),
+        ),
+      });
+    },
+    r = (e) => En(e, !0),
+    i = (e) => Tn(e),
+    a = (n, r, i, a = !1) => {
+      let o = t();
+      if (!o.character || !o.pendingQuest) return;
+      n = En(n, !a);
+      let s = o.character,
+        c = F(i),
+        l = c === i ? n.text : c,
+        u = [],
+        d = o.pulseUid,
+        f = (n.gold ?? 0) + r;
+      if (
+        (f &&
+          ((s = { ...s, gold: Math.max(0, s.gold + f) }),
+          u.push({
+            kind: f > 0 ? `gold` : `fail`,
+            text: F(f > 0 ? `fx.goldPlus` : `fx.goldMinus`, { n: f }),
+          })),
+        n.hp &&
+          ((s = W({ ...s, hp: s.hp + n.hp })),
+          u.push({
+            kind: n.hp > 0 ? `hp` : `fail`,
+            text:
+              n.hp > 0
+                ? F(`fx.hpPlus`, { n: n.hp })
+                : F(`fx.hpMinus`, { n: n.hp }),
+          })),
+        a)
+      ) {
+        let e = an(o.pendingQuest.difficulty ?? `medium`);
+        e &&
+          ((s = W({ ...s, hp: s.hp - e })),
+          u.push({ kind: `fail`, text: F(`fx.hpMinus`, { n: -e }) }));
+      }
+      if ((n.mp && (s = W({ ...s, mp: s.mp + n.mp })), n.item)) {
+        let e = X(s, n.item, Zt(o.layer));
+        ((s = e.character),
+          (d = e.uid),
+          u.push({ kind: `item`, text: F(`fx.itemGot`, { name: I(n.item) }) }));
+      }
+      let p = { ...o.flags };
+      (n.flag && (p[n.flag] = n.flagVal ?? 1),
+        (p[`quest_${o.pendingQuest.id}`] =
+          (p[`quest_${o.pendingQuest.id}`] ?? 0) + 1));
+      let m = rn(o.pendingQuest.difficulty ?? `medium`);
+      (n.xp && (s = xn(s, Math.round(n.xp * m))),
+        n.luck &&
+          (s = { ...s, stats: { ...s.stats, luck: s.stats.luck + n.luck } }),
+        n.cha &&
+          (s = { ...s, stats: { ...s.stats, cha: s.stats.cha + n.cha } }),
+        n.dex &&
+          (s = { ...s, stats: { ...s.stats, dex: s.stats.dex + n.dex } }),
+        (s = bn(s)),
+        e({
+          character: s,
+          narrative: l,
+          flags: p,
+          pendingQuest: null,
+          choices: null,
+          talkOpen: !1,
+          luckPending: !1,
+          pulseUid: d,
+          fx: Y(
+            o.fx,
+            u.map((e) => J(e.kind, e.text)),
+          ),
+          log: Z(o.log, l.slice(0, 80)),
+        }),
+        s.hp <= 0 ? t().enterNav() : t().persist());
+    };
+  return {
+    ...Br(),
+    setScreen: (t) => e({ screen: t }),
+    goCreate: () =>
+      e({
+        screen: `create`,
+        overlay: `none`,
+        create: { race: null, class: null, kitId: null, name: ``, step: 0 },
+      }),
+    setCreate: (n) => e({ create: { ...t().create, ...n } }),
+    toMenu: () => {
+      (t().persist(),
+        e({
+          screen: `menu`,
+          overlay: `none`,
+          combat: null,
+          combatSkill: null,
+        }));
+    },
+    continueSave: () => {
+      t().character || (e({ hydrated: !1 }), t().hydrate());
+      let n = t().character;
+      if (!n) return;
+      let r;
+      try {
+        r = Fr(n);
+      } catch {
+        return;
+      }
+      e({
+        character: r,
+        screen: `game`,
+        overlay: `none`,
+        combat: null,
+        choices: null,
+        luckPending: !1,
+        stageFx: null,
+        talkOpen: !1,
+        combatSkill: null,
+        fx: [],
+        pulseUid: null,
+      });
+    },
+    openOverlay: (t) => e({ overlay: t }),
+    setToast: (t) => e({ toast: t }),
+    pushFx: (e, t) => n([{ kind: e, text: t }]),
+    clearFx: (n) => e({ fx: t().fx.filter((e) => e.id !== n) }),
+    selectCombatSkill: (n) => {
+      let r = t();
+      if (!(!r.combat || r.combat.phase !== `player_act`)) {
+        if (!n) {
+          e({ combatSkill: null });
+          return;
+        }
+        (r.combat.usedSkills ?? []).includes(n) ||
+          r.combatSkill ||
+          e({ combatSkill: n });
+      }
+    },
+    openTutorial: () => {
+      Tr(!0);
+    },
+    closeTutorial: () => {
+      try {
+        localStorage.setItem(Nr, `1`);
+      } catch {}
+      e({ tutorialOpen: !1 });
+    },
+    tutorialNext: () => {
+      let n = t().tutorialStep;
+      if (n >= 6) {
+        t().closeTutorial();
+        return;
+      }
+      e({ tutorialStep: n + 1 });
+    },
+    persist: () => {
+      try {
+        let e = t();
+        if (!e.character) return;
+        let n = JSON.stringify(Vr(e));
+        if (n.length > 35e4) return;
+        typeof window < `u` && localStorage.setItem(Ar, n);
+      } catch {}
+    },
+    applyRemoteSave: (n) => {
+      try {
+        let r = JSON.parse(n);
+        if (!r?.character) return !1;
+        let i = t();
+        if (
+          i.screen === `create` ||
+          i.screen === `game` ||
+          (i.character && i.turn > (r.turn ?? 0))
+        )
+          return !1;
+        let a = {
+          ...r.character,
+          equipment: tr(r.character.equipment),
+          journal: r.character.journal ?? { enemies: [], hexes: [], notes: [] },
+        };
+        e({
+          ...r,
+          character: a,
+          overlay: `none`,
+          combat: null,
+          hydrated: !0,
+          screen: `menu`,
+          create: { race: null, class: null, kitId: null, name: ``, step: 0 },
+          toast: null,
+          fx: [],
+          pulseUid: null,
+          luckPending: !1,
+          talkOpen: !1,
+          combatSkill: null,
+          tutorialOpen: !1,
+          tutorialStep: 0,
+          readingNote: null,
+        });
+        try {
+          localStorage.setItem(Ar, JSON.stringify(Vr(t())));
+        } catch {}
+        return !0;
+      } catch {
+        return !1;
+      }
+    },
+    hydrate: () => {
+      if (t().hydrated) return;
+      let n = t().screen;
+      try {
+        let r = null;
+        for (let e of jr) if (((r = localStorage.getItem(e)), r)) break;
+        if (r) {
+          let i = JSON.parse(r);
+          if (i?.character) {
+            let r = Fr(i.character),
+              a = !!(i.hex && T[i.hex.type]);
+            e({
+              ...i,
+              character: r,
+              hex: a ? i.hex : Pr(),
+              actionsUsed: Array.isArray(i.actionsUsed) ? i.actionsUsed : [],
+              narrative: typeof i.narrative == `string` ? i.narrative : Ir(),
+              overlay: `none`,
+              combat: null,
+              hydrated: !0,
+              screen: n === `create` || n === `lore` ? n : `menu`,
+              create:
+                n === `create`
+                  ? t().create
+                  : { race: null, class: null, kitId: null, name: ``, step: 0 },
+              toast: null,
+              fx: [],
+              pulseUid: null,
+              luckPending: !1,
+              talkOpen: !1,
+              combatSkill: null,
+              tutorialOpen: !1,
+              tutorialStep: 0,
+              readingNote: null,
+              stageFx: null,
+            });
+            return;
+          }
+        }
+      } catch {}
+      e({ hydrated: !0 });
+    },
+    startNew: () => {
+      let n = t().create;
+      if (!n.race || !n.class || !n.kitId) return;
+      let r = yn(n.race, n.class, n.kitId, n.name),
+        i = Pr(),
+        a = `${jn(i)}\n\n${F(`nar.intro`, { name: r.name, race: Mt(r.race), goal: Jn(0).goalName })}`,
+        o = ir(i.type)
+          ? null
+          : Math.random() < 0.75
+            ? Nn(i, {}, null, 0)
+            : null;
+      (e({
+        ...Br(),
+        hydrated: !0,
+        screen: `game`,
+        character: { ...r, journal: rr(r.journal, `hexes`, i.type) },
+        hex: i,
+        narrative:
+          a +
+          (o
+            ? `\n\n${F(`nar.questHead`, { title: R(o.id), intro: Rt(o.id) })}`
+            : ``),
+        pendingQuest: o,
+        log: [F(`log.pathBegun`)],
+        tutorialOpen: !1,
+        tutorialStep: 0,
+      }),
+        t().persist(),
+        Tr());
+    },
+    move: (n) => {
+      try {
+        let n = t();
+        if (
+          !n.character ||
+          n.combat ||
+          n.choices ||
+          n.luckPending ||
+          n.actionsUsed.length < 2
+        )
+          return;
+        Je();
+        let r = n.inNav,
+          i = r ? `nav_gate` : Jn(n.layer).goal,
+          a = n.hexesThisLayer + 1,
+          o = An(n.layer, a, i, r, n.hex.type),
+          s = n.pendingQuest?.id ?? null,
+          c = n.pendingQuest,
+          l = c ?? (Math.random() < 0.5 ? Nn(o, n.flags, s, n.layer) : null),
+          u = jn(o),
+          d = zr(n.flags, o.type),
+          f = { ...n.flags },
+          p = n.character,
+          m = [],
+          h = n.pulseUid;
+        if (d?.kind === `crone` && !f.crone_paid) {
+          f.crone_paid = 1;
+          let e = X(p, `tears`);
+          ((p = e.character),
+            (h = e.uid),
+            m.push({
+              kind: `item`,
+              text: F(`fx.itemGot`, { name: I(`tears`) }),
+            }));
+        }
+        if (d?.kind === `warrior` && !f.warrior_return) {
+          f.warrior_return = 1;
+          let e = X(p, `mail_shard`);
+          ((p = e.character),
+            (h = e.uid),
+            m.push({
+              kind: `item`,
+              text: F(`fx.itemGot`, { name: I(`mail_shard`) }),
+            }));
+        }
+        if (
+          (d?.kind === `god` &&
+            !f.god_wrath &&
+            ((f.god_wrath = 1),
+            (p = W({ ...p, hp: p.hp - 6 })),
+            m.push({ kind: `fail`, text: F(`fx.godWrath`) })),
+          d?.kind === `child` && !f.child_gift)
+        ) {
+          f.child_gift = 1;
+          let e = X(p, `ribbon`);
+          ((p = e.character),
+            (h = e.uid),
+            (p = { ...p, gold: p.gold + 6 }),
+            m.push(
+              { kind: `item`, text: F(`fx.itemGot`, { name: I(`ribbon`) }) },
+              { kind: `gold`, text: F(`fx.goldPlus`, { n: 6 }) },
+            ));
+        }
+        if ((d && (u += ` ` + d.text), l && !c)) {
+          let e = E.find((e) => e.id === l.id),
+            t = e ? on(e.checkStat) : `cha`;
+          ((u += `\n\n${F(`nar.questHead`, { title: R(l.id), intro: Rt(l.id) })}`),
+            (u += `\n${F(`quest.warning`, { rank: F(`quest.diff.${l.difficulty ?? `medium`}`), stat: Bt(t) })}`));
+        }
+        let g = `none`,
+          _ = n.layer,
+          v = n.endingSeen,
+          y = Mn(o.type) ? Pn(_, U(p).cha) : null;
+        if (o.type === i && !r) {
+          let e = Jn(_);
+          if (
+            ((u += `\n\n${F(`nar.layerFound`, { goal: e.goalName, name: e.name })}`),
+            _ >= 2)
+          )
+            ((g = `ending`),
+              (v = !0),
+              (u += ` ` + F(`nar.layerEye`)),
+              m.push({ kind: `win`, text: F(`fx.layerDone`) }));
+          else {
+            _ += 1;
+            let e = Jn(_);
+            ((u +=
+              ` ` + F(`nar.layerNext`, { goal: e.goalName, name: e.name })),
+              m.push({ kind: `ok`, text: F(`fx.goal`, { name: e.goalName }) }));
+          }
+          p = W({
+            ...p,
+            hp: p.hp + Math.floor(p.maxHp * 0.35),
+            mp: p.mp + Math.floor(p.maxMp * 0.25),
+          });
+        }
+        if (o.type === `nav_gate` && r) {
+          ((u +=
+            `
+
+` + F(`nar.gateOpen`)),
+            e({
+              hex: o,
+              narrative: u,
+              inNav: !1,
+              layer: n.returnLayer,
+              hexesThisLayer: 0,
+              turn: n.turn + 1,
+              actionsUsed: [],
+              pendingQuest: null,
+              choices: null,
+              shop: null,
+              talkOpen: !1,
+              luckPending: !1,
+              character: W({
+                ...p,
+                hp: Math.max(1, Math.floor(p.maxHp * 0.45)),
+                mp: Math.floor(p.maxMp * 0.4),
+              }),
+              fx: Y(n.fx, [
+                J(`ok`, F(`fx.navReturn`)),
+                ...m.map((e) => J(e.kind, e.text)),
+              ]),
+              log: Z(n.log, F(`log.navReturn`)),
+              stageFx: null,
+            }),
+            t().persist());
+          return;
+        }
+        p = { ...p, journal: rr(p.journal, `hexes`, o.type) };
+        let b = Z(n.log, F(`hex.${o.type}.name`));
+        (e({
+          hex: o,
+          hexesThisLayer: o.type === i && !r ? 0 : a,
+          layer: _,
+          turn: n.turn + 1,
+          actionsUsed: [],
+          narrative: u,
+          pendingQuest: l,
+          choices: null,
+          talkOpen: !1,
+          luckPending: !1,
+          flags: f,
+          character: p,
+          shop: y,
+          overlay: g,
+          endingSeen: v,
+          log: b,
+          pulseUid: h,
+          fx: Y(
+            n.fx,
+            m.map((e) => J(e.kind, e.text)),
+          ),
+          stageFx: null,
+        }),
+          t().persist());
+      } catch (e) {
+        console.error(`[tmz] move`, n, e);
+      }
+    },
+    doAction: (r) => {
+      try {
+        let i = t();
+        if (
+          !i.character ||
+          i.combat ||
+          i.choices ||
+          i.luckPending ||
+          i.actionsUsed.includes(r) ||
+          i.actionsUsed.length >= 2 ||
+          (r === `quest` && !i.pendingQuest) ||
+          (r === `talk` && !ir(i.hex.type)) ||
+          (r === `steal` && !ir(i.hex.type)) ||
+          (r === `hunt` && !ge.includes(i.hex.type)) ||
+          (r === `fish` && !_e.includes(i.hex.type))
+        )
+          return;
+        if (r === `offer` && i.character.gold < 1) {
+          n([{ kind: `fail`, text: F(`fx.noGold`) }]);
+          return;
+        }
+        let a = i.character,
+          o = i.narrative,
+          s = { ...i.flags },
+          c = null,
+          l = [...i.actionsUsed, r],
+          u = [],
+          d = i.pulseUid;
+        if (r === `search`) {
+          let e = Kn(a, i.hex),
+            t = Math.random();
+          if (t < e.fight)
+            ((c = { ...zn(a.level, i.inNav, i.layer), phase: `enemy_roll` }),
+              (o = F(`nar.searchFight`)));
+          else if (t < e.fight + e.loot) {
+            let e = Dn(U(a).luck, i.layer, !1, a.class),
+              t = X(a, e, Zt(i.layer));
+            ((a = t.character),
+              (d = t.uid),
+              (o = F(`nar.searchFound`, { name: I(e) || F(`thing`) })),
+              u.push({
+                kind: `item`,
+                text: F(`fx.itemGot`, { name: I(e) || F(`thing`) }),
+              }));
+          } else
+            o = B([
+              F(`nar.searchEmpty1`),
+              F(`nar.searchEmpty2`),
+              F(`nar.searchEmpty3`),
+            ]);
+        }
+        if (r === `rest`) {
+          let e = ar(a);
+          ((a = W({ ...a, hp: a.hp + e })),
+            (o = F(`nar.restHp`, { hp: e })),
+            u.push({ kind: `hp`, text: F(`fx.hpPlus`, { n: e }) }),
+            Math.random() < 0.1 &&
+              ((c = { ...zn(a.level, i.inNav, i.layer), phase: `enemy_roll` }),
+              (o += ` ` + F(`nar.ambush`))));
+        }
+        if (r === `offer`) {
+          let e = or(a);
+          ((a = W({ ...a, gold: a.gold - 1, mp: a.mp + e })),
+            (o = F(`nar.offer`, { n: e })),
+            u.push(
+              { kind: `ok`, text: F(`fx.mpPlus`, { n: e }) },
+              { kind: `gold`, text: F(`fx.goldMinus`, { n: -1 }) },
+            ));
+        }
+        if (r === `quest` && i.pendingQuest) {
+          let n = E.find((e) => e.id === i.pendingQuest?.id);
+          if (!n) return;
+          let r = U(i.character),
+            a = i.pendingQuest.difficulty ?? en($t(n.id), i.layer),
+            o = on(n.checkStat),
+            s = tn(a),
+            c = nn(n.bribeCost, a, i.layer),
+            u = r[o];
+          (e({
+            choices: [
+              {
+                id: `method_stat`,
+                text: F(`quest.methodStat`, { stat: Bt(o), dc: s, val: u }),
+              },
+              { id: `method_bribe`, text: F(`quest.methodBribe`, { n: c }) },
+              {
+                id: `method_luck`,
+                text: F(`quest.methodLuck`, { dc: 21, luck: r.luck }),
+              },
+              { id: `method_talk`, text: F(`quest.methodTalk`) },
+            ],
+            narrative: `${R(i.pendingQuest.id)}\n\n${Rt(i.pendingQuest.id)}\n\n${F(`quest.warning`, { rank: F(`quest.diff.${a}`), stat: Bt(o) })}\n\n${F(`quest.how`)}`,
+            actionsUsed: l,
+            talkOpen: !1,
+          }),
+            t().persist());
+          return;
+        }
+        if (
+          r === `talk` ||
+          r === `steal` ||
+          r === `dig` ||
+          r === `hunt` ||
+          r === `fish`
+        ) {
+          (e({ actionsUsed: l }), t().persist());
+          return;
+        }
+        (c && (a = { ...a, journal: rr(a.journal, `enemies`, c.enemyId) }),
+          e({
+            character: a,
+            narrative: o,
+            flags: s,
+            actionsUsed: l,
+            combat: c,
+            pulseUid: d,
+            fx: Y(
+              i.fx,
+              u.map((e) => J(e.kind, e.text)),
+            ),
+            log: Z(i.log, o.slice(0, 80)),
+          }),
+          c && j(!0),
+          t().persist());
+      } catch (t) {
+        (console.error(`[tmz] doAction`, r, t),
+          e({ combat: null, choices: null, luckPending: !1, stageFx: null }));
+      }
+    },
+    resolveChoice: (o) => {
+      let s = t();
+      if (!s.pendingQuest || !s.character) return;
+      let c = E.find((e) => e.id === s.pendingQuest?.id);
+      if (!c) return;
+      if (o === `method_talk`) {
+        e({
+          talkOpen: !0,
+          choices: c.talk.map((e) => ({
+            id: e.id,
+            text: (() => {
+              let t = `quest.${c.id}.talk.${e.id}`,
+                n = F(t);
+              return n === t ? e.text : n;
+            })(),
+          })),
+          narrative: `${R(c.id)}\n\n${Rt(c.id)}\n\n${F(`quest.whatSay`)}`,
+        });
+        return;
+      }
+      if (o === `method_luck`) {
+        (e({ luckPending: !0, choices: null, talkOpen: !1 }),
+          n([{ kind: `info`, text: F(`fx.luckClick`) }]));
+        return;
+      }
+      if (o === `method_bribe`) {
+        let e = s.pendingQuest.difficulty ?? en($t(c.id), s.layer),
+          t = nn(c.bribeCost, e, s.layer);
+        if (s.character.gold < t) {
+          n([{ kind: `fail`, text: F(`fx.noGold`) }]);
+          return;
+        }
+        (n([{ kind: `ok`, text: F(`fx.ok`) }]),
+          a(r(c.outcomes.bribe), -t, `quest.${c.id}.out.bribe`));
+        return;
+      }
+      if (o === `method_stat`) {
+        let e = U(s.character),
+          t = s.pendingQuest.difficulty ?? en($t(c.id), s.layer),
+          i = on(c.checkStat),
+          o = tn(t),
+          l = e[i] >= o;
+        (n([{ kind: l ? `ok` : `fail`, text: F(l ? `fx.ok` : `fx.fail`) }]),
+          a(
+            l ? r(c.outcomes.statOk) : c.outcomes.statFail,
+            0,
+            `quest.${c.id}.out.${l ? `statOk` : `statFail`}`,
+            !l,
+          ));
+        return;
+      }
+      let l = c.outcomes.talk[o];
+      l && a(l, 0, `quest.${c.id}.out.${o}`, !i(l));
+    },
+    finishLuck: (e) => {
+      let i = t();
+      if (!i.pendingQuest || !i.character || !i.luckPending) return;
+      let o = E.find((e) => e.id === i.pendingQuest?.id);
+      if (!o) return;
+      let s = U(i.character).luck,
+        c = e + s,
+        l = c >= 21;
+      (n([
+        {
+          kind: l ? `ok` : `fail`,
+          text: F(l ? `fx.luckOk` : `fx.luckFail`, {
+            raw: e,
+            luck: s,
+            total: c,
+          }),
+        },
+      ]),
+        a(
+          l ? r(o.outcomes.luckOk) : o.outcomes.luckFail,
+          0,
+          `quest.${o.id}.out.${l ? `luckOk` : `luckFail`}`,
+          !l,
+        ));
+    },
+    spendStat: (n) => {
+      let r = t().character;
+      r && (e({ character: Yn(r, n) }), t().persist());
+    },
+    unspendStat: (n, r) => {
+      let i = t().character;
+      i && (e({ character: Xn(i, n, r) }), t().persist());
+    },
+    spendSkill: (n) => {
+      let r = t().character;
+      r && (e({ character: Zn(r, n) }), t().persist());
+    },
+    moveItem: (n, r) => {
+      let i = t().character;
+      if (!i) return;
+      let a = [...i.inventory],
+        o = { ...i.equipment },
+        s = (e) =>
+          e.place === `inv` ? (a[e.index ?? -1] ?? null) : o[e.place],
+        c = (e, t) => {
+          if (e.place === `inv`) {
+            if (e.index === void 0) return;
+            a[e.index] = t;
+          } else o[e.place] = t;
+        };
+      if (r.place === `inv` && (r.index === void 0 || r.index < 0)) return;
+      let l = s(n),
+        u = s(r);
+      l &&
+        ((r.place !== `inv` && !Qn(l, r.place, i.class)) ||
+          (u && n.place !== `inv` && !Qn(u, n.place, i.class)) ||
+          (c(n, u),
+          c(r, l),
+          e({ character: bn({ ...i, inventory: a, equipment: o }) }),
+          t().persist()));
+    },
+    useItem: (n) => {
+      let r = t().character;
+      if (!r) return;
+      let i = H(r.inventory.find((e) => e?.uid === n));
+      if (i?.kind === `note`) {
+        let a = r.inventory.map((e) => (e?.uid === n ? null : e));
+        (e({
+          character: {
+            ...r,
+            inventory: a,
+            journal: rr(r.journal, `notes`, i.id),
+          },
+          overlay: `note`,
+          readingNote: i.loreKey ?? `lore.${i.id}`,
+        }),
+          t().persist());
+        return;
+      }
+      let a = ur(r, n);
+      a &&
+        (e({
+          character: a.character,
+          toast: a.message,
+          narrative: a.message,
+          fx: Y(t().fx, [J(`ok`, a.message)]),
+        }),
+        t().persist());
+    },
+    closeNote: () => e({ overlay: `none`, readingNote: null }),
+    setStageFx: (t) => e({ stageFx: t }),
+    buy: (r) => {
+      let i = t();
+      if (!i.character || !i.shop) return;
+      let a = i.shop.stock.find((e) => e.uid === r);
+      if (!a) return;
+      if (Sn(i.character.inventory) < 0) {
+        n([{ kind: `fail`, text: F(`fx.noSpace`) }]);
+        return;
+      }
+      let o = Fn(
+        a.defId,
+        U(i.character).cha,
+        i.character.skills.bargain ?? 0,
+        !1,
+        V(a),
+      );
+      if (i.character.gold < o) {
+        n([{ kind: `fail`, text: F(`fx.noGold`) }]);
+        return;
+      }
+      let s = wn(i.character, a);
+      (e({
+        character: { ...s, gold: s.gold - o },
+        shop: { ...i.shop, stock: i.shop.stock.filter((e) => e.uid !== r) },
+        fx: Y(i.fx, [J(`ok`, F(`fx.bought`, { name: I(a.defId) }))]),
+      }),
+        t().persist());
+    },
+    sell: (n) => {
+      let r = t();
+      if (!r.character) return;
+      let i = r.character.inventory.findIndex((e) => e?.uid === n);
+      if (i < 0) return;
+      let a = r.character.inventory[i],
+        o = Fn(
+          a.defId,
+          U(r.character).cha,
+          r.character.skills.bargain ?? 0,
+          !0,
+          V(a),
+        ),
+        s = [...r.character.inventory];
+      ((s[i] = null),
+        e({
+          character: {
+            ...r.character,
+            inventory: s,
+            gold: r.character.gold + o,
+          },
+          fx: Y(r.fx, [J(`gold`, F(`fx.soldFor`, { n: o }))]),
+        }),
+        t().persist());
+    },
+    startCombat: (n) => {
+      let r = t();
+      if (!r.character) return;
+      let i = n ?? {
+        ...zn(r.character.level, r.inNav, r.layer),
+        phase: `enemy_roll`,
+      };
+      (e({
+        combat: i,
+        character: {
+          ...r.character,
+          journal: rr(r.character.journal, `enemies`, i.enemyId),
+        },
+      }),
+        j(!0));
+    },
+    combatEnemyRolled: (n) => {
+      let r = t();
+      if (!r.combat || r.combat.phase !== `enemy_roll`) return;
+      let i = n ?? qt(),
+        a = Bn(r.combat, r.layer),
+        o = i + a;
+      e({
+        combat: {
+          ...r.combat,
+          phase: `player_act`,
+          currentEnemyRaw: i,
+          currentEnemyRoll: o,
+          enemyRolls: [...(r.combat.enemyRolls ?? []), o],
+          narrative: F(`combat.enemyRoll`, {
+            name: F(`enemy.${r.combat.enemyId}.name`),
+            raw: i,
+            bonus: a,
+            total: o,
+          }),
+        },
+        combatSkill: null,
+      });
+    },
+    combatPlayerAct: (n, r) => {
+      try {
+        let i = t();
+        if (!i.combat || !i.character || i.combat.phase !== `player_act`)
+          return;
+        let a = r ?? qt(),
+          o = gn(i.character),
+          s = [...(i.combat.usedSkills ?? [])],
+          c = i.combat.usedSkill,
+          l = 0;
+        n && !s.includes(n) && (o[n] ?? 0) > 0
+          ? ((l = _n(n)),
+            i.character.mp < l ? ((n = null), (l = 0)) : (s.push(n), (c = n)))
+          : (n = i.combatSkill && s.includes(i.combatSkill) ? null : n);
+        let u = ``;
+        if (n === `ancestors_luck`) {
+          let e = Math.max(1, o.ancestors_luck ?? 1),
+            t = [a];
+          for (let n = 0; n < e; n++) t.push(qt());
+          let n = Math.max(...t);
+          ((u = F(`combat.youReroll`, { rolls: t.join(`, `), best: n })),
+            (a = n));
+        }
+        let d = hn(i.character),
+          f = Un(
+            i.character,
+            a,
+            n,
+            i.combat.enemySpecials ?? [],
+            o,
+            i.combat.round,
+            d,
+          ),
+          p = i.combat.currentEnemyRoll ?? 0,
+          m = Wn(f.total, p),
+          h = [...(i.combat.roundWinners ?? []), m];
+        Ze();
+        let g = i.character;
+        if (
+          (l && (g = W({ ...g, mp: g.mp - l })),
+          n === `death_pact` && (g = W({ ...g, hp: g.hp - 4 })),
+          n === `river_breath`)
+        ) {
+          let e = 2 + (o.river_breath ?? 1);
+          g = W({ ...g, hp: g.hp + e });
+        }
+        if (n === `set_bone` && m === `player`) {
+          let e = 3 + (o.set_bone ?? 1);
+          g = W({ ...g, hp: g.hp + e });
+        }
+        m === `player` &&
+          d.includes(`lifesteal`) &&
+          (g = W({ ...g, hp: g.hp + 2 }));
+        let _ = i.combat.enemySpecials ?? [];
+        (_.includes(`drain`) &&
+          m === `enemy` &&
+          (g = W({ ...g, mp: g.mp - 2 })),
+          _.includes(`reflect1`) &&
+            m === `player` &&
+            (g = W({ ...g, hp: g.hp - 1 })),
+          h.filter((e) => e === `player`).length,
+          h.filter((e) => e === `enemy`).length);
+        let v = h.length >= 3,
+          y = f.notes.length
+            ? F(`combat.youNotes`, { notes: f.notes.join(`, `) })
+            : ``,
+          b = [
+            F(`combat.youRaw`, { raw: a }),
+            u,
+            F(`combat.youAttack`, {
+              stat: F(`stat.${f.attackKey}`),
+              statVal: f.attackStatValue,
+              weapon: f.weaponAttack,
+              bonus: f.attackBonus,
+            }),
+            F(`combat.youLuck`, { n: f.luckBonus }),
+            f.skillBonus
+              ? F(`combat.youSkill`, { n: f.skillBonus, notes: y })
+              : y,
+            F(`combat.youTotal`, {
+              you: f.total,
+              enemy: p,
+              raw: i.combat.currentEnemyRaw ?? 0,
+            }),
+            F(
+              m === `player`
+                ? `combat.roundYou`
+                : m === `enemy`
+                  ? `combat.roundEnemy`
+                  : `combat.roundTie`,
+            ),
+          ].filter(Boolean).join(`
+`);
+        e({
+          character: g,
+          combatSkill: null,
+          combat: {
+            ...i.combat,
+            phase: v ? `battle_end` : `round_result`,
+            currentPlayerRaw: a,
+            currentPlayerRoll: f.total,
+            playerRolls: [...(i.combat.playerRolls ?? []), f.total],
+            roundWinners: h,
+            usedSkill: c,
+            usedSkills: s,
+            finished: v,
+            narrative: b,
+          },
+          fx: Y(i.fx, [
+            J(
+              m === `player` ? `ok` : m === `enemy` ? `fail` : `info`,
+              F(
+                m === `player`
+                  ? `fx.roundYou`
+                  : m === `enemy`
+                    ? `fx.roundEnemy`
+                    : `fx.roundTie`,
+              ),
+            ),
+          ]),
+        });
+      } catch (e) {
+        console.error(`[tmz] combatPlayerAct`, e);
+      }
+    },
+    combatAckRound: () => {
+      let n = t();
+      !n.combat ||
+        n.combat.phase !== `round_result` ||
+        e({
+          combat: {
+            ...n.combat,
+            round: n.combat.round + 1,
+            phase: `enemy_roll`,
+            currentEnemyRoll: null,
+            currentPlayerRoll: null,
+            currentEnemyRaw: null,
+            currentPlayerRaw: null,
+            usedSkill: n.combat.usedSkill,
+            narrative: F(`combat.nextRoundN`, { n: n.combat.round + 1 }),
+          },
+          combatSkill: null,
+        });
+    },
+    combatFinish: () => {
+      try {
+        let n = t();
+        if (!n.combat || !n.character) return;
+        let { wins: r, losses: i } = Gn(n.combat),
+          a = (n.combat.roundWinners ?? []).filter((e) => e === `tie`).length,
+          o = n.combat.enemyLevel,
+          s = n.character,
+          c = gn(s),
+          l = n.combat.usedSkills ?? [],
+          u = l.includes(`forest_shadow`),
+          d;
+        d = r > i ? `win` : i > r ? `lose` : `draw`;
+        let f = cn(i, o, n.layer);
+        if (
+          (d === `draw` && (f = Math.max(2, Math.floor(cn(1, o, n.layer) / 2))),
+          (n.combat.enemySpecials ?? []).includes(`poison`))
+        ) {
+          let e = s.resists?.poison ?? 0;
+          f += i * Math.max(1, 3 - e);
+        }
+        u && (f = Math.ceil(f * 0.55));
+        let p = c.bone_shell ?? 0;
+        (p && l.includes(`bone_shell`) && (f = Math.max(0, f - p * 2)),
+          (f = Math.max(0, f - Math.floor(mn(s) / 4))),
+          (s = W({ ...s, hp: s.hp - f })),
+          n.combat.guardFight && s.hp <= 0 && (s = { ...s, hp: 1 }));
+        let m = ``,
+          h = [],
+          g = n.pulseUid,
+          _ = s.level,
+          v = a ? F(`combat.tiesNote`, { n: a }) : ``,
+          y = a ? F(`combat.tiesNote2`, { n: a }) : ``;
+        if (d === `win`) {
+          let e = sn(o, n.layer),
+            t =
+              1 + o * 2 + Math.max(0, n.layer) + Math.floor(Math.random() * 4);
+          if (
+            ((s = xn(s, e)),
+            h.push(
+              { kind: `win`, text: F(`fx.win`) },
+              { kind: `xp`, text: F(`fx.xpPlus`, { n: e }) },
+              { kind: `gold`, text: F(`fx.goldPlus`, { n: t }) },
+            ),
+            Math.random() < 0.38)
+          ) {
+            let a = Dn(U(s).luck, n.layer, !1, s.class),
+              o = X(s, a, Zt(n.layer));
+            ((s = o.character),
+              (g = o.uid),
+              (s = { ...s, gold: s.gold + t }),
+              (m = F(`combat.winLoot`, {
+                w: r,
+                l: i,
+                ties: v,
+                xp: e,
+                gold: t,
+                item: I(a) || F(`thing`),
+                dmg: f,
+              })),
+              h.push({
+                kind: `item`,
+                text: F(`fx.itemGot`, { name: I(a) || F(`thing`) }),
+              }));
+          } else
+            ((s = { ...s, gold: s.gold + t + 2 }),
+              (m = F(`combat.winGold`, {
+                w: r,
+                l: i,
+                ties: v,
+                xp: e,
+                gold: t + 2,
+                dmg: f,
+              })),
+              (h[2] = { kind: `gold`, text: F(`fx.goldPlus`, { n: t + 2 }) }));
+        } else if (d === `draw`) {
+          let e = Math.max(1, Math.floor(sn(o, n.layer) / 2)),
+            t = 1 + o + Math.max(0, n.layer);
+          ((s = xn(s, e)),
+            (s = { ...s, gold: s.gold + t }),
+            (m = F(`combat.draw`, {
+              w: r,
+              l: i,
+              ties: y,
+              xp: e,
+              gold: t,
+              dmg: f,
+            })),
+            h.push(
+              { kind: `info`, text: F(`fx.draw`) },
+              { kind: `xp`, text: F(`fx.xpPlus`, { n: e }) },
+              { kind: `gold`, text: F(`fx.goldPlus`, { n: t }) },
+            ));
+        } else
+          ((m = F(`combat.lose`, { w: r, l: i, ties: v, dmg: f })),
+            h.push({ kind: `lose`, text: F(`fx.lose`) }));
+        (s.level > _ &&
+          h.push({ kind: `level`, text: F(`fx.level`, { n: s.level }) }),
+          j(!1),
+          e({
+            character: s,
+            combat: null,
+            combatSkill: null,
+            narrative: m,
+            overlay: `none`,
+            pulseUid: g,
+            fx: Y(
+              n.fx,
+              h.map((e) => J(e.kind, e.text)),
+            ),
+            log: Z(
+              n.log,
+              F(d === `win` ? `fx.win` : d === `draw` ? `fx.draw` : `fx.lose`),
+            ),
+          }),
+          s.hp <= 0 && !n.combat.guardFight ? t().enterNav() : t().persist());
+      } catch (t) {
+        (console.error(`[tmz] combatFinish`, t),
+          j(!1),
+          e({ combat: null, combatSkill: null, overlay: `none` }));
+      }
+    },
+    combatFlee: () => {
+      let n = t();
+      if (!n.combat || !n.character || !Vn(n.combat)) return;
+      let r = U(n.character).luck,
+        i = Hn(r);
+      if (Math.random() >= i) {
+        (e({
+          combat: {
+            ...n.combat,
+            fleeTried: !0,
+            narrative: F(`combat.fleeFail`),
+          },
+          fx: Y(n.fx, [J(`fail`, F(`combat.fleeFailFx`))]),
+        }),
+          t().persist());
+        return;
+      }
+      let a = Bn(n.combat, n.layer),
+        o = Math.max(1, Math.floor(sn(n.combat.enemyLevel, n.layer) / 5)),
+        s = xn(n.character, o),
+        c = 0;
+      (Math.random() < 0.7 &&
+        ((c = Math.max(2, 2 + Math.floor(a / 2) + Math.max(0, n.layer))),
+        (s = W({ ...s, hp: s.hp - c }))),
+        j(!1),
+        e({
+          character: s,
+          combat: null,
+          combatSkill: null,
+          narrative: c
+            ? F(`combat.fleeOkDmg`, { dmg: c, xp: o })
+            : F(`combat.fleeOkSafe`, { xp: o }),
+          fx: Y(n.fx, [
+            J(`ok`, F(`combat.fleeOkFx`)),
+            J(`xp`, F(`fx.xpPlus`, { n: o })),
+            ...(c ? [J(`fail`, F(`fx.hpMinus`, { n: -c }))] : []),
+          ]),
+          log: Z(n.log, F(`combat.fleeOkFx`)),
+        }),
+        s.hp <= 0 ? t().enterNav() : t().persist());
+    },
+    enterNav: () => {
+      let n = t();
+      if (!n.character) return;
+      j(!1);
+      let r = An(-1, 0, `nav_gate`, !0),
+        i = W({
+          ...n.character,
+          hp: Math.max(1, Math.floor(n.character.maxHp * 0.35)),
+          mp: Math.floor(n.character.maxMp * 0.3),
+        });
+      (e({
+        inNav: !0,
+        returnLayer: n.layer,
+        layer: -1,
+        hexesThisLayer: 0,
+        hex: r,
+        character: i,
+        combat: null,
+        overlay: `none`,
+        choices: null,
+        pendingQuest: null,
+        shop: null,
+        talkOpen: !1,
+        luckPending: !1,
+        narrative: F(`nar.death`, { hex: jn(r) }),
+        fx: Y(n.fx, [J(`lose`, F(`fx.navFall`))]),
+        log: Z(n.log, F(`log.navFall`)),
+      }),
+        t().persist());
+    },
+    leaveNav: () => {},
+    finishDig: (n) => {
+      try {
+        let r = t();
+        if (!r.character) return;
+        let i = r.character,
+          a = r.narrative,
+          o = [],
+          s = r.pulseUid;
+        if (n === `loot`) {
+          let e = Dn(U(i).luck + 2, r.layer, !1, i.class),
+            t = 4 + Math.floor(Math.random() * 12) + r.layer * 3,
+            n = X(i, e, Zt(r.layer));
+          ((i = n.character),
+            (s = n.uid),
+            (i = { ...i, gold: i.gold + t }),
+            (a = F(`nar.digFound`, { name: I(e) || F(`thing`), gold: t })),
+            o.push(
+              { kind: `gold`, text: F(`fx.goldPlus`, { n: t }) },
+              {
+                kind: `item`,
+                text: F(`fx.itemGot`, { name: I(e) || F(`thing`) }),
+              },
+            ));
+        } else if (n === `skull`) {
+          let e = lr(r.layer);
+          ((i = W({ ...i, hp: i.hp - e, xp: Math.max(0, i.xp - 1) })),
+            (a = F(`nar.digSkull`, { dmg: e })),
+            o.push(
+              { kind: `fail`, text: F(`fx.hpMinus`, { n: -e }) },
+              { kind: `fail`, text: F(`fx.xpMinus`) },
+            ));
+        } else
+          ((a = B([
+            F(`nar.digEmpty1`),
+            F(`nar.digEmpty2`),
+            F(`nar.digEmpty3`),
+          ])),
+            o.push({ kind: `fail`, text: F(`fx.unlucky`) }));
+        (e({
+          character: i,
+          narrative: a,
+          pulseUid: s,
+          fx: Y(
+            r.fx,
+            o.map((e) => J(e.kind, e.text)),
+          ),
+          log: Z(r.log, a.slice(0, 80)),
+        }),
+          i.hp <= 0 ? t().enterNav() : t().persist());
+      } catch (e) {
+        console.error(`[tmz] finishDig`, n, e);
+      }
+    },
+    finishHunt: () => {
+      let n = t();
+      if (!n.character) return;
+      let r = X(n.character, `game_meat`, Math.max(1, n.layer + 1));
+      (e({
+        character: r.character,
+        pulseUid: r.uid,
+        narrative: F(`nar.hunt`, { name: I(`game_meat`) }),
+        fx: Y(n.fx, [J(`item`, F(`fx.itemGot`, { name: I(`game_meat`) }))]),
+      }),
+        t().persist());
+    },
+    finishFish: () => {
+      let n = t();
+      if (!n.character) return;
+      let r = X(n.character, `river_fish`, Math.max(1, n.layer + 1));
+      (e({
+        character: r.character,
+        pulseUid: r.uid,
+        narrative: F(`nar.fish`, { name: I(`river_fish`) }),
+        fx: Y(n.fx, [J(`item`, F(`fx.itemGot`, { name: I(`river_fish`) }))]),
+      }),
+        t().persist());
+    },
+    applyNpcEvent: (n) => {
+      let r = t();
+      if (!r.character) return;
+      let i = xe.find((e) => e.id === n);
+      if (!i) {
+        e({ narrative: F(`npc.chatDone`) });
+        return;
+      }
+      let a = r.character,
+        o = [],
+        s = r.pulseUid;
+      if (
+        (i.gold &&
+          ((a = { ...a, gold: Math.max(0, a.gold + i.gold) }),
+          o.push({
+            kind: i.gold > 0 ? `gold` : `fail`,
+            text:
+              i.gold > 0
+                ? F(`fx.goldPlus`, { n: i.gold })
+                : F(`fx.goldMinus`, { n: i.gold }),
+          })),
+        i.hp &&
+          ((a = W({ ...a, hp: a.hp + i.hp })),
+          o.push({
+            kind: i.hp > 0 ? `hp` : `fail`,
+            text:
+              i.hp > 0
+                ? F(`fx.hpPlus`, { n: i.hp })
+                : F(`fx.hpMinus`, { n: i.hp }),
+          })),
+        i.mp && (a = W({ ...a, mp: a.mp + i.mp })),
+        i.item)
+      ) {
+        let e = X(a, i.item, Zt(r.layer));
+        ((a = e.character),
+          (s = e.uid),
+          o.push({ kind: `item`, text: F(`fx.itemGot`, { name: I(i.item) }) }));
+      }
+      (i.xp && (a = xn(a, i.xp)),
+        e({
+          character: a,
+          narrative:
+            F(`npc.event.${i.id}`) === `npc.event.${i.id}`
+              ? i.text
+              : F(`npc.event.${i.id}`),
+          pulseUid: s,
+          fx: Y(
+            r.fx,
+            o.map((e) => J(e.kind, e.text)),
+          ),
+        }),
+        t().persist());
+    },
+    offerTalkQuest: (n) => {
+      let r = t();
+      if (!r.character || r.pendingQuest) return null;
+      let i = Nn(r.hex, r.flags, null, r.layer, { fromTalk: !0 });
+      if (!i) return null;
+      let a = E.find((e) => e.id === i.id),
+        o = a ? on(a.checkStat) : `cha`,
+        s = F(`talk.questOffer`, { name: n, title: R(i.id) }),
+        c = Rt(i.id),
+        l = F(`quest.warning`, {
+          rank: F(`quest.diff.${i.difficulty ?? `medium`}`),
+          stat: Bt(o),
+        });
+      return (
+        e({
+          pendingQuest: i,
+          narrative: `${r.narrative}\n\n${s}\n\n${c}\n${l}`,
+          log: Z(r.log, s),
+        }),
+        t().persist(),
+        i
+      );
+    },
+    stealResolve: (n) => {
+      let r = t();
+      if (r.character) {
+        if (n) {
+          let n = cr(r.layer, U(r.character).luck),
+            i = r.character,
+            a = r.pulseUid,
+            o = [];
+          n.gold > 0 &&
+            ((i = { ...i, gold: i.gold + n.gold }),
+            o.push({ kind: `gold`, text: F(`fx.goldPlus`, { n: n.gold }) }));
+          for (let e of n.items) {
+            let t = X(i, e, Zt(r.layer));
+            ((i = t.character),
+              (a = t.uid),
+              o.push({ kind: `item`, text: F(`fx.itemGot`, { name: I(e) }) }));
+          }
+          (e({
+            character: i,
+            pulseUid: a,
+            narrative: F(`nar.stealOk`),
+            fx: Y(
+              r.fx,
+              o.map((e) => J(e.kind, e.text)),
+            ),
+          }),
+            t().persist());
+          return;
+        }
+        (e({ narrative: F(`nar.stealSpot`) }),
+          window.setTimeout(() => {
+            let n = t();
+            n.character &&
+              (e({
+                combat: {
+                  ...sr(n.character.level, n.layer),
+                  phase: `enemy_roll`,
+                },
+                character: {
+                  ...n.character,
+                  journal: rr(n.character.journal, `enemies`, `guard`),
+                },
+                narrative: F(`nar.stealGuard`),
+              }),
+              j(!0));
+          }, 1e3));
+      }
+    },
+  };
+});
+function Hr() {
+  try {
+    if (Q.getState().character) return !0;
+    for (let e of jr) {
+      let t = localStorage.getItem(e);
+      if (t && JSON.parse(t)?.character) return !0;
+    }
+    return !1;
+  } catch {
+    return !1;
+  }
+}
+if (typeof window < `u`)
+  try {
+    Q.getState().hydrate();
+  } catch {}
+var $ = t();
+function Ur({ hasSave: e }) {
+  z();
+  let t = Q((e) => e.screen),
+    n = Q((e) => e.setScreen),
+    r = Q((e) => e.goCreate),
+    i = Q((e) => e.continueSave),
+    a = Q((e) => e.openOverlay);
+  return (0, $.jsxs)(`div`, {
+    className: `relative min-h-dvh overflow-hidden`,
+    children: [
+      (0, $.jsx)(`img`, {
+        src: `/menu-bg.webp`,
+        alt: ``,
+        className: `absolute inset-0 h-full w-full object-cover`,
+        fetchPriority: `high`,
+        decoding: `async`,
+      }),
+      (0, $.jsx)(`div`, {
+        className: `absolute inset-0 bg-[linear-gradient(180deg,rgba(238,244,228,0.28)_0%,rgba(251,247,236,0.62)_48%,rgba(251,247,236,0.92)_100%)]`,
+      }),
+      (0, $.jsx)(`div`, {
+        className: `fog-layer absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_40%,rgba(238,244,228,0.25)_80%)]`,
+      }),
+      (0, $.jsx)(Wr, {}),
+      (0, $.jsxs)(`div`, {
+        className: `relative z-10 mx-auto flex min-h-dvh max-w-xl flex-col justify-end px-6 pb-28 pt-20 sm:justify-center sm:pb-16`,
+        children: [
+          (0, $.jsx)(`p`, {
+            className: `rise-in font-sans text-sm font-medium uppercase tracking-[0.24em] text-accent`,
+            children: F(`brand.tagline`),
+          }),
+          (0, $.jsxs)(`h1`, {
+            className: `font-display mt-3 text-5xl font-semibold leading-[0.95] tracking-tight text-fg sm:text-6xl`,
+            children: [`Туманная`, (0, $.jsx)(`br`, {}), `застава`],
+          }),
+          t === `lore`
+            ? (0, $.jsxs)(`div`, {
+                className: `rise-in mt-6 space-y-3 font-display text-xl leading-relaxed text-fg`,
+                children: [
+                  (0, $.jsx)(`p`, { children: F(`menu.lore1`) }),
+                  (0, $.jsx)(`p`, { children: F(`menu.lore2`) }),
+                  (0, $.jsx)(`p`, { children: F(`menu.lore3`) }),
+                  (0, $.jsx)(`button`, {
+                    type: `button`,
+                    className: `btn-3d mt-4 min-h-12 rounded-md border border-border px-4 text-base text-fg`,
+                    onClick: () => n(`menu`),
+                    children: F(`menu.back`),
+                  }),
+                ],
+              })
+            : (0, $.jsxs)($.Fragment, {
+                children: [
+                  (0, $.jsx)(`p`, {
+                    className: `rise-in mt-5 max-w-md font-display text-2xl leading-relaxed text-fg`,
+                    children: F(`menu.tagline`),
+                  }),
+                  (0, $.jsxs)(`div`, {
+                    className: `mt-8 flex flex-col gap-3`,
+                    children: [
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        className: `btn-3d min-h-14 rounded-md bg-accent px-5 font-sans text-lg font-semibold tracking-wide text-accent-fg hover:brightness-110`,
+                        onPointerDown: (e) => e.stopPropagation(),
+                        onClick: () => {
+                          (r(), N());
+                        },
+                        children: F(`menu.newGame`),
+                      }),
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        disabled: !e,
+                        className: `btn-3d min-h-14 rounded-md border border-border-strong bg-bg-elevated px-5 font-sans text-lg font-medium text-fg disabled:opacity-35`,
+                        onClick: () => {
+                          (N(), i());
+                        },
+                        children: F(`menu.continue`),
+                      }),
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        className: `btn-3d min-h-14 rounded-md border border-border bg-bg-elevated px-5 text-lg`,
+                        onClick: () => {
+                          (N(), a(`bestiary`));
+                        },
+                        children: F(`menu.bestiary`),
+                      }),
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        className: `btn-3d min-h-14 rounded-md border border-border bg-bg-elevated px-5 text-lg`,
+                        onClick: () => {
+                          (N(), n(`lore`));
+                        },
+                        children: F(`menu.about`),
+                      }),
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        className: `btn-3d min-h-14 rounded-md border border-border bg-bg-elevated px-5 text-lg`,
+                        onClick: () => {
+                          (N(), a(`settings`));
+                        },
+                        children: F(`menu.settings`),
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+        ],
+      }),
+    ],
+  });
+}
+function Wr() {
+  let e = z(),
+    [t, n] = (0, s.useState)(!1),
+    r = (0, s.useRef)(null);
+  return (
+    (0, s.useEffect)(() => {
+      if (!t) return;
+      let e = (e) => {
+        r.current?.contains(e.target) || n(!1);
+      };
+      return (
+        document.addEventListener(`pointerdown`, e),
+        () => document.removeEventListener(`pointerdown`, e)
+      );
+    }, [t]),
+    (0, $.jsxs)(`div`, {
+      ref: r,
+      className: `lang-chip-wrap`,
+      children: [
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `lang-chip`,
+          "aria-expanded": t,
+          "aria-haspopup": `listbox`,
+          onClick: () => {
+            (N(), n((e) => !e));
+          },
+          children: ct[e],
+        }),
+        t
+          ? (0, $.jsx)(`div`, {
+              className: `lang-pop`,
+              role: `listbox`,
+              children: st.map((t) => {
+                let r = t.id === e;
+                return (0, $.jsxs)(
+                  `button`,
+                  {
+                    type: `button`,
+                    role: `option`,
+                    "aria-selected": r,
+                    dir: t.rtl ? `rtl` : `ltr`,
+                    className: `lang-opt ${r ? `is-on` : ``}`,
+                    onClick: () => {
+                      (N(), Et(t.id), n(!1));
+                    },
+                    children: [
+                      (0, $.jsx)(`span`, {
+                        className: `lang-opt-code`,
+                        children: ct[t.id],
+                      }),
+                      (0, $.jsx)(`span`, {
+                        className: `lang-opt-name`,
+                        children: t.native,
+                      }),
+                    ],
+                  },
+                  t.id,
+                );
+              }),
+            })
+          : null,
+      ],
+    })
+  );
+}
+function Gr() {
+  let e = z(),
+    t = Wt(),
+    n = Q((e) => e.screen),
+    r = Q((e) => e.openOverlay),
+    [i, a] = (0, s.useState)(`list`),
+    o = () => {
+      (N(), r(n === `game` ? `pause` : `none`));
+    };
+  return (0, $.jsx)(`div`, {
+    className: `fixed inset-0 z-[60] flex items-end justify-center bg-bg/70 p-3 sm:items-center`,
+    onClick: o,
+    children: (0, $.jsxs)(`div`, {
+      className: `panel max-h-[88dvh] w-full max-w-lg overflow-y-auto p-6`,
+      onClick: (e) => e.stopPropagation(),
+      children: [
+        (0, $.jsxs)(`div`, {
+          className: `flex items-start justify-between gap-3`,
+          children: [
+            (0, $.jsxs)(`h3`, {
+              className: `font-display text-3xl font-semibold`,
+              children: [
+                i === `list` && F(`settings.title`),
+                i === `lang` && F(`settings.language`),
+                i === `volume` && F(`settings.volume`),
+              ],
+            }),
+            (0, $.jsx)(`button`, {
+              type: `button`,
+              className: `min-h-11 px-2 text-base text-fg-muted`,
+              onClick: o,
+              children: F(`close`),
+            }),
+          ],
+        }),
+        i === `list` &&
+          (0, $.jsxs)(`div`, {
+            className: `mt-5 flex flex-col gap-2`,
+            children: [
+              (0, $.jsxs)(`button`, {
+                type: `button`,
+                className: `btn-3d flex min-h-14 items-center justify-between rounded-md border border-border bg-bg-elevated px-4 text-left text-lg`,
+                onClick: () => {
+                  (N(), a(`lang`));
+                },
+                children: [
+                  (0, $.jsx)(`span`, { children: F(`settings.language`) }),
+                  (0, $.jsx)(`span`, {
+                    className: `font-sans text-sm text-fg-muted`,
+                    children: st.find((t) => t.id === e)?.native,
+                  }),
+                ],
+              }),
+              (0, $.jsxs)(`button`, {
+                type: `button`,
+                className: `btn-3d flex min-h-14 items-center justify-between rounded-md border border-border bg-bg-elevated px-4 text-left text-lg`,
+                onClick: () => {
+                  (N(), a(`volume`));
+                },
+                children: [
+                  (0, $.jsx)(`span`, { children: F(`settings.volume`) }),
+                  (0, $.jsxs)(`span`, {
+                    className: `font-sans text-sm text-fg-muted`,
+                    children: [
+                      Math.round(t.music * 100),
+                      ` / `,
+                      Math.round(t.sfx * 100),
+                    ],
+                  }),
+                ],
+              }),
+              (0, $.jsxs)(`button`, {
+                type: `button`,
+                className: `btn-3d flex min-h-14 items-center justify-between rounded-md border border-border bg-bg-elevated px-4 text-left text-lg`,
+                onClick: () => {
+                  (N(), kt(!t.tutorial));
+                },
+                children: [
+                  (0, $.jsx)(`span`, { children: F(`settings.tutorial`) }),
+                  (0, $.jsx)(`span`, {
+                    className: `font-sans text-sm text-fg-muted`,
+                    children: t.tutorial
+                      ? F(`settings.tutorialOn`)
+                      : F(`settings.tutorialOff`),
+                  }),
+                ],
+              }),
+            ],
+          }),
+        i === `lang` &&
+          (0, $.jsxs)(`div`, {
+            className: `mt-4`,
+            children: [
+              (0, $.jsx)(`p`, {
+                className: `font-display text-lg text-fg-muted`,
+                children: F(`settings.languageHint`),
+              }),
+              (0, $.jsx)(`div`, {
+                className: `mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2`,
+                children: st.map((t) => {
+                  let n = t.id === e;
+                  return (0, $.jsxs)(
+                    `button`,
+                    {
+                      type: `button`,
+                      dir: t.rtl ? `rtl` : `ltr`,
+                      className: `btn-3d min-h-14 rounded-md border px-3 py-2 text-left ${n ? `border-accent bg-accent/15` : `border-border bg-bg-elevated`}`,
+                      onClick: () => {
+                        (N(), Et(t.id));
+                      },
+                      children: [
+                        (0, $.jsx)(`div`, {
+                          className: `font-display text-xl font-semibold leading-tight`,
+                          children: t.native,
+                        }),
+                        (0, $.jsx)(`div`, {
+                          className: `font-sans text-xs uppercase tracking-[0.12em] text-fg-muted`,
+                          children: t.english,
+                        }),
+                      ],
+                    },
+                    t.id,
+                  );
+                }),
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d mt-4 min-h-12 rounded-md border border-border px-4 text-base`,
+                onClick: () => {
+                  (N(), a(`list`));
+                },
+                children: F(`settings.back`),
+              }),
+            ],
+          }),
+        i === `volume` &&
+          (0, $.jsxs)(`div`, {
+            className: `mt-4 space-y-6`,
+            children: [
+              (0, $.jsx)(`p`, {
+                className: `font-display text-lg text-fg-muted`,
+                children: F(`settings.volumeHint`),
+              }),
+              (0, $.jsx)(Kr, {
+                label: F(`settings.music`),
+                value: t.music,
+                onChange: (e) => {
+                  Dt(e);
+                },
+              }),
+              (0, $.jsx)(Kr, {
+                label: F(`settings.sfx`),
+                value: t.sfx,
+                onChange: (e) => {
+                  (Ot(e), N());
+                },
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d min-h-12 rounded-md border border-border px-4 text-base`,
+                onClick: () => {
+                  (N(), a(`list`));
+                },
+                children: F(`settings.back`),
+              }),
+            ],
+          }),
+      ],
+    }),
+  });
+}
+function Kr({ label: e, value: t, onChange: n }) {
+  let r = Math.round(t * 100);
+  return (0, $.jsxs)(`div`, {
+    children: [
+      (0, $.jsxs)(`div`, {
+        className: `mb-2 flex items-end justify-between gap-3`,
+        children: [
+          (0, $.jsx)(`span`, {
+            className: `font-sans text-sm uppercase tracking-[0.16em] text-fg-muted`,
+            children: e,
+          }),
+          (0, $.jsx)(`span`, {
+            className: `font-display text-2xl tabular-nums`,
+            children: r,
+          }),
+        ],
+      }),
+      (0, $.jsx)(`div`, {
+        className: `mb-3 flex h-10 items-end gap-1`,
+        "aria-hidden": !0,
+        children: Array.from({ length: 10 }, (e, t) => {
+          let n = t < Math.round((r / 100) * 10);
+          return (0, $.jsx)(
+            `span`,
+            {
+              className: `flex-1 rounded-sm`,
+              style: {
+                height: `${28 + t * 6}%`,
+                background: n
+                  ? `var(--color-accent)`
+                  : `color-mix(in oklab, var(--color-fg) 12%, transparent)`,
+              },
+            },
+            t,
+          );
+        }),
+      }),
+      (0, $.jsx)(`input`, {
+        type: `range`,
+        min: 0,
+        max: 100,
+        step: 1,
+        value: r,
+        "aria-label": e,
+        className: `eq-fader`,
+        onChange: (e) => n(Number(e.target.value) / 100),
+      }),
+    ],
+  });
+}
+var qr = [
+    { id: `enemies`, labelKey: `bestiary.enemies` },
+    { id: `notes`, labelKey: `bestiary.notes` },
+    { id: `hexes`, labelKey: `bestiary.hexes` },
+    { id: `rules`, labelKey: `bestiary.rules` },
+  ],
+  Jr = [`combat`, `explore`, `settle`, `camp`, `gear`, `coin`];
+function Yr() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.openOverlay),
+    [n, r] = (0, s.useState)(`enemies`),
+    [i, a] = (0, s.useState)(null),
+    o = e?.journal ?? { enemies: [], hexes: [], notes: [] },
+    c =
+      n === `enemies`
+        ? o.enemies
+        : n === `hexes`
+          ? o.hexes
+          : n === `notes`
+            ? o.notes
+            : [],
+    l =
+      n === `enemies`
+        ? fe.map((e) => e.id)
+        : n === `hexes`
+          ? Object.keys(T)
+          : n === `notes`
+            ? le
+            : [],
+    u = (e) => (n === `enemies` ? Ft(e) : n === `hexes` ? It(e) : I(e)),
+    d = (e) =>
+      F(
+        n === `enemies`
+          ? `enemy.${e}.desc`
+          : n === `hexes`
+            ? `hex.${e}.t0`
+            : e.replace(`note_`, `lore.`),
+      ),
+    f = (e) =>
+      n === `enemies`
+        ? (fe.find((t) => t.id === e)?.portrait ?? ``)
+        : n === `hexes`
+          ? (T[e]?.image ?? ``)
+          : `/items/${w[e]?.icon ?? (e === `note_book` ? `note_diary` : e)}.webp`,
+    p = i && c.includes(i) ? i : null;
+  return (0, $.jsx)(`div`, {
+    className: `fixed inset-0 z-50 flex items-center justify-center bg-bg/75 p-2 sm:p-4`,
+    onClick: () => t(`none`),
+    children: (0, $.jsx)(`div`, {
+      className: `book-wrap`,
+      onClick: (e) => e.stopPropagation(),
+      children: (0, $.jsxs)(`div`, {
+        className: `book-cover`,
+        children: [
+          (0, $.jsx)(`button`, {
+            type: `button`,
+            className: `book-x`,
+            onClick: () => t(`none`),
+            "aria-label": F(`close`),
+            children: `×`,
+          }),
+          (0, $.jsx)(`div`, { className: `book-rivet tl` }),
+          (0, $.jsx)(`div`, { className: `book-rivet bl` }),
+          (0, $.jsx)(`div`, { className: `book-rivet br` }),
+          (0, $.jsx)(`nav`, {
+            className: `book-ribbon`,
+            children: qr.map((e) =>
+              (0, $.jsx)(
+                `button`,
+                {
+                  type: `button`,
+                  className: `book-ribbon-tab ${n === e.id ? `is-on` : ``}`,
+                  onClick: () => {
+                    (r(e.id), a(null));
+                  },
+                  children: F(e.labelKey),
+                },
+                e.id,
+              ),
+            ),
+          }),
+          (0, $.jsxs)(`div`, {
+            className: `book-spread`,
+            children: [
+              (0, $.jsxs)(`section`, {
+                className: `book-leaf book-left`,
+                children: [
+                  (0, $.jsx)(`header`, {
+                    className: `flex items-start justify-between gap-2`,
+                    children: (0, $.jsx)(`h3`, {
+                      className: `font-display text-3xl font-semibold leading-tight`,
+                      children: F(`bestiary.title`),
+                    }),
+                  }),
+                  n === `rules`
+                    ? (0, $.jsx)(`div`, {
+                        className: `mt-3 space-y-5 pr-1`,
+                        children: Jr.map((e) =>
+                          (0, $.jsxs)(
+                            `section`,
+                            {
+                              children: [
+                                (0, $.jsx)(`h4`, {
+                                  className: `book-copy-title font-display text-accent`,
+                                  children: F(`rules.${e}.title`),
+                                }),
+                                (0, $.jsx)(`p`, {
+                                  className: `book-copy-body mt-2 font-display leading-relaxed`,
+                                  children: F(`rules.${e}.body`),
+                                }),
+                              ],
+                            },
+                            e,
+                          ),
+                        ),
+                      })
+                    : (0, $.jsx)(`div`, {
+                        className: `book-grid mt-3`,
+                        children: l.map((e) => {
+                          let t = c.includes(e);
+                          return (0, $.jsx)(
+                            `button`,
+                            {
+                              type: `button`,
+                              disabled: !t,
+                              onClick: () => a(e),
+                              className: `book-plate ${t ? `` : `is-locked`} ${p === e ? `is-pick` : ``}`,
+                              title: t ? u(e) : F(`bestiary.unknown`),
+                              children: (0, $.jsx)(`span`, {
+                                className: `book-plate-frame`,
+                                children: (0, $.jsx)(`img`, {
+                                  src: f(e),
+                                  alt: ``,
+                                  draggable: !1,
+                                }),
+                              }),
+                            },
+                            e,
+                          );
+                        }),
+                      }),
+                ],
+              }),
+              (0, $.jsx)(`div`, {
+                className: `book-gutter`,
+                "aria-hidden": `true`,
+              }),
+              (0, $.jsx)(`section`, {
+                className: `book-leaf book-right`,
+                children:
+                  n === `rules`
+                    ? (0, $.jsx)(`p`, {
+                        className: `font-display text-xl leading-relaxed text-fg-muted`,
+                        children: F(`bestiary.lockedHint`),
+                      })
+                    : p
+                      ? (0, $.jsxs)(`div`, {
+                          className: `book-read`,
+                          children: [
+                            (0, $.jsx)(`div`, {
+                              className: `book-illu`,
+                              children: (0, $.jsx)(`img`, {
+                                src: f(p),
+                                alt: ``,
+                                draggable: !1,
+                              }),
+                            }),
+                            (0, $.jsxs)(`div`, {
+                              className: `book-read-text`,
+                              children: [
+                                (0, $.jsx)(`h4`, {
+                                  className: `book-copy-title font-display font-semibold leading-tight`,
+                                  children: u(p),
+                                }),
+                                (0, $.jsx)(`p`, {
+                                  className: `book-copy-body mt-3 font-display leading-relaxed`,
+                                  children: d(p),
+                                }),
+                              ],
+                            }),
+                          ],
+                        })
+                      : (0, $.jsx)(`p`, {
+                          className: `font-display text-xl leading-relaxed text-fg-muted`,
+                          children: F(`bestiary.lockedHint`),
+                        }),
+              }),
+            ],
+          }),
+        ],
+      }),
+    }),
+  });
+}
+function Xr({ amount: e, className: t = ``, compact: n = !1 }) {
+  return (0, $.jsxs)(`span`, {
+    className: `inline-flex shrink-0 items-center gap-1.5 text-gold ${t}`,
+    children: [
+      (0, $.jsx)(Qr, { className: n ? `size-6` : `size-8` }),
+      (0, $.jsx)(`span`, {
+        className: `font-sans font-bold tabular-nums leading-none ${n ? `text-xl` : `text-2xl`}`,
+        children: e,
+      }),
+    ],
+  });
+}
+var Zr = 9;
+function Qr({ className: e = `size-8` }) {
+  let t = (0, s.useId)().replace(/:/g, ``);
+  return (0, $.jsx)(`span`, {
+    className: `coin-scene ${e}`,
+    "aria-hidden": `true`,
+    children: (0, $.jsx)(`span`, {
+      className: `coin-rig`,
+      children: Array.from({ length: Zr }, (e, n) =>
+        (0, $.jsxs)(
+          `svg`,
+          {
+            viewBox: `0 0 32 32`,
+            className: `coin-slice`,
+            style: { transform: `translateZ(${n}px)` },
+            children: [
+              (0, $.jsxs)(`defs`, {
+                children: [
+                  (0, $.jsxs)(`radialGradient`, {
+                    id: `${t}-e${n}`,
+                    cx: `35%`,
+                    cy: `30%`,
+                    r: `75%`,
+                    children: [
+                      (0, $.jsx)(`stop`, {
+                        offset: `0%`,
+                        stopColor: n === 8 ? `#e8c090` : `#8a4a22`,
+                      }),
+                      (0, $.jsx)(`stop`, {
+                        offset: `55%`,
+                        stopColor: n === 8 ? `#b87333` : `#6a3518`,
+                      }),
+                      (0, $.jsx)(`stop`, {
+                        offset: `100%`,
+                        stopColor: `#4a2410`,
+                      }),
+                    ],
+                  }),
+                  (0, $.jsxs)(`mask`, {
+                    id: `${t}-m${n}`,
+                    children: [
+                      (0, $.jsx)(`rect`, {
+                        width: `32`,
+                        height: `32`,
+                        fill: `#fff`,
+                      }),
+                      (0, $.jsx)(`circle`, {
+                        cx: `5.2`,
+                        cy: `11`,
+                        r: `3.4`,
+                        fill: `#000`,
+                      }),
+                    ],
+                  }),
+                ],
+              }),
+              (0, $.jsx)(`circle`, {
+                cx: `16`,
+                cy: `16`,
+                r: `14`,
+                fill: `url(#${t}-e${n})`,
+                mask: `url(#${t}-m${n})`,
+                stroke: n === 8 ? `#f0d2a0` : `#3a1c0c`,
+                strokeWidth: `1.2`,
+              }),
+              n === 8
+                ? (0, $.jsxs)($.Fragment, {
+                    children: [
+                      (0, $.jsx)(`circle`, {
+                        cx: `16`,
+                        cy: `16`,
+                        r: `9.4`,
+                        fill: `none`,
+                        stroke: `#6a3518`,
+                        strokeWidth: `1.05`,
+                        opacity: `0.55`,
+                      }),
+                      (0, $.jsx)(`ellipse`, {
+                        cx: `12.2`,
+                        cy: `11.2`,
+                        rx: `4`,
+                        ry: `2.6`,
+                        fill: `#fff3d6`,
+                        opacity: `0.42`,
+                      }),
+                      (0, $.jsx)(`path`, {
+                        d: `M12 8.2 C10.2 10.4 9.4 13 10.2 14.6`,
+                        fill: `none`,
+                        stroke: `#3a1c0c`,
+                        strokeWidth: `1.1`,
+                        opacity: `0.7`,
+                      }),
+                    ],
+                  })
+                : null,
+            ],
+          },
+          n,
+        ),
+      ),
+    }),
+  });
+}
+var $r = {
+  weapon: `#8a6414`,
+  armor: `#5a6e58`,
+  consumable: `#2f9a62`,
+  treasure: `#c4922a`,
+  quest: `#4a8fd8`,
+};
+function ei({ id: e, kind: t, className: n = `size-8`, rarity: r, icon: i }) {
+  let a = i || e,
+    o = r ? `rarity-ring rarity-${r}` : ``;
+  return a
+    ? (0, $.jsx)(`img`, {
+        src: `/items/${a}.webp`,
+        alt: ``,
+        draggable: !1,
+        className: `rounded-[6px] object-cover ${o} ${n}`,
+      })
+    : (0, $.jsx)(`span`, {
+        className: `inline-block rounded-[6px] ${o} ${n}`,
+        style: { background: $r[t ?? ``] ?? `#c9b48a` },
+      });
+}
+function ti() {
+  let e = Q((e) => e.overlay),
+    t = Q((e) => e.fx),
+    n = Q((e) => e.clearFx),
+    r = Q((e) => e.openOverlay);
+  return (0, $.jsxs)($.Fragment, {
+    children: [
+      (0, $.jsx)(`div`, {
+        className: `pointer-events-none fixed inset-x-0 top-10 z-[90] flex flex-col items-center gap-3`,
+        children: t.map((e) =>
+          (0, $.jsx)(
+            ni,
+            { id: e.id, kind: e.kind, text: e.text, onDone: n },
+            e.id,
+          ),
+        ),
+      }),
+      e === `stats` && (0, $.jsx)(ii, {}),
+      e === `skills` && (0, $.jsx)(ai, {}),
+      e === `levelup` && (0, $.jsx)(oi, {}),
+      e === `shop` && (0, $.jsx)(si, {}),
+      e === `pause` && (0, $.jsx)(ci, {}),
+      e === `ending` && (0, $.jsx)(ui, {}),
+      e === `settings` && (0, $.jsx)(Gr, {}),
+      e === `bestiary` && (0, $.jsx)(Yr, {}),
+      e === `note` && (0, $.jsx)(li, {}),
+      e !== `none` &&
+        e !== `ending` &&
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `sr-only`,
+          onClick: () => r(`none`),
+          children: `close`,
+        }),
+    ],
+  });
+}
+function ni({ id: e, kind: t, text: n, onDone: r }) {
+  return (
+    (0, s.useEffect)(() => {
+      it(t, n);
+      let i = window.setTimeout(() => r(e), 2400);
+      return () => window.clearTimeout(i);
+    }, [e, t, n, r]),
+    (0, $.jsxs)(`div`, {
+      className: `fx-banner fx-${t}`,
+      children: [
+        t === `gold` ? (0, $.jsx)(Qr, { className: `size-6` }) : null,
+        (0, $.jsx)(`span`, { children: n }),
+      ],
+    })
+  );
+}
+function ri({ title: e, children: t, onClose: n }) {
+  return (
+    z(),
+    (0, $.jsx)(`div`, {
+      className: `fixed inset-0 z-50 flex items-end justify-center bg-bg/70 p-3 sm:items-center`,
+      onClick: n,
+      children: (0, $.jsxs)(`div`, {
+        className: `panel max-h-[88dvh] w-full max-w-lg overflow-y-auto p-6`,
+        onClick: (e) => e.stopPropagation(),
+        children: [
+          (0, $.jsxs)(`div`, {
+            className: `flex items-start justify-between gap-3`,
+            children: [
+              (0, $.jsx)(`h3`, {
+                className: `font-display text-3xl font-semibold`,
+                children: e,
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `min-h-11 px-2 text-base text-fg-muted`,
+                onClick: n,
+                children: F(`close`),
+              }),
+            ],
+          }),
+          (0, $.jsx)(`div`, { className: `mt-4`, children: t }),
+        ],
+      }),
+    })
+  );
+}
+function ii() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.spendStat),
+    n = Q((e) => e.unspendStat),
+    r = Q((e) => e.openOverlay),
+    [i] = (0, s.useState)(() => (e ? { ...e.stats } : null));
+  if (
+    ((0, s.useEffect)(() => {
+      q(`stats`);
+    }, []),
+    !e || !i)
+  )
+    return null;
+  let a = U(e),
+    o = pn(e.equipment);
+  return (0, $.jsxs)(ri, {
+    title: F(`stats.title`),
+    onClose: () => r(`none`),
+    children: [
+      (0, $.jsx)(`p`, {
+        "data-tut": `stats`,
+        className: `text-base text-fg-muted`,
+        children: F(`stats.line`, {
+          cls: Nt(e.class),
+          n: e.level,
+          xp: ln(e.level) - e.xp,
+        }),
+      }),
+      (0, $.jsx)(`p`, {
+        className: `mt-1 text-sm text-fg-muted`,
+        children: F(`stats.equipNote`),
+      }),
+      e.unspentStat > 0 &&
+        (0, $.jsx)(`p`, {
+          className: `mt-2 text-base text-accent`,
+          children: F(`stats.unspent`, { n: e.unspentStat }),
+        }),
+      (0, $.jsx)(`ul`, {
+        className: `mt-4 space-y-2`,
+        children: [`str`, `dex`, `int`, `end`, `luck`, `cha`].map((r) =>
+          (0, $.jsxs)(
+            `li`,
+            {
+              className: `flex items-center justify-between gap-3 border-b border-border py-2`,
+              children: [
+                (0, $.jsx)(`span`, { className: `text-lg`, children: Bt(r) }),
+                (0, $.jsxs)(`span`, {
+                  className: `flex items-center gap-2 tabular-nums text-lg`,
+                  children: [
+                    (0, $.jsxs)(`span`, {
+                      children: [
+                        e.stats[r],
+                        a[r] === e.stats[r]
+                          ? null
+                          : (0, $.jsxs)(`span`, {
+                              className: `text-accent`,
+                              children: [` → `, a[r]],
+                            }),
+                      ],
+                    }),
+                    (0, $.jsx)(`button`, {
+                      type: `button`,
+                      disabled: e.stats[r] <= i[r],
+                      className: `min-h-11 min-w-11 rounded-sm border border-border disabled:opacity-30`,
+                      onClick: () => n(r, i[r]),
+                      children: `−`,
+                    }),
+                    (0, $.jsx)(`button`, {
+                      type: `button`,
+                      disabled: e.unspentStat <= 0,
+                      className: `min-h-11 min-w-11 rounded-sm border border-border disabled:opacity-30`,
+                      onClick: () => t(r),
+                      children: `+`,
+                    }),
+                  ],
+                }),
+              ],
+            },
+            r,
+          ),
+        ),
+      }),
+      (0, $.jsxs)(`p`, {
+        className: `mt-4 text-base text-fg`,
+        children: [
+          F(`stats.armorAttack`, { armor: o.armor, attack: o.attack }),
+          o.armor === 0 && o.attack === 0
+            ? F(`stats.wearGear`)
+            : F(`stats.fromGear`),
+        ],
+      }),
+    ],
+  });
+}
+function ai() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.spendSkill),
+    n = Q((e) => e.openOverlay);
+  if (
+    ((0, s.useEffect)(() => {
+      q(`skills`);
+    }, []),
+    !e)
+  )
+    return null;
+  let r = gn(e);
+  return (0, $.jsxs)(ri, {
+    title: F(`skills.title`),
+    onClose: () => n(`none`),
+    children: [
+      (0, $.jsx)(`p`, {
+        "data-tut": `skills`,
+        className: `text-base text-fg-muted`,
+        children:
+          e.unspentSkill > 0
+            ? F(`skills.points`, { n: e.unspentSkill })
+            : F(`skills.title`),
+      }),
+      (0, $.jsx)(`ul`, {
+        className: `mt-3 space-y-3`,
+        children: de.map((n) => {
+          let i = r[n.id] ?? 0;
+          return (n.itemOnly && i <= 0) ||
+            (i === 0 &&
+              ((n.classReq && n.classReq !== e.class) ||
+                (n.raceReq && n.raceReq !== e.race)))
+            ? null
+            : (0, $.jsx)(
+                `li`,
+                {
+                  className: `rounded-md border border-border p-3`,
+                  children: (0, $.jsxs)(`div`, {
+                    className: `flex items-start justify-between gap-2`,
+                    children: [
+                      (0, $.jsxs)(`div`, {
+                        children: [
+                          (0, $.jsxs)(`div`, {
+                            className: `text-lg font-medium`,
+                            children: [
+                              L(n.id),
+                              ` · `,
+                              n.itemOnly
+                                ? F(`skills.itemOnly`)
+                                : `${e.skills[n.id] ?? 0}/${n.maxRank}`,
+                            ],
+                          }),
+                          (0, $.jsx)(`p`, {
+                            className: `mt-1 text-base leading-relaxed text-fg-muted`,
+                            children: Pt(n.id),
+                          }),
+                        ],
+                      }),
+                      !n.itemOnly &&
+                        (0, $.jsx)(`button`, {
+                          type: `button`,
+                          disabled:
+                            e.unspentSkill <= 0 ||
+                            (e.skills[n.id] ?? 0) >= n.maxRank,
+                          className: `min-h-11 min-w-11 rounded-sm border border-border disabled:opacity-30`,
+                          onClick: () => t(n.id),
+                          children: `+`,
+                        }),
+                    ],
+                  }),
+                },
+                n.id,
+              );
+        }),
+      }),
+    ],
+  });
+}
+function oi() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.openOverlay);
+  return e
+    ? (0, $.jsx)(ri, {
+        title: F(`levelup.title`),
+        onClose: () => t(`none`),
+        children: (0, $.jsxs)(`div`, {
+          "data-tut": `levelup`,
+          children: [
+            (0, $.jsx)(`p`, {
+              className: `font-display text-xl leading-relaxed text-fg-muted`,
+              children: F(`levelup.body`, { n: e.level }),
+            }),
+            (0, $.jsx)(`button`, {
+              type: `button`,
+              className: `btn-3d mt-4 min-h-12 rounded-md bg-accent px-4 text-lg font-semibold text-accent-fg`,
+              onClick: () => t(`none`),
+              children: F(`ok`),
+            }),
+          ],
+        }),
+      })
+    : null;
+}
+function si() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.shop),
+    n = Q((e) => e.buy),
+    r = Q((e) => e.sell),
+    i = Q((e) => e.openOverlay);
+  return !e || !t
+    ? null
+    : (0, $.jsx)(ri, {
+        title: F(`shop.title`),
+        onClose: () => i(`none`),
+        children: (0, $.jsxs)(`div`, {
+          "data-tut": `shop`,
+          children: [
+            (0, $.jsx)(`div`, {
+              className: `mb-1`,
+              children: (0, $.jsx)(Xr, { amount: e.gold }),
+            }),
+            (0, $.jsx)(`ul`, {
+              className: `mt-3 space-y-2`,
+              children: t.stock.map((t) => {
+                let r = H(t),
+                  i = V(t),
+                  a = Fn(t.defId, U(e).cha, e.skills.bargain ?? 0, !1, i);
+                return (0, $.jsxs)(
+                  `li`,
+                  {
+                    className: `flex items-center justify-between gap-2 rounded-sm border border-border px-3 py-2`,
+                    children: [
+                      (0, $.jsxs)(`div`, {
+                        className: `flex min-w-0 items-center gap-2`,
+                        children: [
+                          (0, $.jsx)(ei, {
+                            id: r?.id,
+                            icon: r?.icon,
+                            kind: r?.kind,
+                            rarity: r?.rarity,
+                            className: `size-9 shrink-0`,
+                          }),
+                          (0, $.jsxs)(`div`, {
+                            children: [
+                              (0, $.jsx)(`div`, {
+                                className: `text-lg`,
+                                children: r ? I(r.id) : ``,
+                              }),
+                              (0, $.jsxs)(`div`, {
+                                className: `text-xs font-medium rarity-label rarity-${r?.rarity ?? `common`}`,
+                                children: [
+                                  r ? zt(r.rarity) : ``,
+                                  ` · `,
+                                  F(`item.level`, { n: i }),
+                                  r && vn(r, i).length
+                                    ? ` · ${vn(r, i).join(`, `)}`
+                                    : ``,
+                                ],
+                              }),
+                              (0, $.jsxs)(`div`, {
+                                className: `flex items-center gap-1 text-sm text-fg-muted`,
+                                children: [
+                                  (0, $.jsx)(Qr, { className: `size-4` }),
+                                  ` `,
+                                  a,
+                                ],
+                              }),
+                            ],
+                          }),
+                        ],
+                      }),
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        className: `btn-3d min-h-11 rounded-sm bg-accent px-3 text-base font-semibold text-accent-fg`,
+                        onClick: () => {
+                          (N(), n(t.uid));
+                        },
+                        children: F(`shop.buy`),
+                      }),
+                    ],
+                  },
+                  t.uid,
+                );
+              }),
+            }),
+            (0, $.jsx)(`h4`, {
+              className: `mt-5 text-sm uppercase tracking-[0.16em] text-fg-muted`,
+              children: F(`shop.sellBag`),
+            }),
+            (0, $.jsx)(`ul`, {
+              className: `mt-2 space-y-2`,
+              children: e.inventory.filter(Boolean).map((t) => {
+                if (!t) return null;
+                let n = w[t.defId],
+                  i = Fn(t.defId, U(e).cha, e.skills.bargain ?? 0, !0, V(t));
+                return (0, $.jsxs)(
+                  `li`,
+                  {
+                    className: `flex items-center justify-between gap-2 rounded-sm border border-border px-3 py-2`,
+                    children: [
+                      (0, $.jsxs)(`div`, {
+                        className: `flex min-w-0 items-center gap-2`,
+                        children: [
+                          (0, $.jsx)(ei, {
+                            id: n?.id,
+                            icon: n?.icon,
+                            kind: n?.kind,
+                            rarity: n?.rarity,
+                            className: `size-9 shrink-0`,
+                          }),
+                          (0, $.jsx)(`div`, {
+                            className: `truncate text-lg`,
+                            children: n ? I(n.id) : ``,
+                          }),
+                        ],
+                      }),
+                      (0, $.jsx)(`button`, {
+                        type: `button`,
+                        className: `min-h-11 rounded-sm border border-border px-3 text-base`,
+                        onClick: () => {
+                          (N(), r(t.uid));
+                        },
+                        children: (0, $.jsxs)(`span`, {
+                          className: `inline-flex items-center gap-1`,
+                          children: [
+                            (0, $.jsx)(Qr, { className: `size-4` }),
+                            i,
+                          ],
+                        }),
+                      }),
+                    ],
+                  },
+                  t.uid,
+                );
+              }),
+            }),
+          ],
+        }),
+      });
+}
+function ci() {
+  z();
+  let e = Wt(),
+    t = Q((e) => e.openOverlay),
+    n = Q((e) => e.toMenu),
+    r = Q((e) => e.persist);
+  return (0, $.jsx)(ri, {
+    title: F(`pause.title`),
+    onClose: () => t(`none`),
+    children: (0, $.jsxs)(`div`, {
+      className: `flex flex-col gap-2`,
+      children: [
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d min-h-12 rounded-md bg-accent text-lg font-semibold text-accent-fg`,
+          onClick: () => t(`none`),
+          children: F(`pause.resume`),
+        }),
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d min-h-12 rounded-md border border-border text-lg`,
+          onClick: () => {
+            (r(), t(`none`));
+          },
+          children: F(`pause.save`),
+        }),
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d min-h-12 rounded-md border border-border text-lg`,
+          onClick: () => {
+            (N(), t(`bestiary`));
+          },
+          children: F(`menu.bestiary`),
+        }),
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d min-h-12 rounded-md border border-border text-lg`,
+          onClick: () => {
+            (N(), t(`settings`));
+          },
+          children: F(`menu.settings`),
+        }),
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d min-h-12 rounded-md border border-border text-lg`,
+          onClick: () => {
+            (N(), e.tutorial ? Or() : kr());
+          },
+          children: e.tutorial ? F(`tut.off`) : F(`tut.on`),
+        }),
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d min-h-12 rounded-md border border-border text-lg`,
+          onClick: n,
+          children: F(`pause.toMenu`),
+        }),
+      ],
+    }),
+  });
+}
+function li() {
+  z();
+  let e = Q((e) => e.readingNote),
+    t = Q((e) => e.closeNote);
+  return e
+    ? (0, $.jsxs)(ri, {
+        title: F(`note.title`),
+        onClose: t,
+        children: [
+          (0, $.jsx)(`p`, {
+            className: `font-display text-xl leading-relaxed whitespace-pre-wrap`,
+            children: F(e),
+          }),
+          (0, $.jsx)(`button`, {
+            type: `button`,
+            className: `btn-3d mt-5 min-h-12 rounded-md bg-accent px-4 text-lg font-semibold text-accent-fg`,
+            onClick: t,
+            children: F(`note.done`),
+          }),
+        ],
+      })
+    : null;
+}
+function ui() {
+  z();
+  let e = Q((e) => e.openOverlay);
+  return (0, $.jsx)(`div`, {
+    className: `fixed inset-0 z-50 flex items-center justify-center bg-bg/90 p-6`,
+    children: (0, $.jsxs)(`div`, {
+      className: `max-w-lg text-center`,
+      children: [
+        (0, $.jsx)(`p`, {
+          className: `font-sans text-sm uppercase tracking-[0.22em] text-accent`,
+          children: F(`ending.kicker`),
+        }),
+        (0, $.jsx)(`h3`, {
+          className: `font-display mt-3 text-4xl font-semibold`,
+          children: F(`ending.title`),
+        }),
+        (0, $.jsx)(`p`, {
+          className: `font-display mt-4 text-2xl leading-relaxed text-fg-muted`,
+          children: F(`ending.body1`),
+        }),
+        (0, $.jsx)(`p`, {
+          className: `mt-3 font-display text-xl text-fg-muted`,
+          children: F(`ending.body2`),
+        }),
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d mt-8 min-h-12 rounded-md bg-accent px-6 text-lg font-semibold text-accent-fg`,
+          onClick: () => e(`none`),
+          children: F(`ending.stay`),
+        }),
+      ],
+    }),
+  });
+}
+function di() {
+  z();
+  let e = Q((e) => e.combat),
+    t = Q((e) => e.luckPending),
+    n = Q((e) => e.character),
+    r = Q((e) => e.combatEnemyRolled),
+    i = Q((e) => e.combatPlayerAct),
+    a = Q((e) => e.combatSkill),
+    o = Q((e) => e.finishLuck);
+  if (!e && !t) return null;
+  let s = n ? U(n).luck : 0;
+  return (0, $.jsxs)(`div`, {
+    className: `pointer-events-none fixed inset-0 z-[80]`,
+    children: [
+      e
+        ? (0, $.jsxs)($.Fragment, {
+            children: [
+              (0, $.jsx)(fi, {
+                side: `left`,
+                label: F(`dice.yours`),
+                value: e.currentPlayerRaw,
+                active: e.phase === `player_act`,
+                onRoll: (t) => {
+                  e.phase === `player_act` && i(a, t);
+                },
+              }),
+              (0, $.jsx)(fi, {
+                side: `right`,
+                label: F(`dice.enemy`),
+                value: e.currentEnemyRaw,
+                active: !1,
+                auto: e.phase === `enemy_roll`,
+                onRoll: (t) => {
+                  e.phase === `enemy_roll` && r(t);
+                },
+              }),
+            ],
+          })
+        : null,
+      t && n
+        ? (0, $.jsx)(fi, {
+            side: `center`,
+            label: F(`dice.luck`, { luck: s, dc: 21 }),
+            value: null,
+            active: !0,
+            hold: !0,
+            onRoll: (e) => {
+              window.setTimeout(() => o(e), 800);
+            },
+          })
+        : null,
+    ],
+  });
+}
+function fi({
+  side: e,
+  label: t,
+  value: n,
+  active: r,
+  onRoll: i,
+  hold: a,
+  auto: o,
+}) {
+  let [c, l] = (0, s.useState)(!1),
+    [u, d] = (0, s.useState)(n),
+    [f, p] = (0, s.useState)(null),
+    m = (0, s.useRef)(null),
+    h = (0, s.useRef)(!1);
+  ((0, s.useEffect)(() => {
+    !c && !a && d(n);
+  }, [n, c, a]),
+    (0, s.useEffect)(
+      () => () => {
+        m.current && window.clearInterval(m.current);
+      },
+      [],
+    ));
+  let g = () => {
+    if (h.current || c || m.current) return;
+    ((h.current = !0), Ye(), l(!0));
+    let e = 0;
+    m.current = window.setInterval(() => {
+      if ((p(1 + Math.floor(Math.random() * 30)), (e += 1), e > 12)) {
+        (m.current && window.clearInterval(m.current), (m.current = null));
+        let e = 1 + Math.floor(Math.random() * 30);
+        (p(null), d(e), l(!1), (h.current = !1), Xe(), i(e));
+      }
+    }, 65);
+  };
+  (0, s.useEffect)(() => {
+    if (!o) return;
+    let e = window.setTimeout(() => g(), 380);
+    return () => window.clearTimeout(e);
+  }, [o]);
+  let _ =
+      e === `left`
+        ? `left-1 bottom-2 lg:left-[6%] lg:bottom-[4%]`
+        : e === `right`
+          ? `right-1 bottom-2 lg:right-[6%] lg:bottom-[4%]`
+          : `left-1/2 bottom-2 -translate-x-1/2 lg:bottom-[6%]`,
+    v = c ? (f ?? `?`) : (u ?? `?`),
+    y = r && !c,
+    b = pi(typeof v == `number` ? v : (u ?? 1));
+  return (0, $.jsxs)(`div`, {
+    className: `pointer-events-auto absolute ${_} flex flex-col items-center gap-1`,
+    "data-tut": e === `left` ? `combat-dice` : void 0,
+    children: [
+      (0, $.jsx)(`button`, {
+        type: `button`,
+        disabled: !y,
+        "aria-label": t,
+        onClick: () => {
+          y && g();
+        },
+        className: `die-scene ${y || (o && c) ? `die-wrap is-active` : `die-wrap`}`,
+        children: (0, $.jsxs)(`div`, {
+          className: `d6 ${c ? `is-rolling` : ``}`,
+          children: [
+            (0, $.jsx)(`span`, {
+              className: `d6-face d6-front`,
+              children: (0, $.jsx)(`span`, {
+                className: `d6-num`,
+                children: v,
+              }),
+            }),
+            (0, $.jsx)(`span`, {
+              className: `d6-face d6-back`,
+              children: (0, $.jsx)(`span`, {
+                className: `d6-num d6-num-side`,
+                children: b[1],
+              }),
+            }),
+            (0, $.jsx)(`span`, {
+              className: `d6-face d6-right`,
+              children: (0, $.jsx)(`span`, {
+                className: `d6-num d6-num-side`,
+                children: b[2],
+              }),
+            }),
+            (0, $.jsx)(`span`, {
+              className: `d6-face d6-left`,
+              children: (0, $.jsx)(`span`, {
+                className: `d6-num d6-num-side`,
+                children: b[3],
+              }),
+            }),
+            (0, $.jsx)(`span`, {
+              className: `d6-face d6-top`,
+              children: (0, $.jsx)(`span`, {
+                className: `d6-num d6-num-side`,
+                children: b[4],
+              }),
+            }),
+            (0, $.jsx)(`span`, {
+              className: `d6-face d6-bottom`,
+              children: (0, $.jsx)(`span`, {
+                className: `d6-num d6-num-side`,
+                children: b[5],
+              }),
+            }),
+          ],
+        }),
+      }),
+      (0, $.jsxs)(`div`, {
+        className: `rounded-full bg-bg-elevated/90 px-2 py-0.5 font-sans text-sm font-semibold shadow-sm`,
+        children: [
+          t,
+          u != null && !c
+            ? ` · ${u}`
+            : y
+              ? ` · ${F(`dice.press`)}`
+              : c
+                ? ` …`
+                : ``,
+        ],
+      }),
+    ],
+  });
+}
+function pi(e) {
+  let t = ((Math.max(1, e) - 1) % 30) + 1;
+  return [0, 7, 11, 17, 19, 23].map((e) => ((t - 1 + e) % 30) + 1);
+}
+function mi() {
+  (z(), Wt());
+  let [, e] = (0, s.useState)(0),
+    [t, n] = (0, s.useState)(null),
+    r = xr();
+  if (
+    ((0, s.useEffect)(() => yr(() => e((e) => e + 1)), []),
+    (0, s.useLayoutEffect)(() => {
+      if (!r) {
+        n(null);
+        return;
+      }
+      let e = () => {
+        let e = Sr(r),
+          t = e ? document.querySelector(`[data-tut="${e}"]`) : null;
+        if (!t) {
+          n(null);
+          return;
+        }
+        let i = t.getBoundingClientRect();
+        n({
+          top: i.top,
+          left: i.left,
+          width: Math.max(36, i.width),
+          height: Math.max(36, i.height),
+        });
+      };
+      e();
+      let t = window.setTimeout(e, 40),
+        i = window.setTimeout(e, 220);
+      return (
+        window.addEventListener(`resize`, e),
+        window.addEventListener(`scroll`, e, !0),
+        () => {
+          (window.clearTimeout(t),
+            window.clearTimeout(i),
+            window.removeEventListener(`resize`, e),
+            window.removeEventListener(`scroll`, e, !0));
+        }
+      );
+    }, [r]),
+    !r)
+  )
+    return null;
+  let i = t
+      ? {
+          top: Math.max(6, t.top - 8),
+          left: Math.max(6, t.left - 8),
+          width: t.width + 16,
+          height: t.height + 16,
+        }
+      : null,
+    a = i
+      ? hi(i)
+      : { top: `50%`, left: `50%`, transform: `translate(-50%, -50%)` };
+  return (0, $.jsxs)(`div`, {
+    className: `tut-root`,
+    role: `dialog`,
+    "aria-modal": `true`,
+    children: [
+      i
+        ? (0, $.jsx)(`div`, {
+            className: `tut-hole`,
+            style: {
+              top: i.top,
+              left: i.left,
+              width: i.width,
+              height: i.height,
+            },
+          })
+        : (0, $.jsx)(`div`, { className: `tut-veil` }),
+      (0, $.jsxs)(`div`, {
+        className: `tut-card panel-3d`,
+        style: a,
+        children: [
+          (0, $.jsx)(`p`, {
+            className: `font-sans text-sm uppercase tracking-[0.16em] text-accent`,
+            children: Cr(r) ? F(`tut.mainKicker`) : F(`tut.extraKicker`),
+          }),
+          (0, $.jsx)(`h3`, {
+            className: `font-display mt-1 text-2xl font-semibold sm:text-3xl`,
+            children: F(`tut.${r}.title`),
+          }),
+          (0, $.jsx)(`p`, {
+            className: `mt-2 font-display text-lg leading-relaxed sm:text-xl`,
+            children: F(`tut.${r}.body`),
+          }),
+          (0, $.jsxs)(`div`, {
+            className: `mt-5 flex flex-wrap gap-2`,
+            children: [
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d min-h-12 rounded-md bg-accent px-4 text-lg font-semibold text-accent-fg`,
+                onClick: () => {
+                  (N(), Er());
+                },
+                children: F(`tut.next`),
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d min-h-12 rounded-md border border-border bg-bg-elevated px-4 text-base`,
+                onClick: () => {
+                  (N(), Dr());
+                },
+                children: F(`tut.skip`),
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d min-h-12 rounded-md border border-border px-4 text-base text-fg-muted`,
+                onClick: () => {
+                  (N(), Or());
+                },
+                children: F(`tut.off`),
+              }),
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function hi(e) {
+  let t = window.innerWidth,
+    n = window.innerHeight,
+    r = Math.min(420, t - 24),
+    i = e.top + e.height + 12,
+    a = e.top - 240 - 12,
+    o = i + 240 < n - 16 ? i : a > 12 ? a : Math.max(12, n / 2 - 120),
+    s = e.left + e.width / 2 - r / 2;
+  return (
+    (s = Math.max(12, Math.min(t - r - 12, s))),
+    (o = Math.max(12, Math.min(n - 80, o))),
+    { top: o, left: s }
+  );
+}
+function gi(e) {
+  if (typeof Image > `u`) return;
+  let t = new Image();
+  ((t.decoding = `async`), (t.src = e));
+}
+function _i() {
+  Object.values(C).forEach((e) => gi(e.portrait));
+}
+function vi() {
+  [`warrior`, `volkhv`, `tracker`, `rogue`, `bonesetter`].forEach((e) =>
+    gi(`/portraits/class_${e}.webp`),
+  );
+}
+function yi() {
+  [
+    `w_axe`,
+    `w_sword`,
+    `w_legend`,
+    `w_rank`,
+    `w_gold`,
+    `v_staff`,
+    `v_bone`,
+    `v_legend`,
+    `v_rank`,
+    `v_gold`,
+    `a_bow`,
+    `t_pack`,
+    `t_legend`,
+    `t_rank`,
+    `t_gold`,
+    `r_full`,
+    `r_mid`,
+    `r_legend`,
+    `r_rank`,
+    `r_gold`,
+    `b_full`,
+    `b_mid`,
+    `b_legend`,
+    `b_rank`,
+    `b_gold`,
+  ].forEach((e) => gi(`/portraits/kit_${e}.webp`));
+}
+function bi() {
+  let e = () => {
+    (fe.forEach((e) => gi(e.portrait)),
+      Object.values(T).forEach((e) => gi(e.image)));
+  };
+  if (typeof window > `u`) return;
+  let t = window.requestIdleCallback;
+  t ? t(e, { timeout: 2500 }) : window.setTimeout(e, 600);
+}
+var xi = Object.keys(C),
+  Si = ne;
+function Ci() {
+  z();
+  let e = Q((e) => e.create),
+    t = Q((e) => e.setCreate),
+    n = Q((e) => e.setScreen),
+    r = Q((e) => e.startNew),
+    i = re.filter((t) => t.classId === e.class && !t.hidden);
+  (0, s.useEffect)(() => {
+    (_i(), vi(), yi());
+  }, []);
+  let a = () => {
+      (N(),
+        e.step === 0 && e.race
+          ? t({ step: 1 })
+          : e.step === 1 && e.class
+            ? t({ step: 2 })
+            : e.step === 2 && e.kitId
+              ? t({ step: 3 })
+              : e.step === 3 && r());
+    },
+    o = () => {
+      (N(), e.step === 0 ? n(`menu`) : t({ step: e.step - 1 }));
+    },
+    c =
+      (e.step === 0 && e.race) ||
+      (e.step === 1 && e.class) ||
+      (e.step === 2 && e.kitId) ||
+      e.step === 3;
+  return (0, $.jsxs)(`div`, {
+    className: `mx-auto flex min-h-dvh max-w-5xl flex-col px-3 py-5 pb-28 sm:px-8`,
+    children: [
+      (0, $.jsx)(`p`, {
+        className: `font-sans text-sm uppercase tracking-[0.2em] text-accent`,
+        children: F(`create.step`, { n: e.step + 1 }),
+      }),
+      (0, $.jsxs)(`h2`, {
+        className: `font-display mt-2 text-4xl font-semibold sm:text-5xl`,
+        children: [
+          e.step === 0 && F(`create.race`),
+          e.step === 1 && F(`create.class`),
+          e.step === 2 && F(`create.kit`),
+          e.step === 3 && F(`create.name`),
+        ],
+      }),
+      (0, $.jsxs)(`p`, {
+        className: `mt-2 font-display text-xl text-fg-muted`,
+        children: [
+          e.step === 0 && F(`create.raceHint`),
+          e.step === 1 && F(`create.classHint`),
+          e.step === 2 && F(`create.kitHint`),
+          e.step === 3 && F(`create.nameHint`),
+        ],
+      }),
+      e.step === 0 &&
+        (0, $.jsx)(`div`, {
+          className: `mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5 sm:gap-4`,
+          children: xi.map((n) => {
+            let r = C[n],
+              i = e.race === n;
+            return (0, $.jsxs)(
+              `button`,
+              {
+                type: `button`,
+                onClick: () => {
+                  (N(), t({ race: n }));
+                },
+                className: `frame-3d overflow-hidden rounded-lg border text-left transition-transform duration-150 active:scale-[0.99] ${i ? `border-accent` : `border-border`}`,
+                children: [
+                  (0, $.jsx)(`div`, {
+                    className: `aspect-[2/3] overflow-hidden`,
+                    children: (0, $.jsx)(`img`, {
+                      src: r.portrait,
+                      alt: ``,
+                      width: 240,
+                      height: 360,
+                      decoding: `async`,
+                      className: `h-full w-full object-cover object-[center_12%]`,
+                    }),
+                  }),
+                  (0, $.jsxs)(`div`, {
+                    className: `bg-bg-elevated p-3`,
+                    children: [
+                      (0, $.jsx)(`div`, {
+                        className: `font-display text-xl font-semibold`,
+                        children: Mt(n),
+                      }),
+                      (0, $.jsx)(`p`, {
+                        className: `mt-1 text-sm leading-relaxed text-fg-muted`,
+                        children: F(`race.${n}.bonus`),
+                      }),
+                    ],
+                  }),
+                ],
+              },
+              n,
+            );
+          }),
+        }),
+      e.step === 0 &&
+        e.race &&
+        (0, $.jsx)(`p`, {
+          className: `mt-4 max-w-2xl font-display text-xl leading-relaxed text-fg-muted`,
+          children: F(`race.${e.race}.blurb`),
+        }),
+      e.step === 1 &&
+        (0, $.jsx)(`div`, {
+          className: `mt-6 flex flex-col gap-3`,
+          children: Si.map((n) => {
+            let r = e.class === n;
+            return (0, $.jsxs)(
+              `button`,
+              {
+                type: `button`,
+                onClick: () => {
+                  (N(), t({ class: n, kitId: null }));
+                },
+                className: `flex min-h-[7.5rem] items-stretch overflow-hidden rounded-lg border text-left ${r ? `border-accent bg-bg-elevated` : `border-border bg-bg-subtle`}`,
+                children: [
+                  (0, $.jsx)(`img`, {
+                    src: `/portraits/class_${n}.webp?v=6`,
+                    alt: ``,
+                    width: 160,
+                    height: 240,
+                    decoding: `async`,
+                    className: `h-auto w-24 shrink-0 object-cover object-[center_12%] sm:w-32`,
+                  }),
+                  (0, $.jsxs)(`div`, {
+                    className: `flex min-w-0 flex-1 flex-col justify-center px-4 py-3 sm:px-5`,
+                    children: [
+                      (0, $.jsx)(`div`, {
+                        className: `font-display text-2xl font-semibold sm:text-3xl`,
+                        children: Nt(n),
+                      }),
+                      (0, $.jsx)(`p`, {
+                        className: `mt-1 font-display text-base leading-snug text-fg sm:text-lg`,
+                        children: F(`class.${n}.blurb`),
+                      }),
+                    ],
+                  }),
+                ],
+              },
+              n,
+            );
+          }),
+        }),
+      e.step === 2 &&
+        (0, $.jsx)(`div`, {
+          className: `kit-orbit mt-4`,
+          children: i.map((n) => {
+            let r = e.kitId === n.id;
+            return (0, $.jsxs)(
+              `button`,
+              {
+                type: `button`,
+                onClick: () => {
+                  (N(), t({ kitId: n.id }));
+                },
+                className: `kit-slot overflow-hidden rounded-lg border text-left ${r ? `border-accent bg-bg-elevated` : `border-border bg-bg-subtle`}`,
+                children: [
+                  (0, $.jsx)(`div`, {
+                    className: `kit-shot overflow-hidden`,
+                    children: (0, $.jsx)(`img`, {
+                      src: `/portraits/kit_${n.id}.webp`,
+                      alt: ``,
+                      width: 480,
+                      height: 288,
+                      decoding: `async`,
+                      className: `h-full w-full object-cover`,
+                    }),
+                  }),
+                  (0, $.jsxs)(`div`, {
+                    className: `p-2.5 sm:p-3`,
+                    children: [
+                      (0, $.jsx)(`div`, {
+                        className: `font-display text-lg font-semibold leading-tight sm:text-xl`,
+                        children: Lt(n.id),
+                      }),
+                      (0, $.jsx)(`p`, {
+                        className: `kit-blurb mt-1 text-sm leading-snug text-fg sm:text-base`,
+                        children: F(`kit.${n.id}.blurb`),
+                      }),
+                      (0, $.jsxs)(`div`, {
+                        className: `mt-1.5 flex flex-wrap items-center gap-2 text-fg-muted`,
+                        children: [
+                          (0, $.jsx)(Xr, { amount: n.gold }),
+                          (0, $.jsx)(`span`, {
+                            className: `text-sm`,
+                            children: F(`create.itemsN`, { n: n.items.length }),
+                          }),
+                          n.startLevel && n.startLevel > 1
+                            ? (0, $.jsx)(`span`, {
+                                className: `text-sm text-accent`,
+                                children: F(`create.startLevel`, {
+                                  n: n.startLevel,
+                                }),
+                              })
+                            : null,
+                        ],
+                      }),
+                    ],
+                  }),
+                ],
+              },
+              n.id,
+            );
+          }),
+        }),
+      e.step === 3 &&
+        (0, $.jsxs)(`div`, {
+          className: `mt-8 max-w-md`,
+          children: [
+            (0, $.jsx)(`label`, {
+              className: `text-sm uppercase tracking-[0.16em] text-fg-muted`,
+              htmlFor: `hero-name`,
+              children: F(`create.howName`),
+            }),
+            (0, $.jsx)(`input`, {
+              id: `hero-name`,
+              value: e.name,
+              maxLength: 24,
+              onChange: (e) => t({ name: e.target.value }),
+              placeholder: F(`create.unnamed`),
+              className: `mt-2 h-14 w-full rounded-md border border-border bg-bg-elevated px-3 font-display text-2xl text-fg outline-none focus:border-accent`,
+            }),
+            e.race &&
+              e.class &&
+              (0, $.jsxs)(`p`, {
+                className: `mt-4 font-display text-xl text-fg-muted`,
+                children: [
+                  Mt(e.race),
+                  ` · `,
+                  Nt(e.class),
+                  e.kitId ? ` · ${Lt(e.kitId)}` : ``,
+                ],
+              }),
+          ],
+        }),
+      (0, $.jsxs)(`div`, {
+        className: `mt-auto flex gap-3 pt-8`,
+        children: [
+          (0, $.jsx)(`button`, {
+            type: `button`,
+            onClick: o,
+            className: `btn-3d min-h-14 min-w-28 rounded-md border border-border px-4 text-lg`,
+            children: F(`menu.back`),
+          }),
+          (0, $.jsx)(`button`, {
+            type: `button`,
+            disabled: !c,
+            onClick: a,
+            className: `btn-3d min-h-14 min-w-40 rounded-md bg-accent px-5 text-lg font-semibold text-accent-fg disabled:opacity-40`,
+            children: e.step === 3 ? F(`create.go`) : F(`create.next`),
+          }),
+        ],
+      }),
+    ],
+  });
+}
+var wi = 20,
+  Ti = {
+    ne: `right-[6%] top-[16%]`,
+    e: `right-[-2%] top-1/2`,
+    se: `right-[6%] bottom-[16%]`,
+    sw: `left-[6%] bottom-[16%]`,
+    w: `left-[-2%] top-1/2`,
+    nw: `left-[6%] top-[16%]`,
+  };
+function Ei({ lockedExtra: e = !1 }) {
+  z();
+  let t = Q((e) => e.hex),
+    n = Q((e) => e.move),
+    r = Q((e) => e.combat),
+    i = Q((e) => e.choices),
+    o = Q((e) => e.luckPending),
+    s = Q((e) => e.actionsUsed) ?? [],
+    c = Q((e) => e.inNav),
+    l = Q((e) => e.layer),
+    u = Q((e) => e.stageFx),
+    d = s.length < 2,
+    f = !!(r || i || o || d || e || u),
+    p = T[t?.type] ?? T.fog;
+  return !p || !t
+    ? null
+    : (0, $.jsxs)(`div`, {
+        className: `relative mx-auto w-full max-w-[280px] sm:max-w-sm lg:max-w-lg`,
+        "data-tut": `hex`,
+        children: [
+          (0, $.jsx)(`div`, {
+            className: `hex-scene`,
+            children: (0, $.jsxs)(`div`, {
+              className: `hex-world`,
+              children: [
+                (0, $.jsx)(`div`, { className: `hex-ground` }),
+                (0, $.jsxs)(`div`, {
+                  className: `hex-tile`,
+                  children: [
+                    Array.from({ length: wi }, (e, t) =>
+                      (0, $.jsx)(
+                        `div`,
+                        {
+                          className: `hex-slice`,
+                          style: { transform: `translateZ(${t}px)` },
+                        },
+                        t,
+                      ),
+                    ),
+                    (0, $.jsxs)(`div`, {
+                      className: `hex-top`,
+                      style: { transform: `translateZ(${wi}px)` },
+                      children: [
+                        (0, $.jsx)(`img`, {
+                          src: p.image,
+                          alt: It(t.type),
+                          width: 720,
+                          height: 720,
+                          decoding: `async`,
+                          className: `h-full w-full object-cover`,
+                        }),
+                        (0, $.jsx)(`div`, {
+                          className: `pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_46%,rgba(255,250,240,0.08)_72%,rgba(36,52,40,0.22)_100%)]`,
+                        }),
+                        u === `campfire` ? (0, $.jsx)(Di, {}) : null,
+                        (0, $.jsxs)(`svg`, {
+                          viewBox: `0 0 86.6 100`,
+                          className: `pointer-events-none absolute inset-0 h-full w-full`,
+                          children: [
+                            (0, $.jsx)(`polygon`, {
+                              points: `43.3,1.2 85.2,25.5 85.2,74.5 43.3,98.8 1.4,74.5 1.4,25.5`,
+                              fill: `none`,
+                              stroke: `rgba(255,250,240,0.9)`,
+                              strokeWidth: `1.6`,
+                            }),
+                            (0, $.jsx)(`polygon`, {
+                              points: `43.3,1.2 85.2,25.5 85.2,74.5 43.3,98.8 1.4,74.5 1.4,25.5`,
+                              fill: `none`,
+                              stroke: `rgb(47,154,98)`,
+                              strokeOpacity: `0.55`,
+                              strokeWidth: `0.7`,
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                    ot.map((e) =>
+                      (0, $.jsx)(
+                        `button`,
+                        {
+                          type: `button`,
+                          disabled: f,
+                          "aria-label": F(`dir.${e.id}`),
+                          "data-tut": e.id === `e` ? `move` : void 0,
+                          onClick: () => n(e.id),
+                          className: `dir-btn absolute z-10 flex items-center justify-center ${Ti[e.id]}`,
+                          style: {
+                            transform: `translateZ(28px)${e.id === `e` || e.id === `w` ? ` translateY(-50%)` : ``}`,
+                          },
+                          children: (0, $.jsx)(a, {
+                            className: `size-5 lg:size-7`,
+                            style: { transform: `rotate(${e.rotate}deg)` },
+                            strokeWidth: 2.6,
+                          }),
+                        },
+                        e.id,
+                      ),
+                    ),
+                  ],
+                }),
+              ],
+            }),
+          }),
+          (0, $.jsxs)(`div`, {
+            className: `mt-2 text-center lg:mt-3`,
+            children: [
+              (0, $.jsx)(`div`, {
+                className: `font-display text-2xl font-semibold lg:text-3xl`,
+                children: It(t.type),
+              }),
+              (0, $.jsx)(`div`, {
+                className: `mt-1 font-sans text-sm uppercase tracking-[0.16em] text-fg-muted`,
+                children: c
+                  ? F(`layer.nav`)
+                  : pe[l]
+                    ? F(`layer.${l}.name`)
+                    : F(`layer.endless`),
+              }),
+              d
+                ? (0, $.jsx)(`div`, {
+                    className: `mt-1 font-sans text-sm text-accent`,
+                    children: F(`game.needActions`, { n: 2 - s.length }),
+                  })
+                : null,
+            ],
+          }),
+        ],
+      });
+}
+function Di() {
+  return (0, $.jsxs)(`span`, {
+    className: `camp-3d`,
+    "aria-hidden": `true`,
+    "data-tut": `act-rest`,
+    children: [
+      (0, $.jsx)(`span`, { className: `camp-glow` }),
+      (0, $.jsx)(`span`, { className: `camp-embers` }),
+      (0, $.jsx)(`img`, {
+        src: `/ui/campfire_lit.webp`,
+        alt: ``,
+        className: `camp-art`,
+        draggable: !1,
+      }),
+      (0, $.jsx)(`img`, {
+        src: `/ui/campfire_lit.webp`,
+        alt: ``,
+        className: `camp-art camp-art-flame`,
+        draggable: !1,
+      }),
+      (0, $.jsxs)(`span`, {
+        className: `camp-flames`,
+        children: [
+          (0, $.jsx)(`span`, { className: `camp-tongue t1` }),
+          (0, $.jsx)(`span`, { className: `camp-tongue t2` }),
+          (0, $.jsx)(`span`, { className: `camp-tongue t3` }),
+          (0, $.jsx)(`span`, { className: `camp-tongue t4` }),
+          (0, $.jsx)(`span`, { className: `camp-tongue t5` }),
+        ],
+      }),
+      (0, $.jsx)(`span`, { className: `camp-smoke sm1` }),
+      (0, $.jsx)(`span`, { className: `camp-smoke sm2` }),
+      (0, $.jsx)(`span`, { className: `camp-smoke sm3` }),
+      Array.from({ length: 12 }, (e, t) =>
+        (0, $.jsx)(`span`, { className: `camp-spark s${t}` }, t),
+      ),
+    ],
+  });
+}
+function Oi() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.moveItem),
+    n = Q((e) => e.useItem),
+    r = Q((e) => e.openOverlay),
+    i = Q((e) => e.pulseUid),
+    [a, o] = (0, s.useState)(null),
+    [c, l] = (0, s.useState)(null),
+    [u, d] = (0, s.useState)(null),
+    f = (0, s.useRef)(!1);
+  if (
+    ((0, s.useEffect)(() => {
+      if (!i) return;
+      d(i);
+      let e = window.setTimeout(() => d(null), 900);
+      return () => window.clearTimeout(e);
+    }, [i]),
+    !e)
+  )
+    return null;
+  let p = e,
+    m = ln(p.level),
+    h = Math.min(100, (p.xp / m) * 100),
+    g = Math.min(100, (p.hp / p.maxHp) * 100),
+    _ = Math.min(100, (p.mp / p.maxMp) * 100),
+    v = Array.isArray(p.inventory) ? p.inventory : [],
+    y =
+      v.find((e) => e?.uid === a) ??
+      Object.values(p.equipment ?? {}).find((e) => e?.uid === a) ??
+      null,
+    b = H(y),
+    x = !!(a && v.some((e) => e?.uid === a)),
+    ee = (e) => {
+      c && (c.place !== e.place || c.index !== e.index) && (t(c, e), l(null));
+    };
+  return (0, $.jsxs)(`div`, {
+    className: `flex h-full min-h-0 flex-col gap-2 overflow-y-auto scroll-thin p-3 lg:gap-2.5 lg:p-3.5`,
+    children: [
+      (0, $.jsxs)(`div`, {
+        className: `shrink-0 space-y-1`,
+        children: [
+          (0, $.jsx)(`p`, {
+            className: `truncate font-display text-3xl font-semibold leading-none text-fg lg:text-4xl`,
+            children: e.name,
+          }),
+          (0, $.jsx)(`p`, {
+            className: `font-display text-2xl font-semibold leading-tight text-fg lg:text-3xl`,
+            children: F(`left.levelShort`, { n: e.level }),
+          }),
+          (0, $.jsx)(Ai, {
+            label: F(`left.hp`, { cur: e.hp, max: e.maxHp }),
+            pct: g,
+            color: `bg-hp`,
+          }),
+          (0, $.jsx)(Ai, {
+            label: F(`left.mp`, { cur: e.mp, max: e.maxMp }),
+            pct: _,
+            color: `bg-mp`,
+          }),
+          (0, $.jsx)(Ai, {
+            label: F(`left.xp`, { cur: e.xp, need: m, n: e.level }),
+            pct: h,
+            color: `bg-xp`,
+          }),
+        ],
+      }),
+      (0, $.jsxs)(`div`, {
+        className: `shrink-0`,
+        children: [
+          (0, $.jsxs)(`div`, {
+            className: `flex items-center justify-between`,
+            children: [
+              (0, $.jsx)(`span`, {
+                className: `font-sans text-sm uppercase tracking-[0.16em] text-fg-muted`,
+                children: F(`left.inventory`),
+              }),
+              (0, $.jsx)(Xr, { amount: e.gold }),
+            ],
+          }),
+          (0, $.jsx)(`div`, {
+            className: `mt-1.5 grid grid-cols-6 gap-1`,
+            "data-tut": `inv`,
+            children: v.map((e, t) => {
+              let n = H(e);
+              return (0, $.jsx)(
+                `button`,
+                {
+                  type: `button`,
+                  draggable: !!e,
+                  onDragStart: () => {
+                    e &&
+                      ((f.current = !0),
+                      l({ place: `inv`, index: t, uid: e.uid }));
+                  },
+                  onDragEnd: () => {
+                    (l(null),
+                      window.setTimeout(() => {
+                        f.current = !1;
+                      }, 0));
+                  },
+                  onDragOver: (e) => e.preventDefault(),
+                  onDrop: () => ee({ place: `inv`, index: t }),
+                  onClick: () => {
+                    f.current || o(e?.uid ?? null);
+                  },
+                  "data-filled": !!e,
+                  "data-selected": a === e?.uid,
+                  "data-pulse": u === e?.uid,
+                  title: n ? I(n.id) : void 0,
+                  "aria-label": n ? I(n.id) : F(`left.emptyCell`),
+                  "data-rarity": n?.rarity ?? ``,
+                  className: `inv-cell`,
+                  children: n
+                    ? (0, $.jsx)(ei, {
+                        id: n.id,
+                        icon: n.icon,
+                        kind: n.kind,
+                        rarity: n.rarity,
+                        className: `inv-art`,
+                      })
+                    : null,
+                },
+                t,
+              );
+            }),
+          }),
+        ],
+      }),
+      b && y && x
+        ? (0, $.jsx)(ki, {
+            def: b,
+            level: V(y),
+            onUse: () => {
+              (N(), n(y.uid), o(null));
+            },
+          })
+        : null,
+      (0, $.jsxs)(`div`, {
+        className: `shrink-0`,
+        children: [
+          (0, $.jsx)(`span`, {
+            className: `font-sans text-sm uppercase tracking-[0.16em] text-fg-muted`,
+            children: F(`left.equipment`),
+          }),
+          (0, $.jsx)(`div`, {
+            className: `mt-1.5 grid grid-cols-2 gap-1`,
+            children: at.map((t) => {
+              let n = e.equipment[t.id],
+                r = H(n);
+              return (0, $.jsxs)(
+                `button`,
+                {
+                  type: `button`,
+                  draggable: !!n,
+                  onDragStart: () => {
+                    n && ((f.current = !0), l({ place: t.id, uid: n.uid }));
+                  },
+                  onDragEnd: () => {
+                    (l(null),
+                      window.setTimeout(() => {
+                        f.current = !1;
+                      }, 0));
+                  },
+                  onDragOver: (e) => e.preventDefault(),
+                  onDrop: () => ee({ place: t.id }),
+                  onClick: () => {
+                    f.current || o(n?.uid ?? null);
+                  },
+                  className: `flex min-h-11 items-center gap-1.5 rounded-sm border border-border bg-bg px-1.5 text-left`,
+                  "data-rarity": r?.rarity ?? ``,
+                  children: [
+                    r
+                      ? (0, $.jsx)(ei, {
+                          id: r.id,
+                          icon: r.icon,
+                          kind: r.kind,
+                          rarity: r.rarity,
+                          className: `size-9 shrink-0`,
+                        })
+                      : (0, $.jsx)(`span`, {
+                          className: `size-9 shrink-0 rounded bg-bg-subtle`,
+                        }),
+                    (0, $.jsxs)(`span`, {
+                      className: `min-w-0`,
+                      children: [
+                        (0, $.jsx)(`span`, {
+                          className: `block text-xs uppercase tracking-wide text-fg-subtle`,
+                          children: Vt(t.id),
+                        }),
+                        (0, $.jsx)(`span`, {
+                          className: `block truncate text-sm text-fg`,
+                          children: r ? I(r.id) : F(`left.empty`),
+                        }),
+                      ],
+                    }),
+                  ],
+                },
+                t.id,
+              );
+            }),
+          }),
+        ],
+      }),
+      b && y && !x
+        ? (0, $.jsx)(ki, {
+            def: b,
+            level: V(y),
+            onUse: () => {
+              (N(), n(y.uid), o(null));
+            },
+          })
+        : null,
+      (0, $.jsxs)(`div`, {
+        className: `mt-auto flex shrink-0 gap-2 pt-1`,
+        children: [
+          (0, $.jsxs)(`button`, {
+            type: `button`,
+            className: `btn-3d min-h-11 flex-1 rounded-md border border-border text-base font-medium`,
+            "data-tut": `open-stats`,
+            onClick: () => {
+              (N(), r(`stats`), q(`stats`));
+            },
+            children: [
+              F(`left.stats`),
+              p.unspentStat > 0 ? ` · ${p.unspentStat}` : ``,
+            ],
+          }),
+          (0, $.jsxs)(`button`, {
+            type: `button`,
+            className: `btn-3d min-h-11 flex-1 rounded-md border border-border text-base font-medium`,
+            "data-tut": `open-skills`,
+            onClick: () => {
+              (N(), r(`skills`), q(`skills`));
+            },
+            children: [
+              F(`left.skills`),
+              p.unspentSkill > 0 ? ` · ${p.unspentSkill}` : ``,
+            ],
+          }),
+        ],
+      }),
+    ],
+  });
+}
+function ki({ def: e, level: t, onUse: n }) {
+  let r = e.kind === `consumable` || e.kind === `note`;
+  return (0, $.jsxs)(`div`, {
+    className: `rounded-md border border-border bg-bg p-2.5`,
+    children: [
+      (0, $.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [
+          (0, $.jsx)(ei, {
+            id: e.id,
+            icon: e.icon,
+            kind: e.kind,
+            rarity: e.rarity,
+            className: `size-12`,
+          }),
+          (0, $.jsxs)(`div`, {
+            children: [
+              (0, $.jsx)(`div`, {
+                className: `font-display text-lg font-semibold leading-tight`,
+                children: I(e.id),
+              }),
+              (0, $.jsxs)(`div`, {
+                className: `text-sm font-medium rarity-label rarity-${e.rarity}`,
+                children: [zt(e.rarity), ` · `, F(`item.level`, { n: t })],
+              }),
+            ],
+          }),
+        ],
+      }),
+      (0, $.jsx)(`p`, {
+        className: `mt-1 text-sm leading-relaxed text-fg-muted`,
+        children: jt(e.id),
+      }),
+      vn(e, t).length > 0 &&
+        (0, $.jsx)(`p`, {
+          className: `mt-1 text-sm text-accent`,
+          children: vn(e, t).join(` · `),
+        }),
+      e.uniqueSkill &&
+        (0, $.jsx)(`p`, {
+          className: `mt-1 text-sm text-fg`,
+          children: F(`left.skill`, { name: L(e.uniqueSkill) }),
+        }),
+      e.passive &&
+        (0, $.jsx)(`p`, {
+          className: `mt-1 text-sm text-fg`,
+          children: F(`passive.${e.passive}`),
+        }),
+      r &&
+        (0, $.jsx)(`button`, {
+          type: `button`,
+          className: `btn-3d mt-2 min-h-11 rounded-sm bg-accent px-3 text-base font-semibold text-accent-fg`,
+          onClick: n,
+          children: e.kind === `note` ? F(`left.read`) : F(`left.use`),
+        }),
+    ],
+  });
+}
+function Ai({ label: e, pct: t, color: n }) {
+  return (0, $.jsxs)(`div`, {
+    children: [
+      (0, $.jsx)(`div`, {
+        className: `mb-0.5 font-sans text-xs tabular-nums text-fg-muted`,
+        children: e,
+      }),
+      (0, $.jsx)(`div`, {
+        className: `stat-bar`,
+        children: (0, $.jsx)(`span`, {
+          className: n,
+          style: { width: `${t}%` },
+        }),
+      }),
+    ],
+  });
+}
+var ji = [`human`, `lesovik`, `vodyanoy`, `kostyanoy`, `zharkrovny`],
+  Mi = [10, 25, 45, 65, 90],
+  Ni = 6;
+function Pi(e) {
+  let t = e >>> 0;
+  return () => {
+    t += 1831565813;
+    let e = t;
+    return (
+      (e = Math.imul(e ^ (e >>> 15), e | 1)),
+      (e ^= e + Math.imul(e ^ (e >>> 7), e | 61)),
+      ((e ^ (e >>> 14)) >>> 0) / 4294967296
+    );
+  };
+}
+function Fi(e, t) {
+  let n = [...e];
+  for (let e = n.length - 1; e > 0; e--) {
+    let r = Math.floor(t() * (e + 1));
+    [n[r], n[e]] = [n[e], n[r]];
+  }
+  return n;
+}
+function Ii(e) {
+  let t = Pi(e || 1),
+    n = Fi(Mi, t),
+    r = [];
+  for (let e of ji) for (let t of ve[e]) r.push({ race: e, name: t });
+  let i = Fi(r, t),
+    a = new Set();
+  return n.map((e, n) => {
+    let r = i[n] ?? i[n % i.length],
+      o = ji.indexOf(r.race) * Ni,
+      s = o + Math.floor(t() * Ni),
+      c = 0;
+    for (; a.has(s) && c++ < Ni;) s = o + ((s - o + 1) % Ni);
+    return (
+      a.add(s),
+      { id: n, name: r.name, race: r.race, chance: e, portrait: s }
+    );
+  });
+}
+function Li({ kind: e, onClose: t }) {
+  return (
+    z(),
+    e === `dig`
+      ? (0, $.jsx)(Gi, { onClose: t })
+      : e === `talk`
+        ? (0, $.jsx)(Ki, { onClose: t })
+        : e === `steal`
+          ? (0, $.jsx)(qi, { onClose: t })
+          : e === `hunt`
+            ? (0, $.jsx)(Xi, { onClose: t })
+            : e === `fish`
+              ? (0, $.jsx)(Zi, { onClose: t })
+              : e === `search`
+                ? (0, $.jsx)(Qi, { onClose: t })
+                : null
+  );
+}
+function Ri({ title: e, children: t, onClose: n, wide: r, tall: i, flush: a }) {
+  return (0, $.jsx)(`div`, {
+    className: `fixed inset-0 z-[80] flex items-end justify-center bg-[color-mix(in_oklab,var(--color-bg)_62%,transparent)] p-3 pb-28 backdrop-blur-[2px] sm:items-center sm:pb-6`,
+    children: (0, $.jsxs)(`div`, {
+      className: `panel-3d max-h-[90dvh] w-full p-4 sm:p-6 ${a ? `overflow-hidden` : `overflow-y-auto scroll-thin`} ${r ? `max-w-3xl` : i ? `max-w-sm` : `max-w-lg`}`,
+      children: [
+        (0, $.jsxs)(`div`, {
+          className: `flex items-start justify-between gap-3`,
+          children: [
+            (0, $.jsx)(`h3`, {
+              className: `font-display text-2xl font-semibold sm:text-3xl`,
+              children: e,
+            }),
+            n
+              ? (0, $.jsx)(`button`, {
+                  type: `button`,
+                  className: `min-h-11 px-2 text-base text-fg-muted`,
+                  onClick: n,
+                  children: F(`close`),
+                })
+              : null,
+          ],
+        }),
+        (0, $.jsx)(`div`, { className: `mt-3`, children: t }),
+      ],
+    }),
+  });
+}
+var zi = (() => {
+    let e = [];
+    for (let t = -2; t <= 2; t++) {
+      let n = Math.max(-2, -t - 2),
+        r = Math.min(2, -t + 2);
+      for (let i = n; i <= r; i++) e.push({ q: t, r: i });
+    }
+    return e;
+  })(),
+  Bi = 4,
+  Vi = 72;
+function Hi(e, t) {
+  return { x: Vi * Math.sqrt(3) * (e + t / 2), y: Vi * 1.5 * t };
+}
+function Ui({ q: e, r: t, found: n }) {
+  let { x: r, y: i } = Hi(e, t),
+    a =
+      n === `loot`
+        ? `/ui/chest.webp`
+        : n === `skull`
+          ? `/ui/hex_skull.webp`
+          : n === `empty`
+            ? `/ui/dug_hole.webp`
+            : `/ui/dirt.webp`;
+  return (0, $.jsx)(`span`, {
+    className: `minihex ${n ? `is-flipped` : ``}`,
+    style: { left: `calc(50% + ${r}px)`, top: `calc(50% + ${i}px)` },
+    "aria-hidden": `true`,
+    children: (0, $.jsx)(`span`, {
+      className: `minihex-inner`,
+      children: (0, $.jsxs)(`span`, {
+        className: `minihex-prism`,
+        children: [
+          Array.from({ length: Bi }, (e, t) =>
+            (0, $.jsx)(
+              `span`,
+              {
+                className: `minihex-slice`,
+                style: { transform: `translateZ(${t}px)` },
+              },
+              t,
+            ),
+          ),
+          (0, $.jsx)(`span`, {
+            className: `minihex-face minihex-front`,
+            style: { transform: `rotateY(0deg) translateZ(${Bi}px)` },
+            children: (0, $.jsx)(`img`, {
+              src: `/ui/dirt.webp`,
+              alt: ``,
+              draggable: !1,
+            }),
+          }),
+          (0, $.jsx)(`span`, {
+            className: `minihex-face minihex-back`,
+            style: { transform: `rotateY(180deg) translateZ(${Bi}px)` },
+            children: (0, $.jsx)(`img`, { src: a, alt: ``, draggable: !1 }),
+          }),
+        ],
+      }),
+    }),
+  });
+}
+function Wi({ phase: e, onSkip: t }) {
+  return (0, $.jsx)(`div`, {
+    className: `chest-stage is-${e}`,
+    onPointerDown:
+      e === `open` && t
+        ? (e) => {
+            (e.preventDefault(), e.stopPropagation(), t());
+          }
+        : void 0,
+    children: (0, $.jsxs)(`div`, {
+      className: `chest-pop`,
+      children: [
+        (0, $.jsx)(`span`, { className: `chest-glow` }),
+        (0, $.jsx)(`img`, {
+          src: `/ui/chest_shut.webp`,
+          alt: ``,
+          className: `chest-art chest-art-shut`,
+          draggable: !1,
+        }),
+        (0, $.jsx)(`img`, {
+          src: `/ui/chest_ajar.webp`,
+          alt: ``,
+          className: `chest-art chest-art-ajar`,
+          draggable: !1,
+        }),
+        (0, $.jsx)(`img`, {
+          src: `/ui/chest_open.webp`,
+          alt: ``,
+          className: `chest-art chest-art-open`,
+          draggable: !1,
+        }),
+        e === `open`
+          ? Array.from({ length: 10 }, (e, t) =>
+              (0, $.jsx)(`span`, { className: `chest-spark spark-${t}` }, t),
+            )
+          : null,
+      ],
+    }),
+  });
+}
+function Gi({ onClose: e }) {
+  let t = Q((e) => e.finishDig),
+    n = Q((e) => e.character),
+    [r, i] = (0, s.useState)(3),
+    [a, o] = (0, s.useState)({}),
+    [c, l] = (0, s.useState)(null),
+    u = (0, s.useRef)(!1),
+    d = (0, s.useRef)(!1),
+    f = (0, s.useRef)(!1),
+    p = (0, s.useRef)(!1),
+    m = (0, s.useRef)(null),
+    h = (0, s.useRef)(3),
+    g = (0, s.useRef)({}),
+    _ = (0, s.useRef)([]),
+    v = n ? qn(n) : 0.1,
+    y = (e, t) => {
+      let n = window.setTimeout(e, t);
+      return (_.current.push(n), n);
+    },
+    b = (n) => {
+      if (f.current) return;
+      ((f.current = !0),
+        (u.current = !0),
+        _.current.forEach((e) => window.clearTimeout(e)),
+        (_.current = []));
+      let r = n ?? m.current;
+      try {
+        if (r) t(r);
+        else {
+          let e = Q.getState().actionsUsed.filter((e) => e !== `dig`);
+          Q.setState({ actionsUsed: e });
+        }
+      } catch (e) {
+        console.error(`[tmz] dig settle`, e);
+      }
+      e();
+    };
+  (0, s.useEffect)(() => {
+    [
+      `/ui/dirt.webp`,
+      `/ui/dug_hole.webp`,
+      `/ui/hex_skull.webp`,
+      `/ui/chest.webp`,
+      `/ui/chest_shut.webp`,
+      `/ui/chest_ajar.webp`,
+      `/ui/chest_open.webp`,
+    ].forEach((e) => {
+      let t = new Image();
+      t.src = e;
+    });
+    let e = window.setTimeout(() => {
+      d.current = !0;
+    }, 360);
+    return () => {
+      (window.clearTimeout(e),
+        _.current.forEach((e) => window.clearTimeout(e)));
+    };
+  }, []);
+  let x = (e) => {
+    if (
+      !d.current ||
+      u.current ||
+      f.current ||
+      c ||
+      h.current <= 0 ||
+      g.current[e]
+    )
+      return;
+    (N(), (p.current = !0));
+    let t = Math.random(),
+      n = t < v ? `loot` : t < v + 0.08 ? `skull` : `empty`,
+      r = h.current - 1;
+    if (
+      ((h.current = r),
+      (g.current = { ...g.current, [e]: n }),
+      o(g.current),
+      i(r),
+      n === `loot`)
+    ) {
+      ((u.current = !0),
+        (m.current = `loot`),
+        y(() => l(`shut`), 200),
+        y(() => l(`ajar`), 800),
+        y(() => l(`open`), 1500),
+        y(() => b(`loot`), 3400));
+      return;
+    }
+    if (r <= 0) {
+      u.current = !0;
+      let e = Object.values(g.current).includes(`skull`);
+      ((m.current = e ? `skull` : `empty`), y(() => b(m.current), 700));
+    }
+  };
+  return (0, $.jsx)(Ri, {
+    title: F(`dig.title`),
+    wide: !0,
+    flush: !0,
+    onClose: () => b(),
+    children: (0, $.jsxs)(`div`, {
+      "data-tut": `act-dig`,
+      children: [
+        (0, $.jsx)(`p`, {
+          className: `font-display text-lg text-fg-muted`,
+          children: F(`dig.hint`, { n: r }),
+        }),
+        (0, $.jsxs)(`div`, {
+          className: `minihex-field ${c ? `has-chest` : ``}`,
+          children: [
+            (0, $.jsx)(`div`, {
+              className: `minihex-world`,
+              children: zi.map(({ q: e, r: t }) => {
+                let n = `${e},${t}`;
+                return (0, $.jsx)(Ui, { q: e, r: t, found: a[n] }, n);
+              }),
+            }),
+            (0, $.jsx)(`div`, {
+              className: `minihex-hits`,
+              children: zi.map(({ q: e, r: t }) => {
+                let n = `${e},${t}`,
+                  { x: i, y: o } = Hi(e, t),
+                  s = !!a[n] || !!c || r <= 0;
+                return (0, $.jsx)(
+                  `button`,
+                  {
+                    type: `button`,
+                    className: `minihex-hit`,
+                    disabled: s,
+                    "aria-label": a[n] ?? F(`dig.title`),
+                    style: {
+                      left: `calc(50% + ${i}px)`,
+                      top: `calc(50% + ${o}px)`,
+                    },
+                    onPointerDown: (e) => {
+                      (e.preventDefault(), e.stopPropagation(), x(n));
+                    },
+                  },
+                  n,
+                );
+              }),
+            }),
+            c ? (0, $.jsx)(Wi, { phase: c, onSkip: () => b(`loot`) }) : null,
+          ],
+        }),
+      ],
+    }),
+  });
+}
+function Ki({ onClose: e }) {
+  let t = Q((e) => e.hex),
+    n = Q((e) => e.offerTalkQuest),
+    r = (0, s.useMemo)(() => Ii((t?.seed ?? 1) + 11), [t?.seed]),
+    [i, a] = (0, s.useState)(null),
+    o = (e) => {
+      N();
+      let t = !!Q.getState().pendingQuest,
+        r = Math.random(),
+        i = t
+          ? r < 0.5
+            ? `lore`
+            : `chat`
+          : r < 1 / 3
+            ? `quest`
+            : r < 2 / 3
+              ? `lore`
+              : `chat`;
+      if (i === `quest`) {
+        let t = n(e.name);
+        if (t) {
+          a(
+            `${F(`talk.questOffer`, { name: e.name, title: R(t.id) })}\n\n${Rt(t.id)}`,
+          );
+          return;
+        }
+      }
+      a(
+        i === `lore`
+          ? `${e.name}: ${be[Math.floor(Math.random() * be.length)]}`
+          : `${e.name}: ${ye[Math.floor(Math.random() * ye.length)]}`,
+      );
+    };
+  return (0, $.jsx)(Ri, {
+    title: F(`talk.title`),
+    onClose: i ? e : void 0,
+    children: (0, $.jsx)(`div`, {
+      "data-tut": `act-talk`,
+      children: i
+        ? (0, $.jsxs)($.Fragment, {
+            children: [
+              (0, $.jsx)(`p`, {
+                className: `whitespace-pre-line font-display text-xl leading-relaxed`,
+                children: i,
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d mt-5 min-h-12 rounded-md bg-accent px-4 text-lg font-semibold text-accent-fg`,
+                onClick: e,
+                children: F(`ok`),
+              }),
+            ],
+          })
+        : (0, $.jsx)(`ul`, {
+            className: `flex flex-col gap-2`,
+            children: r.map((e) =>
+              (0, $.jsx)(Ji, { npc: e, onPick: () => o(e) }, e.id),
+            ),
+          }),
+    }),
+  });
+}
+function qi({ onClose: e }) {
+  let t = Q((e) => e.hex),
+    n = Q((e) => e.stealResolve),
+    r = (Q((e) => e.character)?.skills?.mark_pockets ?? 0) > 0,
+    i = (0, s.useMemo)(() => Ii((t?.seed ?? 1) + 29), [t?.seed]),
+    [a, o] = (0, s.useState)(null);
+  return (0, $.jsx)(Ri, {
+    title: F(`steal.title`),
+    onClose: a ? void 0 : e,
+    flush: !0,
+    children: (0, $.jsx)(`div`, {
+      "data-tut": `act-steal`,
+      className: `steal-frame`,
+      children: a
+        ? (0, $.jsx)(`div`, {
+            className: `steal-box`,
+            children: (0, $.jsx)(Yi, {
+              chance: a.chance,
+              onDone: (t) => {
+                (n(t), e());
+              },
+            }),
+          })
+        : (0, $.jsxs)($.Fragment, {
+            children: [
+              (0, $.jsx)(`p`, {
+                className: `mb-3 font-display text-lg text-fg-muted`,
+                children: F(`steal.pick`),
+              }),
+              (0, $.jsx)(`ul`, {
+                className: `flex flex-col gap-2`,
+                children: i.map((e) =>
+                  (0, $.jsx)(
+                    Ji,
+                    {
+                      npc: e,
+                      chance: r ? e.chance : void 0,
+                      onPick: () => {
+                        (N(), o(e));
+                      },
+                    },
+                    e.id,
+                  ),
+                ),
+              }),
+            ],
+          }),
+    }),
+  });
+}
+function Ji({ npc: e, onPick: t, chance: n }) {
+  let r = `/portraits/npc/${String(e.portrait).padStart(2, `0`)}.webp`;
+  return (0, $.jsxs)(`button`, {
+    type: `button`,
+    onClick: t,
+    className: `btn-3d flex min-h-14 items-center gap-3 rounded-md border border-border bg-bg-elevated px-3 text-left`,
+    children: [
+      (0, $.jsx)(`img`, {
+        src: r,
+        alt: ``,
+        className: `npc-face size-14 shrink-0 object-cover`,
+        draggable: !1,
+      }),
+      (0, $.jsxs)(`span`, {
+        className: `min-w-0 flex-1`,
+        children: [
+          (0, $.jsx)(`span`, {
+            className: `block font-display text-lg font-semibold leading-tight`,
+            children: e.name,
+          }),
+          typeof n == `number`
+            ? (0, $.jsx)(`span`, {
+                className: `mt-0.5 block font-sans text-sm font-semibold uppercase tracking-[0.12em] text-accent`,
+                children: F(`steal.chance`, { n }),
+              })
+            : null,
+        ],
+      }),
+    ],
+  });
+}
+function Yi({ chance: e, onDone: t }) {
+  let [n, r] = (0, s.useState)(0),
+    [i, a] = (0, s.useState)(!0),
+    o = (0, s.useRef)(!1),
+    c = (0, s.useRef)(t);
+  ((c.current = t),
+    (0, s.useEffect)(() => {
+      let t = Math.random() * 360,
+        n = 720 + 360 * (2 + Math.floor(Math.random() * 2)) + t,
+        i = performance.now(),
+        s = 2200 + Math.random() * 700,
+        l = 0,
+        u = (t) => {
+          let d = Math.min(1, (t - i) / s),
+            f =
+              d < 0.16
+                ? (d / 0.16) ** 2 * 0.2
+                : 0.2 + (1 - (1 - (d - 0.16) / 0.84) ** 4) * 0.8;
+          if ((r(n * f), d < 1)) l = requestAnimationFrame(u);
+          else {
+            a(!1);
+            let t = ((n % 360) + 360) % 360 < e * 3.6;
+            window.setTimeout(() => {
+              o.current || ((o.current = !0), c.current(t));
+            }, 550);
+          }
+        };
+      return ((l = requestAnimationFrame(u)), () => cancelAnimationFrame(l));
+    }, [e]));
+  let l = `${e * 3.6}deg`;
+  return (0, $.jsxs)(`div`, {
+    className: `flex flex-col items-center gap-4`,
+    children: [
+      (0, $.jsx)(`p`, {
+        className: `font-display text-lg text-fg-muted`,
+        children: F(i ? `steal.spin` : `steal.stop`),
+      }),
+      (0, $.jsxs)(`div`, {
+        className: `steal-stage`,
+        children: [
+          (0, $.jsxs)(`div`, {
+            className: `steal-wheel`,
+            children: [
+              (0, $.jsx)(`span`, { className: `steal-fail` }),
+              (0, $.jsx)(`span`, {
+                className: `steal-ok`,
+                style: { "--slice": l },
+              }),
+              (0, $.jsx)(`img`, {
+                src: `/ui/steal_disc.webp`,
+                alt: ``,
+                className: `steal-rim`,
+                draggable: !1,
+              }),
+            ],
+          }),
+          (0, $.jsx)(`div`, {
+            className: `steal-pointer`,
+            style: { transform: `rotate(${n}deg)` },
+            children: (0, $.jsxs)(`svg`, {
+              className: `needle-svg`,
+              viewBox: `0 0 36 150`,
+              "aria-hidden": `true`,
+              children: [
+                (0, $.jsx)(`polygon`, {
+                  points: `18,2 24,128 18,138 12,128`,
+                  fill: `#f0d2a0`,
+                }),
+                (0, $.jsx)(`polygon`, {
+                  points: `18,2 21,120 18,128 15,120`,
+                  fill: `#fff6c8`,
+                }),
+                (0, $.jsx)(`circle`, {
+                  cx: `18`,
+                  cy: `138`,
+                  r: `7`,
+                  fill: `#c48a40`,
+                }),
+              ],
+            }),
+          }),
+          (0, $.jsx)(`span`, { className: `steal-hub` }),
+        ],
+      }),
+    ],
+  });
+}
+function Xi({ onClose: e }) {
+  let t = Q((e) => e.finishHunt),
+    [n, r] = (0, s.useState)(0),
+    [i, a] = (0, s.useState)({ x: 42, y: 48 }),
+    [o, c] = (0, s.useState)(!1),
+    l = () => {
+      (c(!0),
+        window.setTimeout(() => {
+          (a({ x: 16 + Math.random() * 62, y: 28 + Math.random() * 46 }),
+            c(!1));
+        }, 180));
+    };
+  return (
+    (0, s.useEffect)(() => {
+      l();
+    }, []),
+    (0, $.jsx)($i, {
+      title: F(`hunt.title`),
+      hint: F(`hunt.hint`, { n: 3 - n }),
+      children: (0, $.jsxs)(`div`, {
+        "data-tut": `act-hunt`,
+        className: `hunt-stage`,
+        children: [
+          (0, $.jsx)(`img`, {
+            src: `/locations/forest.webp`,
+            alt: ``,
+            className: `hunt-bg`,
+            draggable: !1,
+          }),
+          (0, $.jsx)(`span`, { className: `hunt-mist` }),
+          (0, $.jsx)(`span`, { className: `hunt-ground` }),
+          (0, $.jsx)(`button`, {
+            type: `button`,
+            className: `hunt-hare ${o ? `is-hop` : ``}`,
+            style: { left: `${i.x}%`, top: `${i.y}%` },
+            onClick: () => {
+              if (o) return;
+              N();
+              let i = n + 1;
+              if ((r(i), i >= 3)) {
+                (t(), e());
+                return;
+              }
+              l();
+            },
+            "aria-label": F(`hunt.mark`),
+            children: (0, $.jsx)(`img`, {
+              src: `/ui/hare.webp`,
+              alt: ``,
+              draggable: !1,
+            }),
+          }),
+          (0, $.jsx)(`span`, {
+            className: `hunt-dust`,
+            style: { left: `${i.x}%`, top: `${i.y}%` },
+          }),
+        ],
+      }),
+    })
+  );
+}
+function Zi({ onClose: e }) {
+  let t = Q((e) => e.finishFish),
+    [n, r] = (0, s.useState)(!1),
+    [i, a] = (0, s.useState)(!1),
+    o = (0, s.useRef)(!0),
+    c = (0, s.useRef)(!1);
+  return (
+    (0, s.useEffect)(() => {
+      o.current = !0;
+      let e = 0,
+        t = 0,
+        n = () => {
+          o.current &&
+            (e = window.setTimeout(
+              () => {
+                o.current &&
+                  ((c.current = !0),
+                  r(!0),
+                  (t = window.setTimeout(() => {
+                    o.current && ((c.current = !1), r(!1), n());
+                  }, 900)));
+              },
+              1600 + Math.random() * 1200,
+            ));
+        };
+      return (
+        n(),
+        () => {
+          ((o.current = !1), window.clearTimeout(e), window.clearTimeout(t));
+        }
+      );
+    }, []),
+    (0, $.jsx)($i, {
+      title: F(`fish.title`),
+      hint: F(`fish.hint`, { n: +!i }),
+      wide: !0,
+      children: (0, $.jsxs)(`button`, {
+        type: `button`,
+        className: `fish-canvas ${i ? `is-caught` : ``}`,
+        onClick: () => {
+          !c.current ||
+            i ||
+            (N(),
+            a(!0),
+            (o.current = !1),
+            window.setTimeout(() => {
+              (t(), e());
+            }, 700));
+        },
+        "aria-label": F(`fish.title`),
+        "data-tut": `act-fish`,
+        children: [
+          (0, $.jsx)(`span`, { className: `fish-water-bg` }),
+          (0, $.jsx)(`span`, { className: `fish-water-shine` }),
+          (0, $.jsx)(`img`, {
+            src: `/ui/fish_rod.webp`,
+            alt: ``,
+            className: `fish-rod-art`,
+            draggable: !1,
+          }),
+          (0, $.jsxs)(`span`, {
+            className: `fish-float ${n ? `is-bite` : ``}`,
+            children: [
+              (0, $.jsxs)(`span`, {
+                className: `bobber-3d`,
+                children: [
+                  (0, $.jsx)(`span`, { className: `bobber-stem` }),
+                  (0, $.jsx)(`span`, { className: `bobber-cap` }),
+                  (0, $.jsx)(`span`, { className: `bobber-red` }),
+                  (0, $.jsx)(`span`, { className: `bobber-white` }),
+                  (0, $.jsx)(`span`, { className: `bobber-shine` }),
+                ],
+              }),
+              (0, $.jsx)(`span`, { className: `ripple r1` }),
+              (0, $.jsx)(`span`, { className: `ripple r2` }),
+              (0, $.jsx)(`span`, { className: `ripple r3` }),
+              (0, $.jsx)(`span`, { className: `splash-burst` }),
+              Array.from({ length: 8 }, (e, t) =>
+                (0, $.jsx)(`span`, { className: `drop drop-${t}` }, t),
+              ),
+            ],
+          }),
+        ],
+      }),
+    })
+  );
+}
+function Qi({ onClose: e }) {
+  let t = (0, s.useRef)(e);
+  return (
+    (t.current = e),
+    (0, s.useEffect)(() => {
+      let e = window.setTimeout(() => {
+        (Q.getState().doAction(`search`), t.current());
+      }, 2400);
+      return () => window.clearTimeout(e);
+    }, []),
+    (0, $.jsx)($i, {
+      title: F(`search.title`),
+      hint: F(`search.hint`),
+      tall: !0,
+      children: (0, $.jsxs)(`div`, {
+        "data-tut": `act-search`,
+        className: `search-stage`,
+        children: [
+          (0, $.jsx)(`div`, { className: `search-earth` }),
+          (0, $.jsx)(`div`, { className: `search-ruts` }),
+          (0, $.jsx)(`div`, { className: `search-fog` }),
+          [
+            { x: 39, y: 80, rot: -10, left: !0 },
+            { x: 58, y: 61, rot: 8, left: !1 },
+            { x: 40, y: 42, rot: -7, left: !0 },
+            { x: 57, y: 24, rot: 9, left: !1 },
+          ].map((e, t) =>
+            (0, $.jsxs)(
+              `span`,
+              {
+                className: `boot-step ${e.left ? `is-left` : `is-right`}`,
+                style: {
+                  left: `${e.x}%`,
+                  top: `${e.y}%`,
+                  "--rot": `${e.rot}deg`,
+                  animationDelay: `${t * 420}ms`,
+                },
+                "aria-hidden": `true`,
+                children: [
+                  (0, $.jsx)(`img`, {
+                    src: `/ui/boot_mud.webp`,
+                    alt: ``,
+                    draggable: !1,
+                  }),
+                  (0, $.jsx)(`span`, { className: `boot-dust` }),
+                ],
+              },
+              t,
+            ),
+          ),
+        ],
+      }),
+    })
+  );
+}
+function $i({ title: e, hint: t, children: n, wide: r, tall: i, onClose: a }) {
+  return (0, $.jsx)(`div`, {
+    className: `act-overlay`,
+    children: (0, $.jsxs)(`div`, {
+      className: `act-stage panel-3d ${r ? `is-wide` : ``} ${i ? `is-tall` : ``}`,
+      children: [
+        (0, $.jsxs)(`div`, {
+          className: `flex items-start justify-between gap-3 px-1`,
+          children: [
+            (0, $.jsx)(`h3`, {
+              className: `font-display text-2xl font-semibold sm:text-3xl`,
+              children: e,
+            }),
+            a
+              ? (0, $.jsx)(`button`, {
+                  type: `button`,
+                  className: `min-h-11 px-2 text-base text-fg-muted`,
+                  onClick: a,
+                  children: F(`close`),
+                })
+              : null,
+          ],
+        }),
+        t
+          ? (0, $.jsx)(`p`, {
+              className: `mt-1 font-display text-lg text-fg-muted`,
+              children: t,
+            })
+          : null,
+        (0, $.jsx)(`div`, { className: `act-canvas`, children: n }),
+      ],
+    }),
+  });
+}
+function ea() {
+  z();
+  let e = Q((e) => e.character),
+    t = Q((e) => e.narrative),
+    n = Q((e) => e.choices),
+    r = Q((e) => e.pendingQuest),
+    i = Q((e) => e.actionsUsed) ?? [],
+    a = Q((e) => e.doAction),
+    c = Q((e) => e.resolveChoice),
+    l = Q((e) => e.shop),
+    u = Q((e) => e.overlay),
+    d = Q((e) => e.openOverlay),
+    f = Q((e) => e.layer),
+    p = Q((e) => e.inNav),
+    m = Q((e) => e.hexesThisLayer),
+    h = Q((e) => e.combat),
+    g = Q((e) => e.talkOpen),
+    _ = Q((e) => e.luckPending),
+    v = Q((e) => e.hex),
+    y = Q((e) => e.setStageFx),
+    [b, x] = (0, s.useState)(!1),
+    [ee, S] = (0, s.useState)(!1),
+    [C, te] = (0, s.useState)(null),
+    [ne, re] = (0, s.useState)(!1),
+    [w, ie] = (0, s.useState)(!1),
+    ae = (0, s.useCallback)(() => te(null), []);
+  if (
+    ((0, s.useEffect)(() => {
+      bi();
+    }, []),
+    (0, s.useEffect)(() => {
+      e || Q.getState().setScreen(`menu`);
+    }, [e]),
+    (0, s.useEffect)(() => {
+      if (!ne) return;
+      let e = window.setTimeout(() => {
+        (Q.getState().doAction(`rest`), Q.getState().setStageFx(null), re(!1));
+      }, 3200);
+      return () => window.clearTimeout(e);
+    }, [ne]),
+    (0, s.useEffect)(() => {
+      (te(null), re(!1), ie(!1), Q.getState().setStageFx(null));
+    }, [v?.seed]),
+    (0, s.useEffect)(() => {
+      C && q(`act.${C}`);
+    }, [C]),
+    (0, s.useEffect)(() => {
+      ne && q(`act.rest`);
+    }, [ne]),
+    (0, s.useEffect)(() => {
+      w && q(`act.offer`);
+    }, [w]),
+    (0, s.useEffect)(() => {
+      ((n && g) || n) && q(`act.quest`);
+    }, [n, g]),
+    (0, s.useEffect)(() => {
+      l && q(`shop`);
+    }, [l]),
+    (0, s.useEffect)(() => {
+      (u === `levelup` && q(`levelup`),
+        u === `stats` && q(`stats`),
+        u === `skills` && q(`skills`));
+    }, [u]),
+    !e || !v)
+  )
+    return null;
+  let oe = p
+      ? { name: F(`layer.nav`), goalName: F(`goal.navGate`) }
+      : pe[f]
+        ? { name: F(`layer.${f}.name`), goalName: F(`layer.${f}.goal`) }
+        : { name: F(`layer.endless`), goalName: F(`hex.fog.name`) },
+    se = 2 - i.length,
+    ce = ir(v.type),
+    le = ge.includes(v.type),
+    ue = _e.includes(v.type),
+    de = !!(h || n || _ || C || ne || w),
+    fe = (e) => {
+      if (e === `search`) {
+        (te(`search`), S(!1));
+        return;
+      }
+      if (e === `rest`) {
+        (re(!0), y(`campfire`), S(!1));
+        return;
+      }
+      if (
+        e === `dig` ||
+        e === `talk` ||
+        e === `steal` ||
+        e === `hunt` ||
+        e === `fish`
+      ) {
+        (a(e), te(e), S(!1));
+        return;
+      }
+      if (e === `offer`) {
+        (ie(!0), S(!1));
+        return;
+      }
+      (N(), a(e), S(!1));
+    },
+    T = [];
+  (ce ||
+    (T.push({
+      id: `search`,
+      label: F(`game.search`),
+      hint: F(`game.searchHint`),
+    }),
+    T.push({ id: `dig`, label: F(`game.dig`), hint: F(`game.digHint`) })),
+    T.push({ id: `rest`, label: F(`game.rest`), hint: F(`game.restHint`) }),
+    ce &&
+      (T.push({ id: `talk`, label: F(`game.talk`), hint: F(`game.talkHint`) }),
+      T.push({
+        id: `steal`,
+        label: F(`game.steal`),
+        hint: F(`game.stealHint`),
+      })),
+    le &&
+      T.push({ id: `hunt`, label: F(`game.hunt`), hint: F(`game.huntHint`) }),
+    ue &&
+      T.push({ id: `fish`, label: F(`game.fish`), hint: F(`game.fishHint`) }),
+    T.push({
+      id: `offer`,
+      label: F(`game.offer`),
+      hint: F(`game.offerHint`),
+      disabled: e.gold < 1,
+    }),
+    (!ce || r) &&
+      T.push({
+        id: `quest`,
+        label: F(`game.quest`),
+        hint: r ? R(r.id) : F(`game.noQuest`),
+        disabled: !r,
+      }));
+  let me = r ? R(r.id) : ``,
+    he = (0, $.jsxs)(`div`, {
+      className: `flex h-full min-h-0 flex-col gap-2 overflow-x-hidden overflow-y-auto scroll-thin p-4 pb-6 lg:p-5`,
+      "data-tut": `actions`,
+      children: [
+        (0, $.jsx)(`div`, {
+          className: `font-sans text-sm uppercase tracking-[0.16em] text-fg-muted`,
+          children: F(`game.actionsLeft`, { n: se }),
+        }),
+        T.map((e) => {
+          let t = i.includes(e.id),
+            n = de || t || se <= 0 || e.disabled;
+          return (0, $.jsxs)(
+            `button`,
+            {
+              type: `button`,
+              disabled: n,
+              onClick: () => {
+                (N(), fe(e.id));
+              },
+              className: `btn-3d min-h-14 rounded-md border border-border bg-bg-subtle px-3 py-2 text-left disabled:opacity-35`,
+              children: [
+                (0, $.jsx)(`div`, {
+                  className: `text-lg font-medium`,
+                  children: e.label,
+                }),
+                (0, $.jsx)(`div`, {
+                  className: `text-sm text-fg-muted`,
+                  children: t ? F(`game.usedThisTurn`) : e.hint,
+                }),
+              ],
+            },
+            e.id,
+          );
+        }),
+        l
+          ? (0, $.jsx)(`button`, {
+              type: `button`,
+              disabled: de,
+              onClick: () => {
+                (N(), d(`shop`));
+              },
+              className: `btn-3d min-h-14 rounded-md border border-accent/40 bg-bg-elevated px-3 text-left text-lg`,
+              children: F(`game.visitShop`),
+            })
+          : null,
+        (0, $.jsx)(`p`, {
+          className: `mt-2 font-display text-base leading-relaxed text-fg-muted lg:text-lg`,
+          children: F(`game.layerGoal`, { goal: oe.goalName, n: m }),
+        }),
+        (0, $.jsxs)(`button`, {
+          type: `button`,
+          onClick: () => {
+            (N(), d(`pause`), S(!1));
+          },
+          className: `btn-3d mt-auto min-h-14 rounded-md border border-border bg-bg-subtle px-3 py-2 text-left`,
+          children: [
+            (0, $.jsx)(`div`, {
+              className: `text-lg font-medium`,
+              children: F(`game.menu`),
+            }),
+            (0, $.jsx)(`div`, {
+              className: `text-sm text-fg-muted`,
+              children: F(`game.menuHint`),
+            }),
+          ],
+        }),
+      ],
+    }),
+    ve = n?.map((e) => {
+      if (!r) return e;
+      if (e.id.startsWith(`method_`)) return { ...e, text: e.text };
+      let t = `quest.${r.id}.talk.${e.id}`,
+        n = F(t);
+      return { ...e, text: n === t ? e.text : n };
+    }),
+    ye = g && (e.skills?.false_path ?? 0) > 0,
+    be = (() => {
+      if (!ye || !r || !n) return null;
+      let e = E.find((e) => e.id === r.id);
+      if (!e) return null;
+      let t = n.filter((t) => {
+        let n = e.outcomes.talk[t.id];
+        return n && !Tn(n);
+      });
+      return t.length ? t[(v.seed >>> 0) % t.length].id : null;
+    })();
+  return (0, $.jsxs)(`div`, {
+    className: `flex min-h-dvh flex-col bg-bg pb-28 lg:h-dvh lg:overflow-hidden lg:pb-0`,
+    children: [
+      (0, $.jsxs)(`header`, {
+        className: `flex flex-col border-b border-border lg:hidden`,
+        children: [
+          (0, $.jsxs)(`div`, {
+            className: `flex items-center justify-between gap-2 px-3 py-2`,
+            children: [
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `flex min-h-11 min-w-11 items-center justify-center rounded-md border border-border`,
+                "aria-label": F(`game.inventoryAria`),
+                onClick: () => x(!0),
+                children: (0, $.jsx)(o, { className: `size-5` }),
+              }),
+              (0, $.jsxs)(`div`, {
+                className: `min-w-0 flex-1 text-center`,
+                children: [
+                  (0, $.jsx)(`div`, {
+                    className: `truncate font-display text-2xl font-semibold leading-tight`,
+                    children: e.name,
+                  }),
+                  (0, $.jsxs)(`div`, {
+                    className: `truncate font-display text-base font-semibold text-fg-muted`,
+                    children: [
+                      F(`left.levelShort`, { n: e.level }),
+                      ` · `,
+                      Mt(e.race),
+                      ` · `,
+                      Nt(e.class),
+                    ],
+                  }),
+                ],
+              }),
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `min-h-11 rounded-md border border-border px-2.5 text-sm`,
+                onClick: () => S(!0),
+                children: F(`game.deeds`),
+              }),
+            ],
+          }),
+          (0, $.jsxs)(`div`, {
+            className: `flex gap-1 px-3 pb-2`,
+            children: [
+              (0, $.jsx)(`div`, {
+                className: `stat-bar flex-1`,
+                children: (0, $.jsx)(`span`, {
+                  className: `bg-hp`,
+                  style: { width: `${(e.hp / e.maxHp) * 100}%` },
+                }),
+              }),
+              (0, $.jsx)(`div`, {
+                className: `stat-bar flex-1`,
+                children: (0, $.jsx)(`span`, {
+                  className: `bg-mp`,
+                  style: { width: `${(e.mp / e.maxMp) * 100}%` },
+                }),
+              }),
+              (0, $.jsx)(`div`, {
+                className: `stat-bar flex-1`,
+                children: (0, $.jsx)(`span`, {
+                  className: `bg-xp`,
+                  style: {
+                    width: `${Math.min(100, (e.xp / ln(e.level)) * 100)}%`,
+                  },
+                }),
+              }),
+            ],
+          }),
+        ],
+      }),
+      (0, $.jsxs)(`div`, {
+        className: `mx-auto grid w-full flex-1 grid-cols-1 overflow-x-hidden lg:h-full lg:grid-cols-[minmax(320px,0.76fr)_minmax(0,1.72fr)_minmax(288px,0.72fr)] lg:grid-rows-[minmax(0,19rem)_minmax(0,1fr)] lg:overflow-hidden`,
+        children: [
+          (0, $.jsx)(`aside`, {
+            className: `hidden min-h-0 overflow-y-auto scroll-thin border-r border-border lg:row-span-2 lg:block`,
+            children: (0, $.jsx)(Oi, {}),
+          }),
+          (0, $.jsx)(`section`, {
+            className: `flex min-h-0 flex-col overflow-hidden border-b border-border px-3 py-2 lg:col-start-2 lg:h-full lg:p-4`,
+            "data-tut": `story`,
+            children: (0, $.jsxs)(`div`, {
+              className: `scroll-thin min-h-0 max-h-[13.5rem] flex-1 overflow-y-auto overscroll-contain pr-2 font-display text-xl font-semibold leading-snug text-fg lg:max-h-none lg:text-2xl lg:leading-snug`,
+              children: [
+                (t ?? ``)
+                  .split(
+                    `
+`,
+                  )
+                  .map((e, t) =>
+                    (0, $.jsx)(
+                      `p`,
+                      { className: t ? `mt-2` : ``, children: e },
+                      t,
+                    ),
+                  ),
+                r && !n
+                  ? (0, $.jsxs)(`p`, {
+                      className: `mt-2 text-base text-accent lg:text-lg`,
+                      children: [
+                        F(`quest.label`),
+                        `: `,
+                        me,
+                        r.difficulty
+                          ? ` · ${F(`quest.warning`, { rank: F(`quest.diff.${r.difficulty}`), stat: Bt(on(E.find((e) => e.id === r.id)?.checkStat ?? `cha`)) })}`
+                          : ``,
+                      ],
+                    })
+                  : null,
+              ],
+            }),
+          }),
+          (0, $.jsx)(`aside`, {
+            className: `hidden min-h-0 overflow-x-hidden overflow-y-auto scroll-thin border-l border-border lg:row-span-2 lg:block`,
+            children: he,
+          }),
+          (0, $.jsx)(`section`, {
+            className: `flex min-h-0 flex-1 items-end justify-center px-2 pb-1 pt-2 lg:col-start-2 lg:row-start-2 lg:p-3 lg:pb-1`,
+            children: (0, $.jsx)(Ei, { lockedExtra: ne || w }),
+          }),
+        ],
+      }),
+      n
+        ? (0, $.jsx)(`div`, {
+            className: `fixed inset-0 z-[55] flex items-end justify-center bg-[color-mix(in_oklab,var(--color-bg)_62%,transparent)] p-3 pb-28 backdrop-blur-[2px] sm:items-center sm:pb-6`,
+            children: (0, $.jsxs)(`div`, {
+              className: `panel-3d max-h-[78dvh] w-full max-w-xl overflow-y-auto scroll-thin p-5 sm:p-7`,
+              "data-tut": `act-quest`,
+              children: [
+                (0, $.jsx)(`p`, {
+                  className: `font-sans text-sm uppercase tracking-[0.16em] text-accent`,
+                  children: F(g ? `quest.talk` : `quest.label`),
+                }),
+                (0, $.jsx)(`h3`, {
+                  className: `font-display mt-1 text-2xl font-semibold sm:text-3xl`,
+                  children: r ? me : ``,
+                }),
+                (0, $.jsx)(`p`, {
+                  className: `mt-3 font-display text-lg leading-relaxed sm:text-xl`,
+                  children: r ? Rt(r.id) : ``,
+                }),
+                r?.difficulty
+                  ? (0, $.jsx)(`p`, {
+                      className: `mt-3 font-sans text-sm font-semibold uppercase tracking-[0.12em] text-accent`,
+                      children: F(`quest.warning`, {
+                        rank: F(`quest.diff.${r.difficulty}`),
+                        stat: Bt(
+                          on(E.find((e) => e.id === r.id)?.checkStat ?? `cha`),
+                        ),
+                      }),
+                    })
+                  : null,
+                (0, $.jsx)(`div`, {
+                  className: `mt-5 flex flex-col gap-2`,
+                  children: (ve ?? n).map((e) => {
+                    let t = be === e.id;
+                    return (0, $.jsxs)(
+                      `button`,
+                      {
+                        type: `button`,
+                        onClick: () => {
+                          (N(), c(e.id));
+                        },
+                        className: `btn-3d min-h-14 rounded-md border px-4 py-3 text-left font-display text-lg sm:text-xl ${t ? `border-hp/80 bg-hp/10 text-fg` : `border-border bg-bg-elevated hover:border-accent`}`,
+                        children: [
+                          e.text,
+                          t
+                            ? (0, $.jsx)(`span`, {
+                                className: `mt-1 block font-sans text-sm uppercase tracking-[0.12em] text-hp`,
+                                children: F(`tut.falsePath`),
+                              })
+                            : null,
+                        ],
+                      },
+                      e.id,
+                    );
+                  }),
+                }),
+              ],
+            }),
+          })
+        : null,
+      b
+        ? (0, $.jsx)(`div`, {
+            className: `fixed inset-0 z-40 bg-bg/70 lg:hidden`,
+            onClick: () => x(!1),
+            children: (0, $.jsxs)(`div`, {
+              className: `absolute inset-y-0 left-0 w-[min(100%,340px)] overflow-y-auto scroll-thin border-r border-border bg-bg-elevated pb-28`,
+              onClick: (e) => e.stopPropagation(),
+              children: [
+                (0, $.jsx)(`div`, {
+                  className: `flex justify-end p-2`,
+                  children: (0, $.jsx)(`button`, {
+                    type: `button`,
+                    className: `min-h-11 px-3 text-base`,
+                    onClick: () => x(!1),
+                    children: F(`close`),
+                  }),
+                }),
+                (0, $.jsx)(Oi, {}),
+              ],
+            }),
+          })
+        : null,
+      ee
+        ? (0, $.jsx)(`div`, {
+            className: `fixed inset-0 z-40 bg-bg/70 lg:hidden`,
+            onClick: () => S(!1),
+            children: (0, $.jsxs)(`div`, {
+              className: `absolute inset-y-0 right-0 w-[min(100%,320px)] overflow-y-auto scroll-thin border-l border-border bg-bg-elevated pb-28`,
+              onClick: (e) => e.stopPropagation(),
+              children: [
+                (0, $.jsx)(`div`, {
+                  className: `flex justify-end p-2`,
+                  children: (0, $.jsx)(`button`, {
+                    type: `button`,
+                    className: `min-h-11 px-3 text-base`,
+                    onClick: () => S(!1),
+                    children: F(`close`),
+                  }),
+                }),
+                he,
+              ],
+            }),
+          })
+        : null,
+      C ? (0, $.jsx)(Li, { kind: C, onClose: ae }) : null,
+      w
+        ? (0, $.jsx)(ta, {
+            onDone: () => {
+              (a(`offer`), ie(!1));
+            },
+          })
+        : null,
+    ],
+  });
+}
+function ta({ onDone: e }) {
+  let t = (0, s.useRef)(e);
+  ((t.current = e),
+    (0, s.useEffect)(() => {
+      let e = window.setTimeout(() => t.current(), 1200);
+      return () => window.clearTimeout(e);
+    }, []));
+  let n =
+    (0, s.useRef)(Math.random() < 0.5 ? `heads` : `tails`).current === `heads`
+      ? 1440
+      : 1620;
+  return (0, $.jsxs)(`div`, {
+    className: `offer-toss`,
+    "aria-hidden": `true`,
+    "data-tut": `act-offer`,
+    children: [
+      (0, $.jsx)(`span`, {
+        className: `toss-ground`,
+        children: (0, $.jsx)(`span`, { className: `toss-shadow` }),
+      }),
+      (0, $.jsx)(`span`, {
+        className: `toss-coin`,
+        children: (0, $.jsxs)(`span`, {
+          className: `toss-spin`,
+          style: { "--spins": `${n}deg` },
+          children: [
+            (0, $.jsx)(`span`, { className: `toss-core` }),
+            (0, $.jsx)(`span`, { className: `toss-face toss-heads` }),
+            (0, $.jsx)(`span`, { className: `toss-face toss-tails` }),
+          ],
+        }),
+      }),
+    ],
+  });
+}
+function na() {
+  z();
+  let e = Q((e) => e.combat),
+    t = Q((e) => e.character),
+    n = Q((e) => e.combatSkill),
+    r = Q((e) => e.selectCombatSkill),
+    i = Q((e) => e.combatAckRound),
+    a = Q((e) => e.combatFinish),
+    o = Q((e) => e.combatFlee),
+    [c, l] = (0, s.useState)(null);
+  if (
+    ((0, s.useEffect)(() => {
+      (We(), j(!0), q(`combat.dice`));
+    }, []),
+    (0, s.useEffect)(() => {
+      e?.phase === `player_act` && q(`combat.skills`);
+    }, [e?.phase]),
+    (0, s.useEffect)(() => {
+      e && Vn(e) && q(`combat.flee`);
+    }, [e]),
+    !e || !t)
+  )
+    return null;
+  let u = e.roundWinners ?? [],
+    d = u.filter((e) => e === `player`).length,
+    f = u.filter((e) => e === `enemy`).length,
+    p = u.filter((e) => e === `tie`).length,
+    m = gn(t),
+    h = de.filter((e) => e.combat && (m[e.id] ?? 0) > 0),
+    g = e.usedSkills ?? [],
+    _ = Ft(e.enemyId),
+    v = Vn(e),
+    y = Math.min(100, (t.hp / t.maxHp) * 100),
+    b = Math.min(100, (t.mp / t.maxMp) * 100),
+    x = e.enemySpecials ?? [],
+    ee = c ?? n;
+  return (0, $.jsx)(`div`, {
+    className: `fixed inset-0 z-50 flex items-center justify-center bg-[color-mix(in_oklab,var(--color-bg)_72%,transparent)] p-2 backdrop-blur-[2px] sm:p-4`,
+    children: (0, $.jsxs)(`div`, {
+      className: `panel combat-panel relative grid max-h-[96dvh] w-full max-w-5xl grid-cols-2 overflow-y-auto scroll-thin pb-28 lg:grid-cols-[1fr_1.15fr_1fr] lg:pb-0`,
+      children: [
+        (0, $.jsxs)(`figure`, {
+          className: `combat-portrait relative min-h-36 overflow-hidden border-b border-border sm:min-h-48 lg:min-h-72 lg:border-b-0 lg:border-r`,
+          children: [
+            (0, $.jsx)(`img`, {
+              src: `/portraits/${t.race}.webp`,
+              alt: t.name,
+              className: `h-full w-full object-cover`,
+              decoding: `async`,
+            }),
+            (0, $.jsxs)(`figcaption`, {
+              className: `combat-caption absolute inset-x-0 bottom-0 p-2 sm:p-4`,
+              children: [
+                (0, $.jsx)(`div`, {
+                  className: `combat-name-hero`,
+                  children: t.name,
+                }),
+                (0, $.jsxs)(`div`, {
+                  className: `mt-2 space-y-1.5`,
+                  children: [
+                    (0, $.jsx)(ra, {
+                      label: F(`left.hp`, { cur: t.hp, max: t.maxHp }),
+                      pct: y,
+                      color: `bg-hp`,
+                    }),
+                    (0, $.jsx)(ra, {
+                      label: F(`left.mp`, { cur: t.mp, max: t.maxMp }),
+                      pct: b,
+                      color: `bg-mp`,
+                    }),
+                  ],
+                }),
+                (0, $.jsxs)(`div`, {
+                  className: `mt-1.5 font-display text-sm text-bg-elevated sm:text-base`,
+                  children: [
+                    e.currentPlayerRaw == null
+                      ? ``
+                      : F(`combat.rawToTotal`, { raw: e.currentPlayerRaw }),
+                    (0, $.jsx)(`span`, {
+                      className: `font-display text-2xl tabular-nums text-accent-dim sm:text-3xl`,
+                      children: e.currentPlayerRoll ?? `—`,
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        }),
+        (0, $.jsxs)(`figure`, {
+          className: `combat-portrait relative min-h-36 overflow-hidden border-b border-l border-border sm:min-h-48 lg:col-start-3 lg:min-h-72 lg:border-b-0`,
+          children: [
+            (0, $.jsx)(`img`, {
+              src: e.enemyPortrait,
+              alt: _,
+              className: `h-full w-full object-cover`,
+              decoding: `async`,
+            }),
+            (0, $.jsxs)(`figcaption`, {
+              className: `combat-caption combat-caption-enemy absolute inset-x-0 bottom-0 p-2 sm:p-4`,
+              children: [
+                (0, $.jsx)(`div`, {
+                  className: `combat-name-enemy`,
+                  children: _,
+                }),
+                (0, $.jsxs)(`div`, {
+                  className: `mt-1 flex flex-wrap items-baseline gap-x-3 gap-y-0.5`,
+                  children: [
+                    (0, $.jsx)(`span`, {
+                      className: `combat-enemy-meta`,
+                      children: F(`combat.enemyLevel`, { n: e.enemyLevel }),
+                    }),
+                    (0, $.jsx)(`span`, {
+                      className: `combat-enemy-power`,
+                      children: F(`combat.enemyPower`, {
+                        n: e.enemyPower ?? 1,
+                      }),
+                    }),
+                  ],
+                }),
+                (0, $.jsxs)(`div`, {
+                  className: `mt-1.5 font-display text-sm text-bg-elevated sm:text-base`,
+                  children: [
+                    e.currentEnemyRaw == null
+                      ? ``
+                      : F(`combat.rawToTotal`, { raw: e.currentEnemyRaw }),
+                    (0, $.jsx)(`span`, {
+                      className: `combat-enemy-total`,
+                      children: e.currentEnemyRoll ?? `—`,
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          ],
+        }),
+        (0, $.jsxs)(`div`, {
+          className: `col-span-2 flex flex-col p-3 sm:p-5 lg:col-span-1 lg:col-start-2 lg:row-start-1`,
+          children: [
+            (0, $.jsxs)(`p`, {
+              className: `font-sans text-sm uppercase tracking-[0.18em] text-accent`,
+              children: [
+                F(`combat.header`, { n: Math.min(e.round, 3), w: d, l: f }),
+                p ? F(`combat.ties`, { n: p }) : ``,
+              ],
+            }),
+            (0, $.jsx)(`p`, {
+              className: `mt-2 whitespace-pre-line font-display text-lg leading-relaxed text-fg sm:text-xl`,
+              children: e.narrative,
+            }),
+            x.length > 0 &&
+              (0, $.jsx)(`ul`, {
+                className: `mt-2 space-y-1 text-sm text-fg-muted sm:text-base`,
+                children: x.map((e) =>
+                  (0, $.jsxs)(`li`, { children: [`· `, F(`special.${e}`)] }, e),
+                ),
+              }),
+            e.phase === `enemy_roll` &&
+              (0, $.jsx)(`p`, {
+                className: `mt-4 font-display text-lg text-accent sm:text-xl`,
+                children: F(`combat.enemyRolling`),
+              }),
+            e.phase === `player_act` &&
+              (0, $.jsxs)(`div`, {
+                className: `mt-3 flex flex-col gap-2`,
+                "data-tut": `combat-skills`,
+                children: [
+                  (0, $.jsx)(`p`, {
+                    className: `font-display text-lg text-accent sm:text-xl`,
+                    children: F(`combat.pressDie`),
+                  }),
+                  (0, $.jsx)(`p`, {
+                    className: `skill-tip-slot`,
+                    children: ee ? Pt(ee) : F(`combat.skillHint`),
+                  }),
+                  h.map((e) => {
+                    let i = g.includes(e.id),
+                      a = n === e.id,
+                      o = t.mp < e.mp,
+                      s = i || o || (!!n && !a);
+                    return (0, $.jsxs)(
+                      `button`,
+                      {
+                        type: `button`,
+                        disabled: s,
+                        className: `skill-btn btn-3d min-h-12 rounded-md border px-3 text-left text-base sm:text-lg ${a ? `border-accent bg-accent/20` : i ? `border-border bg-bg-subtle opacity-55` : `border-border`}`,
+                        onMouseEnter: () => l(e.id),
+                        onMouseLeave: () => l(null),
+                        onFocus: () => l(e.id),
+                        onBlur: () => l(null),
+                        onClick: () => {
+                          s || (N(), r(e.id));
+                        },
+                        children: [
+                          F(`combat.mpCost`, { name: L(e.id), n: e.mp }),
+                          a
+                            ? F(`combat.chosen`)
+                            : i
+                              ? F(`combat.used`)
+                              : o
+                                ? F(`combat.lowMp`)
+                                : ``,
+                        ],
+                      },
+                      e.id,
+                    );
+                  }),
+                ],
+              }),
+            e.phase === `round_result` &&
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d mt-4 min-h-12 rounded-md bg-accent text-lg font-semibold text-accent-fg`,
+                onClick: i,
+                children: F(`combat.nextRound`),
+              }),
+            e.phase === `battle_end` &&
+              (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d mt-4 min-h-12 rounded-md bg-accent text-lg font-semibold text-accent-fg`,
+                onClick: a,
+                children: F(`combat.result`),
+              }),
+          ],
+        }),
+        v
+          ? (0, $.jsx)(`div`, {
+              className: `col-span-2 border-t border-border p-3 lg:col-span-3`,
+              children: (0, $.jsx)(`button`, {
+                type: `button`,
+                className: `btn-3d min-h-12 w-full rounded-md border border-hp/50 bg-bg-subtle px-3 text-base sm:text-lg`,
+                "data-tut": `combat-flee`,
+                onClick: () => {
+                  (N(), o());
+                },
+                children: F(`combat.flee`),
+              }),
+            })
+          : null,
+      ],
+    }),
+  });
+}
+function ra({ label: e, pct: t, color: n }) {
+  return (0, $.jsxs)(`div`, {
+    children: [
+      (0, $.jsx)(`div`, {
+        className: `mb-0.5 font-sans text-sm tabular-nums text-bg-elevated`,
+        children: e,
+      }),
+      (0, $.jsx)(`div`, {
+        className: `stat-bar combat-stat-bar`,
+        children: (0, $.jsx)(`span`, {
+          className: n,
+          style: { width: `${t}%` },
+        }),
+      }),
+    ],
+  });
+}
+function ia() {
+  try {
+    Q.setState({
+      screen: `menu`,
+      overlay: `none`,
+      combat: null,
+      choices: null,
+      luckPending: !1,
+      stageFx: null,
+      talkOpen: !1,
+      combatSkill: null,
+    });
+  } catch {}
+}
+var aa = class extends s.Component {
+  state = { err: null };
+  static getDerivedStateFromError(e) {
+    return { err: e };
+  }
+  componentDidCatch(e, t) {
+    (console.error(`[tmz] crash`, e, t?.componentStack), ia());
+  }
+  render() {
+    return this.state.err
+      ? (0, $.jsxs)(`div`, {
+          className: `flex min-h-dvh flex-col items-center justify-center gap-4 bg-bg px-6 text-fg`,
+          children: [
+            (0, $.jsx)(`p`, {
+              className: `font-display text-3xl`,
+              children: F(`crash.title`),
+            }),
+            (0, $.jsx)(`p`, {
+              className: `font-display text-lg text-fg-muted`,
+              children: F(`crash.body`),
+            }),
+            (0, $.jsx)(`button`, {
+              type: `button`,
+              className: `btn-3d min-h-12 rounded-md bg-accent px-5 text-lg font-semibold text-accent-fg`,
+              onClick: () => {
+                (ia(), this.setState({ err: null }), this.props.onRecover());
+              },
+              children: F(`menu.continue`),
+            }),
+          ],
+        })
+      : this.props.children;
+  }
+};
+function oa() {
+  return (
+    z(),
+    (0, $.jsxs)(`div`, {
+      className: `flex min-h-dvh flex-col items-center justify-center gap-2 bg-bg px-6 text-fg`,
+      children: [
+        (0, $.jsx)(`p`, {
+          className: `font-display text-3xl`,
+          children: `Туманная застава`,
+        }),
+        (0, $.jsx)(`p`, {
+          className: `font-display text-lg text-fg-muted`,
+          children: F(`splash.opening`),
+        }),
+      ],
+    })
+  );
+}
+function sa() {
+  return (0, $.jsx)(Ut, { children: (0, $.jsx)(ca, {}) });
+}
+function ca() {
+  let e = Q((e) => e.screen),
+    t = Q((e) => e.hydrate),
+    n = Q((e) => e.persist),
+    r = Q((e) => e.character),
+    i = Q((e) => e.combat),
+    [a, o] = (0, s.useState)(typeof window < `u`),
+    [c, l] = (0, s.useState)(0);
+  return (
+    (0, s.useEffect)(() => {
+      (t(), o(!0));
+    }, [t]),
+    (0, s.useEffect)(() => {
+      let e = () => {
+          try {
+            n();
+          } catch {}
+        },
+        t = () => e();
+      return (
+        document.addEventListener(`visibilitychange`, t),
+        window.addEventListener(`pagehide`, t),
+        window.addEventListener(`beforeunload`, t),
+        () => {
+          (document.removeEventListener(`visibilitychange`, t),
+            window.removeEventListener(`pagehide`, t),
+            window.removeEventListener(`beforeunload`, t));
+        }
+      );
+    }, [n]),
+    a
+      ? (0, $.jsx)(
+          aa,
+          {
+            onRecover: () => {
+              (ia(), l((e) => e + 1));
+            },
+            children: (0, $.jsxs)(`div`, {
+              className: `min-h-dvh overflow-x-hidden bg-bg text-fg`,
+              onPointerDown: () => We(),
+              children: [
+                e === `menu` || e === `lore`
+                  ? (0, $.jsx)(Ur, { hasSave: !!r || Hr() })
+                  : null,
+                e === `create` ? (0, $.jsx)(Ci, {}) : null,
+                e === `game` && r ? (0, $.jsx)(ea, {}) : null,
+                i ? (0, $.jsx)(na, {}) : null,
+                (0, $.jsx)(ti, {}),
+                (0, $.jsx)(di, {}),
+                (0, $.jsx)(mi, {}),
+              ],
+            }),
+          },
+          c,
+        )
+      : (0, $.jsx)(oa, {})
+  );
+}
+function la() {
+  return (0, $.jsx)(sa, {});
+}
+export {
+  p as a,
+  d as c,
+  la as component,
+  g as i,
+  l,
+  h as n,
+  f as o,
+  _ as r,
+  c as s,
+  m as t,
+  u,
+};
